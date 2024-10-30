@@ -776,7 +776,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	slot_flags = ITEM_SLOT_HANDS // Occupies a hand slot
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 30
-	fire_sound = ''sound/weapons/gun/shotgun/shot.ogg''
+	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
 
 	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	var/ammo = 0 // Tracks current ammo count
