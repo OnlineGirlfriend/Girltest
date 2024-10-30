@@ -771,22 +771,22 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 /obj/item/gun/ballistic/shotgun/mounted
 	var/attached = FALSE // Tracks if the shotgun is attached
 	name = "Mounted Shotgun"
-	desc = "A powerful shotgun mounted for use as an arm attachment."
+	desc = "A shotgun mounted for use as an arm attachment."
 	icon_state = "mounted_shotgun" // Need to create this icon
 	slot_flags = ITEM_SLOT_HANDS // Occupies a hand slot
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 30
-	fire_sound = 'sound/weapons/gun/shotgun/mounted_fire.ogg'
+	fire_sound = 'sound/weapons/gun/shotgun/mounted_fire.ogg' // Add correct sound file
 
 	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	var/ammo = 0 // Tracks current ammo count
 
 	// Attaches the mounted shotgun to the user's arm
 	proc/attach_to_user(mob/user)
-		if(user.is_robot || user.has_prosthetic_arm())
-			user << "You attach the mounted shotgun to your arm!"
+		if(istype(user, /mob/living/silicon) || istype(user, /mob/living/cyborg)) // Double check this
+			user << "You mount the shotgun on your arm!"
 			attached = TRUE
-			user.arm_slot = src // Occupies arm slot
+			// user.arm_slot = src // Occupies arm slot, commented out for now
 			update_icon_state() // Updates icon for attachment
 			user.update_inventory()
 		else
@@ -798,13 +798,13 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			usr << "The mounted shotgun makes an ominous click."
 			return
 		ammo -= 1
-		play_sound(fire_sound, usr)
+		playsound(fire_sound, usr)
 		usr << "You fire the mounted shotgun!"
 
 		// Recoil would go here
 
 	// Updates the icon once attached
-	proc/update_icon_state()
+	proc/update_mounted_icon_state()
 		if(attached)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
@@ -820,16 +820,16 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			user.update_inventory()
 
 // Prevents holding other items while the mounted shotgun is attached
-/mob/proc/update_inventory()
-	if(attached)
-		for(var/obj/item/I in src.contents)
-			if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
-				src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
-				I.drop_to_floor()
+	/mob/proc/update_inventory()
+		if(attached)
+			for(var/obj/item/I in src.contents)
+				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
+					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
+					I.drop_to_floor()
 
 // Prevents item pickup while the mounted shotgun is attached
-/mob/proc/attack_hand(obj/item/I)
-	if(attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
-		src << "Your hand is a shotgun. Shotguns can't hold anything."
-		return
-	return ..()
+	/mob/proc/attack_hand(obj/item/I)
+		if(attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
+			src << "Your hand is a shotgun. Shotguns can't hold anything."
+			return
+		return ..()
