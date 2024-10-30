@@ -782,8 +782,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	var/ammo_type = /obj/item/ammo_casing/shotgun
 	var/ammo = 0
 
-// Mounts the shotgun to the user's arm
-	/mob/proc/attach_to_user(mob/user)
+	// Mounts the shotgun to the user's arm
+	proc/attach_to_user(mob/user)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
 			user << "You mount the shotgun on your arm!"
 			is_mounted = TRUE
@@ -792,8 +792,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 		else
 			user << "You need a robotic or prosthetic arm to do this!"
 
-// Fire method override
-	/mob/proc/fire()
+	// Fire method override
+	proc/fire()
 		if(ammo <=0)
 			usr << "The mounted shotgun makes an ominous click."
 			return
@@ -803,31 +803,31 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 		// Recoil effects would go here
 
-// Updates the icon once mounted
-	/mob/proc/update_mounted_icon_state()
+	// Updates the icon once mounted
+	proc/update_mounted_icon_state()
 		if(is_mounted)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
 			icon_state = "mounted_shotgun" // Make this
 
-// Removes the hand slot overlay when detached
-	/mob/proc/detach_from_user(mob/user)
+	// Removes the hand slot overlay when detached
+	proc/detach_from_user(mob/user)
 		if(is_mounted)
 			is_mounted = FALSE
 			// user.arm_slot = null // Commenting out
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
 			update_mounted_icon_state()
 
-// Prevents holding other items while the mounted shotgun is attached
-	/mob/proc/update_inventory(mob/user)
+	// Prevents holding other items while the mounted shotgun is attached
+	proc/update_inventory(mob/user)
 		if(is_mounted)
 			for(var/obj/item/I in user.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
 					I.forceMove(get_turf(src))
 
-// Prevents item pickup while the mounted shotgun is attached
-	/mob/proc/attack_hand_mounted(obj/item/I, mob/user)
+	// Prevents item pickup while the mounted shotgun is attached
+	proc/attack_hand_mounted(obj/item/I, mob/user)
 		if(is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
