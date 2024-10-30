@@ -812,7 +812,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
-		if(src.attached)
+		if(attached)
 			attached = FALSE
 			// user.arm_slot = null // Commenting out
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
@@ -820,7 +820,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
-		if(src.attached)
+		if(attached)
 			for(var/obj/item/I in src.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
