@@ -4,6 +4,8 @@
 
 // Mutable appearances are children of images, just so you know.
 
+//
+
 /mutable_appearance/New()
 	..()
 	plane = FLOAT_PLANE // No clue why this is 0 by default yet images are on FLOAT_PLANE
@@ -19,3 +21,5 @@
 	MA.alpha = alpha
 	MA.appearance_flags |= appearance_flags
 	return MA
+
+//
