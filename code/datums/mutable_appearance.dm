@@ -4,7 +4,7 @@
 
 // Mutable appearances are children of images, just so you know.
 
-//
+/*
 
 /mutable_appearance/New()
 	..()
@@ -22,4 +22,4 @@
 	MA.appearance_flags |= appearance_flags
 	return MA
 
-//
+*/
