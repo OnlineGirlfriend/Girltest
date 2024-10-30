@@ -769,6 +769,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 // MOUNTED SHOTGUN //
 
 /obj/item/gun/ballistic/shotgun/mounted
+	var/attached = FALSE // Tracks if the shotgun is attached
+
 	name = "Mounted Shotgun"
 	desc = "A shotgun mounted for use as an arm attachment."
 	icon_state = "mounted_shotgun" // Need to create this icon
@@ -777,9 +779,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	force = 30
 	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
 
-	var/attached = FALSE // Tracks if the shotgun is attached
-	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
-	var/ammo = 0 // Tracks current ammo count
+	var/ammo_type = /obj/item/ammo_casing/shotgun
+	var/ammo = 0
 
 	// Attaches the mounted shotgun to the user's arm
 	proc/attach_to_user(mob/user)
@@ -787,7 +788,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			user << "You mount the shotgun on your arm!"
 			src.attached = TRUE
 			// user.arm_slot = src // Occupies arm slot, commented out for now
-			update_icon_state() // Updates icon for attachment
+			update_mounted_icon_state()
 		else
 			user << "You need a robotic or prosthetic arm to do this!"
 
