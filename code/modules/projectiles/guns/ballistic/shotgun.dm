@@ -774,11 +774,12 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	icon_state = "mounted_shotgun" // Need to create this icon
 	slot_flags = ITEM_SLOT_HANDS // Occupies an arm slot
 	w_class = WEIGHT_CLASS_NORMAL
-	ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	force = 30
 	fire_sound = 'sound/weapons/gun/shotgun/mounted_fire.ogg'
 
 	var/attached = FALSE // Tracks if the shotgun is attached
+	var/ammo_type = ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
+	var/ammo = 0 // Tracks current ammo count
 
 	// Attaches the mounted shotgun to the user's arm
 	proc/attach_to_user(mob/user)
