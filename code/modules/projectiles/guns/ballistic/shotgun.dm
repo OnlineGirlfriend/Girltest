@@ -786,7 +786,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	proc/attach_to_user(mob/user)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
 			user << "You mount the shotgun on your arm!"
-			src.is_mounted = TRUE
+			is_mounted = TRUE
 			// user.arm_slot = src // Occupies arm slot, commented out for now
 			update_mounted_icon_state()
 		else
@@ -805,22 +805,22 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Updates the icon once mounted
 	proc/update_mounted_icon_state()
-		if(src.is_mounted)
+		if(is_mounted)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
 			icon_state = "mounted_shotgun" // Make this
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
-		if(src.is_mounted)
-			src.is_mounted = FALSE
+		if(is_mounted)
+			is_mounted = FALSE
 			// user.arm_slot = null // Commenting out
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
 			update_mounted_icon_state()
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
-		if(src.is_mounted)
+		if(user.is_mounted)
 			for(var/obj/item/I in user.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
@@ -828,6 +828,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 // Prevents item pickup while the mounted shotgun is attached
 	/mob/proc/attack_hand_mounted(obj/item/I, mob/user)
-		if(src.is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
+		if(user.is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
