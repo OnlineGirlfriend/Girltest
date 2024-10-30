@@ -769,7 +769,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 // MOUNTED SHOTGUN //
 
 /obj/item/gun/ballistic/shotgun/mounted
-	var/global/attached = FALSE // Tracks if the shotgun is attached
+	var/attached = FALSE // Tracks if the shotgun is attached
 
 	name = "Mounted Shotgun"
 	desc = "A shotgun mounted for use as an arm attachment."
@@ -812,7 +812,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
-		if(attached)
+		if(src.attached)
 			attached = FALSE
 			// user.arm_slot = null // Commenting out
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
@@ -820,7 +820,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
-		if(attached)
+		if(src.attached)
 			for(var/obj/item/I in src.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
@@ -828,7 +828,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 // Prevents item pickup while the mounted shotgun is attached
 	/mob/proc/attack_hand_mounted(obj/item/I, mob/user)
-		if(attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
+		if(src.attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
 		return ..()
