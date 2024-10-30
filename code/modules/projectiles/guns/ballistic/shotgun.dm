@@ -820,7 +820,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
-		if(user.is_mounted)
+		if(is_mounted)
 			for(var/obj/item/I in user.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
