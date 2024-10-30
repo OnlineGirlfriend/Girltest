@@ -769,7 +769,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 // MOUNTED SHOTGUN //
 
 /obj/item/gun/ballistic/shotgun/mounted
-	var/attached = FALSE // Tracks if the shotgun is attached
+	var/is_mounted = FALSE // Tracks if the shotgun is attached
 
 	name = "Mounted Shotgun"
 	desc = "A shotgun mounted for use as an arm attachment."
@@ -782,11 +782,11 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	var/ammo_type = /obj/item/ammo_casing/shotgun
 	var/ammo = 0
 
-	// Attaches the mounted shotgun to the user's arm
+	// Mounts the shotgun to the user's arm
 	proc/attach_to_user(mob/user)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
 			user << "You mount the shotgun on your arm!"
-			src.attached = TRUE
+			src.is_mounted = TRUE
 			// user.arm_slot = src // Occupies arm slot, commented out for now
 			update_mounted_icon_state()
 		else
@@ -803,24 +803,24 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 		// Recoil effects would go here
 
-	// Updates the icon once attached
+	// Updates the icon once mounted
 	proc/update_mounted_icon_state()
-		if(src.attached)
+		if(src.is_mounted)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
 			icon_state = "mounted_shotgun" // Make this
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
-		if(src.attached)
-			attached = FALSE
+		if(src.is_mounted)
+			src.is_mounted = FALSE
 			// user.arm_slot = null // Commenting out
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
 			update_mounted_icon_state()
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
-		if(src.attached)
+		if(src.is_mounted)
 			for(var/obj/item/I in user.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
@@ -828,6 +828,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 // Prevents item pickup while the mounted shotgun is attached
 	/mob/proc/attack_hand_mounted(obj/item/I, mob/user)
-		if(src.attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
+		if(src.is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
