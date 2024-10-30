@@ -776,7 +776,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 30
 	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
-	
+
 	var/attached = FALSE // Tracks if the shotgun is attached
 	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	var/ammo = 0 // Tracks current ammo count
@@ -804,11 +804,11 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 		// Recoil would go here
 
 	// Updates the icon once attached
-	proc/update_mounted_icon_state()
+	proc/update_icon_state()
 		if(attached)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
-			icon_state = "mounted_shotgun"
+			icon_state = "mounted_shotgun" // Make this
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
@@ -820,7 +820,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			user.update_inventory()
 
 	// Prevents holding other items while the mounted shotgun is attached
-	/mob/proc/update_inventory()
+	proc/update_inventory(mob/user)
 		if(attached)
 			for(var/obj/item/I in src.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
@@ -828,7 +828,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 					I.forceMove(get_turf(src))
 
 // Prevents item pickup while the mounted shotgun is attached
-	/mob/proc/attack_hand_mounted(obj/item/I)
+	/mob/proc/attack_hand_mounted(obj/item/I, mob/user)
 		if(attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
