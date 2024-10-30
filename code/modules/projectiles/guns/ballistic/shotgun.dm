@@ -772,7 +772,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	name = "Mounted Shotgun"
 	desc = "A powerful shotgun mounted for use as an arm attachment."
 	icon_state = "mounted_shotgun" // Need to create this icon
-	slot_flags = SLOT_ARM // Occupies an arm slot
+	slot_flags = ITEM_SLOT_HANDS // Occupies an arm slot
 	w_class = WEIGHT_CLASS_NORMAL
 	ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	force = 30
@@ -822,13 +822,13 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 /mob/proc/update_inventory()
 	if(attached)
 		for(var/obj/item/I in src.contents)
-			if(I.slot_flags & SLOT_HAND) //Checks if they're trying to use hand slots
-            	src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
-            	I.drop_to_floor()
+			if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
+				src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
+				I.drop_to_floor()
 
 // Prevents item pickup while the mounted shotgun is attached
 /mob/proc/attack_hand(obj/item/I)
-	if(attached && I.slot_flags & SLOT_HAND) // Checks if attached and using hand slot
-        src << "Your hand is a shotgun. Shotguns can't hold anything."
-        return
+	if(attached && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
+		src << "Your hand is a shotgun. Shotguns can't hold anything."
+		return
 	return ..()
