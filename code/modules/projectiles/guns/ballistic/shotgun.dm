@@ -803,7 +803,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 		// Recoil effects would go here
 
 	// Updates the icon once attached
-	proc/update_icon_state()
+	proc/update_mounted_icon_state()
 		if(src.attached)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
