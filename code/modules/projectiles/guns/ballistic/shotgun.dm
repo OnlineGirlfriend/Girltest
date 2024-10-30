@@ -828,6 +828,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 // Prevents item pickup while the mounted shotgun is attached
 	/mob/proc/attack_hand_mounted(obj/item/I, mob/user)
-		if(user.is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
+		if(is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
