@@ -770,6 +770,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 /obj/item/gun/ballistic/shotgun/mounted
 	var/attached = FALSE // Tracks if the shotgun is attached
+	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
+	var/ammo = 0 // Tracks current ammo count
 	name = "Mounted Shotgun"
 	desc = "A shotgun mounted for use as an arm attachment."
 	icon_state = "mounted_shotgun" // Need to create this icon
@@ -778,14 +780,11 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	force = 30
 	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
 
-	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
-	var/ammo = 0 // Tracks current ammo count
-
 	// Attaches the mounted shotgun to the user's arm
 	proc/attach_to_user(mob/user)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
 			user << "You mount the shotgun on your arm!"
-			attached = TRUE
+			src.attached = TRUE
 			// user.arm_slot = src // Occupies arm slot, commented out for now
 			update_icon_state() // Updates icon for attachment
 			user.update_inventory()
@@ -794,10 +793,10 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Fire method override
 	proc/fire()
-		if(ammo <=0)
+		if(src.ammo <=0)
 			usr << "The mounted shotgun makes an ominous click."
 			return
-		ammo -= 1
+		src.ammo -= 1
 		playsound(fire_sound, usr)
 		usr << "You fire the mounted shotgun!"
 
@@ -805,15 +804,15 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	// Updates the icon once attached
 	proc/update_mounted_icon_state()
-		if(attached)
+		if(src.attached)
 			icon_state = "mounted_shotgun_attached" // Need to make this too
 		else
 			icon_state = "mounted_shotgun"
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
-		if(attached)
-			attached = FALSE
+		if(src.attached)
+			src.attached = FALSE
 			// user.arm_slot = null // Commenting out
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
 			update_icon_state()
