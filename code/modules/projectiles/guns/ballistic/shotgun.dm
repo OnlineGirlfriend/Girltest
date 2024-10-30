@@ -776,7 +776,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	slot_flags = ITEM_SLOT_HANDS // Occupies a hand slot
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 30
-	fire_sound = 'sound/weapons/gun/shotgun/mounted_fire.ogg' // Add correct sound file
+	fire_sound = ''sound/weapons/gun/shotgun/shot.ogg'
 
 	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	var/ammo = 0 // Tracks current ammo count
@@ -825,7 +825,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			for(var/obj/item/I in src.contents)
 				if(I.slot_flags & ITEM_SLOT_HANDS) //Checks if they're trying to use hand slots
 					src << "You cannot hold anything else while the mounted shotgun is attached to your arm."
-					I.forceMove(get_turf(user))
+					I.forceMove(get_turf(src))
 
 // Prevents item pickup while the mounted shotgun is attached
 	/mob/proc/attack_hand_mounted(obj/item/I)
