@@ -4,9 +4,6 @@
 
 // Mutable appearances are children of images, just so you know.
 
-mutable_appearance /image
-	var/icon
-
 /mutable_appearance/New()
 	..()
 	plane = FLOAT_PLANE // No clue why this is 0 by default yet images are on FLOAT_PLANE
