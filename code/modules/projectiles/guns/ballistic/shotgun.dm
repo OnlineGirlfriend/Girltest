@@ -777,9 +777,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	item_state = "mounted_shotgun"
 	lefthand_file = 'icons/mobs/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add this
 	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add this
-	w_class = WEIGHT_CLASS_NORMAL
+	w_class = WEAPON_LIGHT
 	force = 30
-	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
 
 	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
 	var/ammo = 0 // Current ammo count
@@ -791,7 +790,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			is_mounted = TRUE
 			update_mounted_icon_state()
 		else
-			user << "You need a robotic arm to do this!" // Error message for non-silicons
+			user << "This shotgun isn't meant for you!" // Error message for non-silicons
 
 	// Fire method override
 	proc/fire()
@@ -800,8 +799,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			return
 		ammo -= 1
 		playsound(fire_sound, usr)
-		usr << "You fire the mounted shotgun!"
-
+	
 		// Recoil effects would go here
 
 	// Updates the icon once mounted
