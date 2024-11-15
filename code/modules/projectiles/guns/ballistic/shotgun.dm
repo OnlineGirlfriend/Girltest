@@ -793,7 +793,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	proc/update_mounted_icon_state()
 		if(is_mounted)
 			icon_state = "mounted_shotgun_attached" // Add sprite
-			
+		else
+			icon_state = "mounted_shotgun"
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
