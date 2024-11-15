@@ -803,7 +803,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Add sprite
 			var/obj/item/gun/ballistic/shotgun/mounted shotgun = new /obj/item/gun/ballistic/shotgun/mounted(get_turf(user)) // Drops a shotgun when detached
 			shotgun.loc = get_turf(user)
-			update_mounted_icon_state
+			update_mounted_icon_state()
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
