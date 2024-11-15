@@ -793,6 +793,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	proc/update_mounted_icon_state()
 		if(is_mounted)
 			icon_state = "mounted_shotgun_attached" // Add sprite
+			
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
@@ -801,7 +802,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			REMOVE_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Add sprite
 			var/obj/item/shotgun/mounted shotgun = new /obj/item/gun/ballistic/shotgun/mounted(get_turf(user)) // Drops a shotgun when detached
-			update_mounted_icon_state()
+			shotgun.loc = get_turf(user) // This ensures the shotgun is placed on the user's current turf
+			update_mounted_icon_state
 
 	// Prevents holding other items while the mounted shotgun is attached
 	proc/update_inventory(mob/user)
@@ -817,6 +819,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
 
-	obj/item/mounted_shotgun/Initialize()
+/obj/item/mounted_shotgun/Initialize()
 	. = ..()
 	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Prevents dropping, replaces hand
