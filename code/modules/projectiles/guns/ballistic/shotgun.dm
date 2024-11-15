@@ -771,47 +771,38 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 /obj/item/gun/ballistic/shotgun/mounted
 	var/is_mounted = FALSE // Tracks if the shotgun is attached
 
-	name = "Mounted Shotgun"
+	name = "mounted shotgun"
 	desc = "A shotgun instead of an arm. Neat."
-	icon_state = "mounted_shotgun" // Need to create this icon
+	icon_state = "mounted_shotgun" // Add sprite
 	item_state = "mounted_shotgun"
-	lefthand_file = 'icons/mobs/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add this
-	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add this
+	lefthand_file = 'icons/mobs/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add sprite
+	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add sprite
 	w_class = WEAPON_LIGHT
 	force = 30
-
-	var/ammo_type = /obj/item/ammo_casing/shotgun // Uses standard ammo
-	var/ammo = 0 // Current ammo count
 
 	// Mounts the shotgun to the user's arm
 	proc/attach_to_user(mob/user)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
 			user << "You mount the shotgun on your arm!"
 			is_mounted = TRUE
+			//ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 			update_mounted_icon_state()
 		else
-			user << "This shotgun isn't meant for you!" // Error message for non-silicons
-
-	// Fire method override
-	proc/fire()
-		if(ammo <=0)
-			usr << "The mounted shotgun makes an ominous click."
-			return
-		ammo -= 1
-		playsound(fire_sound, usr)
-	
-		// Recoil effects would go here
+			user << "This shotgun isn't meant for you!"
 
 	// Updates the icon once mounted
 	proc/update_mounted_icon_state()
 		if(is_mounted)
-			icon_state = is_mounted ? "mounted_shotgun_attached" : "mounted_shotgun" // Need to add icons
+			icon_state = "mounted_shotgun_attached" // Add sprite
 
 	// Removes the hand slot overlay when detached
 	proc/detach_from_user(mob/user)
 		if(is_mounted)
 			is_mounted = FALSE
-			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Need to make this
+			//REMOVE_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT
+			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Add sprite
+			var/obj/item/shotgun/mounted shotgun = new /obj/item/gun/ballistic/shotgun/mounted(get_turf(user)) // Drops a shotgun when detached
+			shotgun.icon_state = "shotgun"
 			update_mounted_icon_state()
 
 	// Prevents holding other items while the mounted shotgun is attached
@@ -828,6 +819,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			src << "Your hand is a shotgun. Shotguns can't hold anything."
 			return
 
-/obj/item/mounted_shotgun/Initialize()
+	obj/item/mounted_shotgun/Initialize()
 	. = ..()
-	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Can't be dropped, replaces hand
+	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Prevents dropping, replaces hand
