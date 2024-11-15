@@ -778,7 +778,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	lefthand_file = 'icons/mobs/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add sprite
 	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add sprite
 	w_class = WEAPON_LIGHT
-	force = 30
 
 	// Mounts the shotgun to the user's arm
 	proc/attach_to_user(mob/user)
