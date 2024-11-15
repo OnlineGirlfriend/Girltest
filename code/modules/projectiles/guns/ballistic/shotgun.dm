@@ -784,7 +784,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
 			user << "You mount the shotgun on your arm!"
 			is_mounted = TRUE
-			//ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
+			ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 			update_mounted_icon_state()
 		else
 			user << "This shotgun isn't meant for you!"
@@ -798,7 +798,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	proc/detach_from_user(mob/user)
 		if(is_mounted)
 			is_mounted = FALSE
-			//REMOVE_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT
+			REMOVE_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Add sprite
 			var/obj/item/shotgun/mounted shotgun = new /obj/item/gun/ballistic/shotgun/mounted(get_turf(user)) // Drops a shotgun when detached
 			update_mounted_icon_state()
