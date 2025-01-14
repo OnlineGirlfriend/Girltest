@@ -775,7 +775,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	desc = "A shotgun instead of an arm. Neat."
 	icon_state = "mounted_shotgun" // Add sprite
 	item_state = "mounted_shotgun"
-	lefthand_file = 'icons/mobs/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add sprite
+	lefthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add sprite
 	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add sprite
 	w_class = WEAPON_LIGHT
 
