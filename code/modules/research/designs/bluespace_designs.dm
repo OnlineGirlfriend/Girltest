@@ -64,7 +64,7 @@
 
 /datum/design/biobag_holding
 	name = "Biohazard Container of Holding"
-	desc = "A bag designed to safely contain biologically-hazardous objects. This bag has been outfitted with a bluespace storage well, and can carry considerably more then it's actual size."
+	desc = "A bag designed to safely contain biologically-hazardous objects. This bag has been outfitted with a bluespace storage well and can carry considerably more than its actual size."
 	id = "biobag_holding"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/gold = 1500, /datum/material/diamond = 750, /datum/material/uranium = 250, /datum/material/bluespace = 1000)

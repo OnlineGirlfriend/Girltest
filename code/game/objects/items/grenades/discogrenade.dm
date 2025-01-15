@@ -113,7 +113,7 @@
 		return
 
 	target.set_drugginess(10)
-	target.show_message(span_warning("You feel a strong rythme and your muscles spasm uncontrollably, you begin dancing and cannot move!"), 2)
+	target.show_message(span_warning("You feel a strong rhythm, and your muscles spasm uncontrollably. You begin dancing and cannot move!"), 2)
 	target.Immobilize(30)
 
 	//Special actions

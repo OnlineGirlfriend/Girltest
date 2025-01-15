@@ -185,7 +185,7 @@
 	name = "polar cloak"
 	icon_state = "polarcloak"
 	hoodtype = /obj/item/clothing/head/hooded/cloakhood/goliath/polar
-	desc = "A tribal hood made from a polar bears pelt. Keeps it's wearer warm and looks badass while doing it."
+	desc = "A tribal hood made from a polar bears pelt. Keeps its wearer warm and looks badass while doing it."
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS
 

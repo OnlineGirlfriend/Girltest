@@ -49,7 +49,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		if(command)
 			. += "<span class='info'>Alt-click to toggle the high-volume mode.</span>"
 	else
-		. += "<span class='notice'>A small screen on the headset flashes, it's too small to read without holding or wearing the headset.</span>"
+		. += "<span class='notice'>A small screen on the headset flashes. It's too small to read without holding or wearing the headset.</span>"
 
 /obj/item/radio/headset/Initialize()
 	. = ..()

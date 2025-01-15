@@ -42,8 +42,8 @@
 		var/mob/living/carbon/human/H = M
 		if((user.pulling == H && user.grab_state >= GRAB_AGGRESSIVE) && user.zone_selected == BODY_ZONE_HEAD) // Only aggressive grabbed can be sliced.
 			if(H.has_status_effect(/datum/status_effect/neck_slice))
-				user.show_message("<span class='warning'>[H]'s neck has already been already cut, you can't make the bleeding any worse!</span>", MSG_VISUAL, \
-								"<span class='warning'>Their neck has already been already cut, you can't make the bleeding any worse!</span>")
+				user.show_message("<span class='warning'>[H]'s neck has already been already cut. You can't make the bleeding any worse!</span>", MSG_VISUAL, \
+								"<span class='warning'>Their neck has already been already cut. You can't make the bleeding any worse!</span>")
 				return COMPONENT_ITEM_NO_ATTACK
 			INVOKE_ASYNC(src, PROC_REF(startNeckSlice), source, H, user)
 			return COMPONENT_ITEM_NO_ATTACK
@@ -69,8 +69,8 @@
 	playsound(H.loc, butcher_sound, 50, TRUE, -1)
 	if(do_after(user, clamp(500 / source.force, 30, 100), H) && H.Adjacent(source))
 		if(H.has_status_effect(/datum/status_effect/neck_slice))
-			user.show_message("<span class='warning'>[H]'s neck has already been already cut, you can't make the bleeding any worse!</span>", MSG_VISUAL, \
-							"<span class='warning'>Their neck has already been already cut, you can't make the bleeding any worse!</span>")
+			user.show_message("<span class='warning'>[H]'s neck has already been already cut. You can't make the bleeding any worse!</span>", MSG_VISUAL, \
+							"<span class='warning'>Their neck has already been already cut. You can't make the bleeding any worse!</span>")
 			return
 
 		var/obj/item/bodypart/throat_in_question = H.get_bodypart(BODY_ZONE_HEAD)

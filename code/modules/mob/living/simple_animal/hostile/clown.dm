@@ -294,7 +294,7 @@
 
 /mob/living/simple_animal/hostile/clown/mutant/blob
 	name = "Something that was once a clown"
-	desc = "A grotesque bulging figure far mutated from it's original state. You should probably start running. Now."
+	desc = "A grotesque bulging figure far mutated from its original state. You should probably start running. Now."
 	icon_state = "blob"
 	icon_living = "blob"
 	speak = list("hey, buddy", "HONK!!!", "H-h-h-H-HOOOOONK!!!!", "HONKHONKHONK!!!", "HEY, BUCKO, GET BACK HERE!!!", "HOOOOOOOONK!!!", "WHAT'S SO FUNNY!!!")

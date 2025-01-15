@@ -27,7 +27,7 @@
 
 /datum/supply_pack/civilian/janitank
 	name = "Janitor Backpack Crate"
-	desc = "Call forth divine judgement upon dirt and grime with this high capacity janitor backpack. Contains 500 units of filth-cleansing space cleaner."
+	desc = "Call forth divine judgment upon dirt and grime with this high capacity janitor backpack. Contains 500 units of filth-cleansing space cleaner."
 	cost = 1000
 	contains = list(/obj/item/watertank/janitor)
 	crate_name = "janitor backpack crate"

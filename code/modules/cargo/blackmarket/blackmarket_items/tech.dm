@@ -76,7 +76,7 @@
 
 /datum/blackmarket_item/tech/borg
 	name = "Cyborg Construction Kit"
-	desc = "This durable and verastile cyborg frame is capable of fufilling a number of roles and survive situations that would kill the average person. Brain sold seperately."
+	desc = "This durable and verastile cyborg frame is capable of fufilling a number of roles and surviving situations that would kill the average person. Brain sold separately."
 	item = /obj/structure/closet/crate/cyborg
 
 	price_min = 1000

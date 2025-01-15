@@ -12,8 +12,8 @@
 		joke_paper.name = "[pick("awful","terrible","unfunny")] joke"
 		joke_paper.add_raw_text(pick("What did one snowman say to the other?\n\n<i>'Is it me or can you smell carrots?'</i>",
 			"Why couldn't the snowman get laid?\n\n<i>He was frigid!</i>",
-			"Where are santa's helpers educated?\n\n<i>Nowhere, they're ELF-taught.</i>",
-			"What happened to the man who stole advent calanders?\n\n<i>He got 25 days.</i>",
+			"Where are Santa's helpers educated?\n\n<i>Nowhere, they're ELF-taught.</i>",
+			"What happened to the man who stole advent calendars?\n\n<i>He got 25 days.</i>",
 			"What does Santa get when he gets stuck in a chimney?\n\n<i>Claus-trophobia.</i>",
 			"Where do you find chili beans?\n\n<i>The north pole.</i>",
 			"What do you get from eating tree decorations?\n\n<i>Tinsilitis!</i>",

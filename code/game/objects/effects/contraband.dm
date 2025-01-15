@@ -229,7 +229,7 @@
 
 /obj/structure/sign/poster/contraband
 	poster_item_name = "contraband poster"
-	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard Nanotrasen space facilities."
+	poster_item_desc = "This poster comes with its own automatic adhesive mechanism for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard Nanotrasen space facilities."
 	poster_item_icon_state = "rolled_poster"
 
 /obj/structure/sign/poster/contraband/random
@@ -317,7 +317,7 @@
 
 /obj/structure/sign/poster/contraband/tools
 	name = "Tools"
-	desc = "This poster looks like an advertisement for tools, but is in fact a subliminal jab at the tools on Nanotrasen stations."
+	desc = "This poster looks like an advertisement for tools but is in fact a subliminal jab at the tools on Nanotrasen stations."
 	icon_state = "poster_tools"
 
 /obj/structure/sign/poster/contraband/power
@@ -352,7 +352,7 @@
 
 /obj/structure/sign/poster/contraband/ss13
 	name = "Space Station 13 Does Not Exist"
-	desc = "A poster mocking CentCom's extreme cover and secrecy up of NTRSS-13, that was so extensive that not even CentCom themselves knows what happened to it."
+	desc = "A poster mocking CentCom's extreme cover-up of NTRSS-13, which was so extensive that not even CentCom themselves knows what happened to it."
 	icon_state = "poster_ss13"
 
 /obj/structure/sign/poster/contraband/engis_unite
@@ -403,7 +403,7 @@
 
 /obj/structure/sign/poster/contraband/ntos
 	name = "Ntos V"
-	desc = "A advertisement for Ntos V. Unlike earlier iterations of the system, Nanotrasen has opted to update this version continously, instead of release a new version every so often, much to the dismay of older system users."
+	desc = "A advertisement for Ntos V. Unlike earlier iterations of the system, Nanotrasen has opted to update this version continously rathern than release a new version every so often, much to the dismay of older system users."
 	icon_state = "poster_ntos"
 
 /obj/structure/sign/poster/contraband/punch_shit
@@ -523,12 +523,12 @@
 
 /obj/structure/sign/poster/contraband/inteq_nt
 	name = "Inteq Recruitment"
-	desc = "Tired of your underpaying and abusive job at Nanotrasen? Join the IRMG Artificers! You won't get bullshit from us. Retrofit spacecraft and weaponry, field test weaponry, and earn higher pay!"
+	desc = "Tired of your underpaying and abusive job at Nanotrasen? Join the IRMG Artificers! You won't get bullshit from us. Retrofit spacecraft, field test weaponry, and earn higher pay!"
 	icon_state = "poster-inteq_poaching_nt"
 
 /obj/structure/sign/poster/contraband/inteq_gec
 	name = "Inteq Recruitment"
-	desc = "Tired of your boring union job at the GEC? Join the IRMG Artificers! You won't get bullshit from us. Retrofit spacecraft and weaponry, field test weaponry, and earn higher pay!"
+	desc = "Tired of your boring union job at the GEC? Join the IRMG Artificers! You won't get bullshit from us. Retrofit spacecraft, field test weaponry, and earn higher pay!"
 	icon_state = "poster-inteq_poaching_gec"
 
 /obj/structure/sign/poster/contraband/winchester
@@ -555,7 +555,7 @@
 //beginning of Nanotrasen approved posters. Expect corprate propaganda and motavation. You will usually only see this on Nanotrasen ships and stations
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
-	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/official/random
@@ -682,7 +682,7 @@
 
 /obj/structure/sign/poster/official/fruit_bowl
 	name = "Fruit Bowl"
-	desc = " Simple, yet awe-inspiring."
+	desc = " Simple, yet awe inspiring."
 	icon_state = "poster_fruitbowl"
 
 /obj/structure/sign/poster/official/pda_ad
@@ -735,7 +735,7 @@
 //Retro naontrasen posters. very inspired by the early apple logos and 70s-90s tech logos. Expect to see these on ancient Nanotrasen ships and stations, collectables, or callbacks to retro NT
 /obj/structure/sign/poster/retro
 	poster_item_name = "retro poster"
-	poster_item_desc = "A really old Nanotrasen poster that probably sells for a lot now days. It comes with adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "A really old Nanotrasen poster that probably sells for a lot now days. It comes with adhesive backing for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/retro/random
@@ -777,7 +777,7 @@
 
 /obj/structure/sign/poster/retro/pdaancient
 	name = "PDA Ad"
-	desc = "A poster advertising the original Thinkitronic PDA after the company was aquired by Nanotrasen. This thing shipped with severe problems such as PDA message 'bombing' and memory errors. Despite this, it's fondly remembered. This thing is ancient."
+	desc = "A poster advertising the original Thinkitronic PDA after the company was acquired by Nanotrasen. This thing shipped with severe problems such as PDA message 'bombing' and memory errors. Despite this, it's fondly remembered. This thing is ancient."
 	icon_state = "poster-pda70_retro"
 
 /obj/structure/sign/poster/retro/lasergun
@@ -799,7 +799,7 @@
 
 /obj/structure/sign/poster/official/moth
 	name = "Safety Moth - Poisoning"
-	desc = "This informational poster uses Safety Moth(TM) to tell the viewer not to poison important goods, and to be wary of suspect foods. It's signed by 'AspEv'."
+	desc = "This informational poster uses Safety Moth(TM) to tell the viewer not to poison important goods and to be wary of suspect foods. It's signed by 'AspEv'."
 	icon_state = "poster_moth_poisoning"
 
 /obj/structure/sign/poster/official/moth/boh
@@ -819,7 +819,7 @@
 
 /obj/structure/sign/poster/official/moth/piping
 	name = "Safety Moth - Piping"
-	desc = "This informational poster uses Safety Moth(TM) to tell atmospheric technicians correct types of piping to be used. Proper pipe placement prevents poor preformance! It's signed by 'AspEv'."
+	desc = "This informational poster uses Safety Moth(TM) to tell atmospheric technicians the correct types of piping to be used. Proper pipe placement prevents poor preformance! It's signed by 'AspEv'."
 	icon_state = "poster_moth_piping"
 
 /obj/structure/sign/poster/official/moth/supermatter
@@ -849,13 +849,13 @@
 
 /obj/structure/sign/poster/contraband/mothpill
 	name = "Safety Pill - Methamphetamine"
-	desc = "A decommisioned poster that uses Safety Pill(TM?) to promote less-than-legal chemicals. This is one of the reasons Nanotrasen stopped outsourcing their posters. It's partially signed by 'AspEv'."
+	desc = "A decommissioned poster that uses Safety Pill(TM?) to promote less-than-legal chemicals. This is one of the reasons Nanotrasen stopped outsourcing their posters. It's partially signed by 'AspEv'."
 	icon_state = "poster_moth_pill"
 
 //terragov poster pool. expect a focus on terran based products and places. Expect these on terragov ships
 /obj/structure/sign/poster/terragov
 	poster_item_name = "terran poster"
-	poster_item_desc = "A terran based poster, made with natural paper! It comes with adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "A terran based poster, made with natural paper! It comes with adhesive backing for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/terragov/random
@@ -936,7 +936,7 @@
 
 /obj/structure/sign/poster/terragov/suns
 	name = "Student Union of Natural Sciences"
-	desc = "SUNS, best known for it's diverse variety of top students from various terran universities, dealing with internal fighting via dueling with swords, and being sued by Nanotrasen for trademark infrigement on their old name \"NSV.\""
+	desc = "SUNS, best known for its diverse variety of top students from various terran universities, dealing with internal fighting via dueling with swords, and being sued by Nanotrasen for trademark infrigement on their old name \"NSV.\""
 	icon_state = "poster-solgov_suns"
 
 //CLIP poster pool. This is quite limited, so don't use more than 3 random ones at once. Expect to see these on CLIP ships.
@@ -975,12 +975,12 @@
 
 /obj/structure/sign/poster/clip/maxin
 	name = "Maxin"
-	desc = "Maxin, the fourth planet of the Kanler-332 system. It's many moons including Lanchester City make it a popular sightseeing attraction for those enroute to Lanchester City."
+	desc = "Maxin, the fourth planet of the Kanler-332 system. Its many moons including Lanchester City make it a popular sightseeing attraction for those enroute to Lanchester City."
 	icon_state = "poster-clip_maxin"
 
 /obj/structure/sign/poster/clip/lanchester
 	name = "Lanchester City"
-	desc = "Lanchester City, one of the many moons of the gas giant Maxin. A moon well known for it's numerous, massive factories. This poster is attempting to encounrage tourism with this poster by listing several tourist attractions, such as crashed Frontiersmen ships and the massive entertainment industry."
+	desc = "Lanchester City, one of the many moons of the gas giant Maxin. A moon well known for its numerous, massive factories. This poster is attempting to encounrage tourism with this poster by listing several tourist attractions, such as crashed Frontiersmen ships and the massive entertainment industry."
 	icon_state = "poster-clip_lanchester"
 
 /obj/structure/sign/poster/clip/serene
@@ -991,7 +991,7 @@
 // Syndicate posters. Since syndicate are dived lorewise, this would only make sense on pre-split ships.
 /obj/structure/sign/poster/syndicate
 	poster_item_name = "suspicious looking poster"
-	poster_item_desc = "A poster with an ultra adhesive backing that's carefully designed to boost pinning ability. It comes with adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "A poster with an ultra adhesive backing that's carefully designed to boost pinning ability. It comes with adhesive backing for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_syndicate"
 
 /obj/structure/sign/poster/syndicate/random

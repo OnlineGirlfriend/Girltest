@@ -1674,7 +1674,7 @@
 	},
 /obj/item/paper/crumpled/bloody{
 	desc = "written hastly on a blood stained peace of paper.";
-	default_raw_text = "Hilbert welded himself in maintainance from the inside. Perhaps a death from starvation is better than the fate that awaits us when the doors bust...";
+	default_raw_text = "Hilbert welded himself in maintenance from the inside. Perhaps a death from starvation is better than the fate that awaits us when the doors bust...";
 	name = "Office clerks last note";
 	pixel_x = -13;
 	pixel_y = -6

@@ -709,7 +709,7 @@
 	name = "HL-75 Heavy Laser Cannon";
 	faction = list("neutral","turret");
 	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	desc = "The penultimate turret in the HL-XX series. This heavy monstrosity sports a plasteel cover and robust armor to protect it's devastating energy beam armament."
+	desc = "The penultimate turret in the HL-XX series. This heavy monstrosity sports a plasteel cover and robust armor to protect its devastating energy beam armament."
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)

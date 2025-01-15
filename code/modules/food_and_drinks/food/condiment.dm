@@ -226,10 +226,10 @@
 	possible_states = list(
 		/datum/reagent/consumable/ketchup = list("condi_ketchup", "Ketchup", "You feel more American already."),
 		/datum/reagent/consumable/capsaicin = list("condi_hotsauce", "Hotsauce", "You can almost TASTE the stomach ulcers now!"),
-		/datum/reagent/consumable/soysauce = list("condi_soysauce", "Soy Sauce", "A salty soy-based flavoring"),
-		/datum/reagent/consumable/frostoil = list("condi_frostoil", "Coldsauce", "Leaves the tongue numb in it's passage"),
-		/datum/reagent/consumable/sodiumchloride = list("condi_salt", "Salt Shaker", "Salt. From space oceans, presumably"),
-		/datum/reagent/consumable/blackpepper = list("condi_pepper", "Pepper Mill", "Often used to flavor food or make people sneeze"),
+		/datum/reagent/consumable/soysauce = list("condi_soysauce", "Soy Sauce", "A salty soy-based flavoring."),
+		/datum/reagent/consumable/frostoil = list("condi_frostoil", "Coldsauce", "Leaves the tongue numb in its passage."),
+		/datum/reagent/consumable/sodiumchloride = list("condi_salt", "Salt Shaker", "Salt. From space oceans, presumably."),
+		/datum/reagent/consumable/blackpepper = list("condi_pepper", "Pepper Mill", "Often used to flavor food or make people sneeze."),
 		/datum/reagent/consumable/cornoil = list("condi_cornoil", "Corn Oil", "A delicious oil used in cooking. Made from corn"),
 		/datum/reagent/consumable/sugar = list("condi_sugar", "Sugar", "Tasty spacey sugar!"),
 		/datum/reagent/consumable/astrotame = list("condi_astrotame", "Astrotame", "The sweetness of a thousand sugars but none of the calories."),
@@ -309,13 +309,13 @@
 
 /obj/item/reagent_containers/condiment/ketchup
 	name = "ketchup bottle"
-	desc = "You feel more american already"
+	desc = "You feel more American already."
 	icon_state = "ketchup"
 	list_reagents = list(/datum/reagent/consumable/ketchup = 50)
 
 /obj/item/reagent_containers/condiment/bbqsauce
 	name = "bbq sauce bottle"
-	desc = "Hand wipes not included"
+	desc = "Hand wipes not included."
 	icon_state = "bbqsauce"
 	list_reagents = list(/datum/reagent/consumable/bbqsauce = 50)
 
@@ -327,12 +327,12 @@
 
 /obj/item/reagent_containers/condiment/coldsauce
 	name = "cold sauce bottle"
-	desc = "Leaves the tounge numb in it's passage"
+	desc = "Leaves the tongue numb in its passage."
 	icon_state = "coldsauce"
 	list_reagents = list(/datum/reagent/consumable/frostoil = 50)
 
 /obj/item/reagent_containers/condiment/oliveoil
 	name = "olive oil bottle"
-	desc = "A delicious oil used in cooking"
+	desc = "A delicious oil used in cooking."
 	icon_state = "oliveoil"
 	list_reagents = list(/datum/reagent/consumable/cornoil = 50)

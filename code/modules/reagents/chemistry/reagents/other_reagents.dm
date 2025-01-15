@@ -1418,7 +1418,7 @@
 
 /datum/reagent/plantnutriment/liquidearthquake
 	name = "Liquid Earthquake"
-	description = "A specialized nutriment, which increases the plant's production speed, as well as it's susceptibility to weeds."
+	description = "A specialized nutriment, which increases the plant's production speed, as well as its susceptibility to weeds."
 	color = "#912e00" // RBG: 145, 46, 0
 	tox_prob = 25
 
@@ -1476,7 +1476,7 @@
 	description = "For those that need a more creative way to roll out a red carpet."
 	reagent_state = LIQUID
 	color = "#771100"
-	taste_description = "carpet" // Your tounge feels furry.
+	taste_description = "carpet" // Your tongue feels furry.
 	var/carpet_type = /turf/open/floor/carpet
 
 /datum/reagent/carpet/expose_turf(turf/T, reac_volume)
@@ -2136,7 +2136,7 @@
 /datum/reagent/metalgen
 	name = "Metalgen"
 	data = list("material"=null)
-	description = "A purple metal morphic liquid, said to impose it's metallic properties on whatever it touches."
+	description = "A purple metal morphic liquid said to impose its metallic properties on whatever it touches."
 	color = "#b000aa"
 	taste_mult = 0 // oderless and tasteless
 	var/applied_material_flags = MATERIAL_ADD_PREFIX | MATERIAL_COLOR
@@ -2284,7 +2284,7 @@
 	description = "Out on the edge of human space, at the limits of scientific understanding and \
 	cultural taboo, people develop and dose themselves with substances that would curl the hair on \
 	a brinker's vatgrown second head. Three Eye is one of the most notorious narcotics to ever come \
-	out of the independant habitats, and has about as much in common with recreational drugs as a \
+	out of the independent habitats and has about as much in common with recreational drugs as a \
 	Stok does with an Unathi strike trooper. It is equally effective on humans, Skrell, dionaea and \
 	probably the Captain's cat, and distributing it will get you guaranteed jail time in every \
 	human territory."

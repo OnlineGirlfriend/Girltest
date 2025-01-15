@@ -55,7 +55,7 @@
 
 /mob/living/simple_animal/hostile/human/hermit/ranged/gunslinger
 	name = "Hermit Soldier"
-	desc = "The miner's rebellion, though mostly underground, recieved a few good weapon shipments from an off-sector source. You should probably start running."
+	desc = "The miner's rebellion, though mostly underground, received a few good weapon shipments from an off-sector source. You should probably start running."
 	icon_state = "survivor_gunslinger"
 	icon_living = "survivor_gunslinger"
 	projectilesound = 'sound/weapons/gun/smg/shot.ogg'

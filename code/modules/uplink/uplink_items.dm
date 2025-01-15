@@ -151,7 +151,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/bundles_TC/chemical
 	name = "Bioterror bundle"
 	desc = "For the madman: Contains a handheld Bioterror chem sprayer, a Bioterror foam grenade, a box of lethal chemicals, a dart pistol, \
-			box of syringes, Donksoft assault rifle, and some riot darts. Remember: Seal suit and equip internals before use."
+			a box of syringes, a Donksoft assault rifle, and some riot darts. Remember: Seal suit and equip internals before use."
 	item = /obj/item/storage/backpack/duffelbag/syndie/med/bioterrorbundle
 	cost = 30 // normally 42
 	include_modes = list(/datum/game_mode/nuclear)
@@ -197,15 +197,15 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/bundles_TC/firestarter
 	name = "Spetsnaz Pyro bundle"
-	desc = "For systematic suppression of carbon lifeforms in close quarters: Contains a lethal backpack spray, Elite hardsuit, \
-			Stechkin APS pistol, two magazines, a minibomb and a stimulant syringe."
+	desc = "For systematic suppression of carbon lifeforms in close quarters: Contains a lethal backpack spray, an Elite hardsuit, \
+			a Stechkin APS pistol, two magazines, a minibomb and a stimulant syringe."
 	item = /obj/item/storage/backpack/duffelbag/syndie/firestarter
 	cost = 30
 	include_modes = list(/datum/game_mode/nuclear)
 
 /datum/uplink_item/bundles_TC/contract_kit
 	name = "Contract Kit"
-	desc = "The Syndicate have offered you the chance to become a contractor, take on kidnapping contracts for TC and cash payouts. Upon purchase, \
+	desc = "The Syndicate have offered you the chance to become a contractor - take on kidnapping contracts for TC and cash payouts. Upon purchase, \
 			you'll be granted your own contract uplink embedded within the supplied tablet computer. Additionally, you'll be granted \
 			standard contractor gear to help with your mission - comes supplied with the tablet, specialised space suit, chameleon jumpsuit and mask, \
 			agent card, specialised contractor baton, and three randomly selected low cost items. Can include otherwise unobtainable items."
@@ -226,7 +226,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/bundles_TC/bundle_B
 	name = "Syndi-kit Special"
 	desc = "Syndicate Bundles, also known as Syndi-Kits, are specialized groups of items that arrive in a plain box. \
-			In Syndi-kit Special, you will recieve items used by famous syndicate agents of the past. Collectively worth more than 20 telecrystals, the syndicate loves a good throwback."
+			In Syndi-kit Special, you will receive items used by famous syndicate agents of the past. Collectively worth more than 20 telecrystals, the syndicate loves a good throwback."
 	item = /obj/item/storage/box/syndicate/bundle_B
 	cost = 20
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
@@ -340,7 +340,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/dangerous/pie_cannon
 	name = "Banana Cream Pie Cannon"
-	desc = "A special pie cannon for a special clown, this gadget can hold up to 20 pies and automatically fabricates one every two seconds!"
+	desc = "A special pie cannon for a special clown. This gadget can hold up to 20 pies and automatically fabricates one every two seconds!"
 	cost = 10
 	item = /obj/item/pneumatic_cannon/pie/selfcharge
 	surplus = 0
@@ -348,7 +348,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/dangerous/bananashield
 	name = "Bananium Energy Shield"
-	desc = "A clown's most powerful defensive weapon, this personal shield provides near immunity to ranged energy attacks \
+	desc = "A clown's most powerful defensive weapon. This personal shield provides near immunity to ranged energy attacks \
 		by bouncing them back at the ones who fired them. It can also be thrown to bounce off of people, slipping them, \
 		and returning to you even if you miss. WARNING: DO NOT ATTEMPT TO STAND ON SHIELD WHILE DEPLOYED, EVEN IF WEARING ANTI-SLIP SHOES."
 	item = /obj/item/shield/energy/bananium
@@ -358,7 +358,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/dangerous/clownsword
 	name = "Bananium Energy Sword"
-	desc = "An energy sword that deals no damage, but will slip anyone it contacts, be it by melee attack, thrown \
+	desc = "An energy sword that deals no damage but will slip anyone it contacts, be it by melee attack, thrown \
 	impact, or just stepping on it. Beware friendly fire, as even anti-slip shoes will not protect against it."
 	item = /obj/item/melee/transforming/energy/sword/bananium
 	cost = 3
@@ -404,7 +404,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/dangerous/doublesword
 	name = "Double-Bladed Energy Sword"
 	desc = "The double-bladed energy sword does slightly more damage than a standard energy sword and will deflect \
-			all energy projectiles, but requires two hands to wield."
+			all energy projectiles, but it requires two hands to wield."
 	item = /obj/item/dualsaber
 	player_minimum = 25
 	cost = 16
@@ -424,7 +424,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/dangerous/shield
 	name = "Energy Shield"
 	desc = "An incredibly useful personal shield projector, capable of reflecting energy projectiles and defending \
-			against other attacks. Pair with an Energy Sword for a killer combination."
+			against other attacks. Pair with an energy sword for a killer combination."
 	item = /obj/item/shield/energy
 	cost = 16
 	surplus = 20
@@ -571,7 +571,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_weapons/combatglovesplus
 	name = "Combat Gloves Plus"
-	desc = "A pair of gloves that are fireproof and electrically insulated, however unlike the regular Combat Gloves these use nanotechnology \
+	desc = "A pair of gloves that are fireproof and electrically insulated; however, unlike regular combat gloves, these use nanotechnology \
 			to teach the martial art of krav maga to the wearer."
 	item = /obj/item/clothing/gloves/krav_maga/combatglovesplus
 	cost = 5
@@ -596,7 +596,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_weapons/dehy_carp
 	name = "Dehydrated Space Carp"
-	desc = "Looks like a plush toy carp, but just add water and it becomes a real-life space carp! Activate in \
+	desc = "Looks like a plush toy carp, but just add water, and it becomes a real-life space carp! Activate in \
 			your hand before use so it knows not to kill you."
 	item = /obj/item/toy/plush/carpplushie/dehy_carp
 	cost = 1
@@ -657,9 +657,9 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_weapons/sleepy_pen
 	name = "Sleepy Pen"
-	desc = "A syringe disguised as a functional pen, filled with a potent mix of drugs, including a \
+	desc = "A syringe disguised as a functional pen and filled with a potent mix of drugs, including a \
 			strong anesthetic and a chemical that prevents the target from speaking. \
-			The pen holds one dose of the mixture, and can be refilled with any chemicals. Note that before the target \
+			The pen holds one dose of the mixture and can be refilled with any chemicals. Note that before the target \
 			falls asleep, they will be able to move and act."
 	item = /obj/item/pen/sleepy
 	cost = 4
@@ -667,7 +667,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_weapons/suppressor
 	name = "Suppressor"
-	desc = "This suppressor will silence the shots of the weapon it is attached to for increased stealth and superior ambushing capability. It is compatible with many small ballistic guns including the Stechkin and C-20r, but not revolvers or energy guns."
+	desc = "This suppressor will silence the shots of the weapon it is attached to for increased stealth and superior ambushing capability. It is compatible with many small ballistic guns, including the Stechkin and C-20r, but not revolvers or energy guns."
 	item = /obj/item/attachment/silencer
 	cost = 3
 	surplus = 10
@@ -695,7 +695,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/stealthy_weapons/syndi_borer
 	name = "Syndicate Brain Slug"
 	desc = "A small cortical borer, modified to be completely loyal to the owner. \
-			Genetically infertile, these brain slugs can assist medically in a support role, or take direct action \
+			Genetically infertile, these brain slugs can assist medically in a support role or take direct action \
 			to assist their host."
 	item = /obj/item/antag_spawner/syndi_borer
 	refundable = TRUE
@@ -854,7 +854,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/ammo/rocket/hedp
 	name = "84mm HEDP Rocket"
-	desc = "A high-yield HEDP rocket; extremely effective against armored targets, as well as surrounding personnel. \
+	desc = "A high-yield HEDP rocket; extremely effective against armored targets as well as surrounding personnel. \
 			Strike fear into the hearts of your enemies."
 	item = /obj/item/ammo_casing/caseless/rocket/hedp
 	cost = 6
@@ -933,7 +933,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/explosives/bombanana
 	name = "Bombanana"
-	desc = "A banana with an explosive taste! discard the peel quickly, as it will explode with the force of a Syndicate minibomb \
+	desc = "A banana with an explosive taste! Discard the peel quickly, as it will explode with the force of a Syndicate minibomb \
 		a few seconds after the banana is eaten."
 	item = /obj/item/reagent_containers/food/snacks/grown/banana/bombanana
 	cost = 4 //it is a bit cheaper than a minibomb because you have to take off your helmet to eat it, which is how you arm it
@@ -1089,7 +1089,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/support/clown_reinforcement
 	name = "Clown Reinforcements"
-	desc = "Call in an additional clown to share the fun, equipped with full starting gear, but no telecrystals."
+	desc = "Call in an additional clown to share the fun. Equipped with full starting gear, but no telecrystals."
 	item = /obj/item/antag_spawner/nuke_ops/clown
 	cost = 20
 	include_modes = list(/datum/game_mode/nuclear/clown_ops)
@@ -1116,8 +1116,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/support/reinforcement/medical_borg
 	name = "Syndicate Medical Cyborg"
-	desc = "A combat medical cyborg. Has limited offensive potential, but makes more than up for it with its support capabilities. \
-			It comes equipped with a nanite hypospray, a medical beamgun, combat defibrillator, full surgical kit including an energy saw, an emag, pinpointer and flash. \
+	desc = "A combat medical cyborg. Has limited offensive potential but more than makes up for it with its support capabilities. \
+			It comes equipped with nanite hypospray, medical beamgun, combat defibrillator, full surgical kit including an energy saw, emag, pinpointer, and flash. \
 			Thanks to its organ storage bag, it can perform surgery as well as any humanoid."
 	item = /obj/item/antag_spawner/nuke_ops/borg_tele/medical
 	refundable = TRUE
@@ -1126,8 +1126,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/support/reinforcement/saboteur_borg
 	name = "Syndicate Saboteur Cyborg"
-	desc = "A streamlined engineering cyborg, equipped with covert modules. Also incapable of leaving the welder in the shuttle. \
-			Aside from regular Engineering equipment, it comes with a special destination tagger that lets it traverse disposals networks. \
+	desc = "A streamlined engineering cyborg equipped with covert modules. Also incapable of leaving the welder in the shuttle. \
+			Aside from regular engineering equipment, it comes with a special destination tagger that lets it traverse disposals networks. \
 			Its chameleon projector lets it disguise itself as a Nanotrasen cyborg, on top it has thermal vision and a pinpointer."
 	item = /obj/item/antag_spawner/nuke_ops/borg_tele/saboteur
 	refundable = TRUE
@@ -1136,8 +1136,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/support/gygax
 	name = "Dark Gygax Exosuit"
-	desc = "A lightweight exosuit, painted in a dark scheme. Its speed and equipment selection make it excellent \
-			for hit-and-run style attacks. Features an incendiary carbine, flash bang launcher, teleporter, ion thrusters and a Tesla energy array."
+	desc = "A lightweight exosuit painted in a dark scheme. Its speed and equipment selection make it excellent \
+			for hit-and-run style attacks. Features incendiary carbine, flash bang launcher, teleporter, ion thrusters, and Tesla energy array."
 	item = /obj/mecha/combat/gygax/dark/loaded
 	cost = 80
 
@@ -1150,8 +1150,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/support/touro
 	name = "Touro Exosuit"
-	desc = "A well-armored and incredibly deadly military-grade exosuit. Features long-range targeting, thrust vectoring \
-			and deployable smoke. Comes equipped with an LMG, scattershot carbine, missile rack, an antiprojectile armor booster and a Tesla energy array."
+	desc = "A well-armored and incredibly deadly military-grade exosuit. Features long-range targeting, thrust vectoring, \
+			and deployable smoke. Comes equipped with LMG, scattershot carbine, missile rack, antiprojectile armor booster, and Tesla energy array."
 	item = /obj/mecha/combat/marauder/touro/loaded
 	cost = 140
 
@@ -1161,7 +1161,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_tools/agent_card
 	name = "Agent Identification Card"
-	desc = "Agent cards prevent artificial intelligences from tracking the wearer, and can copy access \
+	desc = "Agent cards prevent artificial intelligences from tracking the wearer and can copy access \
 			from other identification cards. The access is cumulative, so scanning one card does not erase the \
 			access gained from another. In addition, they can be forged to display a new assignment and name. \
 			This can be done an unlimited amount of times. Some Syndicate areas and devices can only be accessed \
@@ -1171,9 +1171,9 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_tools/ai_detector
 	name = "Artificial Intelligence Detector"
-	desc = "A functional multitool that turns red when it detects an artificial intelligence watching it, and can be \
+	desc = "A functional multitool that turns red when it detects an artificial intelligence watching it. It can be \
 			activated to display their exact viewing location and nearby security camera blind spots. Knowing when \
-			an artificial intelligence is watching you is useful for knowing when to maintain cover, and finding nearby \
+			an artificial intelligence is watching you is useful for maintaining cover, and finding nearby \
 			blind spots can help you identify escape routes."
 	item = /obj/item/multitool/ai_detect
 	cost = 1
@@ -1265,7 +1265,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Infiltrator Case"
 	desc = "Developed by Roseus Galactic in conjunction with the Gorlex Marauders to produce a functional suit for urban operations, \
 			this suit proves to be cheaper than your standard issue hardsuit, with none of the movement restrictions of the outdated spacesuits employed by the company. \
-			Comes with a armor vest, helmet, sneaksuit, sneakboots, specialized combat gloves and a high-tech balaclava. The case is also rather useful as a storage container."
+			Comes with armor vest, helmet, sneaksuit, sneakboots, specialized combat gloves and high-tech balaclava. The case is also rather useful as a storage container."
 	item = /obj/item/storage/toolbox/infiltrator
 	cost = 6
 	limited_stock = 1 //you only get one so you don't end up with too many gun cases
@@ -1283,7 +1283,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Syndicate Hardsuit"
 	desc = "The feared suit of a Syndicate nuclear agent. Features slightly better armoring and a built in jetpack \
 			that runs off standard atmospheric tanks. Toggling the suit in and out of \
-			combat mode will allow you all the mobility of a loose fitting uniform without sacrificing armoring. \
+			combat mode will allow you all the mobility of a loose-fitting uniform without sacrificing armoring. \
 			Additionally the suit is collapsible, making it small enough to fit within a backpack. \
 			Nanotrasen crew who spot these suits are known to panic."
 	item = /obj/item/clothing/suit/space/hardsuit/syndi
@@ -1342,7 +1342,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/device_tools/briefcase_launchpad
 	name = "Briefcase Launchpad"
 	desc = "A briefcase containing a launchpad, a device able to teleport items and people to and from targets up to eight tiles away from the briefcase. \
-			Also includes a remote control, disguised as an ordinary folder. Touch the briefcase with the remote to link it."
+			Also includes a remote control disguised as an ordinary folder. Touch the briefcase with the remote to link it."
 	surplus = 0
 	item = /obj/item/storage/briefcase/launchpad
 	cost = 6
@@ -1428,13 +1428,13 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/device_tools/hypnotic_grenade
 	name = "Hypnotic Grenade"
-	desc = "A modified flashbang grenade able to hypnotize targets. The sound portion of the flashbang causes hallucinations, and will allow the flash to induce a hypnotic trance to viewers."
+	desc = "A modified flashbang grenade able to hypnotize targets. The sound portion of the flashbang causes hallucinations and will allow the flash to induce a hypnotic trance to viewers."
 	item = /obj/item/grenade/hypnotic
 	cost = 12
 
 /datum/uplink_item/device_tools/medgun
 	name = "Medbeam Gun"
-	desc = "A wonder of Syndicate engineering, the Medbeam gun, or Medi-Gun enables a medic to keep his fellow \
+	desc = "A wonder of Syndicate engineering, the Medbeam gun or Medi-Gun enables a medic to keep his fellow \
 			operatives in the fight, even while under fire. Don't cross the streams!"
 	item = /obj/item/gun/medbeam
 	cost = 15
@@ -1530,7 +1530,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Syndicate Sentience Potion"
 	item = /obj/item/slimepotion/slime/sentience/nuclear
 	desc = "A potion recovered at great risk by undercover Syndicate operatives and then subsequently modified with Syndicate technology. \
-			Using it will make any animal sentient, and bound to serve you, as well as implanting an internal radio for communication and an internal ID card for opening doors."
+			Using it will make any animal sentient and bound to serve you, as well as implanting an internal radio for communication and an internal ID card for opening doors."
 	cost = 4
 	include_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 	restricted = TRUE
@@ -1555,8 +1555,8 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/implants/adrenal
 	name = "Adrenal Implant"
-	desc = "An implant injected into the body, and later activated at the user's will. It will inject a chemical \
-			cocktail which removes all incapacitating effects, lets the user run faster and has a mild healing effect."
+	desc = "An implant injected into the body and later activated at the user's will. It will inject a chemical \
+			cocktail which removes all incapacitating effects. Lets the user run faster and has a mild healing effect."
 	item = /obj/item/storage/box/syndie_kit/imp_adrenal
 	cost = 8
 	player_minimum = 20
@@ -1619,7 +1619,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/implants/storage
 	name = "Storage Implant"
-	desc = "An implant injected into the body, and later activated at the user's will. It will open a small bluespace \
+	desc = "An implant injected into the body and later activated at the user's will. It will open a small bluespace \
 			pocket capable of storing two regular-sized items."
 	item = /obj/item/storage/box/syndie_kit/imp_storage
 	cost = 8
@@ -1635,7 +1635,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/implants/uplink
 	name = "Uplink Implant"
 	desc = "An implant injected into the body, and later activated at the user's will. Has no telecrystals and must be charged by the use of physical telecrystals. \
-			Undetectable (except via surgery), and excellent for escaping confinement."
+			Undetectable (except via surgery) and excellent for escaping confinement."
 	item = /obj/item/storage/box/syndie_kit/imp_uplink
 	cost = 4
 	// An empty uplink is kinda useless.
@@ -1710,7 +1710,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/role_restricted/pie_cannon
 	name = "Banana Cream Pie Cannon"
-	desc = "A special pie cannon for a special clown, this gadget can hold up to 20 pies and automatically fabricates one every two seconds!"
+	desc = "A special pie cannon for a special clown. This gadget can hold up to 20 pies and automatically fabricates one every two seconds!"
 	cost = 10
 	item = /obj/item/pneumatic_cannon/pie/selfcharge
 	restricted_roles = list("Clown")
@@ -1795,7 +1795,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/role_restricted/haunted_magic_eightball
 	name = "Haunted Magic Eightball"
 	desc = "Most magic eightballs are toys with dice inside. Although identical in appearance to the harmless toys, this occult device reaches into the spirit world to find its answers. \
-			Be warned, that spirits are often capricious or just little assholes. To use, simply speak your question aloud, then begin shaking."
+			Be warned, spirits are often capricious or just little assholes. To use, simply speak your question aloud, then begin shaking."
 	item = /obj/item/toy/eightball/haunted
 	cost = 2
 	restricted_roles = list("Curator")
@@ -1810,7 +1810,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/role_restricted/lawnmower
 	name = "Gas powered lawn mower"
-	desc = "A lawn mower is a machine utilizing one or more revolving blades to cut a grass surface to an even height, or bodies if that's your thing"
+	desc = "A lawn mower is a machine utilizing one or more revolving blades to cut a grass surface to an even height - or bodies, if that's your thing."
 	restricted_roles = list("Botanist")
 	cost = 14
 	item = /obj/vehicle/ridden/lawnmower/emagged
@@ -1835,7 +1835,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/role_restricted/mimery
 	name = "Guide to Advanced Mimery Series"
-	desc = "The classical two part series on how to further hone your mime skills. Upon studying the series, the user should be able to make 3x1 invisible walls, and shoot bullets out of their fingers. \
+	desc = "The classical two part series on how to further hone your mime skills. Upon studying the series, the user should be able to make 3x1 invisible walls and shoot bullets out of their fingers. \
 			Obviously only works for Mimes."
 	cost = 12
 	item = /obj/item/storage/box/syndie_kit/mimery
@@ -1935,7 +1935,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/badass/syndiecash
 	name = "Syndicate Briefcase Full of Cash"
-	desc = "A secure briefcase containing 5000 space credits. Useful for bribing personnel, or purchasing goods \
+	desc = "A secure briefcase containing 5000 space credits. Useful for bribing personnel or purchasing goods \
 			and services at lucrative prices. The briefcase also feels a little heavier to hold; it has been \
 			manufactured to pack a little bit more of a punch if your client needs some convincing."
 	item = /obj/item/storage/secure/briefcase/syndie

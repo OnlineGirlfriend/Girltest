@@ -992,7 +992,7 @@ EMPTY_GUN_HELPER(shotgun/automatic/bulldog)
 
 /obj/item/ammo_box/magazine/m12g_bulldog
 	name = "shotgun box magazine (12g buckshot)"
-	desc = "A single-stack, 8-round box magazine for the Bulldog shotgun and it's derivatives."
+	desc = "A single-stack, 8-round box magazine for the Bulldog shotgun and its derivatives."
 	icon_state = "bulldog_mag-1"
 	base_icon_state = "bulldog_mag"
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
@@ -1002,7 +1002,7 @@ EMPTY_GUN_HELPER(shotgun/automatic/bulldog)
 
 /obj/item/ammo_box/magazine/m12g_bulldog/drum
 	name = "shotgun drum magazine (12g buckshot)"
-	desc = "A bulky 12-round drum designed for the Bulldog shotgun and it's derivatives."
+	desc = "A bulky 12-round drum designed for the Bulldog shotgun and its derivatives."
 	icon_state = "bulldog_drum-1"
 	base_icon_state = "bulldog_drum"
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot

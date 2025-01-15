@@ -2,7 +2,7 @@
 /obj/effect/anomaly/pyro
 	name = "plasmaball"
 	icon_state = "pyroclastic"
-	desc = "A mysterious anomaly, made of an everburning gas. Those who approach it tend to absorb it's heat, or even ignite."
+	desc = "A mysterious anomaly, made of an everburning gas. Those who approach it tend to absorb its heat or even ignite."
 	effectrange = 4
 	pulse_delay = 10 SECONDS
 	aSignal = /obj/item/assembly/signaler/anomaly/pyro

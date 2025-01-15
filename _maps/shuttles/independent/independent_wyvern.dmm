@@ -3416,7 +3416,7 @@
 	dir = 1;
 	overheatsound = 'sound/weapons/gun/pistol/dry_fire.ogg';
 	damtype = "burn";
-	desc = "A modified TGMC era heavy machine gun. It's internals have been stripped and replacer with a jury-rigged repeating laser system.";
+	desc = "A modified TGMC era heavy machine gun. Its internals have been stripped and replacer with a jury-rigged repeating laser system.";
 	name = "LHMG-5 'The Welcome Mat'";
 	projectile_type = /obj/projectile/beam/laser/assault
 	},

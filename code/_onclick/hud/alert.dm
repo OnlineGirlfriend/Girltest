@@ -416,7 +416,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 
 /atom/movable/screen/alert/alien_vulnerable
 	name = "Severed Matriarchy"
-	desc = "Your queen has been killed, you will suffer movement penalties and loss of hivemind. A new queen cannot be made until you recover."
+	desc = "Your queen has been killed. You will suffer movement penalties and loss of hivemind. A new queen cannot be made until you recover."
 	icon_state = "alien_noqueen"
 	alerttooltipstyle = "alien"
 
@@ -553,7 +553,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 
 /atom/movable/screen/alert/instealth
 	name = "In Stealth"
-	desc = "You are in stealth and your next attack will do bonus damage!"
+	desc = "You are in stealth, and your next attack will do bonus damage!"
 	icon_state = "guardian_instealth"
 	alerttooltipstyle = "parasite"
 
@@ -579,7 +579,7 @@ Recharging stations are available in robotics, the dormitory bathrooms, and the 
 
 /atom/movable/screen/alert/etherealcharge
 	name = "Low Blood Charge"
-	desc = "Your blood's electric charge is running low, find a source of charge for your blood. Use a recharging station found in robotics or the dormitory bathrooms, or eat some Ethereal-friendly food."
+	desc = "Your blood's electric charge is running low. Find a source of charge for your blood. Use a recharging station found in robotics or the dormitory bathrooms, or eat some Ethereal-friendly food."
 	icon_state = "etherealcharge"
 
 /atom/movable/screen/alert/ethereal_overcharge

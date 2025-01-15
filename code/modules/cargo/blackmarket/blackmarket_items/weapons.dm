@@ -252,7 +252,7 @@
 
 /datum/blackmarket_item/weapon/sgg
 	name = "SSG-669C Rotary Sniper Rifle"
-	desc = "I could tell you it's full name, but we'd be here all day. It's a sniper rifle. It shoots people from far away. Chambered in 8x58mm caseless."
+	desc = "I could tell you its full name, but we'd be here all day. It's a sniper rifle. It shoots people from far away. Chambered in 8x58mm caseless."
 	item = /obj/item/gun/ballistic/rifle/terragov
 	pair_item = list(/datum/blackmarket_item/ammo/sgg_stripper)
 

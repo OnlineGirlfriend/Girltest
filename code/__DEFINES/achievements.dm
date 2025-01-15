@@ -10,7 +10,7 @@
 #define MEDAL_RODSUPLEX "Feat of Strength"
 #define MEDAL_CLOWNCARKING "Round and Full"
 #define MEDAL_THANKSALOT "The Best Driver"
-#define MEDAL_HELBITALJANKEN "Hel-bent on Winning"
+#define MEDAL_HELBITALJANKEN "Hell-bent on Winning"
 #define MEDAL_MATERIALCRAFT "Getting an Upgrade"
 #define MEDAL_DISKPLEASE "Disk, Please!"
 #define MEDAL_GAMER "I'm Not Important"

@@ -4,7 +4,7 @@
 
 /datum/award/achievement/boss/tendril_exterminator
 	name = "Tendril Exterminator"
-	desc = "Watch your step"
+	desc = "Watch your step."
 	database_id = BOSS_MEDAL_TENDRIL
 	icon = "tendril"
 
@@ -27,13 +27,13 @@
 
 /datum/award/achievement/boss/bubblegum_kill
 	name = "Bubblegum Killer"
-	desc = "I guess he wasn't made of candy after all"
+	desc = "I guess he wasn't made of candy after all."
 	database_id = BOSS_MEDAL_BUBBLEGUM
 	icon = "bbgum"
 
 /datum/award/achievement/boss/colossus_kill
 	name = "Colossus Killer"
-	desc = "The bigger they are... the better the loot"
+	desc = "The bigger they are... the better the loot."
 	database_id = BOSS_MEDAL_COLOSSUS
 	icon = "colossus"
 
@@ -68,7 +68,7 @@
 
 /datum/award/achievement/boss/king_goat_kill
 	name = "King Goat Killer"
-	desc = "The king is dead, long live the king!"
+	desc = "The king is dead. Long live the king!"
 	database_id = BOSS_MEDAL_KINGGOAT
 	icon = "goatboss"
 
@@ -85,13 +85,13 @@
 
 /datum/award/achievement/boss/bubblegum_crusher
 	name = "Bubblegum Crusher"
-	desc = "I guess he wasn't made of candy after all"
+	desc = "I guess he wasn't made of candy after all."
 	database_id = BOSS_MEDAL_BUBBLEGUM_CRUSHER
 	icon = "bbgum"
 
 /datum/award/achievement/boss/colossus_crusher
 	name = "Colossus Crusher"
-	desc = "The bigger they are... the better the loot"
+	desc = "The bigger they are... the better the loot."
 	database_id = BOSS_MEDAL_COLOSSUS_CRUSHER
 	icon = "colossus"
 
@@ -124,6 +124,6 @@
 
 /datum/award/achievement/boss/king_goat_crusher
 	name = "King Goat Crusher"
-	desc = "The king is dead, long live the king!"
+	desc = "The king is dead. Long live the king!"
 	database_id = BOSS_MEDAL_KINGGOAT_CRUSHER
 	icon = "goatboss"

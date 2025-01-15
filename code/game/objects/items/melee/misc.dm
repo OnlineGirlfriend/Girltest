@@ -105,7 +105,7 @@
 
 /obj/item/melee/sabre/suns/telescopic
 	name = "telescopic sabre"
-	desc = "A telescopic and retractable blade given to SUNS peacekeepers for easy concealment and carry. It's design makes it slightly less effective than normal sabres sadly, however it is still excelent at piercing armor."
+	desc = "A telescopic and retractable blade given to SUNS peacekeepers for easy concealment and carry. Its design makes it slightly less effective than normal sabres sadly; however, it is still excellent at piercing armor."
 	icon_state = "suns-tsword"
 	item_state = "suns-tsword"
 	force = 0

@@ -48,7 +48,7 @@
 	default_raw_text = "<B>**NOTICE**</B><BR><BR>Smelting operations moved on-station.<BR><BR>Take your unrefined ore to the Redemption Machine in the Delivery Office to redeem points.<BR><BR>--SS13 Command"
 
 /obj/item/paper/fluff/jobs/security/court_judgement
-	name = "paper- 'Judgement'"
+	name = "paper- 'Judgment'"
 	default_raw_text = "For crimes against the station, the offender is sentenced to:<BR>\n<BR>\n"
 
 /obj/item/paper/fluff/jobs/toxins/chemical_info

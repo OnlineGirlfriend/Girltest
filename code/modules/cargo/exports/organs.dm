@@ -34,5 +34,5 @@
 
 /datum/export/organ/tongue
 	cost = 5
-	unit_name = "humanoid tounge"
+	unit_name = "humanoid tongue"
 	export_types = list(/obj/item/organ/tongue)

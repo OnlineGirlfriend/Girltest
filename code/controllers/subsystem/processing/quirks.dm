@@ -58,4 +58,4 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		cli?.prefs.save_character()
 
 	if(length(conflicting_quirks) > 0)
-		alert(user, "Your quirks have been altered because you had a conflicting or invalid quirk, this was likely caused by mood being disabled or the species locks on a quirk being updated!")
+		alert(user, "Your quirks have been altered because you had a conflicting or invalid quirk. This was likely caused by mood being disabled or the species locks on a quirk being updated!")

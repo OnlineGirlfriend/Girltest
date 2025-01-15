@@ -22,7 +22,7 @@
 
 /datum/action/item_action/ninjastar
 	name = "Create Throwing Stars (1E)"
-	desc = "Creates some throwing stars"
+	desc = "Creates some throwing stars."
 	button_icon_state = "throwingstar"
 	icon_icon = 'icons/obj/items_and_weapons.dmi'
 
@@ -34,7 +34,7 @@
 
 /datum/action/item_action/ninja_sword_recall
 	name = "Recall Energy Katana (Variable Cost)"
-	desc = "Teleports the Energy Katana linked to this suit to its wearer, cost based on distance."
+	desc = "Teleports the Energy Katana linked to this suit to its wearer. Cost based on distance."
 	button_icon_state = "energy_katana"
 	icon_icon = 'icons/obj/items_and_weapons.dmi'
 

@@ -31,18 +31,18 @@
 //caves papers
 
 /obj/item/paper/crumpled/awaymissions/caves/unsafe_area
-	default_raw_text = "<center><b>WARNING</center></b><br><br><center>Majority of this area is considered 'unsafe' past this point. Theres an outpost directly south of here where you can get your bearing and travel further down if needed. Traveling in groups is HIGHLY advised, the shit out there can be extremely deadly if you're alone.</center>"
+	default_raw_text = "<center><b>WARNING</center></b><br><br><center>Majority of this area is considered 'unsafe' past this point. Theres an outpost directly south of here where you can get your bearing and travel further down if needed. Traveling in groups is HIGHLY advised. The shit out there can be extremely deadly if you're alone.</center>"
 
 /obj/item/paper/fluff/awaymissions/caves/omega
 	name = "Subject Omega Notes"
-	default_raw_text = "<b><center>Testing Notes</b></center><br><br><center>Subject appears unresponsive to most interactions, refusing to move away from the corners or face any scientists. Subject appears to move between the two back corners every observation. A strange humming can be heard from inside the cell, appears to be originating from the subject itself, further testing is necessary to confirm or deny this.</center>"
+	default_raw_text = "<b><center>Testing Notes</b></center><br><br><center>Subject appears unresponsive to most interactions, refusing to move away from the corners or face any scientists. Subject appears to move between the two back corners every observation. A strange humming can be heard from inside the cell, appears to be originating from the subject itself. Further testing is necessary to confirm or deny this.</center>"
 
 /obj/item/paper/fluff/awaymissions/caves/magma
-	default_raw_text = "<center> Mining is hell down here, you can feel the heat of the magma no matter how thick the suit is. Conditions are barely manageable as is, restless nights and horrid work conditions. The ore maybe rich down here, but we've already lost a few men to the faults shifting, god knows how much longer till it all just collapses down and consumes everyone with it.</center>"
+	default_raw_text = "<center> Mining is hell down here. You can feel the heat of the magma no matter how thick the suit is. Conditions are barely manageable as is - restless nights and horrid work conditions. The ore may be rich down here, but we've already lost a few men to the faults shifting. God knows how much longer 'til it all just collapses down and consumes everyone with it.</center>"
 
 /obj/item/paper/fluff/awaymissions/caves/work_notice
 	name = "work notice"
-	default_raw_text = "<center><b>Survival Info For Miners</b></center><br><br><center>The caves are an unforgiving place, the only thing you'll have to traverse is the supplies in your locker and your own wit. Travel in packs when mining and try to shut down the monster dens before they overwhelm you. The job is dangerous but the haul is good, so remember this information and hopefully we'll all go home alive.</center>"
+	default_raw_text = "<center><b>Survival Info For Miners</b></center><br><br><center>The caves are an unforgiving place. All you have to traverse them are the supplies in your locker and your own wit. Travel in packs when mining, and try to shut down the monster dens before they overwhelm you. The job is dangerous, but the haul is good, so remember this information and hopefully we'll all go home alive.</center>"
 
 /obj/item/paper/fluff/awaymissions/caves/shipment_notice
 	name = "shipment notice"
@@ -50,7 +50,7 @@
 
 /obj/item/paper/fluff/awaymissions/caves/safety_notice
 	name = "safety notice"
-	default_raw_text = "<center>Some of the miners have gone to laying some mine traps among the lower levels of the mine to keep the monsters at bay.  This probably isn't the smartest idea in a cavern like this but the boys seem to get a chuckle out of every distant blast they hear go off, so I guess it works </center>"
+	default_raw_text = "<center>Some of the miners have gone to laying some mine traps among the lower levels of the mine to keep the monsters at bay.  This probably isn't the smartest idea in a cavern like this, but the boys seem to get a chuckle out of every distant blast they hear go off, so I guess it works. </center>"
 
 /obj/item/paper/fluff/awaymissions/caves/shipment_receipt
 	name = "Shipment Receipt"
@@ -58,4 +58,4 @@
 
 /obj/item/paper/fluff/awaymissions/caves/mech_notice
 	name = "NOTICE!! paper"
-	default_raw_text = "<center><b>NOTICE!!</center></b><br><br><center>Although you may seem indestructible in a mech, remember, THIS SHIT ISN'T LAVA PROOF!! The boys have already had to deal with loosing the last two to salvage because the dumbass thought he could just wade through the lower lakes like it was nothing. The fact he even managed to get back without being fused with what was left of the mech is a miracle in itself. They're built to be resistant against extreme heat, not heat PROOF!</center><br><br><i>Robotics Team</i>"
+	default_raw_text = "<center><b>NOTICE!!</center></b><br><br><center>Although you may seem indestructible in a mech, remember, THIS SHIT ISN'T LAVA PROOF!! The boys have already had to deal with losing the last two to salvage because the dumbass thought he could just wade through the lower lakes like it was nothing. The fact he even managed to get back without being fused with what was left of the mech is a miracle in itself. They're built to be resistant against extreme heat, not heat PROOF!</center><br><br><i>Robotics Team</i>"

@@ -441,7 +441,7 @@
 			if (!isnull(temp_pod.landingSound))
 				temp_pod.landingSound = null
 				return
-			var/soundInput = input(holder, "Please pick a sound file to play when the pod lands! I reccomend a nice \"oh shit, i'm sorry\", incase you hit someone with the pod.", "Pick a Sound File") as null|sound
+			var/soundInput = input(holder, "Please pick a sound file to play when the pod lands! I recommend a nice \"oh shit, i'm sorry\" in case you hit someone with the pod.", "Pick a Sound File") as null|sound
 			if (isnull(soundInput))
 				return
 			temp_pod.landingSound = soundInput
@@ -450,7 +450,7 @@
 			if (!isnull(temp_pod.openingSound))
 				temp_pod.openingSound = null
 				return
-			var/soundInput = input(holder, "Please pick a sound file to play when the pod opens! I reccomend a stock sound effect of kids cheering at a party, incase your pod is full of fun exciting stuff!", "Pick a Sound File") as null|sound
+			var/soundInput = input(holder, "Please pick a sound file to play when the pod opens! I recommend a stock sound effect of kids cheering at a party, in case your pod is full of fun exciting stuff!", "Pick a Sound File") as null|sound
 			if (isnull(soundInput))
 				return
 			temp_pod.openingSound = soundInput
@@ -459,7 +459,7 @@
 			if (!isnull(temp_pod.leavingSound))
 				temp_pod.leavingSound = null
 				return
-			var/soundInput = input(holder, "Please pick a sound file to play when the pod leaves! I reccomend a nice slide whistle sound, especially if you're using the reverse pod effect.", "Pick a Sound File") as null|sound
+			var/soundInput = input(holder, "Please pick a sound file to play when the pod leaves! I recommend a nice slide whistle sound, especially if you're using the reverse pod effect.", "Pick a Sound File") as null|sound
 			if (isnull(soundInput))
 				return
 			temp_pod.leavingSound = soundInput

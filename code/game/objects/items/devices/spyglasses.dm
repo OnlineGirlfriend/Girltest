@@ -98,13 +98,13 @@
 	desc = "An eye gougingly yellow pamphlet with a badly designed image of a detective on it. the subtext says \" The Latest way to violate privacy guidelines!\" "
 	default_raw_text = @{"
 
-Thank you for your purchase of the Nerd Co SpySpeks <small>tm</small>, this paper will be your quick-start guide to violating the privacy of your crewmates in three easy steps!<br><br>Step One: Nerd Co SpySpeks <small>tm</small> upon your face. <br>
-Step Two: Place the included "ProfitProtektor <small>tm</small>" camera assembly in a place of your choosing - make sure to make heavy use of it's inconspicous design!
+Thank you for your purchase of the Nerd Co SpySpeks <small>tm</small>. This paper will be your quick-start guide to violating the privacy of your crewmates in three easy steps!<br><br>Step One: Place Nerd Co SpySpeks <small>tm</small> upon your face. <br>
+Step Two: Place the included "ProfitProtektor <small>tm</small>" camera assembly in a place of your choosing - make sure to take advantage of its inconspicous design!
 
-Step Three: Press the "Activate Remote View" Button on the side of your SpySpeks <small>tm</small> to open a movable camera display in the corner of your vision, it's just that easy!<br><br><br><center><b>TROUBLESHOOTING</b><br></center>
+Step Three: Press the "Activate Remote View" Button on the side of your SpySpeks <small>tm</small> to open a movable camera display in the corner of your vision. It's just that easy!<br><br><br><center><b>TROUBLESHOOTING</b><br></center>
 My SpySpeks <small>tm</small> Make a shrill beep while attempting to use!
 
-A shrill beep coming from your SpySpeks means that they can't connect to the included ProfitProtektor <small>tm</small>, please make sure your ProfitProtektor is still active, and functional!
+A shrill beep coming from your SpySpeks means that they can't connect to the included ProfitProtektor <small>tm</small>. Please make sure your ProfitProtektor is still active and functional!
 	"}
 
 /obj/item/storage/box/rxglasses/spyglasskit/PopulateContents()

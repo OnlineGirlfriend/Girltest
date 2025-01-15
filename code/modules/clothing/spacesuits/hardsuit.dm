@@ -127,7 +127,7 @@
 /obj/item/clothing/suit/space/hardsuit/examine(mob/user)
 	. = ..()
 	if(!helmet && helmettype)
-		. += "<span class='notice'> The helmet on [src] seems to be malfunctioning. It's light bulb needs to be replaced.</span>"
+		. += "<span class='notice'> The helmet on [src] seems to be malfunctioning. Its light bulb needs to be replaced.</span>"
 
 /obj/item/clothing/suit/space/hardsuit/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/tank/jetpack/suit))
@@ -1184,7 +1184,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/security/independent/inteq
 	name = "inteq hardsuit"
-	desc = "A heavy-duty looking suit that protects against hazardous, low pressure environments. It's bulk provides ample protection, if not a bit cumbersome to wear."
+	desc = "A heavy-duty looking suit that protects against hazardous, low pressure environments. Its bulk provides ample protection, if not a bit cumbersome to wear."
 	icon_state = "hardsuit-inteq"
 	item_state = "hardsuit-inteq"
 	hardsuit_type = "inteq"

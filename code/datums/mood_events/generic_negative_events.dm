@@ -218,7 +218,7 @@
 	timeout = 1 MINUTES
 
 /datum/mood_event/high_five_alone
-	description = "<span class='boldwarning'>I tried getting a high-five with no one around, how embarassing!</span>\n"
+	description = "<span class='boldwarning'>I tried getting a high-five with no one around. How embarrassing!</span>\n"
 	mood_change = -2
 	timeout = 1 MINUTES
 
