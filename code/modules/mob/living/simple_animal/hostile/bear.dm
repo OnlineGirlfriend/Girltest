@@ -1,7 +1,7 @@
 //Space bears!
 /mob/living/simple_animal/hostile/bear
 	name = "space bear"
-	desc = "You don't need to be faster than a space bear, you just need to outrun your crewmates."
+	desc = "You don't need to be faster than a space bear; you just need to outrun your crewmates."
 	icon_state = "bear"
 	icon_living = "bear"
 	icon_dead = "bear_dead"
@@ -73,7 +73,7 @@
 /mob/living/simple_animal/hostile/bear/Hudson
 	name = "Hudson"
 	gender = MALE
-	desc = "Feared outlaw, this guy is one bad news bear." //I'm sorry...
+	desc = "Feared outlaw. This guy is one bad-news bear." //I'm sorry...
 
 /mob/living/simple_animal/hostile/bear/snow
 	name = "space polar bear"
@@ -86,7 +86,7 @@
 
 /mob/living/simple_animal/hostile/bear/frontier
 	name = "combat bear"
-	desc = "A ferocious brown bear decked out in armor plating, a red star with yellow outlining details the shoulder plating."
+	desc = "A ferocious brown bear decked out in armor plating. A red star with yellow outlining details the shoulder plating."
 	icon_state = "combatbear"
 	icon_living = "combatbear"
 	icon_dead = "combatbear_dead"
@@ -140,7 +140,7 @@
 	icon_state = "butterbear"
 	icon_living = "butterbear"
 	icon_dead = "butterbear_dead"
-	desc = "I can't believe its not a bear!"
+	desc = "I can't believe it's not a bear!"
 	faction = list("neutral", FACTION_ANTAG_FRONTIERSMEN)
 	obj_damage = 11
 	melee_damage_lower = 1
@@ -173,7 +173,7 @@
 		return
 	B.brainmob.mind.transfer_to(src)
 	to_chat(src, "<span class='big bold'>You are a butter bear!</span><b> You're a mostly harmless bear/butter hybrid that everyone loves. People can take bites out of you if they're hungry, but you regenerate health \
-	so quickly that it generally doesn't matter. You're remarkably resilient to any damage besides this and it's hard for you to really die at all. You should go around and bring happiness and \
+	so quickly that it generally doesn't matter. You're remarkably resilient to any damage besides this, and it's hard for you to really die at all. You should go around and bring happiness and \
 	free butter to the universe!</b>")
 	var/new_name = stripped_input(src, "Enter your name, or press \"Cancel\" to stick with Terrygold.", "Name Change")
 	if(new_name)

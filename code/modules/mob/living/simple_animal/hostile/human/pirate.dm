@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/human/pirate
 	name = "Pirate"
-	desc = "Does what he wants cause a pirate is free."
+	desc = "Does what he wants, 'cause a pirate is free."
 	icon_state = "piratemelee"
 	icon_living = "piratemelee"
 	icon_dead = "pirate_dead"

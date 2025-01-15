@@ -6,7 +6,7 @@ Difficulty: Extremely Hard
 
 /mob/living/simple_animal/hostile/megafauna/demonic_frost_miner
 	name = "demonic-frost miner"
-	desc = "An extremely well-geared miner, driven crazy or possessed by the demonic forces here, either way a terrifying enemy."
+	desc = "An extremely well-geared miner, driven crazy or possessed by the demonic forces here. Either way, a terrifying enemy."
 	health = 1500
 	maxHealth = 1500
 	icon_state = "demonic_miner"
@@ -275,7 +275,7 @@ Difficulty: Extremely Hard
 
 /obj/item/clothing/shoes/winterboots/ice_boots/ice_trail
 	name = "cursed ice hiking boots"
-	desc = "A pair of winter boots contractually made by a devil, they cannot be taken off once put on."
+	desc = "A pair of winter boots contractually made by a devil. They cannot be taken off once donned."
 	actions_types = list(/datum/action/item_action/toggle)
 	var/on = FALSE
 	var/change_turf = /turf/open/floor/plating/ice/icemoon

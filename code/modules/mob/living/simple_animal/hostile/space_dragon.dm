@@ -43,7 +43,7 @@
 	ranged = TRUE
 	mouse_opacity = MOUSE_OPACITY_ICON
 	butcher_results = list(/obj/item/stack/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/bone = 30)
-	deathmessage = "screeches as its wings turn to dust and it collapses on the floor, life estinguished."
+	deathmessage = "screeches and collapses as its wings turn to dust, life extinguished."
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
@@ -104,7 +104,7 @@
 	if(using_special)
 		return
 	if(target == src)
-		to_chat(src, "<span class='warning'>You almost bite yourself, but then decide against it.</span>")
+		to_chat(src, "<span class='warning'>You almost bite yourself but then decide against it.</span>")
 		return
 	if(istype(target, /turf/closed/wall))
 		var/turf/closed/wall/thewall = target
@@ -350,7 +350,7 @@
 			main_objective.completed = TRUE
 	sound_to_playing_players('sound/machines/alarm.ogg')
 	sleep(100)
-	priority_announce("A large amount of lifeforms have been detected approaching [station_name()] at extreme speeds.  Evacuation of the remamining crew will begin immediately.", "Central Command Spacial Corps")
+	priority_announce("A large amount of lifeforms have been detected approaching [station_name()] at extreme speeds.  Evacuation of the remaining crew will begin immediately.", "Central Command Special Corps")
 	for(var/obj/structure/carp_rift/rift in rift_list)
 		rift.carp_stored = 999999
 	sleep(50)
@@ -445,7 +445,7 @@
 /obj/structure/carp_rift/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	if(time_charged != max_charge + 1)
-		to_chat(dragon, "<span class='boldwarning'>The rift has been destroyed!  You have failed, and find yourself brought down by the weight of your failure.</span>")
+		to_chat(dragon, "<span class='boldwarning'>The rift has been destroyed!  You have failed, and you find yourself brought down by the weight of your failure.</span>")
 		dragon.set_varspeed(5)
 		dragon.tiredness_mult = 5
 		dragon.destroy_rifts()

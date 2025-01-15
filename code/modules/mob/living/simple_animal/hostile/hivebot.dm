@@ -74,7 +74,7 @@
 
 /mob/living/simple_animal/hostile/hivebot/range
 	name = "hivebot"
-	desc = "A smallish robot, this one is armed!"
+	desc = "A smallish robot. This one is armed!"
 	icon_state = "ranged"
 	icon_living = "ranged"
 	icon_dead = "ranged"
@@ -102,7 +102,7 @@
 	icon_state = "strong"
 	icon_living = "strong"
 	icon_dead = "strong"
-	desc = "A robot, this one is armed and looks tough!"
+	desc = "A robot. This one is armed and looks tough!"
 	health = 80
 	maxHealth = 80
 	ranged = TRUE
@@ -177,7 +177,7 @@
 
 /mob/living/simple_animal/hostile/hivebot/wasteplanet
 	name = "hivebot"
-	desc = "A smallish robot, this one is armed!"
+	desc = "A smallish robot. This one is armed!"
 	icon_state = "basic"
 	icon_living = "basic"
 	icon_dead = "basic"
@@ -207,7 +207,7 @@
 	icon_state = "strong"
 	icon_living = "strong"
 	icon_dead = "strong"
-	desc = "A robot, this one is armed and looks tough!"
+	desc = "A robot. This one is armed and looks tough!"
 	health = 80
 	maxHealth = 80
 	ranged = TRUE

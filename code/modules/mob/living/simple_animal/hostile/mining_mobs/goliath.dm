@@ -1,7 +1,7 @@
 //A slow but strong beast that tries to stun using its tentacles
 /mob/living/simple_animal/hostile/asteroid/goliath
 	name = "goliath"
-	desc = "A massive beast that uses long tentacles to ensnare its prey, threatening them is not advised under any conditions."
+	desc = "A massive beast that uses long tentacles to ensnare its prey. Threatening them is not advised under any conditions."
 	icon = 'icons/mob/lavaland/lavaland_monsters_wide.dmi'
 	icon_state = "ancient_goliath"
 	icon_living = "ancient_goliath"
@@ -440,7 +440,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/rockplanet
 	name = "gruboid"
-	desc = "A massive beast that uses long tentacles to ensnare its prey, threatening them is not advised under any conditions."
+	desc = "A massive beast that uses long tentacles to ensnare its prey. Threatening them is not advised under any conditions."
 	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
 	icon_state = "gruboid2"
 	icon_living = "gruboid2"

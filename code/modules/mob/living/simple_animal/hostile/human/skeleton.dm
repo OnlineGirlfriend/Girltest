@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/human/skeleton
 	name = "reanimated skeleton"
-	desc = "A real bonefied skeleton, doesn't seem like it wants to socialize."
+	desc = "A bona fide skeleton. Doesn't seem like it wants to socialize."
 	icon_state = "skeleton"
 	icon_living = "skeleton"
 	icon_dead = "skeleton"
@@ -63,7 +63,7 @@
 
 /mob/living/simple_animal/hostile/human/skeleton/plasmaminer
 	name = "shambling miner"
-	desc = "A plasma-soaked miner, their exposed limbs turned into a grossly incandescent bone seemingly made of plasma."
+	desc = "A plasma-soaked miner. Their exposed limbs are a grossly incandescent bone, seemingly made of plasma."
 	icon_state = "plasma_miner"
 	icon_living = "plasma_miner"
 	icon_dead = "plasma_miner"
@@ -80,7 +80,7 @@
 	loot = list(/obj/effect/decal/remains/plasma)
 
 /mob/living/simple_animal/hostile/human/skeleton/plasmaminer/jackhammer
-	desc = "A plasma-soaked miner, their exposed limbs turned into a grossly incandescent bone seemingly made of plasma. They seem to still have their mining tool in their hand, gripping tightly."
+	desc = "A plasma-soaked miner. Their exposed limbs are a grossly incandescent bone, seemingly made of plasma. They seem to still have their mining tool in their hand, gripping it tightly."
 	icon_state = "plasma_miner_tool"
 	icon_living = "plasma_miner_tool"
 	icon_dead = "plasma_miner_tool"

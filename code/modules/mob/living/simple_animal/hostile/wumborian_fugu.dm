@@ -1,7 +1,7 @@
 //A fragile mob that becomes temporarily invincible and large to attack
 /mob/living/simple_animal/hostile/asteroid/fugu
 	name = "wumborian fugu"
-	desc = "The wumborian fugu rapidly increases its body mass in order to ward off its prey. Great care should be taken to avoid it while it's in this state as it is nearly invincible, but it cannot maintain its form forever."
+	desc = "The wumborian fugu rapidly increases its body mass in order to ward off its prey. Great care should be taken to avoid it while it's in this state, as it is nearly invincible. Luckily, it cannot maintain this form forever."
 	icon = 'icons/mob/lavaland/64x64megafauna.dmi'
 	icon_state = "Fugu0"
 	icon_living = "Fugu0"
@@ -73,7 +73,7 @@
 
 /datum/action/innate/fugu/expand
 	name = "Inflate"
-	desc = "Temporarily increases your size, and makes you significantly more dangerous and tough! Do not bully the fugu!"
+	desc = "Temporarily increases your size and makes you significantly more dangerous and tough! Do not bully the fugu!"
 	button_icon_state = "expand"
 
 /datum/action/innate/fugu/expand/Activate()
@@ -126,7 +126,7 @@
 
 /obj/item/fugu_gland
 	name = "wumborian fugu gland"
-	desc = "The key to the wumborian fugu's ability to increase its mass arbitrarily, this disgusting remnant can apply the same effect to other creatures, giving them great strength."
+	desc = "The key to the wumborian fugu's ability to increase its mass arbitrarily, this disgusting remnant can apply the same effect to other creatures and give them great strength."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "fugu_gland"
 	item_flags = NOBLUDGEON

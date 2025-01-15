@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/retaliate/spaceman
 	name = "Spaceman"
-	desc = "What in the actual hell..?"
+	desc = "What in the actual hell...?"
 	icon_state = "old"
 	icon_living = "old"
 	icon_dead = "old_dead"
@@ -29,7 +29,7 @@
 
 /mob/living/simple_animal/hostile/retaliate/nanotrasenpeace //this should be in a different file
 	name = "\improper Nanotrasen Private Security Officer"
-	desc = "An officer part of Nanotrasen's private security force."
+	desc = "An officer from Nanotrasen's private security force."
 	icon = 'icons/mob/simple_human.dmi'
 	icon_state = "nanotrasen"
 	icon_living = "nanotrasen"

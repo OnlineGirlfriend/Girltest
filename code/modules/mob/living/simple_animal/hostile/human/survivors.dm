@@ -21,7 +21,7 @@
 
 /mob/living/simple_animal/hostile/human/hermit/survivor
 	name = "Hermit Wanderer"
-	desc =" A wild-eyed figure, wearing tattered mining equipment and boasting a malformed body, twisted by the heavy metals and high background radiation of the sandworlds."
+	desc =" A wild-eyed figure, wearing tattered mining equipment and boasting a malformed body. They've been twisted by the heavy metals and high background radiation of the sandworlds."
 	loot = list(
 		/obj/effect/mob_spawn/human/corpse/damaged/whitesands/survivor
 	)
@@ -48,7 +48,7 @@
 
 /mob/living/simple_animal/hostile/human/hermit/ranged/hunter
 	name = "Hermit Hunter"
-	desc ="A wild-eyed figure. Watch out- he has a gun, and he remembers just enough of his old life to use it!"
+	desc ="A wild-eyed figure. Watch out - he has a gun, and he remembers just enough of his old life to use it!"
 	loot = list(
 		/obj/effect/mob_spawn/human/corpse/damaged/whitesands/hunter,
 	)

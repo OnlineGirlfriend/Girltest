@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/eyeball
 	name = "eyeball"
-	desc = "An odd looking creature, it won't stop staring..."
+	desc = "An odd looking creature. It won't stop staring..."
 	icon = 'icons/mob/carp.dmi'
 	icon_state = "eyeball"
 	icon_living = "eyeball"

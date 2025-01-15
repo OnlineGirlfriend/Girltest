@@ -18,7 +18,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/elite/herald
 	name = "herald"
-	desc = "A monstrous beast which fires deadly projectiles at threats and prey."
+	desc = "A monstrous beast that fires deadly projectiles at threats and prey."
 	icon = 'icons/mob/lavaland/lavaland_elites_64.dmi'
 	icon_state = "herald"
 	icon_living = "herald"
