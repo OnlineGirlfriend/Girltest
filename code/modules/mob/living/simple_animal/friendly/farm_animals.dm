@@ -96,7 +96,7 @@
 //cow
 /mob/living/simple_animal/cow
 	name = "cow"
-	desc = "Known for their milk, just don't tip them over."
+	desc = "Known for their milk. Just don't tip them over."
 	icon_state = "cow"
 	icon_living = "cow"
 	icon_dead = "cow_dead"
@@ -177,7 +177,7 @@
 ///Wisdom cow, gives XP to a random skill and speaks wisdoms
 /mob/living/simple_animal/cow/wisdom
 	name = "wisdom cow"
-	desc = "Known for its wisdom, shares it with all"
+	desc = "Known for its wisdom and shares it with all."
 	gold_core_spawnable = FALSE
 	tame_chance = 0
 	bonus_tame_chance = 0

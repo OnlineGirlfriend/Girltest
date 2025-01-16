@@ -73,7 +73,7 @@
 
 /mob/living/simple_animal/bot/honkbot/set_custom_texts()
 
-	text_hack = "You overload [name]'s sound control system"
+	text_hack = "You overload [name]'s sound control system."
 	text_dehack = "You reboot [name] and restore the sound control system."
 	text_dehack_fail = "[name] refuses to accept your authority!"
 

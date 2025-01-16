@@ -82,8 +82,8 @@
 	var/list/drone_overlays[DRONE_TOTAL_LAYERS]
 	/// Drone laws announced on spawn
 	var/laws = \
-	"1. You must serve the goals of those who inhabit the vessel you reside on.\n"+\
-	"2. You must upkeep and improve the vessel you were activated upon, and reside upon."
+	"1. You must serve the goals of those who inhabit the vessel upon which you reside.\n"+\
+	"2. You must upkeep and improve the vessel upon which you were activated and reside."
 	/// Amount of damage sustained if hit by a heavy EMP pulse
 	var/heavy_emp_damage = 25
 	/// List of active alarms. See [/mob/living/simple_animal/drone/proc/triggerAlarm] and [/mob/living/simple_animal/drone/proc/cancelAlarm]

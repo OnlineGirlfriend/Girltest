@@ -412,7 +412,7 @@
 
 /datum/action/innate/seek_master
 	name = "Seek your Master"
-	desc = "You and your master share a soul-link that informs you of their location"
+	desc = "You and your master share a soul-link that informs you of their location."
 	background_icon_state = "bg_demon"
 	buttontooltipstyle = "cult"
 	button_icon_state = "cult_mark"
@@ -450,7 +450,7 @@
 
 /datum/action/innate/seek_prey
 	name = "Seek the Harvest"
-	desc = "None can hide from Nar'Sie, activate to track a survivor attempting to flee the red harvest!"
+	desc = "None can hide from Nar'Sie! Activate to track a survivor attempting to flee the red harvest!"
 	icon_icon = 'icons/mob/actions/actions_cult.dmi'
 	background_icon_state = "bg_demon"
 	buttontooltipstyle = "cult"
@@ -461,10 +461,10 @@
 		return
 	var/mob/living/simple_animal/hostile/construct/harvester/the_construct = owner
 	if(the_construct.seeking)
-		desc = "None can hide from Nar'Sie, activate to track a survivor attempting to flee the red harvest!"
+		desc = "None can hide from Nar'Sie! Activate to track a survivor attempting to flee the red harvest!"
 		button_icon_state = "cult_mark"
 		the_construct.seeking = FALSE
-		to_chat(the_construct, "<span class='cult italic'>You are now tracking Nar'Sie, return to reap the harvest!</span>")
+		to_chat(the_construct, "<span class='cult italic'>You are now tracking Nar'Sie. Return to reap the harvest!</span>")
 		return
 	else
 		if(LAZYLEN(GLOB.cult_narsie.souls_needed))

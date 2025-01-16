@@ -6,8 +6,8 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	melee_damage_type = TOX
-	playstyle_string = "<span class='holoparasite'>As a <b>slime</b> type, you can toggle between a weak combat mode, and a strong healing mode that nourishes and repairs damage. This mode also works on slimes. Be warned: You are more vulnerable to damage then most holoparasites.</span>"
-	magic_fluff_string = "<span class='holoparasite'>..And draw the Xenobiologist, a purveyor of godlike power.</span>"
+	playstyle_string = "<span class='holoparasite'>As a <b>slime</b> type, you can toggle between a weak combat mode and a strong healing mode that nourishes and repairs damage. This mode also works on slimes. Be warned: You are more vulnerable to damage than most holoparasites.</span>"
+	magic_fluff_string = "<span class='holoparasite'>...and draw the Xenobiologist, a purveyor of godlike power.</span>"
 	carp_fluff_string = "<span class='holoparasite'>CARP CARP CARP! You caught a slimy carp. Gross, maybe you should throw this one back.</span>"
 	tech_fluff_string = "<span class='holoparasite'>Boot sequence complete. Xenobiological support module active. Holoparasite swarm online.</span>"
 	miner_fluff_string = "<span class='holoparasite'>You encounter... Slime, the master of xenobiology.</span>"

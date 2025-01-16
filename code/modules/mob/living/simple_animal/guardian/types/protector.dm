@@ -4,8 +4,8 @@
 	melee_damage_upper = 30
 	range = 20
 	damage_coeff = list(BRUTE = 0.4, BURN = 0.4, TOX = 0.4, CLONE = 0.4, STAMINA = 0, OXY = 0.4)
-	playstyle_string = "<span class='holoparasite'>As a <b>protector</b> type you cause your summoner to leash to you instead of you leashing to them and have two modes; Combat Mode, where you do and take medium damage, and Protection Mode, where you take almost no damage and have reduced damage. While in protection mode, you move significantly slower, and have extremely low range.</span>"
-	magic_fluff_string = "<span class='holoparasite'>..And draw the Guardian, a stalwart protector that never leaves the side of its charge.</span>"
+	playstyle_string = "<span class='holoparasite'>As a <b>protector</b> type, you cause your summoner to leash to you instead of you leashing to them. You have two modes: combat mode, where you deal and take medium damage, and protection mode, where you deal reduced damage while taking almost no damage yourself. In protection mode, you move significantly slower and have extremely low range.</span>"
+	magic_fluff_string = "<span class='holoparasite'>...and draw the Guardian, a stalwart protector that never leaves the side of its charge.</span>"
 	tech_fluff_string = "<span class='holoparasite'>Boot sequence complete. Protector modules loaded. Holoparasite swarm online.</span>"
 	carp_fluff_string = "<span class='holoparasite'>CARP CARP CARP! You caught one! Wait, no... it caught you! The fisher has become the fishy.</span>"
 	miner_fluff_string = "<span class='holoparasite'>You encounter... Uranium, a very resistant guardian.</span>"
@@ -61,11 +61,11 @@
 			return
 		else
 			if(istype(summoner.loc, /obj/effect))
-				to_chat(src, "<span class='holoparasite'>You moved out of range, and were pulled back! You can only move [range] meters from [summoner.real_name]!</span>")
+				to_chat(src, "<span class='holoparasite'>You moved out of range and were pulled back! You can only move [range] meters from [summoner.real_name]!</span>")
 				visible_message("<span class='danger'>\The [src] jumps back to its user.</span>")
 				Recall(TRUE)
 			else
-				to_chat(summoner, "<span class='holoparasite'>You moved out of range, and were pulled back! You can only move [range] meters from <font color=\"[guardiancolor]\"><b>[real_name]</b></font>!</span>")
+				to_chat(summoner, "<span class='holoparasite'>You moved out of range and were pulled back! You can only move [range] meters from <font color=\"[guardiancolor]\"><b>[real_name]</b></font>!</span>")
 				summoner.visible_message("<span class='danger'>\The [summoner] jumps back to [summoner.p_their()] protector.</span>")
 				new /obj/effect/temp_visual/guardian/phase/out(get_turf(summoner))
 				summoner.forceMove(get_turf(src))

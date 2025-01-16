@@ -28,7 +28,7 @@
 /mob/living/simple_animal/pet/penguin/emperor
 	name = "Emperor penguin"
 	real_name = "penguin"
-	desc = "Emperor of all they survey."
+	desc = "Emperor of all it surveys."
 	icon_state = "penguin"
 	icon_living = "penguin"
 	icon_dead = "penguin_dead"
@@ -37,7 +37,7 @@
 
 /mob/living/simple_animal/pet/penguin/emperor/shamebrero
 	name = "Shamebrero penguin"
-	desc = "Shameful of all he surveys."
+	desc = "Shameful of all it surveys."
 	icon_state = "penguin_shamebrero"
 	icon_living = "penguin_shamebrero"
 	gold_core_spawnable = NO_SPAWN

@@ -1,7 +1,7 @@
 //Cleanbot
 /mob/living/simple_animal/bot/cleanbot
 	name = "\improper Cleanbot"
-	desc = "A little cleaning robot, he looks so excited!"
+	desc = "A little cleaning robot. It looks so excited!"
 	icon = 'icons/mob/aibots.dmi'
 	icon_state = "cleanbot0"
 	density = FALSE

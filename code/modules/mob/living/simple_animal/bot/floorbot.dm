@@ -1,7 +1,7 @@
 //Floorbot
 /mob/living/simple_animal/bot/floorbot
 	name = "\improper Floorbot"
-	desc = "A little floor repairing robot, he looks so excited!"
+	desc = "A little floor repairing robot. It looks so excited!"
 	icon = 'icons/mob/aibots.dmi'
 	icon_state = "floorbot0"
 	density = FALSE
@@ -42,7 +42,7 @@
 
 /mob/living/simple_animal/bot/floorbot/rockplanet
 	name = "\improper Abandoned Floorbot"
-	desc = "Many years of abandonment has made this bot into a floor destroying robot! They look so excited!"
+	desc = "Many years of abandonment has made this bot into a floor destroying robot! It looks so excited!"
 	toolbox = /obj/item/storage/toolbox/syndicate/empty
 	toolbox_color = "s"
 	emagged = 2
@@ -81,7 +81,7 @@
 
 /mob/living/simple_animal/bot/floorbot/set_custom_texts()
 	text_hack = "You corrupt [name]'s construction protocols."
-	text_dehack = "You detect errors in [name] and reset his programming."
+	text_dehack = "You detect errors in [name] and reset its programming."
 	text_dehack_fail = "[name] is not responding to reset commands!"
 
 /mob/living/simple_animal/bot/floorbot/get_controls(mob/user)

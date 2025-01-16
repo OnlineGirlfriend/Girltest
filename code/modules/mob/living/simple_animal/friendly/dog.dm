@@ -196,10 +196,10 @@
 /mob/living/simple_animal/pet/dog/corgi/attackby(obj/item/O, mob/user, params)
 	if (istype(O, /obj/item/razor))
 		if (shaved)
-			to_chat(user, "<span class='warning'>You can't shave this corgi, it's already been shaved!</span>")
+			to_chat(user, "<span class='warning'>You can't shave this corgi. It's already been shaved!</span>")
 			return
 		if (nofur)
-			to_chat(user, "<span class='warning'>You can't shave this corgi, it doesn't have a fur coat!</span>")
+			to_chat(user, "<span class='warning'>You can't shave this corgi. It doesn't have a fur coat!</span>")
 			return
 		user.visible_message("<span class='notice'>[user] starts to shave [src] using \the [O].</span>", "<span class='notice'>You start to shave [src] using \the [O]...</span>")
 		if(do_after(user, 50, target = src))
@@ -281,7 +281,7 @@
 						return
 
 					if(!usr.temporarilyRemoveItemFromInventory(item_to_add))
-						to_chat(usr, "<span class='warning'>\The [item_to_add] is stuck to your hand, you cannot put it on [src]'s back!</span>")
+						to_chat(usr, "<span class='warning'>\The [item_to_add] is stuck to your hand. You cannot put it on [src]'s back!</span>")
 						return
 
 					if(istype(item_to_add, /obj/item/grenade/c4)) // last thing he ever wears, I guess

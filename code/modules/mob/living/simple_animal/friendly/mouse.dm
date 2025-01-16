@@ -207,7 +207,7 @@ GLOBAL_VAR_INIT(mouse_killed, 0)
 	resize = 0.5
 	update_transform()
 	remove_movespeed_modifier(/datum/movespeed_modifier/mouse_cheese)
-	to_chat(src, "<span class='userdanger'>A feeling of sadness comes over you as the effects of the cheese wears off. You. Must. Get. More.</span>")
+	to_chat(src, "<span class='userdanger'>A feeling of sadness comes over you as the effects of the cheese wear off. You. Must. Get. More.</span>")
 
 /atom/proc/mouse_eat(mob/living/simple_animal/mouse/M)
 	M.adjustHealth(-5)

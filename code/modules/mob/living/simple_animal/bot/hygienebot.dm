@@ -1,7 +1,7 @@
 //Cleanbot
 /mob/living/simple_animal/bot/hygienebot
 	name = "\improper Hygienebot"
-	desc = "A flying cleaning robot, he'll chase down people who can't shower properly!"
+	desc = "A flying, cleaning robot. It'll chase down people who can't shower properly!"
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "drone"
 	base_icon_state = "hygienebot"
@@ -132,7 +132,7 @@
 				if(target.loc == loc && isturf(target.loc)) //LADIES AND GENTLEMAN WE GOTEM PREPARE TO DUMP
 					start_washing()
 					if(mad)
-						speak("Well about fucking time you degenerate", "Fucking finally", "Thank god, you finally stopped")
+						speak("Well about fucking time, you degenerate.", "Fucking finally.", "Thank God, you finally stopped.")
 						playsound(loc, 'sound/effects/hygienebot_angry.ogg', 60, 1)
 						mad = FALSE
 					mode = BOT_SHOWERSTANCE
@@ -141,7 +141,7 @@
 					walk_to(src, target,0, currentspeed)
 					if(mad && prob(60))
 						playsound(loc, 'sound/effects/hygienebot_angry.ogg', 60, 1)
-						speak(pick("Get back here you foul smelling fucker.", "If you don't get back here right now I'm going to give you a fucking vasectomy.", "STOP RUNNING OR I WILL CUT YOUR ARTERIES!", "Just fucking let me clean you you arsehole!", "STOP. RUNNING.", "Either you stop running or I will fucking drag you out of an airlock.", "I just want to fucking clean you you troglodyte.", "If you don't come back here I'll put a green cloud around you cunt."))
+						speak(pick("Get back here you foul smelling fucker.", "If you don't get back here right now I'm going to give you a fucking vasectomy.", "STOP RUNNING OR I WILL CUT YOUR ARTERIES!", "Just fucking let me clean you, you arsehole!", "STOP. RUNNING.", "Either you stop running or I will fucking drag you out of an airlock.", "I just want to fucking clean you, you troglodyte.", "If you don't come back here, I'll put a green cloud around you, cunt."))
 					if((get_dist(src, target)) >= (olddist))
 						frustration++
 					else

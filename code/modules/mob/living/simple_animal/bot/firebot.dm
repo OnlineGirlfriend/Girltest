@@ -6,7 +6,7 @@
 
 /mob/living/simple_animal/bot/firebot
 	name = "\improper Firebot"
-	desc = "A little fire extinguishing bot. He looks rather anxious."
+	desc = "A little fire extinguishing bot. It looks rather anxious."
 	icon = 'icons/mob/aibots.dmi'
 	icon_state = "firebot"
 	density = FALSE
@@ -40,7 +40,7 @@
 
 /mob/living/simple_animal/bot/firebot/rockplanet
 	name = "\improper Abandoned Firebot"
-	desc = "A little fire extinguishing bot. He looks rather bloodthrirsty."
+	desc = "A little fire extinguishing bot. It looks rather bloodthrirsty."
 	emagged = 2
 	remote_disabled = 1
 	locked = TRUE
@@ -121,7 +121,7 @@
 
 /mob/living/simple_animal/bot/firebot/set_custom_texts()
 	text_hack = "You corrupt [name]'s safety protocols."
-	text_dehack = "You detect errors in [name] and reset his programming."
+	text_dehack = "You detect errors in [name] and reset its programming."
 	text_dehack_fail = "[name] is not responding to reset commands!"
 
 /mob/living/simple_animal/bot/firebot/get_controls(mob/user)

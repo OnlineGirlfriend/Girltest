@@ -75,7 +75,7 @@
 
 /obj/effect/mob_spawn/drone/snowflake
 	name = "snowflake drone shell"
-	desc = "A shell of a snowflake drone, a maintenance drone with a built in holographic projector to display hats and masks."
+	desc = "A shell of a snowflake drone, a maintenance drone with a built-in holographic projector to display hats and masks."
 	mob_name = "snowflake drone"
 	mob_type = /mob/living/simple_animal/drone/snowflake
 

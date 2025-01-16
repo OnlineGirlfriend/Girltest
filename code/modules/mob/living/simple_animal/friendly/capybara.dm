@@ -41,7 +41,7 @@
 /mob/living/simple_animal/pet/dog/corgi/capybara/caspar
 	name = "Caspar"
 	real_name = "Caspar"
-	desc = "It's Caspar, the Capybara Captain, the Capy Cappy."
+	desc = "It's Caspar, the Capybara Captain - the Capy Cappy."
 	gender = MALE
 	gold_core_spawnable = NO_SPAWN
 	unique_pet = TRUE

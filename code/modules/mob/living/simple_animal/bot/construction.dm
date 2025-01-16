@@ -221,7 +221,7 @@
 //Medbot Assembly
 /obj/item/bot_assembly/medbot
 	name = "incomplete medibot assembly"
-	desc = "A first aid kit with a robot arm permanently grafted to it."
+	desc = "A first aid kit with a robot arm permanently grafted onto it."
 	icon_state = "firstaid_arm"
 	created_name = "Medibot" //To preserve the name if it's a unique medbot I guess
 	var/skin = null //Same as medbot, set to tox or ointment for the respective kits.
@@ -264,7 +264,7 @@
 //Honkbot Assembly
 /obj/item/bot_assembly/honkbot
 	name = "incomplete honkbot assembly"
-	desc = "The clown's up to no good once more"
+	desc = "The clown's up to no good once more."
 	icon_state = "honkbot_arm"
 	created_name = "Honkbot"
 
@@ -465,7 +465,7 @@
 //Get cleaned
 /obj/item/bot_assembly/hygienebot
 	name = "incomplete hygienebot assembly"
-	desc = "Clear out the swamp once and for all"
+	desc = "Clear out the swamp once and for all."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "drone"
 	created_name = "Hygienebot"

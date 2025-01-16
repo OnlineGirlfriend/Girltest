@@ -1,6 +1,6 @@
 /mob/living/simple_animal/bot/secbot/ed209
 	name = "\improper ED-209 Security Robot"
-	desc = "A security robot. He looks less than thrilled."
+	desc = "A security robot. It looks less than thrilled."
 	icon_state = "ed209"
 	density = TRUE
 	health = 100
@@ -21,7 +21,7 @@
 
 /mob/living/simple_animal/bot/secbot/ed209/rockplanet
 	name = "\improper Abandoned ED-209 Robot"
-	desc = "A security robot. It looks like they have a loose trigger finger."
+	desc = "A security robot. It looks like it has a loose trigger finger."
 	health = 60
 	maxHealth = 60
 	icon_state = "red209"
@@ -50,7 +50,7 @@
 /mob/living/simple_animal/bot/secbot/ed209/set_custom_texts()
 	text_hack = "You disable [name]'s combat inhibitor."
 	text_dehack = "You restore [name]'s combat inhibitor."
-	text_dehack_fail = "[name] ignores your attempts to restrict him!"
+	text_dehack_fail = "[name] ignores your attempts to restrict it!"
 
 /mob/living/simple_animal/bot/secbot/ed209/emag_act(mob/user)
 	..()

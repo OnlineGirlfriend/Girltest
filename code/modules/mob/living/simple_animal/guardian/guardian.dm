@@ -229,7 +229,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 		if(get_dist(get_turf(summoner),get_turf(src)) <= range)
 			return
 		else
-			to_chat(src, "<span class='holoparasite'>You moved out of range, and were pulled back! You can only move [range] meters from [summoner.real_name]!</span>")
+			to_chat(src, "<span class='holoparasite'>You moved out of range and were pulled back! You can only move [range] meters from [summoner.real_name]!</span>")
 			visible_message("<span class='danger'>\The [src] jumps back to its user.</span>")
 			if(istype(summoner.loc, /obj/effect))
 				Recall(TRUE)
@@ -275,7 +275,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 			summoner.visible_message("<span class='danger'><B>Blood sprays from [summoner] as [src] takes damage!</B></span>")
 			switch(summoner.stat)
 				if(UNCONSCIOUS, HARD_CRIT)
-					to_chat(summoner, "<span class='danger'><B>Your body can't take the strain of sustaining [src] in this condition, it begins to fall apart!</span></B>")
+					to_chat(summoner, "<span class='danger'><B>Your body can't take the strain of sustaining [src] in this condition. It begins to fall apart!</span></B>")
 					summoner.adjustCloneLoss(amount * 0.5) //dying hosts take 50% bonus damage as cloneloss
 		update_health_hud()
 
@@ -527,7 +527,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	var/mob_name = "Guardian Spirit"
 	var/use_message = "<span class='holoparasite'>You shuffle the deck...</span>"
 	var/used_message = "<span class='holoparasite'>All the cards seem to be blank now.</span>"
-	var/failure_message = "<span class='holoparasite bold'>..And draw a card! It's...blank? Maybe you should try again later.</span>"
+	var/failure_message = "<span class='holoparasite bold'>...and draw a card! It's...blank? Maybe you should try again later.</span>"
 	var/ling_failure = "<span class='holoparasite bold'>The deck refuses to respond to a souless creature such as you.</span>"
 	var/list/possible_guardians = list("Assassin", "Chaos", "Charger", "Explosive", "Lightning", "Protector", "Ranged", "Standard", "Support", "Gravitokinetic")
 	var/random = TRUE
@@ -679,23 +679,23 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	default_raw_text = {"<b>A list of Holoparasite Types</b><br>
 
 <br>
-<b>Assassin</b>: Does medium damage and takes full damage, but can enter stealth, causing its next attack to do massive damage and ignore armor. However, it becomes briefly unable to recall after attacking from stealth.<br>
+<b>Assassin</b>: Deals medium damage and takes full damage, but can enter stealth, causing its next attack to do massive damage and ignore armor. However, it becomes briefly unable to recall after attacking from stealth.<br>
 <br>
 <b>Chaos</b>: Ignites enemies on touch and causes them to hallucinate all nearby people as the parasite. Automatically extinguishes the user if they catch on fire.<br>
 <br>
-<b>Charger</b>: Moves extremely fast, does medium damage on attack, and can charge at targets, damaging the first target hit and forcing them to drop any items they are holding.<br>
+<b>Charger</b>: Moves extremely fast, deals medium damage on attack, and can charge at targets, damaging the first target hit and forcing them to drop any items they are holding.<br>
 <br>
-<b>Dexterous</b>: Does low damage on attack, but is capable of holding items and storing a single item within it. It will drop items held in its hands when it recalls, but it will retain the stored item.<br>
+<b>Dexterous</b>: Deals low damage on attack, but is capable of holding items and storing a single item within it. It will drop items held in its hands when it recalls, but it will retain the stored item.<br>
 <br>
-<b>Explosive</b>: High damage resist and medium power attack that may explosively teleport targets. Can turn any object, including objects too large to pick up, into a bomb, dealing explosive damage to the next person to touch it. The object will return to normal after the trap is triggered or after a delay.<br>
+<b>Explosive</b>: High damage resistance and medium power attack that may explosively teleport targets. Can turn any object, including objects too large to pick up, into a bomb, dealing explosive damage to the next person to touch it. The object will return to normal after the trap is triggered or after a delay.<br>
 <br>
 <b>Lightning</b>: Attacks apply lightning chains to targets. Has a lightning chain to the user. Lightning chains shock everything near them, doing constant damage.<br>
 <br>
-<b>Protector</b>: Causes you to teleport to it when out of range, unlike other parasites. Has two modes; Combat, where it does and takes medium damage, and Protection, where it does and takes almost no damage but moves slightly slower.<br>
+<b>Protector</b>: Causes you to teleport to it when out of range, unlike other parasites. Has two modes: combat mode, which deals and takes medium damage; and protection mode, which deals and takes almost no damage while moving slightly slower.<br>
 <br>
-<b>Ranged</b>: Has two modes. Ranged; which fires a constant stream of weak, armor-ignoring projectiles. Scout; Cannot attack, but can move through walls and is quite hard to see. Can lay surveillance snares, which alert it when crossed, in either mode.<br>
+<b>Ranged</b>: Has two modes: ranged mode, which fires a constant stream of weak, armor-ignoring projectiles; and scout mode, which cannot attack but can move through walls and is quite hard to see. Can also lay surveillance snares, which alert it when crossed, in either mode.<br>
 <br>
-<b>Standard</b>: Devastating close combat attacks and high damage resist. Can smash through weak walls.<br>
+<b>Standard</b>: Devastating close combat attacks and high damage resistance. Can smash through weak walls.<br>
 <br>
 <b>Gravitokinetic</b>: Attacks will apply crushing gravity to the target. Can target the ground as well to slow targets advancing on you, but this will affect the user.<br>
 <br>
@@ -706,23 +706,23 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	default_raw_text = {"<b>A list of Guardian Types</b><br>
 
 <br>
-<b>Assassin</b>: Does medium damage and takes full damage, but can enter stealth, causing its next attack to do massive damage and ignore armor. However, it becomes briefly unable to recall after attacking from stealth.<br>
+<b>Assassin</b>: Deals medium damage and takes full damage, but can enter stealth, causing its next attack to do massive damage and ignore armor. However, it becomes briefly unable to recall after attacking from stealth.<br>
 <br>
 <b>Chaos</b>: Ignites enemies on touch and causes them to hallucinate all nearby people as the guardian. Automatically extinguishes the user if they catch on fire.<br>
 <br>
-<b>Charger</b>: Moves extremely fast, does medium damage on attack, and can charge at targets, damaging the first target hit and forcing them to drop any items they are holding.<br>
+<b>Charger</b>: Moves extremely fast, deals medium damage on attack, and can charge at targets, damaging the first target hit and forcing them to drop any items they are holding.<br>
 <br>
-<b>Dexterous</b>: Does low damage on attack, but is capable of holding items and storing a single item within it. It will drop items held in its hands when it recalls, but it will retain the stored item.<br>
+<b>Dexterous</b>: Deals low damage on attack, but is capable of holding items and storing a single item within it. It will drop items held in its hands when it recalls, but it will retain the stored item.<br>
 <br>
-<b>Explosive</b>: High damage resist and medium power attack that may explosively teleport targets. Can turn any object, including objects too large to pick up, into a bomb, dealing explosive damage to the next person to touch it. The object will return to normal after the trap is triggered or after a delay.<br>
+<b>Explosive</b>: High damage resistance and medium power attack that may explosively teleport targets. Can turn any object, including objects too large to pick up, into a bomb, dealing explosive damage to the next person to touch it. The object will return to normal after the trap is triggered or after a delay.<br>
 <br>
 <b>Lightning</b>: Attacks apply lightning chains to targets. Has a lightning chain to the user. Lightning chains shock everything near them, doing constant damage.<br>
 <br>
-<b>Protector</b>: Causes you to teleport to it when out of range, unlike other parasites. Has two modes; Combat, where it does and takes medium damage, and Protection, where it does and takes almost no damage but moves slightly slower.<br>
+<b>Protector</b>: Causes you to teleport to it when out of range, unlike other parasites. Has two modes: combat mode, which deals and takes medium damage; and protection mode, which deals and takes almost no damage while moving slightly slower.<br>
 <br>
-<b>Ranged</b>: Has two modes. Ranged; which fires a constant stream of weak, armor-ignoring projectiles. Scout; Cannot attack, but can move through walls and is quite hard to see. Can lay surveillance snares, which alert it when crossed, in either mode.<br>
+<b>Ranged</b>: Has two modes: ranged mode, which fires a constant stream of weak, armor-ignoring projectiles; and scout mode, which cannot attack, but can move through walls and is quite hard to see. Can lay surveillance snares, which alert it when crossed, in either mode.<br>
 <br>
-<b>Standard</b>: Devastating close combat attacks and high damage resist. Can smash through weak walls.<br>
+<b>Standard</b>: Devastating close combat attacks and high damage resistance. Can smash through weak walls.<br>
 <br>
 <b>Gravitokinetic</b>: Attacks will apply crushing gravity to the target. Can target the ground as well to slow targets advancing on you, but this will affect the user.<br>
 <br>
@@ -738,7 +738,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 
 /obj/item/guardiancreator/carp
 	name = "holocarp fishsticks"
-	desc = "Using the power of Carp'sie, you can catch a carp from byond the veil of Carpthulu, and bind it to your fleshy flesh form."
+	desc = "Using the power of Carp'sie, you can catch a carp from byond the veil of Carpthulu and bind it to your fleshy flesh form."
 	icon = 'icons/obj/food/food.dmi'
 	icon_state = "fishfingers"
 	theme = "carp"
@@ -754,7 +754,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 
 /obj/item/guardiancreator/miner
 	name = "dusty shard"
-	desc = "Seems to be a very old rock, may have originated from a strange meteor."
+	desc = "Seems to be a very old rock, which may have originated from a strange meteor."
 	icon = 'icons/obj/lavaland/artefacts.dmi'
 	icon_state = "dustyshard"
 	theme = "miner"
@@ -767,7 +767,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 /obj/item/guardiancreator/miner/choose
 	random = FALSE
 	name = "glimmering shard"
-	desc = "Seems to be a very old rock, may have originated from a strange meteor. <b>This one looks exceptionally pure.</b>"
+	desc = "Seems to be a very old rock, which may have originated from a strange meteor. <b>This one looks exceptionally pure.</b>"
 	possible_guardians = list("Assassin", "Chaos", "Charger", "Dextrous", "Explosive", "Lightning", "Protector", "Ranged", "Standard", "Support")
 	allowmultiple = TRUE//if you *somehow* get the extremely rare minerchoose guardian(25% chance to spawn, for an item in a table of around 30 options) while you already have a guardian, you can stack it. The ultimate gambling.
 

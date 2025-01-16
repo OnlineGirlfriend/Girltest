@@ -14,7 +14,7 @@
 	range = 5//tiny range
 	speed = 4//slow af
 	playstyle_string = "<span class='holoparasite'>As an <b>explosive</b> type, you have powerful but slow blasting punches, may explode targets for bonus damage on attack, and are capable of converting nearby items and objects into disguised bombs via alt click. However, you are slow, and your range is very low. Make it count!</span>"
-	magic_fluff_string = "<span class='holoparasite'>..And draw the Scientist, master of explosive death.</span>"
+	magic_fluff_string = "<span class='holoparasite'>...and draw the Scientist, master of explosive death.</span>"
 	tech_fluff_string = "<span class='holoparasite'>Boot sequence complete. Explosive modules active. Holoparasite swarm online.</span>"
 	carp_fluff_string = "<span class='holoparasite'>CARP CARP CARP! Caught one! It's an explosive carp! Boom goes the fishy.</span>"
 	miner_fluff_string = "<span class='holoparasite'>You encounter... Gibtonite, an explosive fighter.</span>"

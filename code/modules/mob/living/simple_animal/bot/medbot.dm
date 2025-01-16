@@ -11,7 +11,7 @@
 
 /mob/living/simple_animal/bot/medbot
 	name = "\improper Medibot"
-	desc = "A little medical robot. He looks somewhat underwhelmed."
+	desc = "A little medical robot. It looks somewhat underwhelmed."
 	icon = 'icons/mob/aibots.dmi'
 	icon_state = "medibot"
 	base_icon_state = "medibot"
@@ -71,7 +71,7 @@
 
 /mob/living/simple_animal/bot/medbot/mysterious
 	name = "\improper Mysterious Medibot"
-	desc = "International Medibot of mystery."
+	desc = "International Medibot of Mystery."
 	icon_state = "medibot_bezerk"
 	base_icon_state = "medibot_bezerk"
 	base_screen_state = "medibot"
@@ -79,7 +79,7 @@
 
 /mob/living/simple_animal/bot/medbot/rockplanet
 	name = "\improper Abandoned Medibot"
-	desc = "A little medical robot. They look like they have some sort of bloodlust in their eyes."
+	desc = "A little medical robot. It looks like it has some sort of bloodlust in its eyes."
 	icon_state = "medibot_evil"
 	base_icon_state = "medibot_evil"
 	base_screen_state = "medibot_evil"
