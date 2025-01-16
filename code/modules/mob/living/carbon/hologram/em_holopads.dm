@@ -42,7 +42,7 @@
 		return
 	if(QDELETED(src) || QDELETED(user))
 		return
-	var/ghost_role = alert("Become a hologram? (Warning, You can no longer be revived!)", "Become Hologram", "Yes", "No")
+	var/ghost_role = alert("Become a hologram? (Warning: You can no longer be revived!)", "Become Hologram", "Yes", "No")
 	if(ghost_role == "No" || !loc || !istype(user))
 		return
 	if(!em)

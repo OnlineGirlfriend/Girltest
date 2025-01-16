@@ -130,7 +130,7 @@
 				return
 		updatehealth()
 		visible_message("<span class='danger'>[M.name] hits [src]!</span>", \
-						"<span class='userdanger'>[M.name] hits you!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, M)
+						"<span class='userdanger'>[M.name] hits you!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, M)
 		to_chat(M, "<span class='danger'>You hit [src]!</span>")
 		log_combat(M.occupant, src, "attacked", M, "(INTENT: [uppertext(M.occupant.a_intent)]) (DAMTYPE: [uppertext(M.damtype)])")
 	else

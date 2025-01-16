@@ -1365,7 +1365,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	if(prob(20))
 		M.adjustStaminaLoss(10)
 		M.drop_all_held_items()
-		to_chat(M, "<span class='notice'>You cant feel your hands!</span>")
+		to_chat(M, "<span class='notice'>You can't feel your hands!</span>")
 	if(current_cycle > 5)
 		if(prob(20))
 			var/t = pickt()

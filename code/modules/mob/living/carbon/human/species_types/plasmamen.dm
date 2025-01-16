@@ -21,7 +21,7 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC
 	outfit_important_for_life = /datum/outfit/plasmaman
 	species_language_holder = /datum/language_holder/skeleton
-	loreblurb = "Technically a disability rather than a species, Phorids (known far more commonly as plasmamen) are a loose grouping of people fallen victim to anomalous plasma-related effects that convert tough biological matter into inorganic, biology-mimicking plasma structures. Phorids often live their lives dependent on larger organizations due to their oxygen-incompatible physiology."
+	loreblurb = "Technically a disability rather than a species, Phorids (known far more commonly as plasmamen) are a loose grouping of people who have fallen victim to anomalous plasma-related effects that convert tough biological matter into inorganic, biology-mimicking plasma structures. Phorids often live their lives dependent on larger organizations due to their oxygen-incompatible physiology."
 
 	species_chest = /obj/item/bodypart/chest/plasmaman
 	species_head = /obj/item/bodypart/head/plasmaman
@@ -212,7 +212,7 @@
 		if(prob(20))
 			switch(rand(1, 3))
 				if(1)
-					H.say(pick("oof.", "ouch.", "my bones.", "oof ouch.", "oof ouch my bones."), forced = /datum/reagent/toxin/bonehurtingjuice)
+					H.say(pick("Oof.", "Ouch.", "My bones.", "Oof ouch.", "Oof ouch my bones."), forced = /datum/reagent/toxin/bonehurtingjuice)
 				if(2)
 					H.manual_emote(pick("oofs silently.", "looks like their bones hurt.", "grimaces, as though their bones hurt."))
 				if(3)

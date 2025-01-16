@@ -26,13 +26,13 @@
 	to_chat(who, "<b>Obey these laws:</b>")
 	laws.show_laws(who)
 	if (shell) //AI shell
-		to_chat(who, "<b>Remember, you are an AI remotely controlling your shell, other AIs can be ignored.</b>")
+		to_chat(who, "<b>Remember, you are an AI remotely controlling your shell; other AIs can be ignored.</b>")
 	else if (connected_ai)
-		to_chat(who, "<b>Remember, [connected_ai.name] is your master, other AIs can be ignored.</b>")
+		to_chat(who, "<b>Remember, [connected_ai.name] is your master; other AIs can be ignored.</b>")
 	else if (emagged)
 		to_chat(who, "<b>Remember, you are not required to listen to the AI.</b>")
 	else
-		to_chat(who, "<b>Remember, you are not bound to any AI, you are not required to listen to them.</b>")
+		to_chat(who, "<b>Remember, you are not bound to any AI; you are not required to listen to them.</b>")
 
 
 /mob/living/silicon/robot/proc/lawsync()

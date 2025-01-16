@@ -292,7 +292,7 @@
 				fluff = "atomic [fluff]"
 
 		D.visible_message("<span class='danger'>[A] [fluff] [D]!</span>", \
-						"<span class='userdanger'>You're [fluff]ed by [A]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
+						"<span class='userdanger'>You're [fluff]ed by [A]!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
 		to_chat(A, "<span class='danger'>You [fluff] [D]!</span>")
 		playsound(A.loc, "swing_hit", 50, TRUE)
 		if (!D.stat)
@@ -337,7 +337,7 @@
 		addtimer(CALLBACK(src, PROC_REF(CheckStrikeTurf), A, T), 4)
 
 		D.visible_message("<span class='danger'>[A] headbutts [D]!</span>", \
-						"<span class='userdanger'>You're headbutted by [A]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
+						"<span class='userdanger'>You're headbutted by [A]!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
 		to_chat(A, "<span class='danger'>You headbutt [D]!</span>")
 		D.adjustBruteLoss(rand(10,20))
 		playsound(A.loc, "swing_hit", 50, TRUE)
@@ -352,7 +352,7 @@
 	A.setDir(turn(A.dir, 90))
 
 	D.visible_message("<span class='danger'>[A] roundhouse-kicks [D]!</span>", \
-					"<span class='userdanger'>You're roundhouse-kicked by [A]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
+					"<span class='userdanger'>You're roundhouse-kicked by [A]!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, A)
 	to_chat(A, "<span class='danger'>You roundhouse-kick [D]!</span>")
 	playsound(A.loc, "swing_hit", 50, TRUE)
 	D.adjustBruteLoss(rand(10,20))
@@ -418,7 +418,7 @@
 		A.forceMove(D.loc)
 
 		D.visible_message("<span class='danger'>[A] leg-drops [D]!</span>", \
-						"<span class='userdanger'>You're leg-dropped by [A]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", null, A)
+						"<span class='userdanger'>You're leg-dropped by [A]!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", null, A)
 		to_chat(A, "<span class='danger'>You leg-drop [D]!</span>")
 		playsound(A.loc, "swing_hit", 50, TRUE)
 		A.emote("scream")

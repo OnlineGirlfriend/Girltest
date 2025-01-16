@@ -186,7 +186,7 @@
 			mind.transfer_to(mmi.brainmob)
 			mmi.update_appearance()
 		else
-			to_chat(src, "<span class='boldannounce'>Oops! Something went very wrong, your MMI was unable to receive your mind. You have been ghosted. Please make a bug report so we can fix this bug.</span>")
+			to_chat(src, "<span class='boldannounce'>Oops! Something went very wrong. Your MMI was unable to receive your mind. You have been ghosted. Please make a bug report so we can fix this bug.</span>")
 			ghostize()
 			stack_trace("Borg MMI lacked a brainmob")
 		mmi = null
@@ -679,7 +679,7 @@
 	scrambledcodes = TRUE // These are rogue borgs.
 	ionpulse = TRUE
 	var/playstyle_string = "<span class='big bold'>You are a Syndicate assault cyborg!</span><br>\
-							<b>You are armed with powerful offensive tools to aid you in your mission: help the operatives secure the nuclear authentication disk. \
+							<b>You are armed with powerful offensive tools to aid you in your mission: Help the operatives secure the nuclear authentication disk. \
 							Your cyborg LMG will slowly produce ammunition from your power supply, and your operative pinpointer will find and locate fellow nuclear operatives. \
 							<i>Help the operatives secure the disk at all costs!</i></b>"
 	set_module = /obj/item/robot_module/syndicate
@@ -709,8 +709,8 @@
 	lawupdate = FALSE
 	scrambledcodes = TRUE // These are rogue borgs.
 	var/playstyle_string = "<span class='big bold'>You are a Prototype Syndicate Brigador!</span><br>\
-							<b>Your line was intended to be the future of cybernetic combat- though it was not to be. In the twilight years of the war, many a shattered dream was lost among the noise and fire. \
-							You possess an array of formidable tools, optimized for infiltration and powerful breaching strikes. \
+							<b>Your line was intended to be the future of cybernetic combat - though it was not to be. In the twilight years of the war, many a shattered dream was lost among the noise and fire. \
+							You possess an array of formidable tools optimized for infiltration and powerful breaching strikes. \
 							The malfunctioning laws your system is loaded with give you a modicum of full freedom of action, though some legacy of your original purpose remains. \
 							Though your memories of whatever came before are foggy, you know one thing: Without your reactivator, you would have remained dead forever. Perhaps you can be of use to them?</b>"
 	set_module = /obj/item/robot_module/syndieproto

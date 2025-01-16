@@ -26,7 +26,7 @@
 		. += "<span class='warning'>It's coated in something flammable.</span>"
 
 	if(opened)
-		. += "<span class='warning'>Its cover is open and the power cell is [cell ? "installed" : "missing"].</span>"
+		. += "<span class='warning'>Its cover is open, and the power cell is [cell ? "installed" : "missing"].</span>"
 	else
 		. += "Its cover is closed[locked ? "" : ", and looks unlocked"]."
 

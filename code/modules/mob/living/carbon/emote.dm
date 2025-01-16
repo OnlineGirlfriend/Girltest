@@ -189,7 +189,7 @@
 
 /obj/item/noogie
 	name = "noogie"
-	desc = "Get someone in an aggressive grab then use this on them to ruin their day."
+	desc = "Get someone in an aggressive grab, then use this on them to ruin their day."
 	icon_state = "nothing"
 	force = 0
 	throwforce = 0
@@ -320,7 +320,7 @@
 
 	if(!(locate(/mob/living/carbon) in orange(1, offerer)))
 		visible_message(span_danger("[offerer] raises [offerer.p_their()] arm, looking around for a high-five, but there's no one around!"), \
-			span_warning("You post up, looking for a high-five, but finding no one within range!"), null, 2)
+			span_warning("You post up, looking for a high-five but finding no one within range!"), null, 2)
 		return
 
 	offerer.visible_message(span_notice("[offerer] raises [offerer.p_their()] arm, looking for a high-five!"), \
@@ -348,13 +348,13 @@
 			slappers_giver++
 
 	if(slappers_giver >= 2) // we only check this if it's already established the taker has 2+ hands free
-		offerer.visible_message(span_notice("[taker] enthusiastically high-tens [offerer]!"), span_nicegreen("Wow! You're high-tenned [taker]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), ignored_mobs=taker)
+		offerer.visible_message(span_notice("[taker] enthusiastically high-tens [offerer]!"), span_nicegreen("Wow! You're high-tenned [taker]!"), span_hear("You hear the sickening sound of flesh hitting flesh!"), ignored_mobs=taker)
 		to_chat(taker, span_nicegreen("You give high-tenning [offerer] your all!"))
 		playsound(offerer, 'sound/weapons/slap.ogg', 100, TRUE, 1)
 		SEND_SIGNAL(offerer, COMSIG_ADD_MOOD_EVENT, "high_five", /datum/mood_event/high_ten)
 		SEND_SIGNAL(taker, COMSIG_ADD_MOOD_EVENT, "high_five", /datum/mood_event/high_ten)
 	else
-		offerer.visible_message(span_notice("[taker] high-fives [offerer]!"), span_nicegreen("All right! You're high-fived by [taker]!"), span_hear("You hear a sickening sound of flesh hitting flesh!"), ignored_mobs=taker)
+		offerer.visible_message(span_notice("[taker] high-fives [offerer]!"), span_nicegreen("All right! You're high-fived by [taker]!"), span_hear("You hear the sickening sound of flesh hitting flesh!"), ignored_mobs=taker)
 		to_chat(taker, span_nicegreen("You high-five [offerer]!"))
 		playsound(offerer, 'sound/weapons/slap.ogg', 50, TRUE, -1)
 		SEND_SIGNAL(offerer, COMSIG_ADD_MOOD_EVENT, "high_five", /datum/mood_event/high_five)
@@ -596,7 +596,7 @@
 
 	if(HAS_TRAIT(owner, TRAIT_HULK))
 		owner.visible_message("<span class='danger'>[owner] bops [sucker] with [owner.p_their()] [src.name] much harder than intended, sending [sucker.p_them()] flying!</span>", \
-			"<span class='danger'>You bop [sucker] with your [src.name] much harder than intended, sending [sucker.p_them()] flying!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", ignored_mobs=list(sucker))
+			"<span class='danger'>You bop [sucker] with your [src.name] much harder than intended, sending [sucker.p_them()] flying!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", ignored_mobs=list(sucker))
 		to_chat(sucker, "<span class='userdanger'>[owner] bops you incredibly hard with [owner.p_their()] [src.name], sending you flying!</span>")
 		sucker.apply_damage(50, STAMINA)
 		sucker.Knockdown(50)

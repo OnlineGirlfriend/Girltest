@@ -47,7 +47,7 @@
 	var/current_color
 	var/EMPeffect = FALSE
 	var/static/unhealthy_color = rgb(237, 164, 149)
-	loreblurb = "Elzuosa are an uncommon and unusual species best described as crystalline, electrically-powered plantpeople. They hail from the warm planet Kalixcis, where they evolved alongside the Sarathi. Kalixcian culture places no importance on blood-bonds, and those from it tend to consider their family anyone they are sufficiently close to, and choose their own names."
+	loreblurb = "Elzuosa are an uncommon and unusual species best described as crystalline, electrically-powered plantpeople. They hail from the warm planet Kalixcis, where they evolved alongside the Sarathi. Kalixcian culture places no importance on blood-bonds, and those from it tend to consider their family anyone they are sufficiently close to, choosing their own names."
 	var/drain_time = 0 //used to keep ethereals from spam draining power sources
 	var/obj/effect/dummy/lighting_obj/ethereal_light
 	var/datum/action/innate/root/rooting
@@ -110,7 +110,7 @@
 		to_chat(_human,span_warning("Your charge is full!"))
 		return
 	_elzu.drain_time = world.time + ROOT_TIME
-	_human.visible_message(span_notice("[_human] is digging into the ground"),span_warning("You start to dig yourself into the ground to root. You won't won't be able to move once you start the process."),span_notice("You hear digging."))
+	_human.visible_message(span_notice("[_human] is digging into the ground"),span_warning("You start to dig yourself into the ground to root. You won't be able to move once you start the process."),span_notice("You hear digging."))
 	if(!do_after(_human,DIG_TIME, target = _human))
 		to_chat(_human,span_warning("You were interupted!"))
 		return
@@ -142,7 +142,7 @@
 /datum/species/elzuose/proc/uproot(mob/living/carbon/human/_human)
 	//You got moved and uprooted, time to suffer the consequences.
 	if(_human.has_status_effect(/datum/status_effect/rooted))
-		_human.visible_message(span_warning("[_human] is forcefully uprooted. That looked like it hurt."),span_warning("You're forcefully unrooted! Ouch!"),span_warning("You hear someone scream in pain."))
+		_human.visible_message(span_warning("[_human] is forcefully uprooted. That looked like it hurt."),span_warning("You're forcefully uprooted! Ouch!"),span_warning("You hear someone scream in pain."))
 		_human.apply_damage(8,BRUTE,BODY_ZONE_CHEST)
 		_human.apply_damage(8,BRUTE,BODY_ZONE_L_LEG)
 		_human.apply_damage(8,BRUTE,BODY_ZONE_R_LEG)

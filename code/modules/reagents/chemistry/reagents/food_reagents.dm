@@ -823,7 +823,7 @@
 
 /datum/reagent/consumable/cheese_spread
 	name = "Cheese Spread"
-	description = "I cant believe its not cheese!"
+	description = "I can't believe it's not cheese!"
 	color = "#FBDB65"
 	nutriment_factor = 2 * REAGENTS_METABOLISM
 	taste_mult = 2

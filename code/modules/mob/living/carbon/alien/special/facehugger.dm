@@ -109,7 +109,7 @@
 
 	//Check for headlessness
 	if(!carbon_target.get_bodypart(BODY_ZONE_HEAD))
-		visible_message("<span class='danger'>[src] smashes against [target], but can't latch on!</span>", "<span class='userdanger'>[src] smashes against you, but cant latch on!</span>")
+		visible_message("<span class='danger'>[src] smashes against [target], but it can't latch on!</span>", "<span class='userdanger'>[src] smashes against you, but it can't latch on!</span>")
 		if(!sterile)
 			carbon_target.adjustBruteLoss(melee_damage_upper)
 		return FALSE
@@ -130,7 +130,7 @@
 		if(carbon_target.dropItemToGround(mask))
 			carbon_target.visible_message("<span class='danger'>[src] tears [mask] off of [target]'s face!</span>", "<span class='userdanger'>[src] tears [mask] off of your face!</span>")
 		else
-			carbon_target.visible_message("<span class='danger'>[src] tries to tear [mask] off of [target]'s face, but fails!</span>", "<span class='userdanger'>[src] trys to tear [mask] off of your face, but fails!</span>")
+			carbon_target.visible_message("<span class='danger'>[src] tries to tear [mask] off of [target]'s face, but it fails!</span>", "<span class='userdanger'>[src] trys to tear [mask] off of your face, but it fails!</span>")
 			COOLDOWN_START(src, coupling_cooldown, couple_retry_time)
 			return FALSE
 

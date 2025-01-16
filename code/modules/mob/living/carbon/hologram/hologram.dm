@@ -150,7 +150,7 @@
 			flavortext = "Serve [user]."
 		to_chat(user, "<span class='notice'>You [density ? "poke [src] with your card" : "slide your card through the air where [src] is"], and set their laws to [str].</span>")
 	src.visible_message("<span class='danger'>[src] starts flickering!</span>",
-						"<span class='userdanger'>You start flickering, and detect an unauthorized law change!</span>",
+						"<span class='userdanger'>You start flickering, and you detect an unauthorized law change!</span>",
 						"<span class='danger'>You hear a strange buzzing noise!</span>")
 	possible_a_intents |= list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, INTENT_HARM)
 	show_laws()

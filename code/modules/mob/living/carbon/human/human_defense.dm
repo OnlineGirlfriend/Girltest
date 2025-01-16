@@ -195,7 +195,7 @@
 		return
 	playsound(loc, user.dna.species.attack_sound, 25, TRUE, -1)
 	visible_message("<span class='danger'>[user] [hulk_verb]ed [src]!</span>", \
-					"<span class='userdanger'>[user] [hulk_verb]ed [src]!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", null, user)
+					"<span class='userdanger'>[user] [hulk_verb]ed [src]!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", null, user)
 	to_chat(user, "<span class='danger'>You [hulk_verb] [src]!</span>")
 	adjustBruteLoss(15)
 
@@ -277,7 +277,7 @@
 
 		playsound(loc, 'sound/weapons/slice.ogg', 25, TRUE, -1)
 		visible_message("<span class='danger'>[M] slashes at [src]!</span>", \
-						"<span class='userdanger'>[M] slashes at you!</span>", "<span class='hear'>You hear a sickening sound of a slice!</span>", null, M)
+						"<span class='userdanger'>[M] slashes at you!</span>", "<span class='hear'>You hear the sickening sound of a slice!</span>", null, M)
 		to_chat(M, "<span class='danger'>You slash at [src]!</span>")
 		log_combat(M, src, "attacked")
 		if(!dismembering_strike(M, M.zone_selected)) //Dismemberment successful
@@ -396,7 +396,7 @@
 			updatehealth()
 
 		visible_message("<span class='danger'>[M.name] hits [src]!</span>", \
-						"<span class='userdanger'>[M.name] hits you!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, M)
+						"<span class='userdanger'>[M.name] hits you!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, M)
 		to_chat(M, "<span class='danger'>You hit [src]!</span>")
 		log_combat(M.occupant, src, "attacked", M, "(INTENT: [uppertext(M.occupant.a_intent)]) (DAMTYPE: [uppertext(M.damtype)])")
 

@@ -92,12 +92,12 @@ Doesn't work on other aliens/AI.*/
 	if(!M)
 		return 0
 	if(M.anti_magic_check(FALSE, FALSE, TRUE, 0))
-		to_chat(user, "<span class='noticealien'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that streches beyond visible range. It seems you've been foiled.</span>")
+		to_chat(user, "<span class='noticealien'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that stretches beyond visible range. It seems you've been foiled.</span>")
 		return FALSE
 	var/msg = sanitize(input("Message:", "Alien Whisper") as text|null)
 	if(msg)
 		if(M.anti_magic_check(FALSE, FALSE, TRUE, 0))
-			to_chat(user, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that streches beyond visible range. It seems you've been foiled.</span>")
+			to_chat(user, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that stretches beyond visible range. It seems you've been foiled.</span>")
 			return
 		log_directed_talk(user, M, msg, LOG_SAY, tag="alien whisper")
 		to_chat(M, "<span class='noticealien'>You hear a strange, alien voice in your head...</span>[msg]")

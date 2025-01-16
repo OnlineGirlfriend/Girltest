@@ -9,7 +9,7 @@
 		hitverb = "slam"
 	playsound(loc, "punch", 25, TRUE, -1)
 	visible_message("<span class='danger'>[user] [hitverb]s [src]!</span>", \
-					"<span class='userdanger'>[user] [hitverb]s you!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, user)
+					"<span class='userdanger'>[user] [hitverb]s you!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, user)
 	to_chat(user, "<span class='danger'>You [hitverb] [src]!</span>")
 
 /mob/living/carbon/alien/humanoid/attack_hand(mob/living/carbon/human/M)
@@ -20,12 +20,12 @@
 				if (prob(90))
 					playsound(loc, "punch", 25, TRUE, -1)
 					visible_message("<span class='danger'>[M] punches [src]!</span>", \
-									"<span class='userdanger'>[M] punches you!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, M)
+									"<span class='userdanger'>[M] punches you!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", COMBAT_MESSAGE_RANGE, M)
 					to_chat(M, "<span class='danger'>You punch [src]!</span>")
 					if ((stat != DEAD) && (damage > 9 || prob(5)))//Regular humans have a very small chance of knocking an alien down.
 						Unconscious(40)
 						visible_message("<span class='danger'>[M] knocks [src] down!</span>", \
-										"<span class='userdanger'>[M] knocks you down!</span>", "<span class='hear'>You hear a sickening sound of flesh hitting flesh!</span>", null, M)
+										"<span class='userdanger'>[M] knocks you down!</span>", "<span class='hear'>You hear the sickening sound of flesh hitting flesh!</span>", null, M)
 						to_chat(M, "<span class='danger'>You knock [src] down!</span>")
 					var/obj/item/bodypart/affecting = get_bodypart(ran_zone(M.zone_selected))
 					apply_damage(damage, BRUTE, affecting)

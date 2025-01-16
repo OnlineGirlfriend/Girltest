@@ -24,7 +24,7 @@
 	inherent_factions = list("slime")
 	species_language_holder = /datum/language_holder/jelly
 	ass_image = 'icons/ass/assslime.png'
-	loreblurb = "Slime, itself a slime-mold like organism of unknown origin, is capable of both mutating existing biological organisms into slime, retaining most of the structure and mind of the original, and forming quick-learning gestalts capable of mimicking existing beings, including animals and humanoids. The blood of slimepeople is toxic, and the properties of poisonous and poison-healing substances are inverted for them."
+	loreblurb = "Slime, itself a slime-mold like organism of unknown origin, is capable of both mutating existing biological organisms into slime - retaining most of the structure and mind of the original - and forming quick-learning gestalts capable of mimicking existing beings, including animals and humanoids. The blood of slimepeople is toxic, and the properties of poisonous and poison-healing substances are inverted for them."
 
 	species_chest = /obj/item/bodypart/chest/jelly
 	species_head = /obj/item/bodypart/head/jelly
@@ -828,12 +828,12 @@
 	if(!M)
 		return
 	if(M.anti_magic_check(FALSE, FALSE, TRUE, 0))
-		to_chat(H, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that streches beyond visible range. It seems you've been foiled.</span>")
+		to_chat(H, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that stretches beyond visible range. It seems you've been foiled.</span>")
 		return
 	var/msg = sanitize(input("Message:", "Telepathy") as text|null)
 	if(msg)
 		if(M.anti_magic_check(FALSE, FALSE, TRUE, 0))
-			to_chat(H, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that streches beyond visible range. It seems you've been foiled.</span>")
+			to_chat(H, "<span class='notice'>As you try to communicate with [M], you're suddenly stopped by a vision of a massive tinfoil wall that stretches beyond visible range. It seems you've been foiled.</span>")
 			return
 		log_directed_talk(H, M, msg, LOG_SAY, "slime telepathy")
 		to_chat(M, "<span class='notice'>You hear an alien voice in your head... </span><font color=#008CA2>[msg]</font>")

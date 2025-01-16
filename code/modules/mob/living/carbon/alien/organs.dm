@@ -133,7 +133,7 @@
 		owner.Stun(200) //Actually just slows them down a bit.
 
 	else if(ishuman(owner)) //Humans, being more fragile, are more overwhelmed by the mental backlash.
-		to_chat(owner, "<span class='danger'>You feel a splitting pain in your head, and are struck with a wave of nausea. You cannot hear the hivemind anymore!</span>")
+		to_chat(owner, "<span class='danger'>You feel a splitting pain in your head and are struck with a wave of nausea. You cannot hear the hivemind anymore!</span>")
 		owner.emote("scream")
 		owner.Paralyze(100)
 

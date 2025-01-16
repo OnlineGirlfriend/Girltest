@@ -103,7 +103,7 @@
 		to_chat(user, "<span class='warning'>[src] is sealed shut!</span>")
 		return 0
 	else
-		to_chat(user, "<span class='warning'>[src] cant be eaten like that!</span>")
+		to_chat(user, "<span class='warning'>[src] can't be eaten like that!</span>")
 		return 0
 
 /obj/item/reagent_containers/food/snacks/ration/condiment/afterattack(obj/target, mob/user , proximity)
@@ -119,7 +119,7 @@
 			to_chat(user, "<span class='warning'>[target] is too full!</span>" )
 			return
 		else
-			to_chat(user, "<span class='notice'>You tear open [src] above [target] and the condiments drip onto it.</span>")
+			to_chat(user, "<span class='notice'>You tear open [src] above [target], and the condiments drip onto it.</span>")
 			src.reagents.trans_to(target, amount_per_transfer_from_this, transfered_by = user)
 			qdel(src)
 

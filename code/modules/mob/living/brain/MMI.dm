@@ -287,7 +287,7 @@
 	radio.on = FALSE
 
 /obj/item/mmi/ipc //for use in IPC with human brains
-	desc = "An MMI designed specifically to be compatible with IPCs. Unfortunately leaving the brain unable to be removed without killing it."
+	desc = "An MMI designed specifically to be compatible with IPCs, unfortunately leaving the brain unable to be removed without killing it."
 
 /obj/item/mmi/ipc/attackby(obj/item/O, mob/user)
 	return

@@ -238,7 +238,7 @@
 		return
 
 	if(!offerer.temporarilyRemoveItemFromInventory(I))
-		visible_message(span_notice("[offerer] tries to hand over [I] but it's stuck to them...."))
+		visible_message(span_notice("[offerer] tries to hand over [I], but it's stuck to them...."))
 		return
 
 	visible_message(span_notice("[src] takes [I] from [offerer]"), \

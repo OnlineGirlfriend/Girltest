@@ -158,7 +158,7 @@ GLOBAL_LIST_INIT(spider_last, world.file2list("strings/names/spider_last.txt"))
 		to_chat(H, "<i>You weave a web on the ground with your spinneret!</i>")
 
 	else
-		to_chat(H, "<span class='warning'>You're too hungry to spin web right now, eat something first!</span>")
+		to_chat(H, "<span class='warning'>You're too hungry to spin webs right now. Eat something first!</span>")
 		return
 /*
 	This took me far too long to figure out so I'm gonna document it here.
@@ -184,7 +184,7 @@ GLOBAL_LIST_INIT(spider_last, world.file2list("strings/names/spider_last.txt"))
 		RegisterSignal(H, list(COMSIG_MOB_MIDDLECLICKON, COMSIG_MOB_ALTCLICKON), PROC_REF(cocoonAtom))
 		return
 	else
-		to_chat(H, "<span class='warning'>You're too hungry to spin web right now, eat something first!</span>")
+		to_chat(H, "<span class='warning'>You're too hungry to spin webs right now. Eat something first!</span>")
 		return
 
 /datum/action/innate/spin_cocoon/proc/cocoonAtom(mob/living/carbon/human/species/spider/H, atom/movable/A)

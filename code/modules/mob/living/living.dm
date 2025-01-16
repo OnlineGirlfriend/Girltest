@@ -481,10 +481,10 @@
 				to_chat(src, "<span class='notice'>You will now try to stay lying down on the floor.</span>")
 		else if(buckled && buckled.buckle_lying != NO_BUCKLE_LYING)
 			if(!silent)
-				to_chat(src, "<span class='notice'>You will now lay down as soon as you are able to.</span>")
+				to_chat(src, "<span class='notice'>You will now lie down as soon as you are able to.</span>")
 		else
 			if(!silent)
-				to_chat(src, "<span class='notice'>You lay down.</span>")
+				to_chat(src, "<span class='notice'>You lie down.</span>")
 			set_lying_down()
 	else
 		if(body_position == STANDING_UP)

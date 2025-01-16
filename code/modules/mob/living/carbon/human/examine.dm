@@ -141,7 +141,7 @@
 				. += "<span class='warning'>[t_His] soul seems to have been ripped out of [t_his] body. Revival is impossible.</span>"
 			. += ""
 			if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(FALSE, TRUE))
-				. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_he] won't be coming back...</span>"
+				. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life, and [t_he] won't be coming back...</span>"
 			else
 				. += "<span class='deadsay'>[t_He] [t_is] limp and unresponsive; there are no signs of life...</span>"
 
@@ -287,7 +287,7 @@
 				if(21.01 to 41) //.01s are used in case drunkenness ends up to be a small decimal
 					msg += "[t_He] [t_is] flushed.\n"
 				if(41.01 to 51)
-					msg += "[t_He] [t_is] quite flushed and [t_his] breath smells of alcohol.\n"
+					msg += "[t_He] [t_is] quite flushed, and [t_his] breath smells of alcohol.\n"
 				if(51.01 to 61)
 					msg += "[t_He] [t_is] very flushed and [t_his] movements jerky, with breath reeking of alcohol.\n"
 				if(61.01 to 91)

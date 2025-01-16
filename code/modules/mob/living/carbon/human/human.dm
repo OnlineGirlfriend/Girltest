@@ -338,7 +338,7 @@
 						if(burndamage)
 							to_chat(usr, "<span class='[span]'>[BP] appears to have [status]</span>")
 				if(getOxyLoss())
-					to_chat(usr, "<span class='danger'>Patient has signs of suffocation, emergency treatment may be required!</span>")
+					to_chat(usr, "<span class='danger'>Patient has signs of suffocation. Emergency treatment may be required!</span>")
 				if(getToxLoss() > 20)
 					to_chat(usr, "<span class='danger'>Gathered data is inconsistent with the analysis, possible cause: poisoning.</span>")
 			if(!H.wear_id) //You require access from here on out.
