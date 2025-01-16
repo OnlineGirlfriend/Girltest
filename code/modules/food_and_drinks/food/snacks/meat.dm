@@ -185,7 +185,6 @@
 	desc = "A slice from a huge tomato."
 	icon_state = "tomatomeat"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
-	filling_color = "#FF0000"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/killertomato
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/killertomato
 	tastes = list("tomato" = 1)
@@ -255,6 +254,35 @@
 	desc = "Much meatier than monkey meat."
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/cooking_oil = 5) //Plenty of fat!
 
+/obj/item/reagent_containers/food/snacks/meat/slab/chicken
+	name = "chicken meat"
+	icon_state = "birdmeat"
+	desc = "A slab of raw chicken. Remember to wash your hands!"
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/chicken
+	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/chicken
+	tastes = list("chicken" = 1)
+	filling_color = "#6B8E23"
+
+	/obj/item/reagent_containers/food/snacks/meat/slab/gondola
+	name = "gondola meat"
+	desc = "According to legends of old, consuming raw gondola flesh grants one inner peace."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/tranquility = 5, /datum/reagent/consumable/cooking_oil = 3)
+	tastes = list("meat" = 4, "tranquility" = 1)
+	filling_color = "#9A6750"
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/gondola
+	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola
+	foodtype = RAW | MEAT
+
+/obj/item/reagent_containers/food/snacks/meat/slab/penguin
+	name = "penguin meat"
+	icon_state = "birdmeat"
+	desc = "A slab of penguin meat."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/cooking_oil = 3)
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/penguin
+	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/penguin
+	filling_color = "#B22222"
+	tastes = list("beef" = 1, "cod fish" = 1)
+
 /obj/item/reagent_containers/food/snacks/meat/rawbacon
 	name = "raw piece of bacon"
 	desc = "A raw piece of bacon."
@@ -276,26 +304,6 @@
 	tastes = list("bacon" = 1)
 	foodtype = MEAT | BREAKFAST
 
-/obj/item/reagent_containers/food/snacks/meat/slab/gondola
-	name = "gondola meat"
-	desc = "According to legends of old, consuming raw gondola flesh grants one inner peace."
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/tranquility = 5, /datum/reagent/consumable/cooking_oil = 3)
-	tastes = list("meat" = 4, "tranquility" = 1)
-	filling_color = "#9A6750"
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/gondola
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola
-	foodtype = RAW | MEAT
-
-/obj/item/reagent_containers/food/snacks/meat/slab/penguin
-	name = "penguin meat"
-	icon_state = "birdmeat"
-	desc = "A slab of penguin meat."
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/cooking_oil = 3)
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/penguin
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/penguin
-	filling_color = "#B22222"
-	tastes = list("beef" = 1, "cod fish" = 1)
-
 /obj/item/reagent_containers/food/snacks/meat/rawcrab
 	name = "raw crab meat"
 	desc = "A pile of raw crab meat."
@@ -316,14 +324,6 @@
 	filling_color = "#DFB73A"
 	tastes = list("crab" = 1)
 	foodtype = MEAT
-
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken
-	name = "chicken meat"
-	icon_state = "birdmeat"
-	desc = "A slab of raw chicken. Remember to wash your hands!"
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/chicken
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/chicken
-	tastes = list("chicken" = 1)
 
 ////////////////////////////////////// MEAT STEAKS ///////////////////////////////////////////////////////////
 
@@ -449,31 +449,37 @@
 	name = "raw bear cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/bear
 	tastes = list("meat" = 1, "salmon" = 1)
+	filling_color = "#FFB6C1"
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
 	name = "raw xeno cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/xeno
 	tastes = list("meat" = 1, "acid" = 1)
+	filling_color = "#32CD32"
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/spider
 	name = "raw spider cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/spider
 	tastes = list("cobwebs" = 1)
+	filling_color = "#7CFC00"
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola
 	name = "raw gondola cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/gondola
 	tastes = list("meat" = 1, "tranquility" = 1)
+	filling_color = "#9A6750"
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/penguin
 	name = "raw penguin cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/penguin
 	tastes = list("beef" = 1, "cod fish" = 1)
+	filling_color = "#B22222"
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/chicken
 	name = "raw chicken cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/chicken
 	tastes = list("chicken" = 1)
+	filling_color = "#6B8E23"
 
 //Cooked cutlets
 

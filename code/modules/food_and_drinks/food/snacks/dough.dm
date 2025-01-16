@@ -10,6 +10,7 @@
 	cooked_type = /obj/item/food/bread/plain
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6)
 	w_class = WEIGHT_CLASS_NORMAL
+	filling_color = "#EFD9C2"
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
@@ -38,6 +39,7 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/pizzabread
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6)
 	w_class = WEIGHT_CLASS_NORMAL
+	filling_color = "#EFD9C2"
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
@@ -49,6 +51,7 @@
 	custom_food_type = /obj/item/reagent_containers/food/snacks/customizable/pizza
 	list_reagents = list(/datum/reagent/consumable/nutriment = 7)
 	w_class = WEIGHT_CLASS_NORMAL
+	filling_color = "#CD853F"
 	tastes = list("bread" = 1)
 	foodtype = GRAIN
 
@@ -61,7 +64,7 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/bait/doughball
 	slices_num = 5
 	cooked_type = /obj/item/reagent_containers/food/snacks/bun
-	filling_color = "#CD853F"
+	filling_color = "#EFD9C2"
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
@@ -85,6 +88,7 @@
 	cooked_type = /obj/item/food/cake/plain
 	list_reagents = list(/datum/reagent/consumable/nutriment = 9)
 	w_class = WEIGHT_CLASS_NORMAL
+	filling_color = "#EFD9C2"
 	tastes = list("batter" = 1)
 	foodtype = GRAIN | DAIRY
 
@@ -110,6 +114,7 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/pie/plain
 	list_reagents = list(/datum/reagent/consumable/nutriment = 9)
 	w_class = WEIGHT_CLASS_NORMAL
+	filling_color = "#EFD9C2"
 	tastes = list("dough" = 1)
 	foodtype = GRAIN | DAIRY
 
@@ -119,7 +124,7 @@
 	icon = 'icons/obj/food/food_ingredients.dmi'
 	icon_state = "rawpastrybase"
 	cooked_type = /obj/item/reagent_containers/food/snacks/pastrybase
-	filling_color = "#CD853F"
+	filling_color = "#EFD9C2"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 1)
 	tastes = list("raw pastry" = 1)
 	foodtype = GRAIN | DAIRY

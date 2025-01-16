@@ -76,6 +76,7 @@
 	desc = "A slice from a huge mushroom."
 	icon_state = "hugemushroomslice"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
+	filling_color = "#876736"
 	tastes = list("mushroom" = 1)
 	foodtype = VEGETABLES
 
@@ -429,6 +430,7 @@
 	icon_state = "stuffed_legion"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/medicine/tricordrazine = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/capsaicin = 2, /datum/reagent/medicine/tricordrazine = 10)
+	filling_color = "#3B342B"
 	tastes = list("death" = 2, "rock" = 1, "meat" = 1, "hot peppers" = 1)
 	foodtype = MEAT
 
@@ -438,6 +440,7 @@
 	icon_state = "powercrepe"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/iron = 10)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/cherryjelly = 5)
+	filling_color = "#D1AE82"
 	force = 30
 	throwforce = 15
 	block_chance = 55
@@ -641,6 +644,7 @@
 	icon_state = "bran_requests"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/sodiumchloride = 5)
 	bonus_reagents = list(/datum/reagent/consumable/sodiumchloride = 10)
+	filling_color = "#D1AE82"
 	tastes = list("bran" = 4, "raisins" = 3, "salt" = 1)
 	foodtype = GRAIN | FRUIT | BREAKFAST
 

@@ -327,6 +327,33 @@
 	is_decorated = TRUE
 	filling_color = "#879630"
 
+	/obj/item/reagent_containers/food/snacks/donut/laugh
+	name = "sweet pea donut"
+	desc = "Goes great with a glass of Bastion Burbon!"
+	icon_state = "donut_laugh"
+	bonus_reagents = list(/datum/reagent/consumable/laughter = 3)
+	tastes = list("donut" = 3, "fizzy tutti frutti" = 1,)
+	is_decorated = TRUE
+	filling_color = "#803280"
+
+/obj/item/reagent_containers/food/snacks/donut/jelly/laugh
+	name = "sweet pea jelly donut"
+	desc = "Goes great with a glass of Bastion Burbon!"
+	icon_state = "jelly_laugh"
+	bonus_reagents = list(/datum/reagent/consumable/laughter = 3)
+	tastes = list("jelly" = 3, "donut" = 1, "fizzy tutti frutti" = 1)
+	is_decorated = TRUE
+	filling_color = "#803280"
+
+/obj/item/reagent_containers/food/snacks/donut/jelly/slimejelly/laugh
+	name = "sweet pea jelly donut"
+	desc = "Goes great with a glass of Bastion Burbon!"
+	icon_state = "jelly_laugh"
+	bonus_reagents = list(/datum/reagent/consumable/laughter = 3)
+	tastes = list("jelly" = 3, "donut" = 1, "fizzy tutti frutti" = 1)
+	is_decorated = TRUE
+	filling_color = "#803280"
+
 ////////////////////////////////////////////MUFFINS////////////////////////////////////////////
 
 /obj/item/reagent_containers/food/snacks/muffin
@@ -772,6 +799,18 @@
 	tastes = list("pastry" = 1, "sweetness" = 1)
 	foodtype = GRAIN | SUGAR
 
+/obj/item/reagent_containers/food/snacks/cannoli
+	name = "cannoli"
+	desc = "A sicilian treat that makes you into a wise guy."
+	icon_state = "cannoli"
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 1)
+	filling_color = "#ffffff"
+	tastes = list("pastry" = 1)
+	foodtype = GRAIN | DAIRY | SUGAR
+
+// Pancakes //
+
 #define PANCAKE_MAX_STACK 10
 
 /obj/item/reagent_containers/food/snacks/pancakes
@@ -888,40 +927,3 @@
 	update_appearance()
 
 #undef PANCAKE_MAX_STACK
-
-/obj/item/reagent_containers/food/snacks/cannoli
-	name = "cannoli"
-	desc = "A sicilian treat that makes you into a wise guy."
-	icon_state = "cannoli"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 1)
-	filling_color = "#ffffff"
-	tastes = list("pastry" = 1)
-	foodtype = GRAIN | DAIRY | SUGAR
-
-/obj/item/reagent_containers/food/snacks/donut/laugh
-	name = "sweet pea donut"
-	desc = "Goes great with a glass of Bastion Burbon!"
-	icon_state = "donut_laugh"
-	bonus_reagents = list(/datum/reagent/consumable/laughter = 3)
-	tastes = list("donut" = 3, "fizzy tutti frutti" = 1,)
-	is_decorated = TRUE
-	filling_color = "#803280"
-
-/obj/item/reagent_containers/food/snacks/donut/jelly/laugh
-	name = "sweet pea jelly donut"
-	desc = "Goes great with a glass of Bastion Burbon!"
-	icon_state = "jelly_laugh"
-	bonus_reagents = list(/datum/reagent/consumable/laughter = 3)
-	tastes = list("jelly" = 3, "donut" = 1, "fizzy tutti frutti" = 1)
-	is_decorated = TRUE
-	filling_color = "#803280"
-
-/obj/item/reagent_containers/food/snacks/donut/jelly/slimejelly/laugh
-	name = "sweet pea jelly donut"
-	desc = "Goes great with a glass of Bastion Burbon!"
-	icon_state = "jelly_laugh"
-	bonus_reagents = list(/datum/reagent/consumable/laughter = 3)
-	tastes = list("jelly" = 3, "donut" = 1, "fizzy tutti frutti" = 1)
-	is_decorated = TRUE
-	filling_color = "#803280"

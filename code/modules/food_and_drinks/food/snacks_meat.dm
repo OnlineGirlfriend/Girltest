@@ -190,6 +190,7 @@
 	trash = /obj/item/trash/plate
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 4)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	filling_color = "D43131"
 	tastes = list("meat" = 1, "cabbage" = 1)
 	foodtype = MEAT | VEGETABLES
 
@@ -200,6 +201,7 @@
 	trash = /obj/item/trash/plate
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 6)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/ethanol/manly_dorf = 5)
+	filling_color = "#B22222"
 	tastes = list("meat" = 1, "salmon" = 1)
 	foodtype = MEAT | ALCOHOL
 
@@ -246,6 +248,7 @@
 	desc = "One hundred khinkalis? Do I look like a pig?"
 	icon_state = "khinkali"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/garlic = 1)
+	filling_color = "#F0F0F0"
 	cooked_type = /obj/item/reagent_containers/food/snacks/khinkali
 	tastes = list("meat" = 1, "onions" = 1, "garlic" = 1)
 	foodtype = MEAT
@@ -359,7 +362,7 @@
 
 /obj/item/reagent_containers/food/snacks/nugget
 	name = "chicken nugget"
-	filling_color = "#B22222"
+	filling_color = "#E6B857"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	tastes = list("\"chicken\"" = 1)
@@ -390,6 +393,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	list_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/bbqsauce = 5)
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 1)
+	filling_color = "#662008"
 	tastes = list("meat" = 3, "smokey sauce" = 1)
 	foodtype = MEAT
 
@@ -399,6 +403,7 @@
 	icon_state = "meatclown"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1, /datum/reagent/consumable/banana = 2)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	filling_color = "#CD4122"
 	tastes = list("meat" = 5, "clowns" = 3, "sixteen teslas" = 1)
 	foodtype = MEAT
 
@@ -413,6 +418,7 @@
 	icon_state = "kebab"
 	w_class = WEIGHT_CLASS_NORMAL
 	list_reagents = list(/datum/reagent/consumable/nutriment = 8)
+	filling_color = "#9C4814"
 	tastes = list("meat" = 3, "metal" = 1)
 	foodtype = MEAT
 

@@ -374,7 +374,7 @@
 /obj/item/reagent_containers/food/snacks/ration/side/white_sandwich_bread
 	name = "white sandwich bread"
 	desc = "Soft and fluffy white bread, perfect for making sandwiches or enjoying as a quick and simple snack."
-	filling_color = "#ffffff"
+	filling_color = "#F5ECE4"
 	tastes = list("bread" = 1)
 	foodtype = GRAIN
 
@@ -455,7 +455,7 @@
 /obj/item/reagent_containers/food/snacks/ration/side/white_bread_mini_loaf
 	name = "mini loaf of white bread"
 	desc = "A small loaf of soft and fluffy white bread, perfect for making sandwiches or enjoying as a simple snack."
-	filling_color = "#ffffff"
+	filling_color = "#F5ECE4"
 	tastes = list("bread" = 1)
 	foodtype = GRAIN
 
@@ -645,14 +645,14 @@
 /obj/item/reagent_containers/food/snacks/ration/snack/apple_slices
 	name = "apple slices"
 	desc = "Fresh and crisp apple slices, perfect for a refreshing and healthy snack option."
-	filling_color = "#ff3300"
+	filling_color = "#FFD6CC"
 	tastes = list("apple" = 1)
 	foodtype = FRUIT
 
 /obj/item/reagent_containers/food/snacks/ration/snack/candied_pineapple_chunks
 	name = "candied pineapple chunks"
 	desc = "Sweet and chewy candied pineapple chunks, offering a burst of tropical flavor in every bite."
-	filling_color = "#ff6600"
+	filling_color = "#FFCC00"
 	tastes = list("candied pineapple" = 1)
 	foodtype = SUGAR | FRUIT
 
@@ -680,14 +680,14 @@
 /obj/item/reagent_containers/food/snacks/ration/snack/patriotic_sugar_cookies
 	name = "patriotic sugar cookies"
 	desc = "Colorful sugar cookies with patriotic designs, providing a festive and sweet treat for special occasions."
-	filling_color = "#ffcc00"
+	filling_color = "#FFF0B3"
 	tastes = list("sugar cookies" = 1)
 	foodtype = SUGAR
 
 /obj/item/reagent_containers/food/snacks/ration/snack/oatmeal_cookie
 	name = "oatmeal cookie"
 	desc = "A delicious oatmeal cookie, offering a wholesome and satisfying treat for any time of day."
-	filling_color = "#663300"
+	filling_color = "#E8C676"
 	tastes = list("oatmeal cookie" = 1)
 	foodtype = SUGAR | GRAIN
 
@@ -701,14 +701,14 @@
 /obj/item/reagent_containers/food/snacks/ration/snack/dry_roasted_peanuts
 	name = "dry roasted peanuts"
 	desc = "Crunchy and flavorful dry roasted peanuts, a satisfying and protein-packed snack option."
-	filling_color = "#663300"
+	filling_color = "#B35900"
 	tastes = list("peanuts" = 1)
 	foodtype = FRUIT
 
 /obj/item/reagent_containers/food/snacks/ration/snack/jalapeno_cashews
 	name = "jalapeno cashews"
 	desc = "Savory cashews coated in a spicy jalapeno seasoning, creating a flavorful and satisfying snack option."
-	filling_color = "#663300"
+	filling_color = "#B35900"
 	tastes = list("jalapeno" = 1, "cashews" = 1)
 	foodtype = FRUIT
 
@@ -762,12 +762,12 @@
 
 /obj/item/reagent_containers/food/snacks/ration/condiment/peanut_butter
 	name = "peanut butter pack"
-	filling_color = "#664400"
+	filling_color = "#D18F4D"
 	list_reagents = list(/datum/reagent/consumable/sugar = 5, /datum/reagent/consumable/peanut_butter = 5)
 
 /obj/item/reagent_containers/food/snacks/ration/condiment/chunky_peanut_butter
 	name = "chunky peanut butter pack"
-	filling_color = "#663300"
+	filling_color = "#D18F4D"
 	list_reagents = list(/datum/reagent/consumable/peanut_butter = 10)
 
 /obj/item/reagent_containers/food/snacks/ration/condiment/maple_syrup
