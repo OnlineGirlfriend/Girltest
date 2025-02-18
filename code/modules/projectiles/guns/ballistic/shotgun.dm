@@ -773,7 +773,7 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	name = "mounted shotgun"
 	desc = "A shotgun instead of an arm. Neat."
-	icon_state = "mounted_shotgun" // Add sprite
+	icon_state = "shotgun_on" // Add sprite
 	item_state = "mounted_shotgun"
 	lefthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add sprite
 	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add sprite
@@ -787,12 +787,12 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 			update_mounted_icon_state()
 		else
-			user << "This shotgun isn't meant for you!"
+			user << "Attaching a shotgun to an organic being seems too dangerous!"
 
 	// Updates the icon once mounted
 	proc/update_mounted_icon_state()
 		if(is_mounted)
-			icon_state = "mounted_shotgun_attached" // Add sprite
+			icon_state = "mounted_shotgun_on" // Add sprite
 		else
 			icon_state = "mounted_shotgun"
 
