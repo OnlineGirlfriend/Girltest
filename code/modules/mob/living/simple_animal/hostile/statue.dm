@@ -78,7 +78,7 @@
 /mob/living/simple_animal/hostile/statue/Move(turf/NewLoc)
 	if(can_be_seen(NewLoc))
 		if(client)
-			to_chat(src, "<span class='warning'>You cannot move. There are eyes on you!</span>")
+			to_chat(src, "<span class='warning'>You cannot move, there are eyes on you!</span>")
 		return 0
 	return ..()
 
@@ -96,7 +96,7 @@
 /mob/living/simple_animal/hostile/statue/AttackingTarget()
 	if(can_be_seen(get_turf(loc)))
 		if(client)
-			to_chat(src, "<span class='warning'>You cannot attack. There are eyes on you!</span>")
+			to_chat(src, "<span class='warning'>You cannot attack, there are eyes on you!</span>")
 		return FALSE
 	else
 		return ..()

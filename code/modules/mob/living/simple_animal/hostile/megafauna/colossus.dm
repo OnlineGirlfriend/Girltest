@@ -388,7 +388,7 @@ GLOBAL_DATUM(blackbox, /obj/machinery/smartfridge/black_box)
 
 /obj/machinery/anomalous_crystal
 	name = "anomalous crystal"
-	desc = "A strange chunk of crystal. Being in its presence fills you with equal parts excitement and dread."
+	desc = "A strange chunk of crystal, being in the presence of it fills you with equal parts excitement and dread."
 	var/observer_desc = "Anomalous crystals have descriptions that only observers can see. But this one hasn't been changed from the default."
 	icon = 'icons/obj/lavaland/artefacts.dmi'
 	icon_state = "anomaly_crystal"

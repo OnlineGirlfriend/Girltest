@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/asteroid/wolf
 	name = "white wolf"
-	desc = "A beast that survives by feasting on weaker opponents. They're much stronger in numbers. Watch out for the lunge!"
+	desc = "A beast that survives by feasting on weaker opponents, they're much stronger with numbers. Watch out for the lunge!"
 	icon = 'icons/mob/icemoon/icemoon_monsters.dmi'
 	icon_state = "whitewolf"
 	icon_living = "whitewolf"
@@ -109,13 +109,13 @@
 	pull_force = PULL_FORCE_DEFAULT
 	if(prob(15))
 		new /obj/item/mob_trophy/wolf_ear(loc)
-		visible_message("<span class='warning'>You notice a damaged ear that might be salvageable.</span>")
+		visible_message("<span class='warning'>You notice a damaged ear that might be salvagable.</span>")
 	..()
 
 //alpha wolf- smaller chance to spawn, practically a miniboss. Has the ability to do a short, untelegraphed lunge with a stun. Be careful!
 /mob/living/simple_animal/hostile/asteroid/wolf/alpha
 	name = "alpha wolf"
-	desc = "An old wolf with matted, dirty fur and a missing eye, trophies of many successful battles and hunts. Seems like they're the leader of the pack around here. Watch out for the lunge!"
+	desc = "An old wolf with matted, dirty fur and a missing eye, trophies of many won battles and successful hunts. Seems like they're the leader of the pack around here. Watch out for the lunge!"
 	icon = 'icons/mob/icemoon/icemoon_monsters.dmi'
 	icon_state = "alphawolf"
 	icon_living = "alphawolf"

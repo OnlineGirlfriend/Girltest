@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/retaliate/bat
 	name = "Space Bat"
-	desc = "A rare breed of bat that roosts in spaceships. Probably not vampiric."
+	desc = "A rare breed of bat which roosts in spaceships, probably not vampiric."
 	icon_state = "bat"
 	icon_living = "bat"
 	icon_dead = "bat_dead"

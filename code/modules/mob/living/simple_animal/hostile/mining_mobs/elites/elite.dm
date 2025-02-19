@@ -5,7 +5,7 @@
 //Elite mining mobs
 /mob/living/simple_animal/hostile/asteroid/elite
 	name = "elite"
-	desc = "An elite monster found in one of the strange tumors on lavaland."
+	desc = "An elite monster, found in one of the strange tumors on lavaland."
 	icon = 'icons/mob/lavaland/lavaland_elites.dmi'
 	faction = list("boss")
 	robust_searching = TRUE
@@ -259,13 +259,13 @@ While using this makes the system rely on OnFire, it still gives options for tim
 		mychild.health = mychild.maxHealth
 	if(times_won == 1)
 		mychild.playsound_local(get_turf(mychild), 'sound/effects/magic.ogg', 40, 0)
-		to_chat(mychild, "<span class='boldwarning'>As the life in the activator's eyes fade, the forcefield around you dies out, and you feel your power subside.\nDespite this inferno being your home, you feel as if you aren't welcome here anymore.\nWithout any guidance, your purpose is now for you to decide.</span>")
-		to_chat(mychild, "<b>Your max health has been halved, but you can now heal by standing on your tumor. Note, it's your only way to heal.\nBear in mind, if anyone interacts with your tumor, you'll be resummoned here to carry out another fight.  In such a case, you will regain your full max health.\nAlso, be wary of your fellow inhabitants. They likely won't be happy to see you!</b>")
+		to_chat(mychild, "<span class='boldwarning'>As the life in the activator's eyes fade, the forcefield around you dies out and you feel your power subside.\nDespite this inferno being your home, you feel as if you aren't welcome here anymore.\nWithout any guidance, your purpose is now for you to decide.</span>")
+		to_chat(mychild, "<b>Your max health has been halved, but can now heal by standing on your tumor.  Note, it's your only way to heal.\nBear in mind, if anyone interacts with your tumor, you'll be resummoned here to carry out another fight.  In such a case, you will regain your full max health.\nAlso, be weary of your fellow inhabitants, they likely won't be happy to see you!</b>")
 		to_chat(mychild, "<span class='big bold'>Note that you are an alien entity, and thus not allied to the sector. Your path now is up to you.</span>")
 
 /obj/item/tumor_shard
 	name = "tumor shard"
-	desc = "A strange, sharp, crystal shard from an odd tumor on Lavaland.  Stabbing the corpse of a lavaland elite with this will revive them, assuming their soul still lingers.  Revived lavaland elites only have half their max health, but they are completely loyal to their reviver."
+	desc = "A strange, sharp, crystal shard from an odd tumor on Lavaland.  Stabbing the corpse of a lavaland elite with this will revive them, assuming their soul still lingers.  Revived lavaland elites only have half their max health, but are completely loyal to their reviver."
 	icon = 'icons/obj/lavaland/artefacts.dmi'
 	icon_state = "crevice_shard"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'

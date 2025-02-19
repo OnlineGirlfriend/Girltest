@@ -4,7 +4,7 @@
  */
 /mob/living/simple_animal/hostile/asteroid/lobstrosity
 	name = "arctic lobstrosity"
-	desc = "A marvel of evolution gone wrong. The frosty ice produces underground lakes where these ill-tempered seafood gather. Beware its charge."
+	desc = "A marvel of evolution gone wrong, the frosty ice produces underground lakes where these ill tempered seafood gather. Beware its charge."
 	icon = 'icons/mob/icemoon/icemoon_monsters.dmi'
 	icon_state = "arctic_lobstrosity"
 	icon_living = "arctic_lobstrosity"
@@ -37,7 +37,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/lobstrosity/beach
 	name = "tropical lobstrosity"
-	desc = "A marvel of evolution gone wrong. Its diet of crabs makes it have a red-hued shell. Beware its charge."
+	desc = "A marvel of evolution gone wrong, on the tropical beaches, it's diet of crabs makes it have a red hued shell. Beware its charge."
 	icon_state = "lobstrosity"
 	icon_living = "lobstrosity"
 	icon_dead = "lobstrosity_dead"

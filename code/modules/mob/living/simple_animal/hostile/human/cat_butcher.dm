@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/human/cat_butcherer
 	name = "Cat Surgeon"
-	desc = "Feline genemod physiological modification surgery is outlawed in Nanotrasen-controlled sectors. This doctor doesn't seem to care and thus is wanted for several war crimes."
+	desc = "Feline genemod physiological modification surgery is outlawed in Nanotrasen-controlled sectors. This doctor doesn't seem to care, and thus, is wanted for several warcrimes."
 	icon_state = "cat_butcher"
 	icon_living = "cat_butcher"
 	projectiletype = /obj/projectile/bullet/dart/tranq

@@ -214,7 +214,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/hivelordbrood/legion/staff
 	name = "emaciated legion"
-	desc = "One of many. This one was spawned from a surrogate host and is quite short-lived and nearsighted. However, it is friendly to humans."
+	desc = "One of many. This one was spawned from a surrogate host, and is quite short-lived and nearsighted. However, it is freindly to humans."
 	color = "#c8e6fb"
 	melee_damage_lower = 10
 	melee_damage_upper = 10
@@ -325,7 +325,7 @@
 //Advanced Legion is slightly tougher to kill and can raise corpses (revive other legions)
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/advanced
 	name = "Signifer"
-	desc = "A shrunken legion, carrying the remnants of a mouldering battle standard. The cadre of lackeys surrounding it seem particularly attentive."
+	desc = "A shrunken legion, carring the remnants of a mouldering battle standard. The cadre of lackeys surrounding it seem particularly attentive."
 	stat_attack = DEAD
 	maxHealth = 120
 	health = 120
@@ -418,7 +418,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal
 	name = "disfigured legion"
-	desc = "Disfigured, contorted, and corrupted. This thing was once part of the legion. Now it has a different vile and twisted allegiance."
+	desc = "Disfigured, contorted, and corrupted. This thing was once part of the legion, now it has a different vile and twisted allegiance."
 	icon_state = "disfigured_legion"
 	icon_living = "disfigured_legion"
 	icon_aggro = "disfigured_legion"

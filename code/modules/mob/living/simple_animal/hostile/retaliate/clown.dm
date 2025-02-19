@@ -296,7 +296,7 @@
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/xeno/bodypartless, /obj/item/soap, /obj/effect/gibspawner/generic, /obj/effect/gibspawner/generic/animal, /obj/effect/gibspawner/human/bodypartless, /obj/effect/gibspawner/human)
 
 /mob/living/simple_animal/hostile/retaliate/clown/mutant/blob
-	name = "Something that was once a clown."
+	name = "Something that was once a clown"
 	desc = "A grotesque bulging figure far mutated from its original state."
 	icon_state = "blob"
 	icon_living = "blob"

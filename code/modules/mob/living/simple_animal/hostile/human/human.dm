@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/human
 	name = "crazed human"
-	desc = "A crazed human. They cannot be reasoned with."
+	desc = "A crazed human, they cannot be reasoned with"
 	icon = 'icons/mob/simple_human.dmi'
 	icon_state = "survivor_base"
 	icon_living = "survivor_base"
