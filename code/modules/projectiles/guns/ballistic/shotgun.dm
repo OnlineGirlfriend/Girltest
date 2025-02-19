@@ -780,10 +780,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 	item_flags = ABSTRACT
 	w_class = WEAPON_LIGHT
 
-/obj/item/mounted_shotgun/Initialize()
-	. = ..()
-	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Prevents dropping, replaces hand
-
 	// Mounts the shotgun to the user's arm
 	proc/attach_to_user(mob/user)
 		if(istype(user, /mob/living/silicon)) // For silicons only, sorry
@@ -810,4 +806,6 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			shotgun.loc = get_turf(user)
 			update_mounted_icon_state()
 
-
+/obj/item/mounted_shotgun/Initialize()
+	. = ..()
+	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Prevents dropping, replaces hand
