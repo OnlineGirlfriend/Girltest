@@ -288,7 +288,7 @@
 
 /obj/item/gem/void
 	name = "\improper Null Crystal"
-	desc = "A shard of stellar energy, shaped into crystal. These strange objects occasionally appear spontaneously in the deepest, darkest depths of space. Despite its incredible value, it seems far lighter than it should be."
+	desc = "A shard of stellar energy, shaped into crystal. These strange objects occasionally appear spontaneously in the deepest, darkest depths of space. Despite it's incredible value, it seems far lighter than it should be."
 	icon = 'icons/obj/gems.dmi'
 	icon_state ="void"
 	light_range = 2

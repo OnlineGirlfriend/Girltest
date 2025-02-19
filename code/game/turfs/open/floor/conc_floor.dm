@@ -272,7 +272,7 @@
 
 /turf/open/floor/concrete/pavement
 	name = "pavement"
-	desc = "The hot, coarse pavement. Vehicles driven on this are generally quieter than on traditional concrete. It is preferred for roadways."
+	desc = "The hot, coarse, and somewhat pavement. Vehicles driven on this are generally quiter than on traditional concrete, and is prefered for roadways."
 	icon_state = "pavement"
 	broken_states = null
 	shape_types = list(

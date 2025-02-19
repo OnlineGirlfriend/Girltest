@@ -295,7 +295,7 @@
 /datum/barsign/goose
 	name = "The Loose Goose"
 	icon = "goose"
-	desc = "Drink 'til you puke and/or break the laws of reality!"
+	desc = "Drink till you puke and/or break the laws of reality!"
 
 /datum/barsign/dustydunesaloon
 	name = "Dusty Dune Saloon"

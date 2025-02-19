@@ -264,7 +264,7 @@
 			The simplest way I have found of making them is crafting them with a chunk of glass, plasma, and a welder.<br>
 
 			<h2> Bacteria </h2>
-			A special species of bacteria native to Illestren is what allows Trickwines form.<br>
+			A speical speices of bacteria native to Illestren is what allows Trickwines form.<br>
 			Now we use a special distiller that keeps just enough bacertia alive to ferment without turning the batch sour.<br>
 			Now you should still have one on board but if you dont its fine.<br>
 			It just so happens we have trees on board our ships host to the Bacteria.<br>

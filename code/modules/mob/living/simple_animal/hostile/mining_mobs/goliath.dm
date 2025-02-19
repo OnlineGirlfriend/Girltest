@@ -117,7 +117,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/goliath/pup
 	name = "goliath pup"
-	desc = "A small goliath pup. Its tendrils have not yet fully grown."
+	desc = "A small goliath pup. It's tendrils have not yet fully grown."
 	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
 	icon_state = "goliath_baby"
 	icon_living = "goliath_baby"
@@ -203,7 +203,7 @@
 	if(!isturf(tturf) || !isliving(target))
 		return
 	if(dist <= tent_range)
-		visible_message("<span class='warning'>[src] digs its tentacles under [target]!</span>")
+		visible_message("<span class='warning'>[src] digs it's tentacles under [target]!</span>")
 		new tentacle_type(tturf, src ,TRUE)
 		ranged_cooldown = world.time + ranged_cooldown_time
 		icon_state = icon_aggro
@@ -372,7 +372,7 @@
 
 /mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient/crystal
 	name = "crystal goliath"
-	desc = "Once a goliath, it is now an abomination composed of undead flesh and crystals that sprout throughout its decomposing body."
+	desc = "Once a goliath, it is now an abomination composed of undead flesh and crystals that sprout throughout it's decomposing body."
 	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
 	icon_state = "crystal_goliath"
 	icon_living = "crystal_goliath"
@@ -402,7 +402,7 @@
 		playsound(loc, 'sound/magic/charge.ogg', 100, TRUE)
 		INVOKE_ASYNC(src, PROC_REF(spray_of_crystals))
 	else
-		visible_message("<span class='warning'>[src] expels its matter, releasing a spray of crystalline shards!</span>")
+		visible_message("<span class='warning'>[src] expels it's matter, releasing a spray of crystalline shards!</span>")
 		playsound(loc, 'sound/effects/bamf.ogg', 100, TRUE)
 		shoot_projectile(Get_Angle(src,target) + 10)
 		shoot_projectile(Get_Angle(src,target))

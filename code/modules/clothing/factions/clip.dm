@@ -133,7 +133,7 @@
 
 /obj/item/clothing/suit/armor/clip_trenchcoat
 	name = "\improper CLIP trenchcoat"
-	desc = "A CLIP trenchcoat. Despite its reputation as a officer coat, it's actually issued to the entire CLIP government and its branches. Has a lot of pockets."
+	desc = "A CLIP trenchcoat. Despite it's reputation as a officer coat, it's actually issued to the entire CLIP government and it's branches. Has a lot of pockets."
 
 	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'
@@ -149,7 +149,7 @@
 
 /obj/item/clothing/suit/armor/clip_capcoat
 	name = "\improper CLIP Minutemen captain's coat"
-	desc = "A well-made coat used by CLIP Minutemen captains. Its thick padding stops some hazards for its user."
+	desc = "A well-made coat used by CLIP Minutemen captains. It's thick padding stops some hazards for its user."
 
 	icon = 'icons/obj/clothing/faction/clip/suits.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/clip/suits.dmi'

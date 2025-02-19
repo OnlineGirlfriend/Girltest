@@ -641,7 +641,7 @@
 //nerfed necrostone
 /obj/item/necromantic_stone/lava
 	name = "cracked medallion"
-	desc = "A damaged stone medallion with a glowing gem set in its center. You could probably resurrect people as skeletons with it. The controlling spirit seems to be malfunctioning."
+	desc = "A damaged stone medallion, with a glowing gem set in it's center. You could probably resurrect people as skeletons with it. The controlling spirit seems to be malfunctioning."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "necrostone"
 	item_state = "electronic"
@@ -687,7 +687,7 @@
 
 	arm_skeleton(M)
 
-	desc = "A damaged stone medallion with a glowing gem set in its center. You could probably resurrect people as skeletons with it. The controlling spirit seems to be malfunctioning. Remember to strip targets[nolimit ? "." : ", [skeletons.len]/5 active skeletons."]"
+	desc = "A damaged stone medallion, with a glowing gem set in it's center. You could probably resurrect people as skeletons with it. The controlling spirit seems to be malfunctioning. Remember to strip targets[nolimit ? "." : ", [skeletons.len]/5 active skeletons."]"
 
 /obj/item/necromantic_stone/lava/proc/check_skele()
 	if(nolimit) //no point, the list isn't used.

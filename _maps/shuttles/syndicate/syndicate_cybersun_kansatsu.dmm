@@ -171,7 +171,7 @@
 /obj/item/modular_computer/tablet/preset/advanced,
 /obj/item/modular_computer/tablet/preset/advanced,
 /obj/item/paper{
-	default_raw_text = "Congratulations on your purchase of Cybersun G-1010 Long Range Communication Tablet (chat client installed separately)!"
+	default_raw_text = "Congratulations on your purchase of Cybersun G-1010 Long Range Communication Tables (Chat client installed seperately)"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)

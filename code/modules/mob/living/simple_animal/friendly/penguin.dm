@@ -10,7 +10,7 @@
 	speak = list("Gah Gah!", "NOOT NOOT!", "NOOT!", "Noot", "noot", "Prah!", "Grah!")
 	speak_emote = list("squawks", "gakkers")
 	emote_hear = list("squawk!", "gakkers!", "noots.","NOOTS!")
-	emote_see = list("shakes its beak.", "flaps its wings.","preens itself.")
+	emote_see = list("shakes its beak.", "flaps it's wings.","preens itself.")
 	faction = list("penguin")
 	minbodytemp = 0
 	see_in_dark = 5

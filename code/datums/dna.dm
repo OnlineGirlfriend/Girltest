@@ -253,7 +253,7 @@
 				if(1 to 19)
 					message = "<span class='warning'>You can feel your cells burning.</span>"
 				if(-INFINITY to 0)
-					message = "<span class='boldwarning'>You can feel your DNA exploding. We need to do something fast!</span>"
+					message = "<span class='boldwarning'>You can feel your DNA exploding, we need to do something fast!</span>"
 		if(stability <= 0)
 			holder.apply_status_effect(STATUS_EFFECT_DNA_MELT)
 		if(message)

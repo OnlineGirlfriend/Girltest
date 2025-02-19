@@ -154,7 +154,7 @@
 			if(insert_cell(user, tac_load))
 				to_chat(user, span_notice("You perform a tactical reload on \the [src]."))
 			else
-				to_chat(user, span_warning("You dropped the old cell, but the new one doesn't fit. How embarrassing."))
+				to_chat(user, span_warning("You dropped the old cell, but the new one doesn't fit. How embarassing."))
 		else
 			to_chat(user, span_warning("Your reload was interupted!"))
 			return

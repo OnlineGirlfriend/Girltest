@@ -513,7 +513,7 @@
 	name = "biohazard container of holding"
 	icon = 'icons/obj/bags.dmi'
 	icon_state = "biobagbs"
-	desc = "A bag designed to safely contain biologically-hazardous objects. This bag has been outfitted with a bluespace storage well, and can carry considerably more than its actual size."
+	desc = "A bag designed to safely contain biologically-hazardous objects. This bag has been outfitted with a bluespace storage well, and can carry considerably more then it's actual size."
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKETS
 
 /obj/item/storage/bag/bio/holding/ComponentInitialize()

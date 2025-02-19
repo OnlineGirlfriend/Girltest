@@ -429,7 +429,7 @@
 //put this on military ships for disarming practice
 /obj/item/mine/pressure/training
 	name = "\improper G-MTH Defusal Trainer"
-	desc = "A mothballed anti-personnel explosive, equipped with VISCERAL DEFUSAL ACTION for training purposes. Though Scarborough was forced to decommission their stockpiles of mines as part of the ceasefire, the deployed minefields remain."
+	desc = "A mothballed anti-personnel explosive, equipped with VISCERAL DEFUSAL ACTION for training purposes. Though Scarborough was forced to decomission their stockpiles of mines as part of the ceasefire, the deployed minefields remain."
 	arm_delay = 2 SECONDS
 	manufacturer = MANUFACTURER_SCARBOROUGH
 

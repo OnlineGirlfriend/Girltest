@@ -108,7 +108,7 @@
 ******************************************/
 
 /mob/living/simple_animal/hostile/asteroid/basilisk/whitesands
-	desc = "A native beast of sand planets. This unique mutation has evolved to develop a shell around its body, deflecting all attacks until broken."
+	desc = "A native beast of sand planets. This unique mutation has evolved to develop a shell around it's body, deflecting all attacks until broken."
 	icon_state = "basilisk_whitesands"
 	icon_living = "basilisk_whitesands"
 	icon_aggro = "basilisk_whitesands"
@@ -134,7 +134,7 @@
 				new l(loc)
 			if(!shell_snap_message)
 				playsound(src, "shatter", 80, FALSE)
-				audible_message("<span class='danger'>[src]'s shell violently cracks as its armor is shattered!</span>")
+				audible_message("<span class='danger'>[src]'s shell violently cracks as it's armor is shattered!</span>")
 				throw_message = "bounces off of"
 				shell_snap_message = TRUE //so it doesnt repeat
 		update_appearance()

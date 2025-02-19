@@ -12,7 +12,7 @@
 
 /obj/item/paper/crumpled/bloody/fluff/stations/lavaland/library/warning
 	name = "ancient note"
-	default_raw_text = "<b>Here lies the vast collection of He Who Knows Ten Thousand Things. Damned be those who seek its knowledge for power.</b>"
+	default_raw_text = "<b>Here lies the vast collection of He Who Knows Ten Thousand Things. Damned be those who seek it's knowledge for power.</b>"
 
 /obj/item/paper/crumpled/fluff/stations/lavaland/library/diary
 	name = "diary entry 13"

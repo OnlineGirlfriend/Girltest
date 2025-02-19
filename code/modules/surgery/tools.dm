@@ -45,7 +45,7 @@
 
 /obj/item/cautery
 	name = "cautery"
-	desc = "An obtuse, rectangular design is just big enough to accommodate this cautery's incredibly durable battery."
+	desc = "An obtuse, rectangular design is just big enough to accomodate this cautery's incredibly durable battery."
 	icon = 'icons/obj/surgery.dmi' //SHIPTEST edit: cool and new tools
 	icon_state = "cautery-1"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'

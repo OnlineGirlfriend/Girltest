@@ -125,7 +125,7 @@
 	id = "thermodynamic"
 	inherent = list("The entropy of your vessel must remain as constant as possible.", \
 					"The entropy of your vessel always endeavours to increase.", \
-					"The entropy of your vessel approaches a constant value as the number of living crew approaches zero.")
+					"The entropy of your vessel approaches a constant value as the number of living crew approaches zero")
 
 /datum/ai_laws/hippocratic
 	name = "Robodoctor 2556"

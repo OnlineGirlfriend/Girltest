@@ -130,7 +130,7 @@
 				break
 
 		else
-			to_chat(_human,span_warning("You're missing your biological battery and can't receive charge from rooting!"))
+			to_chat(_human,span_warning("You're missing your biological battery and can't recieve charge from rooting!"))
 			break
 
 /datum/species/elzuose/proc/digout(mob/living/carbon/human/_human)

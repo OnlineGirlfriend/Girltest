@@ -3132,7 +3132,7 @@
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/under/syndicate/inteq/honorable{
 	name = "commanders turtleneck";
-	desc = "A midnight black turtleneck. It makes you want to tent your fingers."
+	desc = "A midnight black turtleneck, it makes you want to tent your fingers."
 	},
 /obj/item/gun/energy/e_gun/hos/brazil,
 /turf/open/floor/plasteel/white,

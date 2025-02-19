@@ -35,7 +35,7 @@
 /obj/item/grown/log
 	seed = /obj/item/seeds/tower
 	name = "tower-cap log"
-	desc = "It's better than bad. It's good!"
+	desc = "It's better than bad, it's good!"
 	icon_state = "logs"
 	force = 5
 	throwforce = 5

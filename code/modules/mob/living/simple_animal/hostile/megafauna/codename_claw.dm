@@ -237,7 +237,7 @@
 /////STING ATTACK
 /mob/living/simple_animal/hostile/megafauna/claw/proc/sting_attack(target)
 	shouldnt_move = TRUE
-	visible_message("<span class='danger'>[src] stops suddenly, and spikes appear all over its body!</span>")
+	visible_message("<span class='danger'>[src] stops suddenly and spikes apear all over it's body!</span>")
 	icon_state = "claw-phase2_sting_attack"
 	flick("claw-phase2_sting_attack_transform", src)
 	projectiletype = /obj/projectile/claw_projectille
@@ -267,7 +267,7 @@
 /////LIE SPIDER
 /mob/living/simple_animal/hostile/megafauna/claw/proc/summon_creatures()
 	shake_animation(20)
-	visible_message("<span class='danger'>[src] shudders violently and starts to split a flesh spider from its body!</span>")
+	visible_message("<span class='danger'>[src] shudders violently and starts to split a flesh spider from it's body!</span>")
 	shouldnt_move = TRUE
 	addtimer(CALLBACK(src, PROC_REF(summon_creatures2)), 2 SECONDS)
 
