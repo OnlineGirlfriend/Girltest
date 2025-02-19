@@ -773,11 +773,16 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 
 	name = "mounted shotgun"
 	desc = "A shotgun instead of an arm. Neat."
-	icon_state = "shotgun_on" // Add sprite
+	icon_state = "shotgun_on"
 	item_state = "mounted_shotgun"
-	lefthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_lefthand.dmi' // Add sprite
-	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi' // Add sprite
+	lefthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi'
+	item_flags = ABSTRACT
 	w_class = WEAPON_LIGHT
+
+/obj/item/mounted_shotgun/Initialize()
+	. = ..()
+	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Prevents dropping, replaces hand
 
 	// Mounts the shotgun to the user's arm
 	proc/attach_to_user(mob/user)
@@ -787,12 +792,12 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 			ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
 			update_mounted_icon_state()
 		else
-			user << "Attaching a shotgun to an organic being seems too dangerous!"
+			user << "Attaching a shotgun to an organic being seems unethical!"
 
 	// Updates the icon once mounted
 	proc/update_mounted_icon_state()
 		if(is_mounted)
-			icon_state = "mounted_shotgun_on" // Add sprite
+			icon_state = "mounted_shotgun_on"
 		else
 			icon_state = "mounted_shotgun"
 
@@ -801,25 +806,8 @@ EMPTY_GUN_HELPER(shotgun/bulldog/inteq)
 		if(is_mounted)
 			is_mounted = FALSE
 			REMOVE_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
-			user.overlays -= 'icons/obj/mounted_shotgun_hand.dmi' // Add sprite
 			var/obj/item/gun/ballistic/shotgun/mounted/shotgun = new /obj/item/gun/ballistic/shotgun/mounted // Drops a shotgun when detached
 			shotgun.loc = get_turf(user)
 			update_mounted_icon_state()
 
-	// Prevents holding other items while the mounted shotgun is attached
-	proc/update_inventory(mob/user)
-		if(is_mounted)
-			for(var/obj/item/I in user.contents)
-				if(I.slot_flags & ITEM_SLOT_HANDS) // Checks if they're trying to use hand slots
-					src << "Your hand is a shotgun. Shotguns can't hold anything."
-					I.forceMove(get_turf(src)) // Force drops the item
 
-	// Prevents item pickup while the mounted shotgun is attached
-	proc/attack_hand_mounted(obj/item/I, mob/user)
-		if(is_mounted && I.slot_flags & ITEM_SLOT_HANDS) // Checks if attached and using hand slot
-			src << "Your hand is a shotgun. Shotguns can't hold anything."
-			return
-
-/obj/item/mounted_shotgun/Initialize()
-	. = ..()
-	ADD_TRAIT (src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT) // Prevents dropping, replaces hand
