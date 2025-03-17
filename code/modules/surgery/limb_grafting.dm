@@ -19,7 +19,7 @@
 	name = "graft limb"
 	implements = list(
 		/obj/item/bodypart = 100,
-		/obj/item/organ_storage = 100,)
+		/obj/item/organ_storage = 100,
 		/obj/item/chainsaw = 100,
 		/obj/item/melee/synthetic_arm_blade = 100,
 		/obj/item/gun/ballistic/shotgun/mounted = 100)
@@ -114,7 +114,7 @@
 			target_zone == BODY_ZONE_R_ARM ? target.put_in_r_hand(new_arm) : target.put_in_l_hand(new_arm)
 			return
 		else if(istype(tool, /obj/item/gun/ballistic/shotgun/mounted))
-			var/obj/item/gun/ballistic/shotgun/mounted/new_arm = new(target)
+			var/obj/item/gun/ballistic/shotgun/mounted/on/new_arm = new(target)
 			target_zone == BODY_ZONE_R_ARM ? target.put_in_r_hand(new_arm) : target.put_in_l_hand(new_arm)
 			return
 	return ..() //if for some reason we fail everything we'll print out some text okay?
