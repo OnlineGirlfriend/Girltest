@@ -83,6 +83,10 @@
 /obj/item/storage/guncase/brimstone/PopulateContents()
 	new /obj/item/gun/ballistic/shotgun/brimstone/no_mag(src)
 
+/obj/item/storage/guncase/mounted_shotgun
+/obj/item/storage/guncase/mounted_shotgun/PopulateContents()
+	new /obj/item/gun/ballistic/shotgun/mounted/no_mag(src)
+
 /obj/item/storage/guncase/illestren
 /obj/item/storage/guncase/illestren/PopulateContents()
 	new /obj/item/gun/ballistic/rifle/illestren/empty(src)

@@ -812,7 +812,7 @@ EMPTY_GUN_HELPER(shotgun/automatic/bulldog/inteq)
 // MOUNTED SHOTGUN //
 
 /obj/item/gun/ballistic/shotgun/mounted
-	name = "shotgun arm"
+	name = "mounted shotgun"
 	desc = "You've always dreamt of replacing your arm with a shotgun. Now you can."
 	icon_state = "mounted_shotgun"
 	item_state = "mounted_shotgun"

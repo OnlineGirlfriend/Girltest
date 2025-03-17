@@ -142,6 +142,13 @@
 	contains = list(/obj/item/storage/guncase/brimstone)
 	crate_name = "shotgun crate"
 
+/datum/supply_pack/gun/mounted_shotgun
+	name = "Mounted Shotgun Crate"
+	desc = "For when you need to deal with hooligans in your sleep. Contains a shotgun to replace your arm."
+	cost = 2000
+	contains = list(/obj/item/storage/guncase/mounted_shotgun)
+	crate_name = "shotgun crate"
+
 /*
 		Rifles
 */
