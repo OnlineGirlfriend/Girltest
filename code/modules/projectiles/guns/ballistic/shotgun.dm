@@ -808,3 +808,20 @@ EMPTY_GUN_HELPER(shotgun/automatic/bulldog/inteq)
 	spread = 6
 	recoil = 2
 	recoil_unwielded = 4
+
+// MOUNTED SHOTGUN //
+
+/obj/item/gun/ballistic/shotgun/mounted
+	name = "shotgun arm"
+	desc = "You've always dreamt of replacing your arm with a shotgun. Now you can."
+	icon_state = "mounted_shotgun"
+	item_state = "mounted_shotgun"
+	lefthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/mounted_shotgun_righthand.dmi'
+	item_flags = ABSTRACT
+	w_class = WEAPON_LIGHT
+	recoil_unwielded = 2
+
+/obj/item/gun/ballistic/shotgun/mounted/Initialize() // Prevents dropping, replaces hand
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)

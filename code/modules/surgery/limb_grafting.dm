@@ -19,11 +19,10 @@
 	name = "graft limb"
 	implements = list(
 		/obj/item/bodypart = 100,
-		/obj/item/organ_storage = 100)
-//		/obj/item/chainsaw = 100,
-//		/obj/item/melee/synthetic_arm_blade = 100)
-// Frankly these have always bothered me. They fill like a bad fit for Shiptest.
-// Marking out for now. Keeping the later code used to install unconventional prostheses just in case someone finds a good use for it.
+		/obj/item/organ_storage = 100,)
+		/obj/item/chainsaw = 100,
+		/obj/item/melee/synthetic_arm_blade = 100,
+		/obj/item/gun/ballistic/shotgun/mounted = 100)
 
 	time = 32
 	experience_given = MEDICAL_SKILL_ORGAN_FIX //won't get full XP if rejected
@@ -110,8 +109,12 @@
 			var/obj/item/mounted_chainsaw/new_arm = new(target)
 			target_zone == BODY_ZONE_R_ARM ? target.put_in_r_hand(new_arm) : target.put_in_l_hand(new_arm)
 			return
-		else if(istype(tool, /obj/item/melee/synthetic_arm_blade))
+		if(istype(tool, /obj/item/melee/synthetic_arm_blade))
 			var/obj/item/melee/arm_blade/new_arm = new(target,TRUE,TRUE)
+			target_zone == BODY_ZONE_R_ARM ? target.put_in_r_hand(new_arm) : target.put_in_l_hand(new_arm)
+			return
+		else if(istype(tool, /obj/item/gun/ballistic/shotgun/mounted))
+			var/obj/item/gun/ballistic/shotgun/mounted/new_arm = new(target)
 			target_zone == BODY_ZONE_R_ARM ? target.put_in_r_hand(new_arm) : target.put_in_l_hand(new_arm)
 			return
 	return ..() //if for some reason we fail everything we'll print out some text okay?
