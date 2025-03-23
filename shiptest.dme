@@ -3620,6 +3620,7 @@
 #include "modular_pentest\modules\pi_items\code\clothing.dm"
 #include "modular_pentest\modules\pi_items\code\flooring_decals.dm"
 #include "modular_pentest\modules\pi_items\code\loadout_selfrelated.dm"
+#include "modular_pentest\modules\pissy_shitties\code\pissy_shitties.dm"
 #include "modular_pentest\modules\pi_items\code\outfits.dm"
 #include "modular_pentest\modules\pi_items\code\plushes.dm"
 #include "modular_pentest\modules\robots\~robots.dme"
