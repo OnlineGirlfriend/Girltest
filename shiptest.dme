@@ -3571,4 +3571,5 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "modular_pentest\~pentest.dme"
+#include "modular_pentest\modules\mounted_shotgun\code\mounted_shotgun.dm"
 // END_INCLUDE
