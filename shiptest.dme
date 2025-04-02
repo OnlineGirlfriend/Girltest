@@ -3571,5 +3571,4 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "modular_pentest\~pentest.dme"
-#include "modular_pentest\modules\soggy_woggies\code\soggy_woggies.dm"
 // END_INCLUDE
