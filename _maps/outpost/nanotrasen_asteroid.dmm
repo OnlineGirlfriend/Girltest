@@ -2778,8 +2778,8 @@
 	},
 /area/outpost/maintenance/fore)
 "kc" = (
-/obj/structure/window/reinforced/fulltile/indestructable,
-/obj/structure/grille/indestructable,
+/obj/structure/window/reinforced/fulltile/indestructible,
+/obj/structure/grille/indestructible,
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "kd" = (
@@ -3018,7 +3018,7 @@
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
 "lb" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/machinery/door/poddoor/ert{
 	id = "outpost_security_desk";
 	desc = "A heavy duty blast door."
@@ -3370,7 +3370,7 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
 "mj" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/machinery/door/poddoor/preopen{
 	id = "outpost_security_window"
 	},
@@ -3869,8 +3869,8 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical)
 "nV" = (
-/obj/structure/grille/indestructable,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/grille/indestructible,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/outpost/engineering/atmospherics)
 "nX" = (
@@ -4370,7 +4370,7 @@
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/library)
 "pK" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/machinery/door/poddoor/preopen{
 	id = "outpost_bridge_lockdown"
 	},
@@ -6520,7 +6520,7 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/maintenance/fore)
 "wI" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/plating,
 /area/outpost/operations)
 "wJ" = (
@@ -7871,7 +7871,7 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/cargo)
 "Bf" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/plating,
 /area/outpost/external)
 "Bi" = (
@@ -10516,7 +10516,7 @@
 /turf/open/floor/wood,
 /area/outpost/hallway/central)
 "Kn" = (
-/obj/machinery/telecomms/allinone/indestructable,
+/obj/machinery/telecomms/allinone/indestructible,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
@@ -11720,8 +11720,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "Ow" = (
-/obj/structure/grille/indestructable,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/grille/indestructible,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/outpost/crew/lounge)
 "Ox" = (
@@ -12224,8 +12224,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/grille/indestructable,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/grille/indestructible,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/outpost/engineering/atmospherics)
 "Ql" = (
@@ -12711,8 +12711,8 @@
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/starboard)
 "RD" = (
-/obj/structure/grille/indestructable,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/grille/indestructible,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/outpost/operations)
 "RE" = (
@@ -13314,7 +13314,7 @@
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
 "TI" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /obj/machinery/door/poddoor/preopen{
 	id = "outpost_office_lockdown";
 	dir = 8
@@ -13594,7 +13594,7 @@
 /turf/open/floor/wood,
 /area/outpost/crew/dorm)
 "UD" = (
-/obj/effect/spawner/structure/window/reinforced/indestructable,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/plating,
 /area/outpost/crew/canteen)
 "UG" = (
