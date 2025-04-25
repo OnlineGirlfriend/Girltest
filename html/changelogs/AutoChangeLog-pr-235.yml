@@ -1,0 +1,166 @@
+author: Ossa88
+changes:
+  - {rscadd: 'Gygax 515 Conversion kit (ST #4325)'}
+  - {bugfix: 'Loaded MP charger path (ST #4325)'}
+  - {balance: "DMR's are now equalized according to new scopes  (ST #4365)"}
+  - {balance: 'Genemod human ears no longer take double ear damage (ST #4364)'}
+  - {balance: 'you can put tape recorders in command pouches (ST #4366)'}
+  - {balance: "Boosts .22lr's damage very slightly. (ST #4351)"}
+  - {rscdel: 'Removed the following languages: mushroom, narsian, piratespeak, shadowtongue,
+      calcic, beachbum (ST #4367)'}
+  - {bugfix: 'Any species now has the ability to speak any language other than Rachnidian
+      and Vox Pidgin. (ST #4367)'}
+  - {bugfix: 'Common renamed Galactic Common (Unlisted Change) - (ST #4367)'}
+  - {bugfix: 'Draconic renamed Kalixcian Common (Unlisted Change) - (ST #4367)'}
+  - {bugfix: 'Solarian renamed Solarian International (Unlisted Change) - (ST #4367)'}
+  - {bugfix: 'Non Terragov (ST:Solgov) Humans can speak Solarian International (Unlisted
+      Change) - (ST #4367)'}
+  - {bugfix: 'Spider renamed Rachnidian (Unlisted Change) - (ST #4367)'}
+  - {bugfix: 'Solarian enabled to be speakable - (PT #235)'}
+  - {bugfix: 'Restored Narsian - Modularized - (PT #235)'}
+  - {rscadd: 'Indestructible Jungle Rock - (ST #4360)'}
+  - {rscadd: 'Indestructible Beach Rock - (ST #4360)'}
+  - {rscadd: 'Indestructible Waste Rock - (ST #4360)'}
+  - {rscadd: 'Indestructible Sand Rock - (ST #4360)'}
+  - {rscdel: 'All those mine removal bounties have paid off, since the amount of landmines
+      on most worlds has plummeted - (ST #4352)'}
+  - {rscdel: 'CLIP pulled the bounty for landmines as a result. - (ST #4352)'}
+  - {rscadd: 'someone blew a landmine freighter up over a sand world. - (ST #4352)'}
+  - {rscadd: 'Cool new plant analyzer tgui - (ST #4227)'}
+  - {bugfix: 'Max reagent level on trays now work as intended. - (ST #4227)'}
+  - {code_imp: 'A lot of plant file cleanup, primarily defining important things.
+      - (ST #4227)'}
+  - {balance: 'Abandoned Crates reportedly now contain vastly different contents.
+      Pry them open, if you dare. - (ST #4346)'}
+  - {rscadd: 'Added more paperstuff to the Arke and CLIP gas masks + Evidence bags
+      - (ST #4353)'}
+  - {rscadd: 'Wallets now use a random spawner - (ST #3644)'}
+  - {rscadd: 'More spawners now use the fancy sprites - (ST #3644)'}
+  - {rscdel: 'Removed a few cruft items/spawners - (ST #3644)'}
+  - {balance: 'Exotic loot is a lot less cruft - (ST #3644)'}
+  - {refactor: 'Re paths a few spawns to make them easier to reuse - (ST #3644)'}
+  - {balance: 'Ration crayons and twice as rare - (ST #3644)'}
+  - {rscadd: 'Replaces Identification consoles with modular ones - (ST #4261)'}
+  - {bugfix: 'Arke-class now has a command modcomp - (ST #4336)'}
+  - {bugfix: 'Arke-class warning sign name and description updated (Unlisted Change)
+      - (ST #4336)'}
+  - {bugfix: "radiation storms don't suck any more - (ST #4369)"}
+  - {rscadd: "Helms in the orbit menu now use the ship's name as its full name - (ST
+      #4249)"}
+  - {bugfix: "Random helms not connected to a ship don't appear in the orbit menu
+      - (ST #4249)"}
+  - {rscadd: 'Stars and outposts now show up in the orbit menu - (ST #4251)'}
+  - {refactor: 'Adds basic mobs, a replacement for simple mobs that will hopefully
+      destroy the subtype. This is so far applied to cockroaches, mice, rats (and
+      their variants) - (ST #3969)'}
+  - {rscadd: 'Touches up the wrecked factory ruin - (ST #4117)'}
+  - {rscadd: 'Simple mobs can say things on aggro. - (ST #4117)'}
+  - {rscdel: 'Removed some decals inside walls - (ST #4292)'}
+  - {rscadd: 'You can now see mechanical limb structure damage on scanner. - (ST #4318)'}
+  - {bugfix: 'Make the limb description in health scanner more concise. - (ST #4318)'}
+  - {bugfix: 'Distillery now has Mauler mags. - (ST #4356)'}
+  - {rscadd: 'Fancy Illestren in the Distillery armoury. - (ST #4356)'}
+  - {rscadd: 'melee weapons now support varried cooldowns, we now have fast swinging
+      knives and slow swinging axes for example - (ST #3964)'}
+  - {rscadd: 'stamped machetes can now break - (ST #3964)'}
+  - {rscadd: 'expanded the range of the force string, toolboxes are now "medium" in
+      accordance to power creep - (ST #3964)'}
+  - {balance: 'you now only take the block chance from your best weapon - (ST #3964)'}
+  - {soundadd: 'a lot of sounds ported from mojave sun - (ST #3964)'}
+  - {refactor: 'halberds are now a simple subtype of dswords - (ST #3964)'}
+  - {refactor: 'detached some shield code from shield/riot and ported from breaking
+      logic from tg - (ST #3964)'}
+  - {refactor: 'gorlex sledgehammers no longer inherit behavior from axes - (ST #3964)'}
+  - {bugfix: 'You can no longer place pipes anywhere you can see with an RPD. The
+      grinch is setback once more. - (ST #4391)'}
+  - {rscadd: 'You can now buy the 3 basic fertilizers from cargo - (ST #4386)'}
+  - {rscadd: 'Solar Armories Turrets exist now. I guess. Sighs. - (ST #4390)'}
+  - {refactor: 'energy halberd are repathed to be melee duel energy subtypes (Unlisted
+      Change) - (ST #4390)'}
+  - {refactor: 'Solar Armories Turrets now Terra... something... I renamed them. -
+      (PT #235)'}
+  - {rscadd: "missions now announce that they've deposited money - (ST #4382)"}
+  - {code_imp: 'the blackbox key "reagent expose mob" is now reagent_expose_mob -
+      (ST #4371)'}
+  - {refactor: 'hermit mobs and soda cans now use a proper spawner - (ST #4381)'}
+  - {rscadd: 'New much more subtle particle effect to replace the glow. - (ST #4222)'}
+  - {rscdel: 'Removed the glow effect and apply and remove messages from trickwines.
+      - (ST #4222)'}
+  - {bugfix: 'Fixed the remaining text to acctually display words that are useful.
+      - (ST #4222)'}
+  - {rscadd: 'CLIP War correspondents spawn with a broadcasting camera and a multitool
+      - (ST #4373)'}
+  - {rscadd: 'CLIP Ships now have entertainment monitors - (ST #4373)'}
+  - {rscadd: 'Blackmarket purchases are logged to the blackbox. - (ST #4394)'}
+  - {bugfix: 'The XO cape for SUNS is no longer incorrectly mirrored. - (ST #4383)'}
+  - {rscadd: 'Syndicate Hardsuit helmet lights can be activated on their own - (ST
+      #4354)'}
+  - {rscadd: 'Syndicate Hardsuit no longer references removed mechanics - (ST #4354)'}
+  - {imageadd: 'sprites for several types of specialist ammo - (ST #4378)'}
+  - {rscadd: 'Autowiki ship table - (ST #3815)'}
+  - {tweak: 'Ship Prefixes are now immutable. - (ST #3815)'}
+  - {tweak: 'Crew manifest is prettier. In my opinion. - (ST #3815)'}
+  - {rscadd: 'broadcast cameras have gotten some minor improvements. - (ST #4389)'}
+  - {bugfix: 'a say() is now a invoke async cause it sleeps - (ST #4406)'}
+  - {rscadd: 'surgeries to organic limbs that are done without anesthetic or painkillers
+      now have a chance to cause extra damage - (ST #4270)'}
+  - {balance: 'medical cyborgs now have access to morphine in their hypospray - (ST
+      #4270)'}
+  - {rscadd: 'Dynamic missions! see about them in your local outpost. - (ST #4015)'}
+  - {rscadd: 'A ModComp program to view and call dibs on missions. - (ST #4015)'}
+  - {rscadd: 'You now need to head down to outpost cargo to view and turn in missions.
+      - (ST #4015)'}
+  - {rscadd: 'Adds multiple ruin specific missions, you can examine objects to see
+      if they are using in a mission. - (ST #4015)'}
+  - {rscadd: 'You can examine planets and other overmap objects. (will eventually
+      become admin only) - (ST #4015)'}
+  - {rscdel: 'Kills all old missions expect for drills, overmap scans, and capture.
+      - (ST #4015)'}
+  - {admin: 'Swaps the category on a few overmap related buttons. - (ST #4015)'}
+  - {admin: 'You can now choose to not load a planet when spawning them. - (ST #4015)'}
+  - {refactor: 'Planets now pick there ruin before they spawn. Used in missions to
+      pick a planet - (ST #4015)'}
+  - {bugfix: Pentest Ships Faction PRefix updated}
+  - {bugfix: Gold core spawns basic mobs now}
+  - {rscadd: "entertainment monitors now tell you when someone starts their livestream.
+      don't miss today's episode of the scrapper show! - (ST #4412)"}
+  - {rscadd: 'Modsuits can be bought in Cargo - (ST #4221) -- Note this changelog
+      is not true, ST Commented them all out prior to merge upstream.'}
+  - {rscadd: 'Toolset, Armor Assist Module, Plasma Engine Module - (ST #4221)'}
+  - {rscdel: 'Ethereal MOD Core, Bikehorn Module - (ST #4221)'}
+  - {balance: 'Modsuit slow downs, power drain and armor - (ST #4221)'}
+  - {balance: 'Spacesuit prices. - (ST #4221)'}
+  - {rscadd: 'EHF point beacons, which can be used to preserve planets - (ST #4246)'}
+  - {bugfix: 'people should remember how to breath again - (ST #4409)'}
+  - {rscadd: 'Added a grinder and PPE to the Nail-class boarding shuttle (ST #4269)'}
+  - {balance: 'Basic cleanliness is now a thing on Inteq ships, Corpsmen have been
+      equipped with gloves. (CT #4347)'}
+  - {rscadd: 'vox and kepori sprites for the azuilhauz (ST #4393)'}
+  - {rscdel: 'Elzuose, IPC, and Phorid damage mods - (ST #4437)'}
+  - {tweak: 'Plenty tweaks have hit the Sunskipper. Most importantly, dorms should
+      suck less now. It also now gets more medicine, more fuel and fishing gear. The
+      mini egun has been swapped for an E-60 too. - (ST #4304)'}
+  - {bugfix: Restores Selling Pad to modularized code.}
+  - {bugfix: Random paths in various map files corrected.}
+  - {rscdel: 'Players go no longer open the overmap inspector, it was designed for
+      admins - (ST #4445)'}
+  - {bugfix: 'Overmap inspect is now formated better and santizes desc html - (ST
+      #4445)'}
+  - {rscadd: 'Added a handful of kepori hardsuit sprites - (ST #4511)'}
+  - {refactor: Properly modularized secc's Swat Mk 2 and Cap armors so that future
+      me wont have to struggle again.}
+  - {bugfix: ROLE_CULTIST is no longer so out of place on the Preferences window}
+  - {bugfix: Service Cyborg with Knife upgrade will once again be able to see their
+      knife. Issue was caused by a chance in how knife based items appear in the world...
+      a new world_icon was added.}
+  - {bugfix: 'stops missions from qdeling players, i hope - (ST #4509)'}
+  - {bugfix: 'booze missions should work better now - (ST #4490)'}
+  - {bugfix: 'you cant turn yourself in for missions - (ST #4490)'}
+  - {bugfix: 'crashed starwalker now spawns its blackbox recorder - (ST #4490)'}
+  - {refactor: Modularized lots of food descriptions along with some missed items
+      from before.}
+  - {bugfix: 'the beach fish mobs no longer toxic, instead they are just normal fish
+      meat, not carp.'}
+  - {bugfix: Junker Captain has access again}
+  - {rscadd: NT Asteroid Outpost now has access to dynamic mission console in cargo.}
+delete-after: true
