@@ -113,11 +113,11 @@ GLOBAL_VAR_INIT(hsboxspawn, TRUE)
 			if("hsbtobj")
 				if(!admin) return
 				if(GLOB.hsboxspawn)
-					to_chat(world, "<span class='boldannounce'>Sandbox:</span> <b>\black[usr.key] has disabled object spawning!</b>")
+					to_chat(world, "[span_boldannounce("Sandbox:")] <b>\black[usr.key] has disabled object spawning!</b>")
 					GLOB.hsboxspawn = FALSE
 					return
 				else
-					to_chat(world, "<span class='boldnotice'>Sandbox:</span> <b>\black[usr.key] has enabled object spawning!</b>")
+					to_chat(world, "[span_boldnotice("Sandbox:")] <b>\black[usr.key] has enabled object spawning!</b>")
 					GLOB.hsboxspawn = TRUE
 					return
 			//
@@ -127,9 +127,9 @@ GLOBAL_VAR_INIT(hsboxspawn, TRUE)
 				if(!admin) return
 				var/sbac = CONFIG_GET(flag/sandbox_autoclose)
 				if(sbac)
-					to_chat(world, "<span class='boldnotice'>Sandbox:</span> <b>\black [usr.key] has removed the object spawn limiter.</b>")
+					to_chat(world, "[span_boldnotice("Sandbox:")] <b>\black [usr.key] has removed the object spawn limiter.</b>")
 				else
-					to_chat(world, "<span class='danger'>Sandbox:</span> <b>\black [usr.key] has added a limiter to object spawning. The window will now auto-close after use.</b>")
+					to_chat(world, "[span_danger("Sandbox:")] <b>\black [usr.key] has added a limiter to object spawning. The window will now auto-close after use.</b>")
 				CONFIG_SET(flag/sandbox_autoclose, !sbac)
 				return
 			//
@@ -175,7 +175,8 @@ GLOBAL_VAR_INIT(hsboxspawn, TRUE)
 				P.back.plane = ABOVE_HUD_PLANE
 				P.update_inv_back()
 				P.internal = P.back
-				P.update_internals_hud_icon(1)
+				P.update_action_buttons_icon() //PENTEST EDIT
+				//P.update_internals_hud_icon(1) //PENTEST REMOVE
 
 			if("hsbscrubber") // This is beyond its normal capability but this is sandbox and you spawned one, I assume you need it
 				var/obj/hsb = new/obj/machinery/portable_atmospherics/scrubber{volume_rate=50*ONE_ATMOSPHERE;on=1}(usr.loc)
