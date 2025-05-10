@@ -61,7 +61,7 @@
 ///////////////
 
 //Start of a breath chain, calls breathe()
-/mob/living/carbon/handle_breathing(times_fired)
+/mob/living/carbon/handle_breathing(seconds_per_tick, times_fired)
 	var/next_breath = 4
 	var/obj/item/organ/lungs/L = getorganslot(ORGAN_SLOT_LUNGS)
 	var/obj/item/organ/heart/H = getorganslot(ORGAN_SLOT_HEART)
@@ -107,8 +107,8 @@
 	//Suffocate
 	if(losebreath >= 1) //You've missed a breath, take oxy damage
 		losebreath--
-		if(prob(10))
-			emote("gasp")
+		//if(prob(10)) //PENTEST CHANGE - Going to set this to 100% chance to trigger the gasp. Because it was so rare in a 5 min test I only saw it twice.
+		emote("gasp")
 		if(istype(loc, /obj/))
 			var/obj/loc_as_obj = loc
 			loc_as_obj.handle_internal_lifeform(src,0)
@@ -288,12 +288,15 @@
 	if(internal)
 		if(internal.loc != src)
 			internal = null
-			update_internals_hud_icon(0)
+			update_action_buttons_icon() //PENTEST EDIT
+			//update_internals_hud_icon(0)
 		else if (!internals && !getorganslot(ORGAN_SLOT_BREATHING_TUBE)) //WS Port - Citadel Internals
 			internal = null
-			update_internals_hud_icon(0)
+			update_action_buttons_icon() //PENTEST EDIT
+			//update_internals_hud_icon(0)
 		else
-			update_internals_hud_icon(1)
+			update_action_buttons_icon() //PENTEST EDIT
+			//update_internals_hud_icon(1)
 			. = internal.remove_air_volume(volume_needed)
 			if(!.)
 				return FALSE //to differentiate between no internals and active, but empty internals
@@ -507,13 +510,13 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		if(drunkenness >= 81)
 			adjustToxLoss(1)
 			if(prob(5) && !stat)
-				to_chat(src, "<span class='warning'>Maybe you should lie down for a bit...</span>")
+				to_chat(src, span_warning("Maybe you should lie down for a bit..."))
 
 		if(drunkenness >= 91)
 			adjustToxLoss(1)
 			adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4)
 			if(prob(20) && !stat)
-				to_chat(src, "<span class='warning'>Just a quick nap...</span>")
+				to_chat(src, span_warning("Just a quick nap..."))
 				Sleeping(900)
 
 		if(drunkenness >= 101)
@@ -679,7 +682,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		return
 	adjustToxLoss(4, TRUE,  TRUE)
 	if(prob(30))
-		to_chat(src, "<span class='warning'>You feel a stabbing pain in your abdomen!</span>")
+		to_chat(src, span_warning("You feel a stabbing pain in your abdomen!"))
 
 /////////////
 //CREMATION//
@@ -707,11 +710,11 @@ All effects don't start immediately, but rather get worse over time; the rate is
 				if(limb.cremation_progress >= 100)
 					if(IS_ORGANIC_LIMB(limb))  //Non-organic limbs don't burn
 						limb.drop_limb()
-						limb.visible_message("<span class='warning'>[src]'s [limb.name] crumbles into ash!</span>")
+						limb.visible_message(span_warning("[src]'s [limb.name] crumbles into ash!"))
 						qdel(limb)
 					else
 						limb.drop_limb()
-						limb.visible_message("<span class='warning'>[src]'s [limb.name] detaches from [p_their()] body!</span>")
+						limb.visible_message(span_warning("[src]'s [limb.name] detaches from [p_their()] body!"))
 	if(still_has_limbs)
 		return
 
@@ -723,17 +726,17 @@ All effects don't start immediately, but rather get worse over time; the rate is
 			if(head.cremation_progress >= 100)
 				if(!IS_ORGANIC_LIMB(head)) //Non-organic limbs don't burn
 					head.drop_limb()
-					head.visible_message("<span class='warning'>[src]'s head crumbles into ash!</span>")
+					head.visible_message(span_warning("[src]'s head crumbles into ash!"))
 					qdel(head)
 				else
 					head.drop_limb()
-					head.visible_message("<span class='warning'>[src]'s head detaches from [p_their()] body!</span>")
+					head.visible_message(span_warning("[src]'s head detaches from [p_their()] body!"))
 		return
 
 	//Nothing left: dust the body, drop the items (if they're flammable they'll burn on their own)
 	chest.cremation_progress += rand(2,5)
 	if(chest.cremation_progress >= 100)
-		visible_message("<span class='warning'>[src]'s body crumbles into a pile of ash!</span>")
+		visible_message(span_warning("[src]'s body crumbles into a pile of ash!"))
 		dust(TRUE, TRUE)
 
 ////////////////
