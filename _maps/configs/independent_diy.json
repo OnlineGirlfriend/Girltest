@@ -31,10 +31,9 @@
 	"starting_funds": 0,
 	"enabled": true,
 	"space_spawn": false,
-	
+
 	"architect": "Unknown",
 	"contributors": [
-		"Ossa / SYNAPSE - Porting to Pentest",
-		"jimmyl - Remap"
+		"Ossa / SYNAPSE - Pulled the Blueprints"
 	]
 }

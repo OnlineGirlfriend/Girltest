@@ -31,8 +31,8 @@
 
 /obj/projectile/bullet/a8_50r
 	name = "8x50mmR bullet"
-	damage = 37
-	armour_penetration = 30
+	damage = 35
+	armour_penetration = 40
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "large bullet"
 
@@ -45,7 +45,7 @@
 /obj/projectile/bullet/a8_50r/match
 	name = "8x50mmR match bullet"
 	damage = 40
-	armour_penetration = 27
+	armour_penetration = 30
 	speed_mod = BULLET_SPEED_AP_MOD
 	ricochets_max = 4
 	ricochet_chance = 80
@@ -93,7 +93,7 @@
 
 /obj/projectile/bullet/a308
 	name = ".308 bullet"
-	damage = 35
+	damage = 30
 	armour_penetration = 40
 	speed = BULLET_SPEED_RIFLE
 	bullet_identifier = "large bullet"
@@ -106,7 +106,7 @@
 
 /obj/projectile/bullet/a308/ap
 	name = ".308 armor piercing bullet"
-	damage = 32
+	damage = 27
 	armour_penetration = 60
 	speed_mod = BULLET_SPEED_AP_MOD
 

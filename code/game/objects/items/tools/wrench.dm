@@ -15,7 +15,6 @@
 	drop_sound = 'sound/items/handling/wrench_drop.ogg'
 	pickup_sound =  'sound/items/handling/wrench_pickup.ogg'
 
-	attack_cooldown = LIGHT_WEAPON_CD
 	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 	demolition_mod = 1.25
 	tool_behaviour = TOOL_WRENCH
@@ -73,7 +72,7 @@
 		attack_verb = list("bopped")
 		toolspeed = initial(toolspeed)
 		playsound(user, 'sound/weapons/saberoff.ogg', 5, TRUE)
-		to_chat(user, span_warning("[src] can now be kept at bay."))
+		to_chat(user, "<span class='warning'>[src] can now be kept at bay.</span>")
 	else
 		on = TRUE
 		force = 15
@@ -84,7 +83,7 @@
 		toolspeed = 0.5
 		hitsound = 'sound/weapons/blade1.ogg'
 		playsound(user, 'sound/weapons/saberon.ogg', 5, TRUE)
-		to_chat(user, span_warning("[src] is now active. Woe onto your enemies!"))
+		to_chat(user, "<span class='warning'>[src] is now active. Woe onto your enemies!</span>")
 	update_appearance()
 
 /obj/item/wrench/combat/update_icon_state()

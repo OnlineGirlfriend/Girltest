@@ -1216,7 +1216,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/machinery/firealarm/directional/east,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/powerpuzzle/secure)
 "jy" = (
@@ -3506,7 +3506,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/powerpuzzle/secure)
 "UV" = (
-/obj/effect/landmark/mission_poi/main,
+/obj/structure/salvageable/computer{
+	dir = 1
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "vaultshutters2"
 	},

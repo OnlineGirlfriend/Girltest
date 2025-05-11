@@ -73,7 +73,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
+/area/ship/maintenance/central)
 "aL" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -628,7 +628,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
+/area/ship/maintenance/central)
 "ir" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -751,6 +751,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew)
+"jA" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/maintenance/central)
 "jC" = (
 /obj/machinery/conveyor{
 	id = "scarab_conveyor"
@@ -759,7 +762,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
+/area/ship/maintenance/central)
 "jG" = (
 /obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/cable{
@@ -1047,7 +1050,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "ma" = (
-/obj/effect/spawner/random/salvage/machine,
+/obj/effect/spawner/random/salvage_machine,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "mr" = (
@@ -1414,7 +1417,7 @@
 /obj/structure/sign/poster/random{
 	pixel_x = 32
 	},
-/obj/effect/spawner/random/salvage/machine{
+/obj/effect/spawner/random/salvage_machine{
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -1737,6 +1740,9 @@
 	dir = 4
 	},
 /obj/structure/railing/corner,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "tL" = (
@@ -1792,7 +1798,7 @@
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
-/area/ship/cargo)
+/area/ship/maintenance/central)
 "uG" = (
 /obj/machinery/door/airlock/public/glass{
 	req_ship_access = 1
@@ -2211,7 +2217,7 @@
 "zD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb,
-/mob/living/basic/mouse{
+/mob/living/simple_animal/mouse{
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -2398,6 +2404,9 @@
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
@@ -2588,6 +2597,9 @@
 	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -3316,7 +3328,9 @@
 /obj/structure/cable/green{
 	icon_state = "4-5"
 	},
-/obj/effect/spawner/random/salvage/machine,
+/obj/effect/spawner/random/salvage_machine{
+	dir = 1
+	},
 /obj/structure/railing{
 	dir = 4
 	},
@@ -3406,8 +3420,12 @@
 /obj/structure/railing{
 	dir = 4
 	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable/green{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
+/area/ship/maintenance/central)
 "NS" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -3618,6 +3636,9 @@
 /area/ship/crew)
 "QE" = (
 /obj/effect/decal/cleanable/oil/streak,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "QJ" = (
@@ -4615,8 +4636,8 @@ Qb
 oJ
 rC
 iZ
-iZ
-iZ
+jA
+jA
 UB
 UB
 iV
@@ -4696,7 +4717,7 @@ kl
 jj
 IL
 iZ
-iZ
+jA
 uC
 UB
 MD

@@ -93,13 +93,6 @@
 	/// Person wearing the MODsuit.
 	var/mob/living/carbon/human/wearer
 
-	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
-	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
-	equip_delay_self = EQUIP_DELAY_BACK
-	equip_delay_other = EQUIP_DELAY_BACK * 1.5
-	strip_delay = EQUIP_DELAY_BACK * 1.5
-	equip_self_flags = EQUIP_ALLOW_MOVEMENT | EQUIP_SLOWDOWN
-
 /obj/item/mod/control/Initialize(mapload, datum/mod_theme/new_theme, new_skin, obj/item/mod/core/new_core)
 	. = ..()
 	if(new_theme)
@@ -222,12 +215,10 @@
 			. += span_notice("You could remove [ai] with an <b>intellicard</b>.")
 		else
 			. += span_notice("You could install an AI with an <b>intellicard</b>.")
-	. += span_notice("You could <b>ctrl-click<b> the [src] to quick activate or deactivate the suit.")
 
 /obj/item/mod/control/examine_more(mob/user)
 	. = ..()
-	if(extended_desc)
-		. += "<i>[extended_desc]</i>"
+	. += "<i>[extended_desc]</i>"
 
 /obj/item/mod/control/process(seconds_per_tick)
 	if(seconds_electrified > MACHINE_NOT_ELECTRIFIED)
@@ -273,7 +264,7 @@
 		return ..()
 	for(var/obj/item/part as anything in mod_parts)
 		if(part.loc != src)
-			to_chat(user,span_warning("Retract parts first!"))
+			balloon_alert(user, "retract parts first!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, FALSE, SILENCED_SOUND_EXTRARANGE)
 			return FALSE
 
@@ -282,7 +273,7 @@
 		return ..()
 	for(var/obj/item/part as anything in mod_parts)
 		if(part.loc != src)
-			to_chat(wearer,span_warning("Retract parts first!"))
+			balloon_alert(wearer, "retract parts first!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, FALSE, SILENCED_SOUND_EXTRARANGE)
 			return
 	if(!wearer.incapacitated())
@@ -298,14 +289,15 @@
 		return TRUE
 	if(open)
 		if(!core)
-			to_chat(user,span_warning("No core installed!!"))
+			balloon_alert(user, "no core!")
 			return TRUE
+		balloon_alert(user, "removing core...")
 		wrench.play_tool_sound(src, 100)
-		to_chat(user,span_notice("You begin removing the mod core..."))
 		if(!wrench.use_tool(src, user, 3 SECONDS) || !open)
+			balloon_alert(user, "interrupted!")
 			return TRUE
 		wrench.play_tool_sound(src, 100)
-		to_chat(user,span_warning("You remove the core."))
+		balloon_alert(user, "core removed")
 		core.forceMove(drop_location())
 		update_charge_alert()
 		return TRUE
@@ -315,27 +307,29 @@
 	if(..())
 		return TRUE
 	if(active || activating)// || ai_controller)
-		to_chat(user,span_warning("Deactivate the suit first!"))
+		balloon_alert(user, "deactivate suit first!")
 		playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 		return FALSE
-	to_chat(user,span_notice("You begin [open ? "closing" : "opening"] the cover..."))
+	balloon_alert(user, "[open ? "closing" : "opening"] cover...")
 	screwdriver.play_tool_sound(src, 100)
 	if(screwdriver.use_tool(src, user, 1 SECONDS))
 		if(active || activating)
-			to_chat(user,span_warning("Deactivate the suit first!"))
+			balloon_alert(user, "deactivate suit first!")
 		screwdriver.play_tool_sound(src, 100)
-		to_chat(user, span_notice("You [open ? "close" : "open"] the cover"))
+		balloon_alert(user, "cover [open ? "closed" : "opened"]")
 		open = !open
+	else
+		balloon_alert(user, "interrupted!")
 	return TRUE
 
 /obj/item/mod/control/crowbar_act(mob/living/user, obj/item/crowbar)
 	. = ..()
 	if(!open)
-		to_chat(user, span_warning("Open the cover first!"))
+		balloon_alert(user, "open the cover first!")
 		playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 		return FALSE
 	if(!allowed(user))
-		to_chat(user, span_warning("Insufficient access!"))
+		balloon_alert(user, "insufficient access!")
 		playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 		return
 	if(SEND_SIGNAL(src, COMSIG_MOD_MODULE_REMOVAL, user) & MOD_CANCEL_REMOVAL)
@@ -354,30 +348,30 @@
 		module_to_remove.forceMove(drop_location())
 		crowbar.play_tool_sound(src, 100)
 		return TRUE
-	to_chat(user, span_warning( "The [src] doesn't have any modules to remove!"))
+	balloon_alert(user, "no modules!")
 	playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 	return FALSE
 
 /obj/item/mod/control/attackby(obj/item/attacking_item, mob/living/user, params)
 	if(istype(attacking_item, /obj/item/mod/module))
 		if(!open)
-			to_chat(user, span_warning("Open the cover first!"))
+			balloon_alert(user, "open the cover first!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return FALSE
 		install(attacking_item, user)
 		return TRUE
 	else if(istype(attacking_item, /obj/item/mod/core))
 		if(!open)
-			to_chat(user, span_warning("Open the cover first!"))
+			balloon_alert(user, "open the cover first!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return FALSE
 		if(core)
-			to_chat(user, span_warning("Core already installed!"))
+			balloon_alert(user, "core already installed!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return FALSE
 		var/obj/item/mod/core/attacking_core = attacking_item
 		attacking_core.install(src)
-		to_chat(user, span_notice("You install the [attacking_core]."))
+		balloon_alert(user, "core installed")
 		playsound(src, 'sound/machines/click.ogg', 50, TRUE, SILENCED_SOUND_EXTRARANGE)
 		update_charge_alert()
 		return TRUE
@@ -409,7 +403,7 @@
 
 /obj/item/mod/control/emag_act(mob/user)
 	locked = !locked
-	to_chat(user, span_warning( "Suit access [locked ? "locked" : "unlocked"]"))
+	balloon_alert(user, "suit access [locked ? "locked" : "unlocked"]")
 
 /obj/item/mod/control/emp_act(severity)
 	. = ..()
@@ -535,19 +529,19 @@
 	for(var/obj/item/mod/module/old_module as anything in modules)
 		if(is_type_in_list(new_module, old_module.incompatible_modules) || is_type_in_list(old_module, new_module.incompatible_modules))
 			if(user)
-				to_chat(user, span_warning("\The [new_module] is incompatible with [old_module]!"))
+				balloon_alert(user, "[new_module] incompatible with [old_module]!")
 				playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return
 	if(is_type_in_list(new_module, theme.module_blacklist))
 		if(user)
-			to_chat(user, span_warning("\The [src] doesn't accept [new_module]!"))
+			balloon_alert(user, "[src] doesn't accept [new_module]!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 		return
 	var/complexity_with_module = complexity
 	complexity_with_module += new_module.complexity
 	if(complexity_with_module > complexity_max)
 		if(user)
-			to_chat(user, span_warning("\The [new_module] would make [src] too complex!"))
+			balloon_alert(user, "[new_module] would make [src] too complex!")
 			playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 		return
 	new_module.forceMove(src)
@@ -559,7 +553,7 @@
 		new_module.on_equip()
 
 	if(user)
-		to_chat(user, span_notice("You add \the [new_module] to \the [src]"))
+		balloon_alert(user, "[new_module] added")
 		playsound(src, 'sound/machines/click.ogg', 50, TRUE, SILENCED_SOUND_EXTRARANGE)
 
 /obj/item/mod/control/proc/uninstall(obj/item/mod/module/old_module, deleting = FALSE)
@@ -579,11 +573,11 @@
 
 /obj/item/mod/control/proc/update_access(mob/user, obj/item/card/id/card)
 	if(!allowed(user))
-		to_chat(user, span_warning( "Insufficient access!"))
+		balloon_alert(user, "insufficient access!")
 		playsound(src, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 		return
 	req_access = card.access.Copy()
-	to_chat(user, span_warning("You update the access credentials on \the [src]."))
+	balloon_alert(user, "access updated")
 
 /obj/item/mod/control/proc/get_charge_source()
 	return core?.charge_source()
@@ -615,7 +609,7 @@
 	core.update_charge_alert()
 
 /obj/item/mod/control/proc/update_speed()
-	var/list/all_parts = mod_parts
+	var/list/all_parts = mod_parts + src
 	for(var/obj/item/part as anything in all_parts)
 		part.slowdown = (active ? slowdown_active : slowdown_inactive) / length(all_parts)
 	wearer?.update_equipment_speed_mods()
@@ -717,5 +711,3 @@
 	if(overslot != overslotting_parts[source])
 		return
 	overslotting_parts[source] = null
-
-

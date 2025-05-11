@@ -62,53 +62,14 @@
 	desc = "A mass-produced machete made of stamped steel, with a faux-leather grip for ease of handling. Right between that of a one-handed and two-handed weapon."
 	icon_state = "machete"
 	base_icon_state = "machete"
-	supports_variations = VOX_VARIATION
 	force = 20
 	throwforce = 15
-	max_integrity = 300
-	integrity_failure = 0.50
-	var/broken = FALSE
-
+	max_integrity = 50
+	supports_variations = VOX_VARIATION
 
 /obj/item/melee/sword/mass/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 22, icon_wielded = "[base_icon_state]_w")
-
-/obj/item/melee/sword/mass/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
-	. = ..()
-	if(.)
-		on_block(owner, hitby, attack_text, damage, attack_type)
-
-/obj/item/melee/sword/mass/proc/on_block(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", damage = 0, attack_type = MELEE_ATTACK)
-	take_damage(damage)
-
-/obj/item/melee/sword/mass/welder_act(mob/living/user, obj/item/I)
-	. = ..()
-	if(broken)
-		if(I.use_tool(src, user, 0, volume = 40))
-			name = src::name
-			broken = FALSE
-			obj_integrity = max_integrity
-		return TRUE
-
-/obj/item/melee/sword/mass/obj_break(damage_flag)
-	. = ..()
-	if(!broken)
-		if(isliving(loc))
-			loc.balloon_alert(loc, "[src] cracks!")
-		name = "broken [src::name]"
-		broken = TRUE
-
-/obj/item/melee/sword/mass/examine(mob/user)
-	. = ..()
-	var/healthpercent = round((obj_integrity/max_integrity) * 100, 1)
-	switch(healthpercent)
-		if(50 to 99)
-			. += span_info("It looks slightly damaged.")
-		if(25 to 50)
-			. += span_info("It appears heavily damaged.")
-		if(0 to 25)
-			. += span_warning("It's falling apart!")
+	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=22)
 
 /obj/item/melee/sword/katana
 	name = "katana"
@@ -241,7 +202,7 @@
 	qdel(shard.countdown)
 	shard.countdown = null
 	START_PROCESSING(SSobj, src)
-	visible_message(span_warning("[src] appears, balanced ever so perfectly on its hilt. This isn't ominous at all."))
+	visible_message("<span class='warning'>[src] appears, balanced ever so perfectly on its hilt. This isn't ominous at all.</span>")
 
 /obj/item/melee/sword/supermatter/process(seconds_per_tick)
 	if(balanced || throwing || ismob(src.loc) || isnull(src.loc))
@@ -275,18 +236,18 @@
 	balanced = 0
 
 /obj/item/melee/sword/supermatter/ex_act(severity, target)
-	visible_message(span_danger("The blast wave smacks into [src] and rapidly flashes to ash."),\
-	span_hear("You hear a loud crack as you are washed with a wave of heat."))
+	visible_message("<span class='danger'>The blast wave smacks into [src] and rapidly flashes to ash.</span>",\
+	"<span class='hear'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	consume_everything()
 
 /obj/item/melee/sword/supermatter/acid_act()
-	visible_message(span_danger("The acid smacks into [src] and rapidly flashes to ash."),\
-	span_hear("You hear a loud crack as you are washed with a wave of heat."))
+	visible_message("<span class='danger'>The acid smacks into [src] and rapidly flashes to ash.</span>",\
+	"<span class='hear'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	consume_everything()
 
 /obj/item/melee/sword/supermatter/bullet_act(obj/projectile/P)
-	visible_message(span_danger("[P] smacks into [src] and rapidly flashes to ash."),\
-	span_hear("You hear a loud crack as you are washed with a wave of heat."))
+	visible_message("<span class='danger'>[P] smacks into [src] and rapidly flashes to ash.</span>",\
+	"<span class='hear'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	consume_everything(P)
 	return BULLET_ACT_HIT
 
@@ -305,8 +266,8 @@
 	if(newT.type == oldtype)
 		return
 	playsound(T, 'sound/effects/supermatter.ogg', 50, TRUE)
-	T.visible_message(span_danger("[T] smacks into [src] and rapidly flashes to ash."),\
-	span_hear("You hear a loud crack as you are washed with a wave of heat."))
+	T.visible_message("<span class='danger'>[T] smacks into [src] and rapidly flashes to ash.</span>",\
+	"<span class='hear'>You hear a loud crack as you are washed with a wave of heat.</span>")
 	shard.Consume()
 
 /obj/item/melee/sword/supermatter/add_blood_DNA(list/blood_dna)
@@ -343,8 +304,8 @@
 		var/mob/living/carbon/C = target
 		var/datum/reagent/R = pick(prick_chems)
 		C.reagents.add_reagent(R, prick_chems[R])
-		C.visible_message(span_danger("[user] is pricked!"), \
-								span_userdanger("You've been pricked by the [src]!"))
+		C.visible_message("<span class='danger'>[user] is pricked!</span>", \
+								"<span class='userdanger'>You've been pricked by the [src]!</span>")
 		log_combat(user, C, "pricked", src.name, "with [prick_chems[R]]u of [R]")
 	return ..()
 
@@ -381,11 +342,11 @@
 	if(HAS_TRAIT(src, TRAIT_WIELDED) || attack_type != PROJECTILE_ATTACK)
 		if(prob(final_block_chance))
 			if(attack_type == PROJECTILE_ATTACK)
-				owner.visible_message(span_danger("[owner] deflects [attack_text] with [src]!"))
+				owner.visible_message("<span class='danger'>[owner] deflects [attack_text] with [src]!</span>")
 				playsound(src, pick('sound/weapons/bulletflyby.ogg', 'sound/weapons/bulletflyby2.ogg', 'sound/weapons/bulletflyby3.ogg'), 75, TRUE)
 				return 1
 			else
-				owner.visible_message(span_danger("[owner] parries [attack_text] with [src]!"))
+				owner.visible_message("<span class='danger'>[owner] parries [attack_text] with [src]!</span>")
 				return 1
 	return 0
 
@@ -452,7 +413,7 @@
 	. = ..()
 	if(length(contents))
 		. += "<span class='notice'>Use [src] in-hand to prime for an opening strike."
-		. += span_info("Alt-click it to quickly draw the blade.")
+		. += "<span class='info'>Alt-click it to quickly draw the blade.</span>"
 
 /obj/item/storage/belt/weebstick/AltClick(mob/user)
 	if(!iscarbon(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)) || primed)
@@ -460,11 +421,11 @@
 	if(length(contents))
 		var/obj/item/I = contents[1]
 		playsound(user, dash_sound, 25, TRUE)
-		user.visible_message(span_notice("[user] swiftly draws \the [I]."), span_notice("You draw \the [I]."))
+		user.visible_message("<span class='notice'>[user] swiftly draws \the [I].</span>", "<span class='notice'>You draw \the [I].</span>")
 		user.put_in_hands(I)
 		update_appearance()
 	else
-		to_chat(user, span_warning("[src] is empty!"))
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
 
 /obj/item/storage/belt/weebstick/attack_self(mob/user)
 	if(!iscarbon(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
@@ -474,17 +435,17 @@
 		if(primed)
 			CP.locked = FALSE
 			playsound(user, 'sound/items/sheath.ogg', 25, TRUE)
-			to_chat(user, span_notice("You return your stance."))
+			to_chat(user, "<span class='notice'>You return your stance.</span>")
 			primed = FALSE
 			update_appearance()
 		else
 			CP.locked = TRUE //Prevents normal removal of the blade while primed
 			playsound(user, 'sound/items/unsheath.ogg', 25, TRUE)
-			user.visible_message(span_warning("[user] grips the blade within [src] and primes to attack."), span_warning("You take an opening stance..."), span_warning("You hear a weapon being drawn..."))
+			user.visible_message("<span class='warning'>[user] grips the blade within [src] and primes to attack.</span>", "<span class='warning'>You take an opening stance...</span>", "<span class='warning'>You hear a weapon being drawn...</span>")
 			primed = TRUE
 			update_appearance()
 	else
-		to_chat(user, span_warning("[src] is empty!"))
+		to_chat(user, "<span class='warning'>[src] is empty!</span>")
 
 /obj/item/storage/belt/weebstick/afterattack(atom/A, mob/living/user, proximity_flag, params)
 	. = ..()
@@ -493,7 +454,7 @@
 			return
 		var/obj/item/I = contents[1]
 		if(!user.put_in_inactive_hand(I))
-			to_chat(user, span_warning("You need a free hand!"))
+			to_chat(user, "<span class='warning'>You need a free hand!</span>")
 			return
 		var/datum/component/storage/CP = GetComponent(/datum/component/storage)
 		CP.locked = FALSE
@@ -531,7 +492,7 @@
 	playsound(start, dash_sound, 35, TRUE)
 	var/obj/spot2 = new phasein(end, user.dir)
 	spot1.Beam(spot2, beam_effect, time=20)
-	user.visible_message(span_warning("In a flash of red, [user] draws [user.p_their()] blade!"), span_notice("You dash forward while drawing your weapon!"), span_warning("You hear a blade slice through the air at impossible speeds!"))
+	user.visible_message("<span class='warning'>In a flash of red, [user] draws [user.p_their()] blade!</span>", "<span class='notice'>You dash forward while drawing your weapon!</span>", "<span class='warning'>You hear a blade slice through the air at impossible speeds!</span>")
 
 /obj/item/storage/belt/weebstick/update_icon_state()
 	icon_state = "weeb_sheath"

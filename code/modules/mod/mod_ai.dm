@@ -7,20 +7,22 @@
 
 /obj/item/mod/control/proc/insert_pai(mob/user, obj/item/paicard/card)
 	if(ai)
-		to_chat(user, span_warning("AI already installed!"))
+		balloon_alert(user, "ai already installed!")
 		return
 	if(!card.pai || !card.pai.mind)
-		to_chat(user, span_warning("The pai is unresponsive!"))
+		balloon_alert(user, "pai unresponsive!")
 		return
-	to_chat(user, span_warning("You transfer \the [card] transferring to the suit..."))
+	balloon_alert(user, "transferring to suit...")
 	if(!do_after(user, 5 SECONDS, target = src))
+		balloon_alert(user, "interrupted!")
 		return FALSE
 	if(!user.transferItemToLoc(card, src))
 		return
 
 	card.pai.canholo = FALSE
 	ai = card.pai
-	to_chat(user, span_warning( "You insert \the [card] into \the [src]"))
+	balloon_alert(user, "pAI transferred to suit")
+	balloon_alert(ai, "transferred to a suit")
 	ai.remote_control = src
 	for(var/datum/action/action as anything in actions)
 		action.Grant(ai)
@@ -32,35 +34,39 @@
  *
  * user - The person trying to take out the pAI from the MODsuit.
  * forced - Whether or not we skip the checks and just eject the pAI. Defaults to FALSE.
- * feedback - Whether to give feedback via alerts or not. Defaults to TRUE.
+ * feedback - Whether to give feedback via balloon alerts or not. Defaults to TRUE.
  */
 /obj/item/mod/control/proc/extract_pai(mob/user, forced = FALSE, feedback = TRUE)
 	if(!ai)
 		if(user && feedback)
-			to_chat(user, span_warning("No pAI to remove!"))
+			balloon_alert(user, "no pAI to remove!")
 		return
 	if(!ispAI(ai))
 		if(user && feedback)
-			to_chat(user, span_warning("The onboard AI cannot fit in this card!"))
+			balloon_alert(user, "onboard AI cannot fit in this card!")
 		return
 	if(!forced)
 		if(!open)
 			if(user && feedback)
-				to_chat(user, span_warning("Open the suit panel first!"))
+				balloon_alert(user, "open the suit panel!")
 			return FALSE
 		if(!do_after(user, 5 SECONDS, target = src))
+			if(user && feedback)
+				balloon_alert(user, "interrupted!")
 			return FALSE
 
 	remove_pai(feedback)
 
 	if(feedback && user)
-		to_chat(user, span_warning("You remove the pAI from the suit"))
+		balloon_alert(user, "pAI removed from the suit")
 
 /**
  * Simple proc that handles the safe removal of the pAI from a MOD control unit.
  *
+ * Arguments:
+ * * feedback - Whether or not we want to give balloon alert feedback to the ai. Defaults to FALSE.
  */
-/obj/item/mod/control/proc/remove_pai()
+/obj/item/mod/control/proc/remove_pai(feedback = FALSE)
 	if(!ispAI(ai))
 		return
 	var/mob/living/silicon/pai/pai = ai
@@ -72,6 +78,8 @@
 		if(action.owner == pai)
 			action.Remove(pai)
 
+	if(feedback)
+		balloon_alert(pai, "removed from a suit")
 	pai.remote_control = null
 	pai.canholo = TRUE
 	pai = null

@@ -31,6 +31,7 @@
 		/obj/item/flashlight/lamp = 35,
 		/obj/item/flashlight/lamp/green = 35,
 		/obj/item/flashlight/lantern = 10,
+		/obj/item/flashlight/lamp/bananalamp = 5,
 	)
 /obj/effect/spawner/random/decoration/glowstick
 	name = "random colored glowstick"

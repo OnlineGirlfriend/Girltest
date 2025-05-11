@@ -18,8 +18,7 @@
 	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/effect/decal/proc/NeverShouldHaveComeHere(turf/T)
-	if(turf_loc_check)
-		return isclosedturf(T) || isgroundlessturf(T)
+	return isclosedturf(T) || isgroundlessturf(T)
 
 /obj/effect/decal/ex_act(severity, target)
 	qdel(src)

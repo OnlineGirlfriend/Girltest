@@ -40,7 +40,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 2
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/office)
 "am" = (
@@ -776,7 +778,9 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/light/small/directional/south,
 /obj/machinery/button/door{
 	pixel_y = -6;
@@ -829,7 +833,9 @@
 	dir = 8
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned,
@@ -922,6 +928,7 @@
 	dir = 4
 	},
 /obj/machinery/door/poddoor/preopen{
+	dir = 2;
 	id = "ship_lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -977,6 +984,7 @@
 /obj/structure/window/reinforced/fulltile/shuttle,
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
+	dir = 2;
 	id = "comms_window"
 	},
 /turf/open/floor/plating,
@@ -1268,7 +1276,9 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo)
 "la" = (
-/obj/effect/turf_decal/siding/white,
+/obj/effect/turf_decal/siding/white{
+	dir = 2
+	},
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
@@ -1474,7 +1484,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/white/end,
+/obj/effect/turf_decal/siding/white/end{
+	dir = 2
+	},
 /obj/structure/chair/office{
 	dir = 4
 	},
@@ -1546,7 +1558,9 @@
 /turf/open/floor/wood,
 /area/ship/cargo/office)
 "mG" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1577,6 +1591,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/poddoor/preopen{
+	dir = 2;
 	id = "tegus_security_lockdown"
 	},
 /obj/machinery/door/airlock/security{
@@ -2199,6 +2214,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/poddoor/preopen{
+	dir = 2;
 	id = "tegus_office_lockdown"
 	},
 /turf/open/floor/plasteel/tech,
@@ -2360,7 +2376,9 @@
 /obj/machinery/computer/monitor/retro{
 	dir = 1
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "tz" = (
@@ -2407,6 +2425,7 @@
 /obj/machinery/door/airlock/external,
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/poddoor/preopen{
+	dir = 2;
 	id = "ship_lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2517,7 +2536,9 @@
 	pixel_x = -8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/handrail,
+/obj/structure/chair/handrail{
+	dir = 2
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "uP" = (
@@ -2931,7 +2952,9 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "tegus_starboard_engines"
@@ -3032,7 +3055,9 @@
 /area/ship/cargo/office)
 "zB" = (
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
@@ -3382,6 +3407,7 @@
 	dir = 5
 	},
 /obj/machinery/door/poddoor/preopen{
+	dir = 2;
 	id = "ship_lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -3459,7 +3485,9 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -3623,7 +3651,9 @@
 	dir = 6
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
@@ -3643,7 +3673,9 @@
 "FG" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
@@ -3675,7 +3707,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/borderfloor,
-/obj/structure/chair/handrail,
+/obj/structure/chair/handrail{
+	dir = 2
+	},
 /obj/structure/noticeboard{
 	pixel_y = 28
 	},
@@ -3801,7 +3835,9 @@
 /obj/machinery/space_heater,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -4312,6 +4348,7 @@
 	id = "tegus_shuttle_bay"
 	},
 /obj/docking_port/mobile{
+	can_move_docking_ports = 1;
 	dir = 2;
 	launch_status = 0;
 	name = "tegu";
@@ -4413,7 +4450,9 @@
 /turf/open/floor/circuit/green,
 /area/ship/engineering/communications)
 "Mv" = (
-/obj/machinery/fax/nanotrasen,
+/obj/machinery/fax/nanotrasen{
+	pixel_y = 6
+	},
 /obj/structure/table,
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4425,7 +4464,9 @@
 	layer = 4.1
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/structure/table/reinforced,
 /obj/item/stack/marker_beacon/thirty{
 	pixel_x = 3
@@ -4444,7 +4485,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 2
+	},
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "MW" = (
@@ -4453,7 +4496,9 @@
 	dir = 1
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "Nb" = (
@@ -4659,7 +4704,9 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "Oq" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -4710,6 +4757,7 @@
 /obj/machinery/door/airlock/external,
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/poddoor/preopen{
+	dir = 2;
 	id = "ship_lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -4795,7 +4843,9 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "Px" = (
-/obj/effect/turf_decal/siding/white/end,
+/obj/effect/turf_decal/siding/white/end{
+	dir = 2
+	},
 /obj/machinery/computer/telecomms/server/retro{
 	dir = 8
 	},
@@ -5098,7 +5148,9 @@
 	dir = 4
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "SN" = (
@@ -5251,7 +5303,9 @@
 	dir = 4;
 	name = "Engine Access"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -5311,7 +5365,9 @@
 	pixel_y = -32
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door{
 	dir = 4;
@@ -5852,7 +5908,9 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "Zb" = (
-/obj/effect/turf_decal/siding/white/end,
+/obj/effect/turf_decal/siding/white/end{
+	dir = 2
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/computer/crew{
 	dir = 8;

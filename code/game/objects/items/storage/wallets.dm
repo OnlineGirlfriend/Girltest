@@ -88,7 +88,7 @@
 /obj/item/storage/wallet/examine()
 	. = ..()
 	if(front_id)
-		. += span_notice("Alt-click to remove the id.")
+		. += "<span class='notice'>Alt-click to remove the id.</span>"
 
 /obj/item/storage/wallet/GetID()
 	return front_id
@@ -123,5 +123,5 @@
 	icon_state = "random_wallet"
 
 /obj/item/storage/wallet/random/PopulateContents()
-	new /obj/effect/spawner/random/entertainment/wallet_storage(src)
+	new /obj/item/spacecash/bundle/pocketchange(src)
 	icon_state = "wallet"

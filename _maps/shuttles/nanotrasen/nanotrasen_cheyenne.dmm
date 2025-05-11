@@ -9682,11 +9682,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 2
+	},
 /obj/structure/cable{
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/crewfive)
@@ -10552,7 +10552,7 @@
 /area/ship/medical)
 "Sz" = (
 /obj/structure/window/reinforced/spawner,
-/mob/living/basic/mouse{
+/mob/living/simple_animal/mouse{
 	desc = "This rat seems particularly old and crotchety.";
 	name = "Splinter";
 	faction = list("playerNanotrasen")

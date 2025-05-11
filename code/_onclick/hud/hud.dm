@@ -58,8 +58,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 
 	var/atom/movable/screen/healths
 	var/atom/movable/screen/healthdoll
-	var/atom/movable/screen/stamina //PENTEST EDIT - START
-	//var/atom/movable/screen/internals //PENTEST EDIT - END
+	var/atom/movable/screen/internals
 
 	var/atom/movable/screen/progbar_container/use_timer
 	// subtypes can override this to force a specific UI style
@@ -108,9 +107,8 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	QDEL_LIST(infodisplay)
 
 	healths = null
-	stamina = null //PENTEST ADDITION
 	healthdoll = null
-	//internals = null //PENTEST REMOVAL
+	internals = null
 	lingchemdisplay = null
 	lingstingdisplay = null
 	alien_plasma_display = null
@@ -261,9 +259,9 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 
 	if(hud_used && client)
 		hud_used.show_hud() //Shows the next hud preset
-		to_chat(usr, span_info("Switched HUD mode. Press F12 to toggle."))
+		to_chat(usr, "<span class='info'>Switched HUD mode. Press F12 to toggle.</span>")
 	else
-		to_chat(usr, span_warning("This mob type does not use a HUD."))
+		to_chat(usr, "<span class='warning'>This mob type does not use a HUD.</span>")
 
 
 //(re)builds the hand ui slots, throwing away old ones

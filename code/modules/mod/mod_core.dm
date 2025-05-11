@@ -71,7 +71,11 @@
 /obj/item/mod/core/standard
 	name = "MOD standard core"
 	icon_state = "mod-core-standard"
-	desc = "A MOD core designed to operate systems of a modsuit."
+	desc = "Growing in the most lush, fertile areas of the planet Sprout, there is a crystal known as the Heartbloom. \
+		These rare, organic piezoelectric crystals are of incredible cultural significance to the artist castes of the \
+		Ethereals, owing to their appearance; which is exactly similar to that of an Ethereal's heart.\n\
+		Which one you have in your suit is unclear, but either way, \
+		it's been repurposed to be an internal power source for a Modular Outerwear Device."
 	/// Installed cell.
 	var/obj/item/stock_parts/cell/cell
 
@@ -180,12 +184,13 @@
 
 /obj/item/mod/core/standard/proc/mod_uninstall_cell(mob/living/user)
 	if(!cell)
-		to_chat(user,span_warning("No cell installed!"))
+		mod.balloon_alert(user, "no cell!")
 		return
-	to_chat(user,span_notice("You begin removing the cell..."))
+	mod.balloon_alert(user, "removing cell...")
 	if(!do_after(user, 1.5 SECONDS, target = mod))
+		mod.balloon_alert(user, "interrupted!")
 		return
-	to_chat(user,span_notice("You remove the cell"))
+	mod.balloon_alert(user, "cell removed")
 	playsound(mod, 'sound/machines/click.ogg', 50, TRUE, SILENCED_SOUND_EXTRARANGE)
 	var/obj/item/cell_to_move = cell
 	cell_to_move.forceMove(drop_location())
@@ -197,15 +202,15 @@
 
 	if(istype(attacking_item, /obj/item/stock_parts/cell))
 		if(!mod.open)
-			to_chat(user,span_warning("Open the cover first!"))
+			mod.balloon_alert(user, "open the cover first!")
 			playsound(mod, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return NONE
 		if(cell)
-			to_chat(user,span_warning("There's a cell already installed!"))
+			mod.balloon_alert(user, "cell already installed!")
 			playsound(mod, 'sound/machines/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
 			return COMPONENT_NO_AFTERATTACK
 		install_cell(attacking_item)
-		to_chat(user,span_notice("Cell installed"))
+		mod.balloon_alert(user, "cell installed")
 		playsound(mod, 'sound/machines/click.ogg', 50, TRUE, SILENCED_SOUND_EXTRARANGE)
 		mod.update_charge_alert()
 		return COMPONENT_NO_AFTERATTACK
@@ -228,6 +233,51 @@
 
 	add_charge(amount)
 	mod.update_charge_alert()
+
+/obj/item/mod/core/ethereal
+	name = "MOD ethereal core"
+	icon_state = "mod-core-ethereal"
+	desc = "A reverse engineered core of a Modular Outerwear Device. Using natural liquid electricity from Ethereals, \
+		preventing the need to use external sources to convert electric charge."
+	/// A modifier to all charge we use, ethereals don't need to spend as much energy as normal suits.
+	var/charge_modifier = 0.1
+
+/obj/item/mod/core/ethereal/charge_source()
+	var/obj/item/organ/stomach/ethereal/ethereal_stomach = mod.wearer.getorganslot(ORGAN_SLOT_STOMACH)
+	if(!istype(ethereal_stomach))
+		return
+	return ethereal_stomach
+
+/obj/item/mod/core/ethereal/charge_amount()
+	var/obj/item/organ/stomach/ethereal/charge_source = charge_source()
+	return charge_source?.crystal_charge || ELZUOSE_CHARGE_NONE
+
+/obj/item/mod/core/ethereal/max_charge_amount()
+	return ELZUOSE_CHARGE_FULL
+
+/obj/item/mod/core/ethereal/add_charge(amount)
+	var/obj/item/organ/stomach/ethereal/charge_source = charge_source()
+	if(!charge_source)
+		return FALSE
+	charge_source.adjust_charge(amount*charge_modifier)
+	return TRUE
+
+/obj/item/mod/core/ethereal/subtract_charge(amount)
+	var/obj/item/organ/stomach/ethereal/charge_source = charge_source()
+	if(!charge_source)
+		return FALSE
+	charge_source.adjust_charge(-amount*charge_modifier)
+	return TRUE
+
+/obj/item/mod/core/ethereal/check_charge(amount)
+	return charge_amount() >= amount*charge_modifier
+
+/obj/item/mod/core/ethereal/update_charge_alert()
+	var/obj/item/organ/stomach/ethereal/charge_source = charge_source()
+	if(charge_source)
+		mod.wearer.clear_alert("mod_charge")
+		return
+	mod.wearer.throw_alert("mod_charge", /atom/movable/screen/alert/nocell)
 
 /obj/item/mod/core/plasma
 	name = "MOD plasma core"
@@ -303,5 +353,5 @@
 	if(!plasma.use(uses_needed))
 		return FALSE
 	add_charge(uses_needed * charge_given)
-	to_chat(user, span_notice("core refueled"))
+	balloon_alert(user, "core refueled")
 	return TRUE

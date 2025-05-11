@@ -119,7 +119,3 @@
 
 /datum/movespeed_modifier/xeno_queen_loss
 	multiplicative_slowdown = 2
-
-/datum/movespeed_modifier/basicmob_varspeed
-	variable = TRUE
-	flags = IGNORE_NOSLOW

@@ -16,7 +16,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 
 	box = /obj/item/storage/box/survival
-	l_hand = /obj/item/melee/duelenergy/halberd
+	l_hand = /obj/item/energyhalberd
 
 
 /datum/outfit/job/terragov/ert/inspector

@@ -276,7 +276,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/unpowered)
 "mH" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -334,6 +336,7 @@
 	icon_state = "0-10"
 	},
 /obj/effect/decal/cleanable/crayon{
+	icon_state = "firedanger";
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/oil,
@@ -760,7 +763,9 @@
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "IZ" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1038,7 +1043,7 @@
 	},
 /obj/structure/trap/stun,
 /obj/effect/decal/cleanable/glass/plasma,
-/obj/item/food/deadmouse,
+/obj/item/reagent_containers/food/snacks/deadmouse,
 /obj/item/stack/cable_coil/cut/orange,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
@@ -1151,11 +1156,7 @@
 	dir = 1
 	},
 /obj/item/melee/axe/fire{
-	name = "rusty fire axe";
-	desc = "Despite the rust, it seems surprisingly well built. Maybe it's worth something to a collector."
-	},
-/obj/effect/landmark/mission_poi/main{
-	already_spawned = 1
+	name = "rusty fire axe"
 	},
 /turf/open/floor/engine/airless,
 /area/ruin/unpowered)

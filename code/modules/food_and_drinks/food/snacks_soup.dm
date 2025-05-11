@@ -14,7 +14,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/wish
 	name = "wish soup"
-	desc = "A bowl of water. Usually served as a joke, desperation, or out of a lack of cups."
+	desc = "I wish this was soup."
 	icon_state = "wishsoup"
 	list_reagents = list(/datum/reagent/water = 10)
 	tastes = list("wishes" = 1)
@@ -23,7 +23,7 @@
 	. = ..()
 	var/wish_true = prob(25)
 	if(wish_true)
-		desc = "This mouthful is strikingly filling."
+		desc = "A wish come true!"
 		bonus_reagents = list(/datum/reagent/consumable/nutriment = 9, /datum/reagent/consumable/nutriment/vitamin = 1)
 	if(wish_true)
 		reagents.add_reagent(/datum/reagent/consumable/nutriment, 9)
@@ -32,7 +32,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/meatball
 	name = "meatball soup"
-	desc = "A bowl of soup, primarily consisting of broth and meatballs."
+	desc = "You've got balls kid, BALLS!"
 	icon_state = "meatballsoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("meat" = 1)
@@ -40,7 +40,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/slime
 	name = "slime soup"
-	desc = "A bowl of oddly thick broth, almost like a thin fruit jelly. Something about it smells odd, and it seems to try and take ahold of any utensils with its surface tension..."
+	desc = "If no water is available, you may substitute tears."
 	icon_state = "slimesoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/toxin/slimejelly = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/toxin/slimejelly = 5, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
@@ -49,7 +49,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/blood
 	name = "tomato soup"
-	desc = "A bowl of tomato soup, which smells incredibly oversalted and strangely metallic."
+	desc = "Smells like copper."
 	icon_state = "tomatosoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 6)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/blood = 10, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
@@ -57,27 +57,27 @@
 	foodtype = GORE //its literally blood
 
 /obj/item/reagent_containers/food/snacks/soup/wingfangchu
-	name = "incubator soup"
-	desc = "A culinary experiment involving xenomorph incubator lifeforms that have been marinated and stewed in soy sauce. It's not a successful experiment."
+	name = "wing fang chu"
+	desc = "A savory dish of alien wing wang in soy."
 	icon_state = "wingfangchu"
 	trash = /obj/item/reagent_containers/glass/bowl
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 2)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/soysauce = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
-	tastes = list("soy sauce and rubber" = 1)
+	tastes = list("soy" = 1)
 	foodtype = MEAT
 
 /obj/item/reagent_containers/food/snacks/soup/clownstears
 	name = "clown's tears"
-	desc = "A bowl of a mix of ingredients that invokes the immediate laughter of the viewer. It's too difficult to visually describe it without being overcome with fits of laughing."
+	desc = "Not very funny."
 	icon_state = "clownstears"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/banana = 5, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/consumable/clownstears = 10)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/banana = 5, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 8, /datum/reagent/consumable/clownstears = 10)
-	tastes = list("laughter" = 1)
+	tastes = list("a bad joke" = 1)
 	foodtype = FRUIT | SUGAR
 
 /obj/item/reagent_containers/food/snacks/soup/vegetable
 	name = "vegetable soup"
-	desc = "A bowl of soup, consisting of vegetable broth and cooked vegetables."
+	desc = "A true vegan meal."
 	icon_state = "vegetablesoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("vegetables" = 1)
@@ -85,7 +85,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/nettle
 	name = "nettle soup"
-	desc = "A traditional soup made primarily from stinging nettles, originally eaten as an ancient form of medicine by ancient humans."
+	desc = "To think, the botanist would've beat you to death with one of these."
 	icon_state = "nettlesoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/medicine/omnizine = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("nettles" = 1)
@@ -93,7 +93,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/mystery
 	name = "mystery soup"
-	desc = "A soup consisting of enough ingredients to make it completely unidentifiable."
+	desc = "The mystery is, why aren't you eating it?"
 	icon_state = "mysterysoup"
 	var/extra_reagent = null
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6)
@@ -108,7 +108,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/hotchili
 	name = "hot chili"
-	desc = "A spicy stew consisting of chili peppers, beef, tomatoes, and beans. Often prepared and eaten by colonists and other frontiersfolk out of tradition. This one's incredibly spicy!"
+	desc = "A five alarm Texan Chili!"
 	icon_state = "hotchili"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
@@ -117,7 +117,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/coldchili
 	name = "cold chili"
-	desc = "A spicy(?) stew consisting of genetically modified chili peppers (chillys?), beef, tomatoes, and beans. Not for those with sensitive teeth."
+	desc = "This slush is barely a liquid!"
 	icon_state = "coldchili"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/frostoil = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
@@ -126,7 +126,8 @@
 
 /obj/item/reagent_containers/food/snacks/soup/meatchili
 	name = "chili con carne"
-	desc = "A spicy stew consisting of chili peppers, beef, tomatoes, and beans. Often prepared and eaten by colonists and other frontiersfolk out of tradition."
+	desc = "A delicious stew of meat and chiles."
+	icon_state = "clownchili"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/consumable/tomatojuice = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("tomato" = 1, "hot peppers" = 2, "meat" = 2, "spice" = 2)
@@ -134,16 +135,16 @@
 
 /obj/item/reagent_containers/food/snacks/soup/monkeysdelight
 	name = "monkey's delight"
-	desc = "A sort of soup consisting of using a culinarily prepared monkey cube, of which it is selectively reconstituted into being the main contents of the soup. Don't eat any dry chunks!"
+	desc = "A delicious soup with dumplings and hunks of monkey meat simmered to perfection, in a broth that tastes faintly of bananas."
 	icon_state = "monkeysdelight"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/banana = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
-	tastes = list("odd broth" = 1, "furred meat" = 1)
-	foodtype = FRUIT //???
+	tastes = list("the jungle" = 1, "banana" = 1)
+	foodtype = FRUIT
 
 /obj/item/reagent_containers/food/snacks/soup/tomato
 	name = "tomato soup"
-	desc = "A soup consisting of pureed tomatoes, primarily used in modern cuisine as a medium to be dipped in."
+	desc = "Drinking this feels like being a vampire! A tomato vampire..."
 	icon_state = "tomatosoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/tomatojuice = 10, /datum/reagent/consumable/nutriment/vitamin = 3)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/tomatojuice = 10, /datum/reagent/consumable/nutriment/vitamin = 3)
@@ -152,23 +153,23 @@
 
 /obj/item/reagent_containers/food/snacks/soup/tomato/eyeball
 	name = "eyeball soup"
-	desc = "An adaptation of tomato soup enjoyed by sarathi with the inclusion of raw organs and meat, most notably the eyes."
+	desc = "It looks back at you..."
 	icon_state = "eyeballsoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/liquidgibs = 3)
-	tastes = list("tomato" = 1, "squish" = 1)
+	tastes = list("tomato" = 1, "squirming" = 1)
 	foodtype = MEAT | GORE
 
 /obj/item/reagent_containers/food/snacks/soup/miso
 	name = "miso soup"
-	desc = "A soup consisting of miso paste and stock consisting of a specific mix of edible kelp and shaved fish. Often includes tofu, mushrooms, and other additions."
+	desc = "The universes best soup! Yum!!!"
 	icon_state = "misosoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 3)
-	tastes = list("miso" = 1)
+	tastes = list("miso" = 1) // wtf is milo
 	foodtype = VEGETABLES
 
 /obj/item/reagent_containers/food/snacks/soup/mushroom
 	name = "chantrelle soup"
-	desc = "A form of cream of mushroom soup consisting primarily of chanterelles, which are often found in untended hydropons."
+	desc = "A delicious and hearty mushroom soup."
 	icon_state = "mushroomsoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/vitamin = 4)
@@ -176,16 +177,21 @@
 	foodtype = VEGETABLES
 
 /obj/item/reagent_containers/food/snacks/soup/beet
-	name = "borscht"
-	desc = "A sour soup consisting of a meat stock with tomatoes and beetroots. Usually served hot or cold."
+	name = "beet soup"
+	desc = "Wait, how do you spell it again..?"
 	icon_state = "beetsoup"
-	tastes = list("sweet and tart beets" = 1, "rich broth" = 1)
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
 	foodtype = VEGETABLES
 
+/obj/item/reagent_containers/food/snacks/soup/beet/Initialize()
+	. = ..()
+	name = pick("borsch","bortsch","borstch","borsh","borshch","borscht")
+	tastes = list(name = 1)
+
+
 /obj/item/reagent_containers/food/snacks/soup/spacylibertyduff
-	name = "libertycap duff"
-	desc = "A thick gelatin that consists of specifically hallucinogenic mushrooms rendered within in order to allow it to permeate across the gelatin body."
+	name = "spacy liberty duff"
+	desc = "Jello gelatin, from Alfred Hubbard's cookbook."
 	icon_state = "spacylibertyduff"
 	bitesize = 3
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
@@ -195,7 +201,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/amanitajelly
 	name = "amanita jelly"
-	desc = "A thick gelatin with the toxic fly agaric mushroom rendered within it. Still highly poisonous, despite being rendered in a sweet jelly."
+	desc = "Looks curiously toxic."
 	icon_state = "amanitajelly"
 	bitesize = 3
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
@@ -205,7 +211,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/stew
 	name = "stew"
-	desc = "A vegetable stew with a thickened, well-seasoned broth and many vegetables."
+	desc = "A nice and warm stew. Healthy and strong."
 	icon_state = "stew"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/tomatojuice = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/medicine/oculine = 5, /datum/reagent/consumable/tomatojuice = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
@@ -216,7 +222,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/sweetpotato
 	name = "sweet potato soup"
-	desc = "A soup consisting of sweet potatoes boiled for extended periods of time with ginger and crystal sugar."
+	desc = "Delicious sweet potato in soup form."
 	icon_state = "sweetpotatosoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("sweet potato" = 1)
@@ -224,15 +230,15 @@
 
 /obj/item/reagent_containers/food/snacks/soup/beet/red
 	name = "red beet soup"
-	desc = "A simplified form of borscht soup, notably lacking the meat broth."
+	desc = "Quite a delicacy."
 	icon_state = "redbeetsoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("beet" = 1)
-	foodtype = VEGETABLES //why is this in the game alongside actual borscht? what are they cooking here? we don't even have beetroot in the game AAARRGHHHH!!!!!
+	foodtype = VEGETABLES
 
 /obj/item/reagent_containers/food/snacks/soup/onion
 	name = "french onion soup"
-	desc = "A soup consisting of fried onions that are cooked in a meat stock, then gratineed with bread and cheese at the top."
+	desc = "Good enough to make a grown mime cry."
 	icon_state = "onionsoup"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("caramelized onions" = 1)
@@ -240,7 +246,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/bisque
 	name = "bisque"
-	desc = "A thick, creamy soup consisting of a broth from strained shellfish."
+	desc = "A classic entree from Space-France."
 	icon_state = "bisque"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/nutriment/vitamin = 6)
 	tastes = list("creamy texture" = 1, "crab" = 4)
@@ -248,7 +254,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/electron
 	name = "electron soup"
-	desc = "A rare example of cuisine from elzuosa, this soup takes advantage of a local mushroom's ability to briefly create plasma when subjected to an electrical current to create a sort of advanced state broth."
+	desc = "A gastronomic curiosity of ethereal origin. It is famed for the minature weather system formed over a properly prepared soup."
 	icon_state = "electronsoup"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/liquidelectricity = 5)
 	tastes = list("mushroom" = 1, "electrons" = 4)
@@ -257,7 +263,7 @@
 
 /obj/item/reagent_containers/food/snacks/soup/bungocurry
 	name = "bungo curry"
-	desc = "A form of vegetable and fruit curry, consisting of the recently mass-market produced experiment known as the bungo fruit. Roasted and curried, it's surprisingly good."
+	desc = "A spicy vegetable curry made with the humble bungo fruit, Exotic!"
 	icon_state = "bungocurry"
 	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/bungojuice = 6)
 	list_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/capsaicin = 5)

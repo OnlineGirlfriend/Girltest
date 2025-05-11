@@ -3,7 +3,7 @@
 ///Magnetic Harness - Automatically puts guns in your suit storage when you drop them.
 /obj/item/mod/module/magnetic_harness
 	name = "MOD magnetic harness module"
-	desc = "Based off old BARD harness kits, this magnetic harness automatically attaches dropped guns back to the wearer."
+	desc = "Based off old TerraGov harness kits, this magnetic harness automatically attaches dropped guns back to the wearer."
 	icon_state = "mag_harness"
 	complexity = 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN
@@ -50,7 +50,7 @@
 	if(!mod.wearer.equip_to_slot_if_possible(item, ITEM_SLOT_SUITSTORE, qdel_on_fail = FALSE, disable_warning = TRUE))
 		return
 	playsound(src, 'sound/items/modsuit/magnetic_harness.ogg', 50, TRUE)
-	to_chat(mod.wearer,span_notice("\The harness automatically reattaches \the [item]."))
+	balloon_alert(mod.wearer, "[item] reattached")
 	drain_power(use_power_cost)
 
 ///Holster - Instantly holsters any not huge gun.
@@ -76,20 +76,20 @@
 	if(!holstered)
 		var/obj/item/gun/holding = mod.wearer.get_active_held_item()
 		if(!holding)
-			to_chat(mod.wearer,span_warning("You aren't holding anything to holster!"))
+			balloon_alert(mod.wearer, "nothing to holster!")
 			return
 		if(!istype(holding) || holding.w_class > WEIGHT_CLASS_BULKY)
-			to_chat(mod.wearer,span_warning("\The [holding] is too huge to fit!"))
+			balloon_alert(mod.wearer, "it doesn't fit!")
 			return
 		if(mod.wearer.transferItemToLoc(holding, src, force = FALSE, silent = TRUE))
 			holstered = holding
-			to_chat(mod.wearer,span_notice("You holster the [holding]. Activate the holster again to draw it."))
+			balloon_alert(mod.wearer, "weapon holstered")
 			playsound(src, 'sound/weapons/gun/revolver/empty.ogg', 100, TRUE)
 	else if(mod.wearer.put_in_active_hand(holstered, forced = FALSE, ignore_animation = TRUE))
-		to_chat(mod.wearer,span_warning("You draw \the [holstered]."))
+		balloon_alert(mod.wearer, "weapon drawn")
 		playsound(src, 'sound/weapons/gun/revolver/empty.ogg', 100, TRUE)
 	else
-		to_chat(mod.wearer,span_warning("The holster is full!"))
+		balloon_alert(mod.wearer, "holster full!")
 
 /obj/item/mod/module/holster/on_uninstall(deleting = FALSE)
 	if(holstered)

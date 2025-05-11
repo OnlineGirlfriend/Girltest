@@ -142,6 +142,3 @@ GLOBAL_VAR_INIT(cmp_field, "name")
 	if(A.dock_width == B.dock_width)
 		return A.dock_height - B.dock_height
 	return A.dock_width - B.dock_width
-
-/proc/cmp_factions_asc(datum/faction/a, datum/faction/b)
-	return initial(b.order) - initial(a.order) || sorttext(initial(b.name), initial(a.name))

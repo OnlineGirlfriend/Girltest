@@ -1,4 +1,4 @@
-/datum/language/solarian_international
+/datum/language/solarian
 	name = "Solarian International Standard"
 	desc = "The natural fusion of the Solarian languages that survived the Night Of Fire, which gradually coalesced into a single language."
 	key = "c"

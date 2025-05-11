@@ -20,9 +20,8 @@ GLOBAL_LIST_EMPTY(GPS_list)
 /datum/component/gps/item
 	var/updating = TRUE //Automatic updating of GPS list. Can be set to manual by user.
 	var/global_mode = TRUE //If disabled, only GPS signals of the same Z level are shown
-	var/deep_interact = FALSE // if this item can have it's GPS accessed inside other items.
 
-/datum/component/gps/item/Initialize(_gpstag = "COM0", emp_proof = FALSE, has_deep_interact = FALSE)
+/datum/component/gps/item/Initialize(_gpstag = "COM0", emp_proof = FALSE)
 	. = ..()
 	if(. == COMPONENT_INCOMPATIBLE || !isitem(parent))
 		return COMPONENT_INCOMPATIBLE
@@ -32,7 +31,6 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	RegisterSignal(parent, COMSIG_ITEM_ATTACK_SELF, PROC_REF(interact))
 	if(!emp_proof)
 		RegisterSignal(parent, COMSIG_ATOM_EMP_ACT, PROC_REF(on_emp_act))
-	deep_interact = has_deep_interact
 	RegisterSignal(parent, COMSIG_PARENT_EXAMINE, PROC_REF(on_examine))
 	RegisterSignal(parent, COMSIG_CLICK_ALT, PROC_REF(on_AltClick))
 
@@ -47,7 +45,7 @@ GLOBAL_LIST_EMPTY(GPS_list)
 /datum/component/gps/item/proc/on_examine(datum/source, mob/user, list/examine_list)
 	SIGNAL_HANDLER
 
-	examine_list += span_notice("Alt-click to switch it [tracking ? "off":"on"].")
+	examine_list += "<span class='notice'>Alt-click to switch it [tracking ? "off":"on"].</span>"
 
 ///Called on COMSIG_ATOM_EMP_ACT
 /datum/component/gps/item/proc/on_emp_act(datum/source, severity)
@@ -78,27 +76,25 @@ GLOBAL_LIST_EMPTY(GPS_list)
 	if(!user.canUseTopic(parent, BE_CLOSE))
 		return //user not valid to use gps
 	if(emped)
-		to_chat(user, span_warning("It's busted!"))
+		to_chat(user, "<span class='warning'>It's busted!</span>")
 		return
 	var/atom/A = parent
 	if(tracking)
 		A.cut_overlay("working")
-		to_chat(user, span_notice("[parent] is no longer tracking, or visible to other GPS devices."))
+		to_chat(user, "<span class='notice'>[parent] is no longer tracking, or visible to other GPS devices.</span>")
 		tracking = FALSE
 	else
 		A.add_overlay("working")
-		to_chat(user, span_notice("[parent] is now tracking, and visible to other GPS devices."))
+		to_chat(user, "<span class='notice'>[parent] is now tracking, and visible to other GPS devices.</span>")
 		tracking = TRUE
 
 /datum/component/gps/item/ui_interact(mob/user, datum/tgui/ui)
 	if(emped)
-		to_chat(user, span_hear("[parent] fizzles weakly."))
+		to_chat(user, "<span class='hear'>[parent] fizzles weakly.</span>")
 		return
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "Gps")
-		if(deep_interact)
-			ui.set_state(GLOB.deep_inventory_state)
 		ui.open()
 	ui.set_autoupdate(updating)
 

@@ -46,15 +46,15 @@ export const HelmConsole = (_props, context) => {
 
 const SharedContent = (_props, context) => {
   const { act, data } = useBackend(context);
-  const { isViewer, canRename, shipInfo = [], otherInfo = [] } = data;
+  const { isViewer, shipInfo = [], otherInfo = [] } = data;
   return (
     <>
       <Section
         title={
           <Button.Input
-            content={decodeHtmlEntities(shipInfo.prefixed)}
+            content={decodeHtmlEntities(shipInfo.name)}
             currentValue={shipInfo.name}
-            disabled={isViewer || !canRename}
+            disabled={isViewer}
             onCommit={(_e, value) =>
               act('rename_ship', {
                 newName: value,

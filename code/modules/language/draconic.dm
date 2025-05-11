@@ -1,4 +1,4 @@
-/datum/language/kalixcian_common
+/datum/language/draconic
 	name = "Kalixcian Common"
 	desc = "The most prevalent language to come out of Kalixcis, and generally understood by all those native to it."
 	speech_verb = "hisses"
@@ -6,7 +6,7 @@
 	exclaim_verb = "roars"
 	sing_verb = "sings"
 	key = "o"
-	flags = TONGUELESS_SPEECH | LANGUAGE_HIDE_ICON_IF_NOT_UNDERSTOOD
+	flags = TONGUELESS_SPEECH | LANGUAGE_HIDE_ICON_IF_NOT_UNDERSTOOD //WS Edit- Language icon hiding
 	space_chance = 40
 	syllables = list(
 		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",

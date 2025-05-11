@@ -869,9 +869,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 			if("Smoker" in all_quirks)
-				if(!mutant_category)
-					dat += APPEARANCE_CATEGORY_COLUMN
-				dat += "<h3>Favorite Smokes</h3>"
+				dat += "<h3>Smoker</h3>"
 
 				dat += "<a href='?_src_=prefs;preference=preferred_smoke_brand;task=input'>[preferred_smoke_brand]</a><BR>"
 
@@ -974,7 +972,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				else
 					dat += " |"
 				if(category == gear_tab)
-					dat += " [span_linkoff("[category]")] "
+					dat += " <span class='linkOff'>[category]</span> "
 				else
 					dat += " <a href='?_src_=prefs;preference=gear;select_category=[category]'>[category]</a> "
 			dat += "</b></center></td></tr>"
@@ -1340,7 +1338,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 /datum/preferences/proc/SetQuirks(mob/user)
 	if(!SSquirks)
-		to_chat(user, span_danger("The quirk subsystem is still initializing! Try again in a minute."))
+		to_chat(user, "<span class='danger'>The quirk subsystem is still initializing! Try again in a minute.</span>")
 		return
 
 	var/list/dat = list()
@@ -1390,7 +1388,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					<font color='[font_color]'>[initial(quirk_datum.name)]</font> - [initial(quirk_datum.desc)]<br>"
 		dat += "<br><center><a href='?_src_=prefs;preference=trait;task=reset'>Reset Quirks</a></center>"
 
-	var/datum/browser/popup = new(user, "mob_trait", "<div align='center'>Quirk Preferences</div>", 900, 650) //no reason not to reuse the occupation window, as it's cleaner that way
+	var/datum/browser/popup = new(user, "mob_trait", "<div align='center'>Quirk Preferences</div>", 900, 600) //no reason not to reuse the occupation window, as it's cleaner that way
 	popup.set_window_options("can_close=0")
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
@@ -1485,7 +1483,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		all_quirks = all_quirks_new
 		save_character()
 	if(all_quirks_new != all_quirks)
-		to_chat(user, span_danger("Your quirks have been altered."))
+		to_chat(user, "<span class='danger'>Your quirks have been altered.</span>")
 		return all_quirks_new
 
 /datum/preferences/proc/GetQuirkBalance()
@@ -1523,7 +1521,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/expires = "This is a permanent ban."
 			if(ban_details["expiration_time"])
 				expires = " The ban is for [DisplayTimeText(text2num(ban_details["duration"]) MINUTES)] and expires on [ban_details["expiration_time"]] (server time)."
-			to_chat(user, span_danger("You, or another user of this computer or connection ([ban_details["key"]]) is banned from playing [href_list["bancheck"]].<br>The ban reason is: [ban_details["reason"]]<br>This ban (BanID #[ban_details["id"]]) was applied by [ban_details["admin_key"]] on [ban_details["bantime"]] during round ID [ban_details["round_id"]].<br>[expires]"))
+			to_chat(user, "<span class='danger'>You, or another user of this computer or connection ([ban_details["key"]]) is banned from playing [href_list["bancheck"]].<br>The ban reason is: [ban_details["reason"]]<br>This ban (BanID #[ban_details["id"]]) was applied by [ban_details["admin_key"]] on [ban_details["bantime"]] during round ID [ban_details["round_id"]].<br>[expires]</span>")
 			return
 	if(href_list["preference"] == "job")
 		SetChoices(user)
@@ -1572,16 +1570,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				var/balance = GetQuirkBalance()
 				if(quirk in all_quirks)
 					if(balance + value < 0)
-						to_chat(user, span_warning("Refunding this would cause you to go below your balance!"))
+						to_chat(user, "<span class='warning'>Refunding this would cause you to go below your balance!</span>")
 						return
 					all_quirks -= quirk
 				else
 					var/is_positive_quirk = SSquirks.quirk_points[quirk] > 0
 					if(is_positive_quirk && GetPositiveQuirkCount() >= MAX_QUIRKS)
-						to_chat(user, span_warning("You can't have more than [MAX_QUIRKS] positive quirks!"))
+						to_chat(user, "<span class='warning'>You can't have more than [MAX_QUIRKS] positive quirks!</span>")
 						return
 					if(balance - value < 0)
-						to_chat(user, span_warning("You don't have enough balance to gain this quirk!"))
+						to_chat(user, "<span class='warning'>You don't have enough balance to gain this quirk!</span>")
 						return
 					all_quirks += quirk
 				SetQuirks(user)
@@ -1854,7 +1852,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#191919")[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor"] = sanitize_hexcolor(new_mutantcolor)
 						else
-							to_chat(user, span_danger("Invalid color. Your color is not bright enough."))
+							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("mutant_color_2")
 					var/new_mutantcolor = input(user, "Choose your character's secondary alien/mutant color:", "Character Preference","#" + features["mcolor2"]) as color|null
@@ -1865,7 +1863,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#191919")[3]) // mutantcolors must be bright, but only if they affect the skin
 							features["mcolor2"] = sanitize_hexcolor(new_mutantcolor)
 						else
-							to_chat(user, span_danger("Invalid color. Your color is not bright enough."))
+							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("color_ethereal")
 					var/new_etherealcolor = input(user, "Choose your elzuose color:", "Character Preference","#"+features["ethcolor"]) as color|null
@@ -1874,7 +1872,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(ReadHSV(temp_hsv)[3] >= ReadHSV("#505050")[3]) // elzu colors should be bright
 							features["ethcolor"] = sanitize_hexcolor(new_etherealcolor)
 						else
-							to_chat(user, span_danger("Invalid color. Your color is not bright enough."))
+							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 
 				if("tail_lizard")
@@ -2128,12 +2126,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						pda_color = pickedPDAColor
 
 				if("phobia")
-					var/phobiaType = input(user, "What is your character scared of?", "Quirk Preference", phobia) as null|anything in SStraumas.phobia_types
+					var/phobiaType = input(user, "What are you scared of?", "Character Preference", phobia) as null|anything in SStraumas.phobia_types
 					if(phobiaType)
 						phobia = phobiaType
-
 				if("preferred_smoke_brand")
-					var/smokeBrand = input(user, "What are your character's favorite smokes?", "Quirk Preference", preferred_smoke_brand) as null|anything in GLOB.valid_smoke_types
+					var/smokeBrand = input(user, "What cigarettes are your favorite?", "Character Preference", preferred_smoke_brand) as null|anything in GLOB.valid_smoke_types
 					if(smokeBrand)
 						preferred_smoke_brand = smokeBrand
 
@@ -2446,7 +2443,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("clear_heart")
 					hearted = FALSE
 					hearted_until = null
-					to_chat(user, span_notice("OOC Commendation Heart disabled"))
+					to_chat(user, "<span class='notice'>OOC Commendation Heart disabled</span>")
 					save_preferences()
 
 

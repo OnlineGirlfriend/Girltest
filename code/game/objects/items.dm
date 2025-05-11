@@ -225,8 +225,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 	var/canMouseDown = FALSE
 
-	var/attack_cooldown = CLICK_CD_MELEE
-
 	/// Has the item been reskinned?
 	var/current_skin
 	/// List of options to reskin.
@@ -367,7 +365,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	. = ..()
 
 	if(unique_reskin && !current_skin)
-		. += span_notice("Alt-click it to reskin it.")
+		. += "<span class='notice'>Alt-click it to reskin it.</span>"
 
 	. += "[gender == PLURAL ? "They are" : "It is"] a [weightclass2text(w_class)] item."
 
@@ -458,9 +456,9 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 		if(can_handle_hot)
 			extinguish()
-			to_chat(user, span_notice("You put out the fire on [src]."))
+			to_chat(user, "<span class='notice'>You put out the fire on [src].</span>")
 		else
-			to_chat(user, span_warning("You burn your hand on [src]!"))
+			to_chat(user, "<span class='warning'>You burn your hand on [src]!</span>")
 			var/obj/item/bodypart/affecting = C.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 			if(affecting && affecting.receive_damage(0, 5))		// 5 burn damage
 				C.update_damage_overlays()
@@ -470,7 +468,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		var/mob/living/carbon/C = user
 		if(istype(C))
 			if(!C.gloves || (!(C.gloves.resistance_flags & (UNACIDABLE|ACID_PROOF))))
-				to_chat(user, span_warning("The acid on [src] burns your hand!"))
+				to_chat(user, "<span class='warning'>The acid on [src] burns your hand!</span>")
 				var/obj/item/bodypart/affecting = C.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 				if(affecting && affecting.receive_damage(0, 5))		// 5 burn damage
 					C.update_damage_overlays()
@@ -482,7 +480,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	var/grav = user.has_gravity()
 	if(grav > STANDARD_GRAVITY)
 		var/grav_power = min(3,grav - STANDARD_GRAVITY)
-		to_chat(user,span_notice("You start picking up [src]..."))
+		to_chat(user,"<span class='notice'>You start picking up [src]...</span>")
 		if(!do_after(user, 30*grav_power, src))
 			return
 
@@ -532,7 +530,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(!A.has_fine_manipulation)
 		if(src in A.contents) // To stop Aliens having items stuck in their pockets
 			A.dropItemToGround(src)
-		to_chat(user, span_warning("Your claws aren't capable of such fine manipulation!"))
+		to_chat(user, "<span class='warning'>Your claws aren't capable of such fine manipulation!</span>")
 		return
 	attack_paw(A)
 
@@ -552,20 +550,14 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 // afterattack() and attack() prototypes moved to _onclick/item_attack.dm for consistency
 
 /obj/item/proc/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
-	//Mostly shields
+	SEND_SIGNAL(src, COMSIG_ITEM_HIT_REACT, args)
 	if((prob(final_block_chance) && COOLDOWN_FINISHED(src, block_cooldown)) || (prob(final_block_chance) && istype(src, /obj/item/shield)))
-		owner.visible_message(span_danger("[owner] blocks [attack_text] with [src]!"))
+		owner.visible_message("<span class='danger'>[owner] blocks [attack_text] with [src]!</span>")
 		playsound(src, 'sound/weapons/effects/deflect.ogg', 100)
 		if(!istype(src, /obj/item/shield))
 			COOLDOWN_START(src, block_cooldown, block_cooldown_time)
 		return TRUE
-
-	var/signal_result = (SEND_SIGNAL(src, COMSIG_ITEM_HIT_REACT, owner, hitby, damage, attack_type)) + prob(final_block_chance)
-	if(!signal_result)
-		return FALSE
-	if(hit_reaction_chance >= 0)
-		owner.visible_message(span_danger("[owner] blocks [attack_text] with [src]!"))
-	return signal_result
+	return FALSE
 
 /obj/item/proc/talk_into(mob/M, input, channel, spans, datum/language/language, list/message_mods)
 	return ITALICS | REDUCE_RANGE
@@ -702,15 +694,15 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 	if(M.is_eyes_covered())
 		// you can't stab someone in the eyes wearing a mask!
-		to_chat(user, span_warning("You're going to need to remove [M.p_their()] eye protection first!"))
+		to_chat(user, "<span class='warning'>You're going to need to remove [M.p_their()] eye protection first!</span>")
 		return
 
 	if(isalien(M))//Aliens don't have eyes./N     slimes also don't have eyes!
-		to_chat(user, span_warning("You cannot locate any eyes on this creature!"))
+		to_chat(user, "<span class='warning'>You cannot locate any eyes on this creature!</span>")
 		return
 
 	if(isbrain(M))
-		to_chat(user, span_warning("You cannot locate any organic eyes on this brain!"))
+		to_chat(user, "<span class='warning'>You cannot locate any organic eyes on this brain!</span>")
 		return
 
 	src.add_fingerprint(user)
@@ -720,12 +712,12 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	user.do_attack_animation(M)
 
 	if(M != user)
-		M.visible_message(span_danger("[user] stabs [M] in the eye with [src]!"), \
-							span_userdanger("[user] stabs you in the eye with [src]!"))
+		M.visible_message("<span class='danger'>[user] stabs [M] in the eye with [src]!</span>", \
+							"<span class='userdanger'>[user] stabs you in the eye with [src]!</span>")
 	else
 		user.visible_message( \
-			span_danger("[user] stabs [user.p_them()]self in the eyes with [src]!"), \
-			span_userdanger("You stab yourself in the eyes with [src]!") \
+			"<span class='danger'>[user] stabs [user.p_them()]self in the eyes with [src]!</span>", \
+			"<span class='userdanger'>You stab yourself in the eyes with [src]!</span>" \
 		)
 	if(is_human_victim)
 		var/mob/living/carbon/human/U = M
@@ -746,20 +738,20 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	if(eyes.damage >= 10)
 		M.adjust_blurriness(15)
 		if(M.stat != DEAD)
-			to_chat(M, span_danger("Your eyes start to bleed profusely!"))
+			to_chat(M, "<span class='danger'>Your eyes start to bleed profusely!</span>")
 		if(!(M.is_blind() || HAS_TRAIT(M, TRAIT_NEARSIGHT)))
-			to_chat(M, span_danger("You become nearsighted!"))
+			to_chat(M, "<span class='danger'>You become nearsighted!</span>")
 		M.become_nearsighted(EYE_DAMAGE)
 		if(prob(50))
 			if(M.stat != DEAD)
 				if(M.drop_all_held_items())
-					to_chat(M, span_danger("You drop what you're holding and clutch at your eyes!"))
+					to_chat(M, "<span class='danger'>You drop what you're holding and clutch at your eyes!</span>")
 			M.adjust_blurriness(10)
 			M.Unconscious(20)
 			M.Paralyze(40)
 		if (prob(eyes.damage - 10 + 1))
 			M.become_blind(EYE_DAMAGE)
-			to_chat(M, span_danger("You go blind!"))
+			to_chat(M, "<span class='danger'>You go blind!</span>")
 
 /obj/item/singularity_pull(S, current_size)
 	..()
@@ -885,7 +877,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 /obj/item/proc/ignition_effect(atom/A, mob/user)
 	if(get_temperature())
-		. = span_notice("[user] lights [A] with [src].")
+		. = "<span class='notice'>[user] lights [A] with [src].</span>"
 	else
 		. = ""
 
@@ -901,11 +893,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	return 0
 
 /obj/item/mech_melee_attack(obj/mecha/M)
-	return 0
-
-/obj/item/attack_basic_mob(mob/living/basic/user, list/modifiers)
-	if (obj_flags & CAN_BE_HIT)
-		return ..()
 	return 0
 
 /obj/item/burn()
@@ -945,25 +932,20 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 /obj/item/proc/set_force_string()
 	switch(force)
-		if(0 to 3)
-			force_string = "pitiful"
-		if(3 to 6)
+		if(0 to 4)
 			force_string = "very low"
-		if(6 to 9)
+		if(4 to 7)
 			force_string = "low"
-		if(10 to 13) //12 is the force of a toolbox
+		if(7 to 10)
 			force_string = "medium"
-		if(13 to 16)
+		if(10 to 11)
 			force_string = "high"
-		if(16 to 20)
+		if(11 to 20) //12 is the force of a toolbox
 			force_string = "robust"
 		if(20 to 25)
 			force_string = "very robust"
-		if(25 to 30)
-			force_string = "exceptionally robust"
 		else
-			force_string = "unfair"
-
+			force_string = "exceptionally robust"
 	last_force_string_check = force
 
 /obj/item/proc/openTip(location, control, params, user)
@@ -1160,7 +1142,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		return
 	user.dropItemToGround(src, silent = TRUE)
 	if(throwforce && HAS_TRAIT(user, TRAIT_PACIFISM))
-		to_chat(user, span_notice("You set [src] down gently on the ground."))
+		to_chat(user, "<span class='notice'>You set [src] down gently on the ground.</span>")
 		return
 	return src
 
@@ -1243,8 +1225,6 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 ///Intended for interactions with guns, like racking
 /obj/item/proc/unique_action(mob/living/user)
-	if(SEND_SIGNAL(src, COMSIG_ITEM_UNIQUE_ACTION, user))
-		return TRUE
 
 ///Called before unique action, if any other associated items should do a unique action or override it.
 /obj/item/proc/pre_unique_action(mob/living/user)
@@ -1310,8 +1290,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 /obj/item/proc/on_accidental_consumption(mob/living/carbon/victim, mob/living/carbon/user, obj/item/source_item, discover_after = TRUE)
 	if(get_sharpness() && force >= 5) //if we've got something sharp with a decent force (ie, not plastic)
 		INVOKE_ASYNC(victim, TYPE_PROC_REF(/mob, force_scream))
-		victim.visible_message(span_warning("[victim] looks like [victim.p_theyve()] just bit something they shouldn't have!"), \
-							span_boldwarning("OH GOD! Was that a crunch? That didn't feel good at all!!"))
+		victim.visible_message("<span class='warning'>[victim] looks like [victim.p_theyve()] just bit something they shouldn't have!</span>", \
+							"<span class='boldwarning'>OH GOD! Was that a crunch? That didn't feel good at all!!</span>")
 
 		victim.apply_damage(max(15, force), BRUTE, BODY_ZONE_HEAD)
 		victim.losebreath += 2
@@ -1355,8 +1335,8 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 		victim.adjust_disgust(33)
 		victim.visible_message(
-			span_warning("[victim] looks like [victim.p_theyve()] just bitten into something hard."), \
-			span_warning("Eugh! Did I just bite into something?"))
+			"<span class='warning'>[victim] looks like [victim.p_theyve()] just bitten into something hard.</span>", \
+			"<span class='warning'>Eugh! Did I just bite into something?</span>")
 
 	else if(w_class == WEIGHT_CLASS_TINY) //small items like soap or toys that don't have mat datums
 		/// victim's chest (for cavity implanting the item)
@@ -1364,16 +1344,16 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		if(victim_cavity.cavity_item)
 			victim.vomit(5, FALSE, FALSE, distance = 0)
 			forceMove(drop_location())
-			to_chat(victim, span_warning("You vomit up a [name]! [source_item? "Was that in \the [source_item]?" : ""]"))
+			to_chat(victim, "<span class='warning'>You vomit up a [name]! [source_item? "Was that in \the [source_item]?" : ""]</span>")
 		else
 			victim.transferItemToLoc(src, victim, TRUE)
 			victim.losebreath += 2
 			victim_cavity.cavity_item = src
-			to_chat(victim, span_warning("You swallow hard. [source_item? "Something small was in \the [source_item]..." : ""]"))
+			to_chat(victim, "<span class='warning'>You swallow hard. [source_item? "Something small was in \the [source_item]..." : ""]</span>")
 		discover_after = FALSE
 
 	else
-		to_chat(victim, span_warning("[source_item? "Something strange was in the \the [source_item]..." : "I just bit something strange..."] "))
+		to_chat(victim, "<span class='warning'>[source_item? "Something strange was in the \the [source_item]..." : "I just bit something strange..."] </span>")
 
 	return discover_after
 

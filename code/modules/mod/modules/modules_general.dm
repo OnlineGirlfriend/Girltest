@@ -9,7 +9,7 @@
 	icon_state = "jetpack"
 	module_type = MODULE_TOGGLE
 	complexity = 3
-	active_power_cost = MODULE_CHARGE_DRAIN_HIGH
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.5
 	use_power_cost = DEFAULT_CHARGE_DRAIN
 	incompatible_modules = list(/obj/item/mod/module/jetpack)
 	cooldown_time = 0.5 SECONDS
@@ -117,7 +117,7 @@
 		However, it will take from the suit's power to do so. Luckily, your PDA already has one of these."
 	icon_state = "empshield"
 	complexity = 1
-	idle_power_cost = MODULE_CHARGE_DRAIN_MEDIUM
+	idle_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	incompatible_modules = list(/obj/item/mod/module/emp_shield)
 
 /obj/item/mod/module/emp_shield/on_install()
@@ -146,7 +146,7 @@
 	icon_state = "flashlight"
 	module_type = MODULE_TOGGLE
 	complexity = 1
-	active_power_cost = MODULE_CHARGE_DRAIN_LOW
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	incompatible_modules = list(/obj/item/mod/module/flashlight)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_light"
@@ -209,10 +209,11 @@
 	if(!.)
 		return
 	if(dispense_time && !do_after(mod.wearer, dispense_time, target = mod))
+		balloon_alert(mod.wearer, "interrupted!")
 		return FALSE
 	var/obj/item/dispensed = new dispense_type(mod.wearer.loc)
 	mod.wearer.put_in_hands(dispensed)
-	to_chat(mod.wearer,span_notice("You dispense \a [dispensed]"))
+	balloon_alert(mod.wearer, "[dispensed] dispensed")
 	playsound(src, 'sound/machines/click.ogg', 100, TRUE)
 	drain_power(use_power_cost)
 	return dispensed
@@ -226,7 +227,7 @@
 	icon_state = "regulator"
 	module_type = MODULE_TOGGLE
 	complexity = 2
-	active_power_cost = MODULE_CHARGE_DRAIN_LOW
+	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
 	incompatible_modules = list(/obj/item/mod/module/thermal_regulator)
 	cooldown_time = 0.5 SECONDS
 	/// The temperature we are regulating to.
@@ -280,7 +281,7 @@
 	if(!.)
 		return
 	dna = mod.wearer.dna.unique_enzymes
-	to_chat(mod.wearer,span_notice("Biometrics updated."))
+	balloon_alert(mod.wearer, "dna updated")
 	drain_power(use_power_cost)
 
 /obj/item/mod/module/dna_lock/emp_act(severity)
@@ -299,7 +300,7 @@
 	var/mob/living/carbon/carbon_user = user
 	if(!dna  || (carbon_user.has_dna() && carbon_user.dna.unique_enzymes == dna))
 		return TRUE
-	to_chat(user,span_warning("The suit is DNA locked and won't activate!"))
+	balloon_alert(user, "dna locked!")
 	return FALSE
 
 /obj/item/mod/module/dna_lock/proc/on_emp(datum/source, severity)
@@ -408,17 +409,17 @@
 	if(!istype(hitting_item, /obj/item/clothing/head))
 		return
 	if(!mod.active)
-		to_chat(user,span_warning("The suit must be active!"))
+		balloon_alert(user, "suit must be active!")
 		return
 	if(!is_type_in_typecache(hitting_item, attachable_hats_list))
-		to_chat(user,span_warning("This hat won't fit!"))
+		balloon_alert(user, "this hat won't fit!")
 		return
 	if(attached_hat)
-		to_chat(user,span_warning("There's a hat already attached!"))
+		balloon_alert(user, "hat already attached!")
 		return
 	if(mod.wearer.transferItemToLoc(hitting_item, src, force = FALSE, silent = TRUE))
 		attached_hat = hitting_item
-		to_chat(user,span_notice("You attached the hat, alt-click to remove"))
+		balloon_alert(user, "hat attached, alt-click to remove")
 		mod.wearer.update_inv_back(mod.slot_flags)
 
 /obj/item/mod/module/hat_stabilizer/generate_worn_overlay()
@@ -432,5 +433,9 @@
 	if(!attached_hat)
 		return
 	attached_hat.forceMove(drop_location())
+	if(user.put_in_active_hand(attached_hat))
+		balloon_alert(user, "hat removed")
+	else
+		balloon_alert_to_viewers("the hat falls to the floor!")
 	attached_hat = null
 	mod.wearer.update_inv_back(mod.slot_flags)

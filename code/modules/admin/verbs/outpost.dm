@@ -19,7 +19,7 @@
 
 /client/proc/spawn_outpost()
 	set name = "Spawn Outpost"
-	set category = "Event.Overmap"
+	set category = "Event.Spawning"
 	set desc = "Spawns the selected /datum/overmap/outpost subtype."
 
 	if(!holder)

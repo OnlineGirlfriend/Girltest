@@ -36,13 +36,6 @@
 	contains = list(/obj/item/storage/box/flashbangs)
 	crate_name = "flashbangs crate"
 
-/datum/supply_pack/sec_supply/smokebombs
-	name = "Smoke Grenades Crate"
-	desc = "Contains seven smoke grenades for screening unit movements and signalling."
-	cost = 500
-	contains = list(/obj/item/storage/box/smokebombs)
-	crate_name = "smoke grenades crate"
-
 /datum/supply_pack/sec_supply/teargas
 	name = "Teargas Grenades Crate"
 	desc = "Contains seven teargas grenades for use in crowd dispersion and riot control."
@@ -180,7 +173,7 @@
 	name = "Energy Halberd Crate"
 	desc = "Contains one Terran Energy Halberd, for issue to your local Shock Trooper battalion."
 	cost = 1500
-	contains = list(/obj/item/melee/duelenergy/halberd)
+	contains = list(/obj/item/energyhalberd)
 	crate_name = "energy halberd crate"
 	faction = /datum/faction/terragov
 	faction_discount = 0
@@ -203,7 +196,7 @@
 /datum/supply_pack/sec_supply/stingpack
 	name = "Stingbang Grenade Pack"
 	desc = "Contains five \"stingbang\" grenades, perfect for stopping riots and playing morally unthinkable pranks."
-	cost = 750
+	cost = 1500
 	contains = list(/obj/item/storage/box/stingbangs)
 	crate_name = "stingbang grenade pack crate"
 

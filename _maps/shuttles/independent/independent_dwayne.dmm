@@ -47,7 +47,9 @@
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
 "aD" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -308,7 +310,8 @@
 /area/ship/crew/cryo)
 "ei" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -471,7 +474,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
 	},
-/obj/structure/cable/cyan,
+/obj/structure/cable/cyan{
+	icon_state = "0-1"
+	},
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
@@ -487,7 +492,8 @@
 /area/ship/crew/toilet)
 "hd" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/cable/yellow{
@@ -728,14 +734,17 @@
 /area/ship/engineering)
 "ld" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
 /turf/open/floor/plating/airless,
 /area/ship/crew/canteen)
 "ls" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/window/northleft{
 	dir = 4;
 	name = "Engine Access"
@@ -873,6 +882,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_y = 20
 	},
 /obj/effect/turf_decal/industrial/warning{
@@ -1059,6 +1069,7 @@
 /area/ship/storage/eva)
 "oC" = (
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = 11;
 	pixel_y = 20
 	},
@@ -1179,6 +1190,7 @@
 /area/ship/hallway/central)
 "pv" = (
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = 12;
 	pixel_y = 20
 	},
@@ -1269,6 +1281,7 @@
 	},
 /obj/machinery/autolathe,
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = -12;
 	pixel_y = 20
 	},
@@ -1396,7 +1409,9 @@
 	id = "dwayne_cargo_field";
 	locked = 1
 	},
-/obj/structure/cable/cyan,
+/obj/structure/cable/cyan{
+	icon_state = "0-1"
+	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -1407,6 +1422,7 @@
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
+	pixel_y = 0;
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -1450,7 +1466,9 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/toilet)
 "vn" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/window/northright{
 	dir = 4;
 	name = "Engine Access"
@@ -1805,7 +1823,9 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-8"
 	},
-/obj/structure/cable/cyan,
+/obj/structure/cable/cyan{
+	icon_state = "0-1"
+	},
 /obj/structure/cable/yellow{
 	icon_state = "9-10"
 	},
@@ -1817,7 +1837,8 @@
 /area/ship/engineering)
 "Bq" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -1865,7 +1886,8 @@
 /area/ship/engineering)
 "CO" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/cable/yellow{
@@ -2128,6 +2150,7 @@
 /area/ship/storage/eva)
 "GU" = (
 /obj/docking_port/mobile{
+	can_move_docking_ports = 1;
 	dir = 2;
 	launch_status = 0;
 	name = "mining ship";
@@ -2241,7 +2264,8 @@
 "IT" = (
 /obj/structure/grille,
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/window/reinforced/fulltile/shuttle,
 /turf/open/floor/plating/airless,
@@ -2258,6 +2282,7 @@
 /area/ship/hallway/central)
 "Jg" = (
 /obj/machinery/conveyor{
+	dir = 2;
 	id = "smelter_dwayne"
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -2363,7 +2388,8 @@
 	id = "dwayne_windows";
 	name = "Fore Window Control";
 	pixel_x = -10;
-	pixel_y = 20
+	pixel_y = 20;
+	dir = 2
 	},
 /obj/machinery/computer/helm{
 	dir = 8
@@ -2527,7 +2553,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
-/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
 "MG" = (
@@ -2541,6 +2569,7 @@
 	id = "dwayne_engines";
 	name = "Aft Window Control";
 	pixel_x = -20;
+	pixel_y = 0;
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -2596,7 +2625,8 @@
 /area/ship/engineering)
 "NM" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_windows"
+	id = "dwayne_windows";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -2833,7 +2863,8 @@
 	},
 /obj/structure/curtain,
 /obj/machinery/shower{
-	dir = 1
+	dir = 1;
+	pixel_y = 0
 	},
 /obj/item/bikehorn/rubberducky/plasticducky{
 	pixel_x = -2;
@@ -3243,7 +3274,8 @@
 /area/ship/cargo)
 "WL" = (
 /obj/machinery/door/poddoor/preopen{
-	id = "dwayne_engines"
+	id = "dwayne_engines";
+	dir = 2
 	},
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -3282,6 +3314,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = -12;
 	pixel_y = 20
 	},
@@ -3375,7 +3408,9 @@
 	id = "dwayne_cargo_field";
 	locked = 1
 	},
-/obj/structure/cable/cyan,
+/obj/structure/cable/cyan{
+	icon_state = "0-1"
+	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /turf/open/floor/plating,
 /area/ship/cargo)

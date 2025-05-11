@@ -595,10 +595,6 @@
 /obj/structure/sign/poster/clip/gold{
 	pixel_y = 32
 	},
-/obj/item/clothing/mask/gas/clip,
-/obj/item/clothing/mask/gas/clip,
-/obj/item/storage/box/evidence,
-/obj/item/storage/box/evidence,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
 "rG" = (
@@ -754,9 +750,7 @@
 	pixel_y = 6;
 	pixel_x = 6
 	},
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_x = 28
-	},
+/obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "uQ" = (
@@ -1066,8 +1060,8 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/tinted,
+/obj/machinery/firealarm/directional/east,
 /obj/machinery/door/firedoor/border_only,
-/obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "EN" = (
@@ -1245,9 +1239,7 @@
 	layer = 3.1
 	},
 /obj/structure/sign/warning/hottemp{
-	pixel_x = 32;
-	name = "\improper WASTE VENT sign";
-	desc = "A sign that warns of potentially hazardous waste gas in the vicinity."
+	pixel_x = 32
 	},
 /obj/effect/decal/fakelattice{
 	icon_state = "lattice-6"
@@ -1568,11 +1560,11 @@
 /obj/effect/turf_decal/minutemen/corner{
 	dir = 4
 	},
-/obj/item/radio/intercom/directional/west,
-/obj/machinery/modular_computer/console/preset/command{
+/obj/machinery/computer/monitor{
 	dir = 1;
 	icon_state = "computer-right"
 	},
+/obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "RB" = (
@@ -1702,23 +1694,11 @@
 	pixel_y = 4
 	},
 /obj/item/folder/blue{
-	pixel_x = 2;
-	pixel_y = 9
+	pixel_x = 5;
+	pixel_y = 5
 	},
 /obj/structure/table/reinforced,
 /obj/item/areaeditor/shuttle,
-/obj/item/stamp/clip{
-	pixel_x = -8;
-	pixel_y = -6
-	},
-/obj/item/folder/blue{
-	pixel_x = 10;
-	pixel_y = 9
-	},
-/obj/item/clipboard{
-	pixel_x = 7;
-	pixel_y = -4
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "UN" = (

@@ -23,12 +23,6 @@
 	var/obj/item/mod/control/mod
 	/// If we're an active module, what item are we?
 	var/obj/item/device
-	/// Is the device a toolset?
-	var/toolset = FALSE
-	/// What tools does this have?
-	var/list/tools_to_create = list()
-	/// the list of generated tools
-	var/list/tools_list = list()
 	/// Overlay given to the user when the module is inactive
 	var/overlay_state_inactive
 	/// Overlay given to the user when the module is active
@@ -63,10 +57,6 @@
 		ADD_TRAIT(device, TRAIT_NODROP, MOD_TRAIT)
 		RegisterSignal(device, COMSIG_PARENT_QDELETING, PROC_REF(on_device_deletion))
 		RegisterSignal(src, COMSIG_ATOM_EXITED, PROC_REF(on_exit))
-	if(toolset)
-		for(var/typepath in tools_to_create)
-			var/atom/new_item = new typepath(src)
-			tools_list += WEAKREF(new_item)
 
 /obj/item/mod/module/Destroy()
 	mod?.uninstall(src)
@@ -85,7 +75,7 @@
 /obj/item/mod/module/proc/on_select()
 	if(((!mod.active || mod.activating) && !allowed_inactive) || module_type == MODULE_PASSIVE)
 		if(mod.wearer)
-			to_chat(mod.wearer,span_warning("The module can't be activated right now!"))
+			balloon_alert(mod.wearer, "not active!")
 		return
 	if(module_type != MODULE_USABLE)
 		if(active)
@@ -99,10 +89,10 @@
 /// Called when the module is activated
 /obj/item/mod/module/proc/on_activation()
 	if(!COOLDOWN_FINISHED(src, cooldown_timer))
-		to_chat(mod.wearer,span_warning("\The [src] is on cooldown!"))
+		balloon_alert(mod.wearer, "on cooldown!")
 		return FALSE
 	if(!mod.active || mod.activating || !mod.get_charge())
-		to_chat(mod.wearer,span_warning("\The [src] doesn't have enough power."))
+		balloon_alert(mod.wearer, "unpowered!")
 		return FALSE
 	if(!allowed_in_phaseout && istype(mod.wearer.loc, /obj/effect/dummy/phased_mob))
 		//specifically a to_chat because the user is phased out.
@@ -114,55 +104,24 @@
 		if(mod.selected_module && !mod.selected_module.on_deactivation(display_message = FALSE))
 			return FALSE
 		mod.selected_module = src
-		if(toolset)
-			return ui_action_click()
 		if(device)
 			if(mod.wearer.put_in_hands(device))
-				to_chat(mod.wearer,span_notice("You extend \the [device]."))
+				balloon_alert(mod.wearer, "[device] extended")
 				RegisterSignal(mod.wearer, COMSIG_ATOM_EXITED, PROC_REF(on_exit))
 				RegisterSignal(mod.wearer, COMSIG_KB_MOB_DROPITEM_DOWN, PROC_REF(dropkey))
 			else
-				to_chat(mod.wearer,span_warning("You can't extend \the [device] right now!"))
+				balloon_alert(mod.wearer, "can't extend [device]!")
 				mod.wearer.transferItemToLoc(device, src, force = TRUE)
 				return FALSE
 		else
 			var/used_button = MIDDLE_CLICK
 			update_signal(used_button)
-			to_chat(mod.wearer,span_warning("[src] activated, [used_button]-click to use."))
+			balloon_alert(mod.wearer, "[src] activated, [used_button]-click to use")
 	active = TRUE
 	COOLDOWN_START(src, cooldown_timer, cooldown_time)
 	mod.wearer.update_inv_back(mod.slot_flags)
 	SEND_SIGNAL(src, COMSIG_MODULE_ACTIVATED)
 	return TRUE
-
-/obj/item/mod/module/ui_action_click()
-	if(!device || (device in src))
-		device = null
-		var/list/choice_list = list()
-		for(var/datum/weakref/tool_ref in tools_list)
-			var/obj/item/tool_item = tool_ref.resolve()
-			if(!tool_item)
-				tools_list -= tool_ref
-				continue
-			choice_list[tool_item] = image(tool_item)
-		var/obj/item/choice = show_radial_menu(mod.wearer, mod.wearer, choice_list)
-		if(mod.wearer && mod.wearer == usr && mod.wearer.stat != DEAD && !device && (choice in contents))
-			if(!choice)
-				return FALSE
-			device = choice
-			if(mod.wearer.put_in_hands(device))
-				to_chat(mod.wearer,span_warning("You extend \the [device]."))
-				RegisterSignal(mod.wearer, COMSIG_ATOM_EXITED, PROC_REF(on_exit))
-				RegisterSignal(mod.wearer, COMSIG_KB_MOB_DROPITEM_DOWN, PROC_REF(dropkey))
-			else
-				to_chat(mod.wearer,span_warning("You can't extend \the [device] right now."))
-				mod.wearer.transferItemToLoc(device, src, force = TRUE)
-				return FALSE
-		active = TRUE
-		COOLDOWN_START(src, cooldown_timer, cooldown_time)
-		mod.wearer.update_inv_back(mod.slot_flags)
-		SEND_SIGNAL(src, COMSIG_MODULE_ACTIVATED)
-		return TRUE
 
 /// Called when the module is deactivated
 /obj/item/mod/module/proc/on_deactivation(display_message = TRUE, deleting = FALSE)
@@ -170,7 +129,7 @@
 	if(module_type == MODULE_ACTIVE)
 		mod.selected_module = null
 		if(display_message)
-			to_chat(mod.wearer,span_warning(device ? "You retract \the [device]." : "\The [src] deactivates."))
+			balloon_alert(mod.wearer, device ? "[device] retracted" : "[src] deactivated")
 		if(device)
 			mod.wearer.transferItemToLoc(device, src, force = TRUE)
 			UnregisterSignal(mod.wearer, COMSIG_ATOM_EXITED)
@@ -185,10 +144,10 @@
 /// Called when the module is used
 /obj/item/mod/module/proc/on_use()
 	if(!COOLDOWN_FINISHED(src, cooldown_timer))
-		to_chat(mod.wearer,span_warning("\The [src] is on cooldown!"))
+		balloon_alert(mod.wearer, "on cooldown!")
 		return FALSE
 	if(!check_power(use_power_cost))
-		to_chat(mod.wearer,span_warning("\The [src] doesn't have enough power."))
+		balloon_alert(mod.wearer, "not enough charge!")
 		return FALSE
 	if(!allowed_in_phaseout && istype(mod.wearer.loc, /obj/effect/dummy/phased_mob))
 		//specifically a to_chat because the user is phased out.
@@ -257,12 +216,8 @@
 	return
 
 /// Drains power from the suit charge
-/obj/item/mod/module/proc/drain_power(amount, force_drain = FALSE)
+/obj/item/mod/module/proc/drain_power(amount)
 	if(!check_power(amount))
-		if(force_drain)
-			var/power_remaining = mod.get_charge()
-			mod.subtract_charge(power_remaining)
-			mod.update_charge_alert()
 		return FALSE
 	mod.subtract_charge(amount)
 	mod.update_charge_alert()
@@ -395,7 +350,7 @@
 
 /obj/item/mod/module/anomaly_locked/on_select()
 	if(!core)
-		to_chat(mod.wearer,span_warning("No anomaly core installed!"))
+		balloon_alert(mod.wearer, "no core!")
 		return
 	return ..()
 
@@ -412,12 +367,12 @@
 /obj/item/mod/module/anomaly_locked/attackby(obj/item/item, mob/living/user, params)
 	if(item.type in accepted_anomalies)
 		if(core)
-			to_chat(user,span_warning("There's a core already installed!"))
+			balloon_alert(user, "core already in!")
 			return
 		if(!user.transferItemToLoc(item, src))
 			return
 		core = item
-		to_chat(user,span_notice("You install the core."))
+		balloon_alert(user, "core installed")
 		playsound(src, 'sound/machines/click.ogg', 30, TRUE)
 		update_icon_state()
 	else
@@ -426,12 +381,13 @@
 /obj/item/mod/module/anomaly_locked/screwdriver_act(mob/living/user, obj/item/tool)
 	. = ..()
 	if(!core)
-		to_chat(user,span_warning("\The [src] has no anomaly core to remove!"))
+		balloon_alert(user, "no core!")
 		return
-	to_chat(user,span_notice("You begin removing the core..."))
+	balloon_alert(user, "removing core...")
 	if(!do_after(user, 3 SECONDS, target = src))
+		balloon_alert(user, "interrupted!")
 		return
-	to_chat(user,span_notice("You remove the core."))
+	balloon_alert(user, "core removed")
 	core.forceMove(drop_location())
 	if(Adjacent(user) && !issilicon(user))
 		user.put_in_hands(core)

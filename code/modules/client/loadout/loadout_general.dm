@@ -214,7 +214,3 @@
 /datum/gear/hourglass
 	display_name = "hourglass"
 	path = /obj/item/hourglass
-
-/datum/gear/spraycan
-	display_name = "spraycan"
-	path = /obj/item/toy/crayon/spraycan

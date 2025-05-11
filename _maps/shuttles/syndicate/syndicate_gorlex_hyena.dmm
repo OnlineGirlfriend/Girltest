@@ -274,7 +274,7 @@
 	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "fi" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/effect/turf_decal/radiation/white,
@@ -310,7 +310,7 @@
 	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "fL" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
@@ -616,6 +616,9 @@
 /obj/effect/landmark/start/captain,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
+"mL" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/maintenance/fore)
 "mX" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
@@ -772,7 +775,7 @@
 	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "oz" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -809,7 +812,7 @@
 /area/ship/cargo)
 "oO" = (
 /turf/closed/wall/mineral/plastitanium,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "oQ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -1620,7 +1623,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "BR" = (
-/obj/machinery/porta_turret/ship/ngr{
+/obj/machinery/porta_turret/ship/syndicate{
 	dir = 1
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -1675,7 +1678,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "DO" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -2090,7 +2093,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "Kf" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/storage)
@@ -2131,7 +2134,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "KA" = (
 /obj/machinery/door/window/northleft{
 	dir = 2;
@@ -2292,7 +2295,7 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "NA" = (
-/obj/machinery/porta_turret/ship/ngr,
+/obj/machinery/porta_turret/ship/syndicate,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "NF" = (
@@ -2382,7 +2385,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "Pn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2459,7 +2462,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Qz" = (
-/obj/machinery/porta_turret/ship/ngr{
+/obj/machinery/porta_turret/ship/syndicate{
 	dir = 6
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -2571,7 +2574,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "RQ" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -2862,7 +2865,7 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "Up" = (
-/obj/machinery/porta_turret/ship/ngr/heavy{
+/obj/machinery/porta_turret/ship/syndicate/heavy{
 	dir = 4
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -2878,7 +2881,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "UN" = (
-/obj/machinery/porta_turret/ship/ngr{
+/obj/machinery/porta_turret/ship/syndicate{
 	dir = 1
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -2923,7 +2926,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/office)
+/area/ship/maintenance/fore)
 "VG" = (
 /turf/open/floor/engine/hull,
 /area/ship/external)
@@ -3310,7 +3313,7 @@ nn
 sE
 MF
 TT
-MF
+Ua
 sE
 "}
 (2,1,1) = {"
@@ -3646,7 +3649,7 @@ fL
 Ib
 ol
 yn
-yn
+mL
 oO
 "}
 (18,1,1) = {"
@@ -3668,7 +3671,7 @@ Xj
 ZL
 yn
 Pd
-yn
+mL
 "}
 (19,1,1) = {"
 nn
@@ -3689,7 +3692,7 @@ fL
 fL
 yn
 DF
-yn
+mL
 "}
 (20,1,1) = {"
 nn
@@ -3708,7 +3711,7 @@ Dp
 dA
 Dp
 hh
-yn
+mL
 Kb
 fC
 "}
@@ -3729,7 +3732,7 @@ si
 Wt
 ia
 SE
-yn
+mL
 Ky
 or
 "}
@@ -3750,7 +3753,7 @@ bd
 sA
 wP
 vv
-yn
+mL
 RE
 fg
 "}
@@ -3771,7 +3774,7 @@ Qy
 MP
 tS
 RQ
-yn
+mL
 VD
 fC
 "}
@@ -3792,9 +3795,9 @@ JS
 NS
 sx
 NN
-yn
-yn
-yn
+mL
+mL
+mL
 "}
 (25,1,1) = {"
 nn
@@ -3814,8 +3817,8 @@ nn
 nn
 nn
 oO
-yn
-yn
+mL
+mL
 "}
 (26,1,1) = {"
 nn
@@ -3835,8 +3838,8 @@ nn
 nn
 nn
 nn
-yn
-yn
+mL
+mL
 "}
 (27,1,1) = {"
 nn
@@ -3856,8 +3859,8 @@ nn
 nn
 nn
 nn
-yn
-yn
+mL
+mL
 "}
 (28,1,1) = {"
 nn

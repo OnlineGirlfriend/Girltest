@@ -275,10 +275,8 @@
 "bx" = (
 /obj/effect/turf_decal/box,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/vein/classfour,
-/obj/machinery/drill/mission/ruin,
-/obj/effect/landmark/mission_poi/main/drill{
-	already_spawned = 1
+/obj/structure/vein/classtwo{
+	mining_charges = 60
 	},
 /turf/open/floor/plating/asteroid/rockplanet/wet/cracked,
 /area/ruin/rockplanet/mining_base/rig_two)
@@ -436,7 +434,9 @@
 /turf/open/floor/plasteel/mono,
 /area/ruin/rockplanet/mining_base/canteen)
 "cf" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer3,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer3{
+	dir = 2
+	},
 /obj/effect/turf_decal/box,
 /turf/open/floor/plating,
 /area/ruin/rockplanet/mining_base/engineering)
@@ -1217,6 +1217,7 @@
 /area/ruin/rockplanet/mining_base/engineering)
 "gg" = (
 /obj/machinery/porta_turret/ship/nt/light/mining_base{
+	dir = 2;
 	id = "m1"
 	},
 /turf/open/floor/pod/rockplanet,
@@ -1309,7 +1310,9 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 5
 	},
-/obj/machinery/washing_machine,
+/obj/machinery/washing_machine{
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/patterned/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "gF" = (
@@ -1563,6 +1566,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "ig" = (
 /obj/machinery/door/airlock{
+	dir = 2;
 	name = "Coordinator's Quarters"
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -1727,6 +1731,7 @@
 	dir = 1
 	},
 /obj/mecha/working/ripley/cargo{
+	pixel_y = 0;
 	name = "APLU 'Cherry Devil'"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2043,6 +2048,7 @@
 /area/ruin/rockplanet/mining_base/canteen)
 "kO" = (
 /obj/machinery/conveyor{
+	dir = 2;
 	id = "rock_mine";
 	pixel_y = -1
 	},
@@ -2893,7 +2899,8 @@
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/grille,
 /obj/machinery/door/poddoor{
-	id = "nsmine_canteen"
+	id = "nsmine_canteen";
+	dir = 2
 	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/mining_base/canteen)
@@ -2945,7 +2952,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
@@ -3068,7 +3077,9 @@
 /obj/structure/window/reinforced/survival_pod{
 	dir = 8
 	},
-/obj/structure/bodycontainer/morgue,
+/obj/structure/bodycontainer/morgue{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/rockplanet/mining_base/med)
@@ -3605,6 +3616,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "tA" = (
 /obj/machinery/conveyor{
+	dir = 2;
 	id = "rock_mine";
 	pixel_y = -1
 	},
@@ -4235,7 +4247,9 @@
 	anchored = 1;
 	setting = 2
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating/asteroid/rockplanet/lit,
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "xn" = (
@@ -4598,10 +4612,12 @@
 "zo" = (
 /obj/structure/table,
 /obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 0
 	},
 /obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 0
 	},
 /obj/item/newspaper{
 	pixel_y = 15;
@@ -6255,10 +6271,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/effect/landmark/mission_poi/main{
-	already_spawned = 1;
-	mission_index = 2
-	},
 /turf/open/floor/carpet,
 /area/ruin/rockplanet/mining_base/office)
 "HE" = (
@@ -7615,6 +7627,7 @@
 	},
 /obj/structure/table,
 /obj/item/storage/case/surgery{
+	pixel_x = 0;
 	pixel_y = 3
 	},
 /obj/item/reagent_containers/glass/bottle/morphine,
@@ -7844,6 +7857,7 @@
 "Ri" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin{
+	pixel_y = 0;
 	pixel_x = 7
 	},
 /obj/item/pen{
@@ -8739,6 +8753,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "VE" = (
 /obj/machinery/conveyor{
+	dir = 2;
 	id = "rock_mine";
 	pixel_y = -1
 	},
@@ -8800,6 +8815,7 @@
 /area/overmap_encounter/planetoid/rockplanet/explored)
 "VT" = (
 /obj/machinery/conveyor{
+	dir = 2;
 	id = "rock_mine";
 	pixel_y = -1
 	},
