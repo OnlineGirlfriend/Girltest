@@ -7,13 +7,13 @@
 # TEAMS
 
 # Map Maintainers
-/_maps/ @pentest-ss13/maptainers
+/_maps/ @pentestss13/maptainers
 
 # Sprite Maintainers
-/icons/ @pentest-ss13/spritetainers
+/icons/ @pentestss13/spritetainers
 
 # CI and tool chains
-/tools/ @pentest-ss13/admins
+/tools/ @pentestss13/admins
 
 
 
