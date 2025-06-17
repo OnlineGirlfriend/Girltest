@@ -19,9 +19,6 @@
 
 # MAINTAINERS
 
-# Ossa88
-
-
 # Constellado
 
 /config/ @Constellado
@@ -33,7 +30,6 @@
 
 # MULTIPLE OWNERS
 
-/.github/ @Ossa88 @Constellado
 
 # ALL CHANGES
-**/ @Ossa88 @Constellado
+*/ @Ossa88 @Constellado
