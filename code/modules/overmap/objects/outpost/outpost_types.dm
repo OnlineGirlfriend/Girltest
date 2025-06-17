@@ -128,14 +128,14 @@
 */
 
 /datum/overmap/outpost/indie_space
-	token_icon_state = "station_cylinder"
+	token_icon_state = "station_asteroid" //PENTEST CHANGE
 	main_template = /datum/map_template/outpost/indie_space
 	elevator_template = /datum/map_template/outpost/elevator_indie
 	faction = FACTION_INDEPENDENT
 	// Uses "default" hangars (indie_space).
 
 /datum/overmap/outpost/nanotrasen_ice
-	token_icon_state = "station_asteroid"
+	token_icon_state = "station_cylinder" //PENTEST CHANGE
 	main_template = /datum/map_template/outpost/nanotrasen_ice
 	elevator_template = /datum/map_template/outpost/elevator_ice
 	faction = FACTION_NT
@@ -150,7 +150,7 @@
 	faction = /datum/faction/nt
 
 /datum/overmap/outpost/ngr_rock
-	token_icon_state = "station_asteroid"
+	token_icon_state = "station_planet" //PENTEST CHANGE
 	main_template = /datum/map_template/outpost/ngr_rock
 	elevator_template = /datum/map_template/outpost/elevator_rock
 	weather_controller_type = /datum/weather_controller/rockplanet_safe
