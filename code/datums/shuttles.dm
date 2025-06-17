@@ -473,9 +473,13 @@
 /datum/map_template/shuttle/subshuttles/sierra
 	file_name = "nanotrasen_sierra"
 	name = "Sierra-class Recovery Shuttle"
+	faction = /datum/faction/nt
+	token_icon_state = "ship_tiny_generic"
 	prefix = "NTSV"
 
 /datum/map_template/shuttle/subshuttles/malp
 	file_name = "nanotrasen_malp"
 	name = "MALP-class Hostile Exploration Shuttle"
+	faction = /datum/faction/nt
+	token_icon_state = "ship_tiny_generic"
 	prefix = "NTSV"
