@@ -1,0 +1,8 @@
+author: FslashN
+changes:
+  - {bugfix: Turret controls can be taken down with a crowbar and face the right
+      direction when mounted on a wall.}
+  - {refactor: Turret controls are now linked to individual turrets through 
+      their buffer instead of the other way around (minimizes running back and 
+      forth).}
+delete-after: true
