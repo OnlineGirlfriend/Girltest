@@ -1,5 +1,0 @@
-author: Ossa88
-changes:
-  - {rscdel: Robot Limbs and IPCs no longer have to deal with Integrity. Pending
-      future updates.}
-delete-after: true

@@ -1,6 +1,0 @@
-author: OnlineGirlfriend
-changes:
-  - {rscadd: spatz and winter plushies}
-  - {bugfix: ipc plushie is now craftable}
-  - {refactor: moves IPC plushie and secborg pen to modular plushes.dm}
-delete-after: true
