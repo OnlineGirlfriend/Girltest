@@ -1,0 +1,36 @@
+author: Ossa88
+changes:
+  - {imageadd: Added dark steel tiles as a turf.}
+  - {rscadd: Added the Typhon-class Light Exosuit Carrier}
+  - {rscadd: Added a non-concealed weapon bay mech module.}
+  - {rscadd: Added guthen pet and bed to the Mudskipper in the crew dorm}
+  - {rscdel: You can no longer pull tails.}
+  - {rscadd: New Vox Sprites for Ramzi Hardsuits.}
+  - {bugfix: 10mm and 9mm cartridges now use the proper metric name format}
+  - {bugfix: 6.5mm CLIP renamed to 7.5x64mm CLIP}
+  - {balance: 'Landmine bounties have depleted landmine spawns on all but wasteworlds,
+      entirely. For real, this time.'}
+  - {bugfix: Sweet Potato repathed letting you make yaki imo properly}
+  - {rscdel: Removed the elite kill mission from lavaland_buried_shrine}
+  - {balance: Butter now requires 5 milk instead of 15}
+  - {bugfix: Sweet potatoes now have their own plant stats and grow icon 
+      independent from being pathed from potato}
+  - {balance: ipcs take massively reduced damage from dangerous atmos}
+  - {bugfix: minor smell spelling error}
+  - {bugfix: ipcs no longer 'burn' their 'eyes' in dangerous atmos}
+  - {code_imp: 'removes TRAIT_METALLIC, superceded by checking for robot mobtype'}
+  - {balance: Frontiersman heavies now use slugs in their Shredders}
+  - {bugfix: The corona/nimbus/cirrus washing machines will no longer randomly 
+      become dense.}
+  - {rscadd: outpost comunications console now has a purchase cart}
+  - {rscadd: outpost cargo is now bundled when applicable}
+  - {bugfix: Jungle Bunker tiles now have the correct atmos.}
+  - {rscadd: added medical area to rock outpost}
+  - {rscadd: potted plants to rock outpost}
+  - {rscadd: altered bounty pad locations}
+  - {rscdel: beats in deciseconds of a song is no longer player facing}
+  - {rscdel: handful of other jukebox cruft cleanup things}
+  - {code_imp: rustg version bump to 3.6}
+  - {refactor: 'can now determine its own length and cache it, used in jukeboxes so
+      we dont have to add it in the title.'}
+delete-after: true
