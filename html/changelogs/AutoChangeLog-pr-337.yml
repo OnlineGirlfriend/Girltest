@@ -1,0 +1,4 @@
+author: Ossa88
+changes:
+  - {bugfix: Vagrant South room gets power and atmos again}
+delete-after: true
