@@ -108,3 +108,8 @@
   - code_imp: rustg version bump to 3.6
   - refactor: can now determine its own length and cache it, used in jukeboxes so
       we dont have to add it in the title.
+2025-06-23:
+  Ossa88:
+  - bugfix: Vagrant South room gets power and atmos again
+  - rscdel: Clown Holopad on NT Asteroid
+  - bugfix: Medical Holopad on NT Asteroid
