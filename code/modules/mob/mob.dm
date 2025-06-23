@@ -807,10 +807,7 @@
 		log_game("[key_name(usr)] AM failed due to disconnect.")
 
 	var/poll_respawn = tgui_alert(usr, "Do you wish to return to the lobby? This will forfeit any chance of being revived.", "Respawn Alert", list("Yes", "No"), 0)
-	if(poll_respawn == "No")
-		to_chat(usr, span_boldnotice("You have cancelled your respawn."))
-		return
-	if(poll_respawn == null)
+	if(poll_respawn == "No" || poll_respawn == null)
 		to_chat(usr, span_boldnotice("You have cancelled your respawn."))
 		return
 
