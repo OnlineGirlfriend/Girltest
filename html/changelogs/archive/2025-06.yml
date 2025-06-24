@@ -113,3 +113,6 @@
   - bugfix: Vagrant South room gets power and atmos again
   - rscdel: Clown Holopad on NT Asteroid
   - bugfix: Medical Holopad on NT Asteroid
+2025-06-24:
+  Ossa88:
+  - bugfix: Fixes Instant Respawn
