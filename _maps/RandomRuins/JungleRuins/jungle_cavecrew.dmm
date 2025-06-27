@@ -4270,7 +4270,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
-/obj/machinery/computer/helm/npc,
+/obj/machinery/computer/helm,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/storage)
 "ZG" = (
