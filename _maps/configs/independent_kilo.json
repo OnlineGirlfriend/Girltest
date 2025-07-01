@@ -39,6 +39,10 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_small_generic",
+	"tranist_x_offset": -15,
+	"tranist_y_offset": -20,
+
 	"architect": "Okand37",
 	"contributors": [
 		"Apogee-dev",

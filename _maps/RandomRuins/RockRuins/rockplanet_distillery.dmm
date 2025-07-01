@@ -3482,7 +3482,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/computer/helm/npc{
+/obj/machinery/computer/helm{
 	desc = "No way you're getting this thing off the ground.";
 	dir = 8;
 	layer = 3.3;
