@@ -49,8 +49,8 @@
 
 		if(mob_overlay_icon) //easiest to check since we override everything. this automatically includes downstream support.
 			// Validate mob_overlay_icon file existence before processing
-			if(!fexists(mob_overlay_icon)) {
-				TEST_NOTICE(src, "==SKIPPED== [item_path] skipped due to missing mob_overlay_icon file: '[mob_overlay_icon]'.") // Highlight skipped items with a clear marker
+			if(fexists(mob_overlay_icon)) {
+				TEST_NOTICE(src, "==SKIPPED== [item_path] skipped. Item is more than likely using a parent mob_overlay_icon. See: '[mob_overlay_icon]'.") // Highlight skipped items with a clear marker
 				continue
 			}
 
