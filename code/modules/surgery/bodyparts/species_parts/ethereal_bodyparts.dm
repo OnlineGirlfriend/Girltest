@@ -2,7 +2,7 @@
 	icon = 'icons/mob/species/ethereal/bodyparts.dmi'
 	icon_state = "elzuose_head"
 	limb_id = SPECIES_ELZUOSE
-	is_dimorphic = FALSE
+	is_dimorphic = TRUE // PENTEST EDIT - Elzuose have a dimorphic body type
 	uses_mutcolor = TRUE
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ORGANIC | BODYTYPE_SNOUT_SMALL
 
@@ -10,7 +10,7 @@
 	icon = 'icons/mob/species/ethereal/bodyparts.dmi'
 	icon_state = "elzuose_chest"
 	limb_id = SPECIES_ELZUOSE
-	is_dimorphic = FALSE
+	is_dimorphic = TRUE // PENTEST EDIT - Elzuose have a dimorphic body type
 	uses_mutcolor = TRUE
 
 /obj/item/bodypart/l_arm/ethereal
