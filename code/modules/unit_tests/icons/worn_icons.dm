@@ -36,9 +36,12 @@
 		var/mob_overlay_state = initial(item_path.mob_overlay_state) //overrides icon_state.
 		var/icon_state = mob_overlay_state || initial(item_path.icon_state) //icon_state. what sprite name we are looking for.
 
+		// Ensure icon_state is valid before proceeding
+		if(isnull(icon_state) || !istext(icon_state)) {
+			TEST_NOTICE(src, "[item_path] skipped due to missing or invalid icon state.")
+			continue // Skip items with invalid or missing icon states.
+		}
 
-		if(isnull(icon_state))
-			continue //no sprite for the item.
 		if(icon_state in already_warned_icons)
 			continue
 
