@@ -36,10 +36,9 @@
 		var/mob_overlay_state = initial(item_path.mob_overlay_state) //overrides icon_state.
 		var/icon_state = mob_overlay_state || initial(item_path.icon_state) //icon_state. what sprite name we are looking for.
 
-		// Ensure icon_state is valid before proceeding
+
 		if(isnull(icon_state))
-			TEST_NOTICE(src, "==SKIPPED== [item_path] skipped due to missing or invalid icon state.") // Highlight skipped items with a clear marker
-			continue // Skip items with invalid or missing icon states.
+			continue //no sprite for the item.
 		if(icon_state in already_warned_icons)
 			continue
 
@@ -48,21 +47,19 @@
 			for(var/file_place in possible_icon_states[icon_state])
 				match_message += (match_message ? " & '[file_place]'" : " - Matching sprite found in: '[file_place]'")
 
-		if(mob_overlay_icon) {
+		if(mob_overlay_icon) //easiest to check since we override everything. this automatically includes downstream support.
 			// Validate mob_overlay_icon file existence before processing
 			if(!fexists(mob_overlay_icon)) {
 				TEST_NOTICE(src, "==SKIPPED== [item_path] skipped due to missing mob_overlay_icon file: '[mob_overlay_icon]'.") // Highlight skipped items with a clear marker
 				continue
 			}
 
-			if(!(icon_state in icon_states(mob_overlay_icon, 1))) {
+			if(!(icon_state in icon_states(mob_overlay_icon, 1)))
 				if(required_test)
 					TEST_FAIL("[item_path] using invalid [mob_overlay_state ? "mob_overlay_state" : "icon_state"], \"[icon_state]\" in mob_overlay_icon override file, '[mob_overlay_icon]'[match_message]")
 				else
 					TEST_NOTICE(src, "[item_path] using invalid [mob_overlay_state ? "mob_overlay_state" : "icon_state"], \"[icon_state]\" in mob_overlay_icon override file, '[mob_overlay_icon]'[match_message]")
-			}
 			continue
-		}
 
 		var/icon_file //checks against all the default icon locations if one isn't defined.
 		var/fail_reasons
