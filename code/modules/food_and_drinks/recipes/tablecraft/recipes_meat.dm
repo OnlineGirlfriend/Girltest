@@ -86,10 +86,10 @@
 	subcategory = CAT_MEAT
 
 /datum/crafting_recipe/food/fishi
-	name = "Zohil temaki roll"
+	name = "Fi-shi roll"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/grown/seaweed/sheet = 8,
-		/obj/item/reagent_containers/food/snacks/fishmeat = 4
+		/obj/item/reagent_containers/food/snacks/fishmeat/carp = 4
 	)
 	result = /obj/item/reagent_containers/food/snacks/fishi
 	subcategory = CAT_MEAT

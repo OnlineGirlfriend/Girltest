@@ -135,9 +135,6 @@
 	tame_chance = 5
 	bonus_tame_chance = 15
 
-/mob/living/simple_animal/hostile/asteroid/goliath/pup/Initialize(mapload)
-	. = ..()
-	ADD_TRAIT(src, TRAIT_HOLDABLE, INNATE_TRAIT)
 
 //Lavaland Goliath
 /mob/living/simple_animal/hostile/asteroid/goliath/beast

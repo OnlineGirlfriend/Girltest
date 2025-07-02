@@ -664,10 +664,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 1,
 		)
 
-	max_mobs = 4
+	max_mobs = -1
 	spawn_time = 5 SECONDS
 	///His greed was his downfall
-	var/greed_chance = 20
+	var/greed_chance = 10
 
 /obj/structure/vein/shrouded/Initialize()
 	. = ..()
@@ -696,7 +696,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 	spawn_time = 4 SECONDS
 
-	greed_chance = 30
+	greed_chance = 20
 
 /obj/structure/vein/shrouded/classthree
 	mining_charges = 12
@@ -719,7 +719,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 5,
 		)
 
-	greed_chance = 40
+	greed_chance = 25
 	spawn_time = 3 SECONDS
 
 // Asteroid veins.

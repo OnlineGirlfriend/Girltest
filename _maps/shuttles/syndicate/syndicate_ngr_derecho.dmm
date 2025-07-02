@@ -848,11 +848,16 @@
 /obj/item/gun/energy/plasmacutter{
 	pixel_y = 15
 	},
+/obj/item/screwdriver/power{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/item/crowbar/power{
+	pixel_x = -9;
+	pixel_y = -1
+	},
 /obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gear_pack/anglegrinder{
-	pixel_y = 3
-	},
 /turf/open/floor/pod,
 /area/ship/storage/equip)
 "hf" = (
@@ -979,13 +984,6 @@
 /obj/item/ammo_box/magazine/m12g_bulldog/empty,
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/storage/box/ammo/c10mm{
-	pixel_x = -7;
-	pixel_y = -8
-	},
-/obj/item/gun_maint_kit,
-/obj/item/gun_maint_kit,
-/obj/item/gun_maint_kit,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "iy" = (
@@ -3521,10 +3519,6 @@
 /obj/item/melee/sledgehammer/gorlex{
 	pixel_x = 5
 	},
-/obj/item/pinpointer/mineral{
-	pixel_x = 5;
-	pixel_y = -3
-	},
 /turf/open/floor/pod,
 /area/ship/storage/equip)
 "DD" = (
@@ -5857,7 +5851,6 @@
 /obj/machinery/firealarm/directional/south,
 /obj/item/storage/guncase/pistol/a357,
 /obj/machinery/light/small/directional/east,
-/obj/item/storage/belt/military/assault,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/dorm/captain)
 "Yq" = (
