@@ -38,7 +38,7 @@
 
 		// Ensure icon_state is valid before proceeding
 		if(isnull(icon_state) || !istext(icon_state)) {
-			TEST_NOTICE(src, "\033[31m[item_path] skipped due to missing or invalid icon state.\033]0m") // Red text formatting
+			TEST_NOTICE(src, "[SKIPPED] [item_path] skipped due to missing or invalid icon state.") // Highlight skipped items with a clear marker
 			continue // Skip items with invalid or missing icon states.
 		}
 
@@ -53,7 +53,7 @@
 		if(mob_overlay_icon) {
 			// Validate mob_overlay_icon file existence before processing
 			if(!fexists(mob_overlay_icon)) {
-				TEST_NOTICE(src, "\033[31m[item_path] skipped due to missing mob_overlay_icon file: '[mob_overlay_icon]'.\033]0m") // Red text formatting
+				TEST_NOTICE(src, "[SKIPPED] [item_path] skipped due to missing mob_overlay_icon file: '[mob_overlay_icon]'.") // Highlight skipped items with a clear marker
 				continue
 			}
 
