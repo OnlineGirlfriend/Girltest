@@ -765,7 +765,7 @@
 /area/ruin/rockplanet/distillery/office)
 "ir" = (
 /obj/structure/cable/yellow,
-/obj/machinery/porta_turret/ship/weak,
+/obj/machinery/porta_turret/ruin/frontiersmen,
 /turf/open/floor/plating/asteroid/rockplanet/cracked/lit,
 /area/ruin/rockplanet/distillery/office)
 "iy" = (
@@ -3482,7 +3482,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/computer/helm/npc{
+/obj/machinery/computer/helm{
 	desc = "No way you're getting this thing off the ground.";
 	dir = 8;
 	layer = 3.3;

@@ -8260,7 +8260,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 5
 	},
-/obj/machinery/computer/helm/npc{
+/obj/machinery/computer/helm{
 	dir = 8;
 	icon_state = "computer-left"
 	},
