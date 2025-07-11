@@ -834,9 +834,6 @@
 	icon_state = "alien5"
 	},
 /area/abductor_ship)
-"ang" = (
-/turf/closed/indestructible/plastitanium/nodiagnonal,
-/area/syndicate_mothership/control)
 "anh" = (
 /obj/item/toy/figure/syndie,
 /obj/effect/light_emitter{
@@ -1699,10 +1696,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/wizard_station)
-"atY" = (
-/obj/effect/baseturf_helper/asteroid/snow,
-/turf/closed/indestructible/plastitanium/nodiagnonal,
-/area/syndicate_mothership/control)
 "atZ" = (
 /obj/structure/sign/map/right{
 	pixel_y = -32
@@ -1712,13 +1705,6 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/syndicate_mothership/control)
-"aud" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "nukeop_ready";
-	name = "Shuttle Dock"
-	},
-/turf/closed/indestructible/plastitanium/nodiagnonal,
 /area/syndicate_mothership/control)
 "auf" = (
 /obj/structure/table/reinforced,
@@ -6047,6 +6033,13 @@
 "aZW" = (
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
+"bad" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "nukeop_ready";
+	name = "Shuttle Dock"
+	},
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/syndicate_mothership/control)
 "bbe" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/handcuffs,
@@ -6341,13 +6334,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/supply)
-"bEQ" = (
-/obj/item/rupee,
-/turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "bFc" = (
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/wideband/table{
@@ -7647,6 +7633,10 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/centcom)
+"erw" = (
+/obj/effect/baseturf_helper/asteroid/snow,
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/syndicate_mothership/control)
 "etl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -8676,13 +8666,6 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/wood/walnut,
 /area/centcom)
-"guF" = (
-/obj/effect/landmark/error,
-/turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "gwE" = (
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 1
@@ -11287,9 +11270,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
-"lJp" = (
-/turf/closed/indestructible/plastitanium/nodiagnonal,
-/area/centcom)
 "lKP" = (
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 4
@@ -12319,6 +12299,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"nNb" = (
+/obj/structure/sign/syndicate,
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/centcom)
 "nTW" = (
 /obj/machinery/computer/operating{
 	dir = 4
@@ -12818,6 +12802,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"oKG" = (
+/obj/structure/signpost/salvation{
+	icon = 'icons/obj/structures.dmi';
+	icon_state = "ladder10";
+	invisibility = 100
+	},
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "oLv" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
@@ -13750,17 +13745,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/tdome/tdomeobserve)
-"qCO" = (
-/obj/structure/signpost/salvation{
-	icon = 'icons/obj/structures.dmi';
-	icon_state = "ladder10";
-	invisibility = 100
-	},
-/turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "qFm" = (
 /obj/machinery/computer/crew{
 	dir = 1
@@ -13861,6 +13845,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"qNi" = (
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "qQe" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/floor/ship/dirt,
@@ -13892,6 +13882,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"qTh" = (
+/obj/item/rupee,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "qVj" = (
 /obj/effect/turf_decal/corner/opaque/red,
 /obj/effect/turf_decal/corner/opaque/red{
@@ -15655,6 +15652,9 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
+"uBd" = (
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/centcom)
 "uEa" = (
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 8
@@ -15882,10 +15882,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/syndicate_mothership/control)
-"veN" = (
-/obj/structure/sign/syndicate,
-/turf/closed/indestructible/plastitanium/nodiagnonal,
-/area/centcom)
 "veT" = (
 /obj/machinery/vending/coffee,
 /obj/effect/turf_decal/corner/transparent/bar,
@@ -16377,12 +16373,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supply)
-"wiK" = (
-/turf/open/floor/plating/ashplanet/wateryrock{
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	planetary_atmos = 0
-	},
-/area/errorroom)
 "wjj" = (
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
@@ -16449,6 +16439,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
+"wrq" = (
+/obj/effect/landmark/error,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	planetary_atmos = 0
+	},
+/area/errorroom)
 "wsj" = (
 /obj/item/wrench,
 /obj/item/restraints/handcuffs,
@@ -16978,6 +16975,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"xZI" = (
+/turf/closed/indestructible/plastitanium/nodiagnonal,
+/area/syndicate_mothership/control)
 "ydI" = (
 /turf/open/floor/plasteel{
 	dir = 1
@@ -18020,13 +18020,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-bEQ
-bEQ
-bEQ
+qTh
+qTh
+qTh
+qNi
+qTh
+qTh
+qTh
 dvE
 ngI
 aaa
@@ -18277,13 +18277,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-bEQ
-bEQ
-bEQ
+qTh
+qTh
+qTh
+qNi
+qTh
+qTh
+qTh
 dvE
 ngI
 aaa
@@ -18534,13 +18534,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-bEQ
-bEQ
-bEQ
+qTh
+qTh
+qTh
+qNi
+qTh
+qTh
+qTh
 dvE
 ngI
 aaa
@@ -18791,13 +18791,13 @@ aaa
 aaa
 ngI
 dvE
-wiK
-wiK
-wiK
-wiK
-wiK
-wiK
-wiK
+qNi
+qNi
+qNi
+qNi
+qNi
+qNi
+qNi
 dvE
 ngI
 aaa
@@ -19048,13 +19048,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-wiK
-wiK
-wiK
+qTh
+qTh
+qTh
+qNi
+qNi
+qNi
+qNi
 dvE
 ngI
 aaa
@@ -19305,13 +19305,13 @@ aaa
 aaa
 ngI
 lEw
-bEQ
-bEQ
-bEQ
-wiK
-wiK
-guF
-qCO
+qTh
+qTh
+qTh
+qNi
+qNi
+wrq
+oKG
 dvE
 ngI
 aaa
@@ -19562,13 +19562,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-wiK
-wiK
-wiK
+qTh
+qTh
+qTh
+qNi
+qNi
+qNi
+qNi
 dvE
 ngI
 aaa
@@ -19819,13 +19819,13 @@ aaa
 aaa
 ngI
 dvE
-wiK
-wiK
-wiK
-wiK
-wiK
-wiK
-wiK
+qNi
+qNi
+qNi
+qNi
+qNi
+qNi
+qNi
 dvE
 ngI
 aaa
@@ -20076,13 +20076,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-bEQ
-bEQ
-bEQ
+qTh
+qTh
+qTh
+qNi
+qTh
+qTh
+qTh
 dvE
 ngI
 aaa
@@ -20333,13 +20333,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-bEQ
-bEQ
-bEQ
+qTh
+qTh
+qTh
+qNi
+qTh
+qTh
+qTh
 dvE
 ngI
 aaa
@@ -20590,13 +20590,13 @@ aaa
 aaa
 ngI
 dvE
-bEQ
-bEQ
-bEQ
-wiK
-bEQ
-bEQ
-bEQ
+qTh
+qTh
+qTh
+qNi
+qTh
+qTh
+qTh
 dvE
 ngI
 aaa
@@ -28528,13 +28528,13 @@ aaa
 aaa
 aaa
 aaa
-lJp
-lJp
-lJp
-lJp
-lJp
-lJp
-lJp
+uBd
+uBd
+uBd
+uBd
+uBd
+uBd
+uBd
 aaa
 hzJ
 hzJ
@@ -28785,13 +28785,13 @@ aaa
 aaa
 aaa
 aaa
-veN
+nNb
 cCK
 cUG
 mAL
 fKt
 iZr
-veN
+nNb
 aaa
 hzJ
 mJP
@@ -29048,7 +29048,7 @@ mJl
 myU
 kXn
 msQ
-lJp
+uBd
 aaa
 hzJ
 lHR
@@ -29299,13 +29299,13 @@ aaa
 aaa
 aaa
 aaa
-lJp
+uBd
 qqj
 xxi
 jPn
 uOa
 jFa
-lJp
+uBd
 aaa
 hzJ
 jDt
@@ -29562,7 +29562,7 @@ mPN
 kmQ
 uuY
 jly
-lJp
+uBd
 aaa
 hzJ
 iRP
@@ -29813,13 +29813,13 @@ aaa
 aaa
 aaa
 aaa
-veN
+nNb
 lfK
 ciU
 iyJ
 bFc
 iZr
-veN
+nNb
 aaa
 hzJ
 mDT
@@ -30070,13 +30070,13 @@ aaa
 aaa
 aaa
 aaa
-lJp
-lJp
-lJp
-lJp
-lJp
-lJp
-lJp
+uBd
+uBd
+uBd
+uBd
+uBd
+uBd
+uBd
 aaa
 hzJ
 hzJ
@@ -33603,10 +33603,10 @@ ahl
 ahl
 ahl
 ahl
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
 akt
 ahl
 ahl
@@ -33863,7 +33863,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 ahl
 ahl
@@ -34120,7 +34120,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 ahl
 ahl
@@ -34130,16 +34130,16 @@ ahl
 ahl
 akt
 akt
-ang
-ang
-ang
-ang
-ang
-aud
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
+xZI
+bad
+xZI
+xZI
+xZI
+xZI
 akt
 akt
 ahl
@@ -34377,7 +34377,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 amz
 ahl
@@ -34386,8 +34386,8 @@ amy
 ahl
 ahl
 aoW
-ang
-atY
+xZI
+erw
 vcL
 hON
 fUK
@@ -34396,8 +34396,8 @@ mtq
 uXT
 avu
 awl
-ang
-ang
+xZI
+xZI
 akt
 ahl
 ahl
@@ -34634,7 +34634,7 @@ aki
 akv
 qJZ
 alm
-ang
+xZI
 akt
 ahl
 ahl
@@ -34654,7 +34654,7 @@ jbg
 avv
 awm
 atv
-ang
+xZI
 akt
 amy
 anx
@@ -34891,7 +34891,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 akt
 akt
@@ -34911,7 +34911,7 @@ jbg
 avw
 awn
 atw
-ang
+xZI
 akt
 ahl
 amz
@@ -35148,16 +35148,16 @@ ahl
 akv
 qJZ
 all
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
 mtq
 mtq
 jbg
@@ -35168,7 +35168,7 @@ jbg
 avx
 awn
 atQ
-ang
+xZI
 aoW
 ahl
 amy
@@ -35425,7 +35425,7 @@ iDE
 aQd
 awo
 atZ
-ang
+xZI
 akt
 ama
 aoW
@@ -35662,17 +35662,17 @@ ahl
 akv
 qJZ
 all
-ang
-ang
+xZI
+xZI
 anz
 anz
 anz
-ang
-ang
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
 veT
 mtq
 mtq
@@ -35681,12 +35681,12 @@ mtq
 mtq
 mtq
 mtq
-ang
-ang
-ang
+xZI
+xZI
+xZI
 anz
-ang
-ang
+xZI
+xZI
 ahh
 ahh
 ahh
@@ -35919,7 +35919,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 amC
 anh
@@ -35929,7 +35929,7 @@ ama
 ama
 akt
 akt
-ang
+xZI
 jPL
 mtq
 mtq
@@ -35943,7 +35943,7 @@ axG
 axG
 axG
 aDl
-ang
+xZI
 aaa
 aaa
 aaa
@@ -36176,7 +36176,7 @@ ahl
 akv
 qJZ
 alm
-ang
+xZI
 akt
 amz
 ahl
@@ -36186,21 +36186,21 @@ ahl
 ahl
 amz
 ama
-ang
-ang
-ang
+xZI
+xZI
+xZI
 cUm
-ang
-ang
+xZI
+xZI
 dMb
 mtq
 udD
-ang
+xZI
 axG
 axG
 axG
 aDl
-ang
+xZI
 aaa
 aaa
 aaa
@@ -36433,7 +36433,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 ahl
 ahl
@@ -36443,21 +36443,21 @@ amz
 ahl
 akt
 akt
-ang
-ang
+xZI
+xZI
 aqN
 aOA
 aWj
-ang
+xZI
 anz
 auJ
 anz
-ang
+xZI
 axH
 axG
 axG
 aDl
-ang
+xZI
 aaa
 aaa
 aaa
@@ -36690,7 +36690,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 akt
 ahl
 amz
@@ -36700,21 +36700,21 @@ ahl
 ahl
 apG
 aqM
-ang
+xZI
 aqO
 aOA
 aOA
 asj
-ang
+xZI
 anz
 all
 anz
-ang
+xZI
 axI
 axG
 axG
 aDl
-ang
+xZI
 aaa
 aaa
 aaa
@@ -36947,7 +36947,7 @@ ahl
 akv
 qJZ
 all
-ang
+xZI
 ama
 ahl
 ahl
@@ -36961,17 +36961,17 @@ anz
 apY
 aqP
 arj
-ang
-ang
+xZI
+xZI
 anz
 all
 anz
-ang
+xZI
 axJ
 axG
 axG
 aDl
-ang
+xZI
 aaa
 aaa
 aaa
@@ -37201,10 +37201,10 @@ ahl
 ahl
 ahl
 ahl
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
 akt
 ahl
 amz
@@ -37214,21 +37214,21 @@ ahl
 amA
 akt
 aqM
-ang
-ang
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
 anz
 all
 anz
-ang
+xZI
 axK
 axG
 ayX
 aGB
-ang
+xZI
 aaa
 aaa
 aaa
@@ -37473,19 +37473,19 @@ ahl
 aqM
 atg
 aaa
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
 anz
 all
 anz
-ang
-ang
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
 aaa
 aaa
 aaa
@@ -37730,7 +37730,7 @@ apG
 ahl
 ahh
 aaa
-ang
+xZI
 ask
 ask
 ask
@@ -37740,7 +37740,7 @@ anz
 ask
 ask
 ask
-ang
+xZI
 aaa
 aaa
 aaa
@@ -37987,7 +37987,7 @@ amA
 ahl
 ahh
 aaa
-ang
+xZI
 ask
 aug
 aKl
@@ -37997,7 +37997,7 @@ anz
 aKl
 aAl
 ask
-ang
+xZI
 aaa
 aaa
 aaa
@@ -38244,7 +38244,7 @@ ahl
 amz
 ahh
 aaa
-ang
+xZI
 aQr
 aHl
 ask
@@ -38254,7 +38254,7 @@ ask
 ask
 azK
 aZO
-ang
+xZI
 aaa
 aaa
 aaa
@@ -38501,7 +38501,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 aQf
 ask
 ask
@@ -38511,7 +38511,7 @@ ask
 ask
 ask
 aVY
-ang
+xZI
 aaa
 aaa
 aaa
@@ -38758,7 +38758,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 aMV
 ask
 ask
@@ -38768,7 +38768,7 @@ ask
 ask
 ask
 aNA
-ang
+xZI
 aaa
 aaa
 aaa
@@ -39015,7 +39015,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 aQf
 ask
 ask
@@ -39025,7 +39025,7 @@ ask
 ask
 ask
 aVY
-ang
+xZI
 aaa
 aaa
 aaa
@@ -39272,7 +39272,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 aQf
 ask
 ask
@@ -39282,7 +39282,7 @@ ask
 ask
 ask
 aVY
-ang
+xZI
 aaa
 aaa
 aaa
@@ -39529,7 +39529,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 aQf
 ask
 ask
@@ -39539,7 +39539,7 @@ ask
 ask
 ask
 aVY
-ang
+xZI
 aaa
 aaa
 aaa
@@ -39786,7 +39786,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 aZd
 aOQ
 ask
@@ -39796,7 +39796,7 @@ ask
 ask
 aXm
 aSM
-ang
+xZI
 aaa
 aaa
 aaa
@@ -40043,7 +40043,7 @@ ahl
 ahl
 ahh
 aaa
-ang
+xZI
 ask
 aZd
 aXp
@@ -40053,7 +40053,7 @@ aXp
 aXp
 aSM
 ask
-ang
+xZI
 aaa
 aaa
 aaa
@@ -40300,17 +40300,17 @@ ahl
 ahl
 ahh
 aaa
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
-ang
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
+xZI
 aaa
 aaa
 aaa

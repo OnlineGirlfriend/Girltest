@@ -1324,7 +1324,7 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/complex/wall)
 "vy" = (
-/obj/machinery/computer/helm/npc{
+/obj/machinery/computer/helm{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono,
