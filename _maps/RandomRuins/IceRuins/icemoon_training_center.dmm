@@ -9210,7 +9210,7 @@
 /turf/open/floor/wood,
 /area/ruin/icemoon/training_facility/classroom)
 "SA" = (
-/obj/structure/sign/poster/solgov/terragov,
+/obj/structure/sign/poster/terragov/terragov,
 /turf/closed/wall/concrete/reinforced,
 /area/ruin/icemoon/training_facility/office_2)
 "SC" = (
