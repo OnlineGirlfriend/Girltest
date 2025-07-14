@@ -983,9 +983,9 @@
 	pixel_x = -7;
 	pixel_y = -8
 	},
+/*/obj/item/gun_maint_kit,
 /obj/item/gun_maint_kit,
-/obj/item/gun_maint_kit,
-/obj/item/gun_maint_kit,
+/obj/item/gun_maint_kit,*/
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "iy" = (
