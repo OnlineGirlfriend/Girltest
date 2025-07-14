@@ -898,7 +898,7 @@
 /obj/structure/sign/poster/terragov/terragov
 	name = "TerraGov"
 	desc = "The coat of arms of TerraGov and the Terran Regency, which the latter still exists to this day."
-	icon_state = "poster-solgov-old"
+	icon_state = "poster-terragov"
 
 /obj/structure/sign/poster/terragov/paperwork
 	name = "Paperwork"

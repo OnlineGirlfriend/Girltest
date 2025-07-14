@@ -197,10 +197,7 @@
 	if(machine_stat & BROKEN)
 		icon_state = "[base_icon_state]_broken"
 		return ..()
-	if(!powered())
-		icon_state = "[base_icon_state]_unpowered"
-		return ..()
-	if(!on)
+	if(!on || !powered())
 		icon_state = "[base_icon_state]_off"
 		return ..()
 	if(lethal)
@@ -363,10 +360,12 @@
 			return
 		if(!multitool_check_buffer(user, I))
 			return
-		var/obj/item/multitool/M = I
-		M.buffer = src
-		to_chat(user, span_notice("You add [src] to multitool buffer."))
-		return
+		var/obj/item/multitool/m_tool = I
+		if(istype(m_tool.buffer, /obj/machinery/turretid))
+			var/obj/machinery/turretid/turret_controls = m_tool.buffer
+			turret_controls.turret_refs |= WEAKREF(src)
+			to_chat(user, span_notice("You link \the [src] with \the [turret_controls]."))
+			return
 
 	if(istype(I, /obj/item/card/id))
 		toggle_lock(user)

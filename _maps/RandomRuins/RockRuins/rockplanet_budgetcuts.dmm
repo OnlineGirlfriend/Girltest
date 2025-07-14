@@ -555,7 +555,7 @@
 /area/ruin/rockplanet/nanotrasen)
 "iU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/helm/npc,
+/obj/machinery/computer/helm,
 /turf/open/floor/plating,
 /area/ruin/rockplanet/nanotrasen)
 "ja" = (
