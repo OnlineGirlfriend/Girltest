@@ -2156,7 +2156,6 @@
 #include "code\modules\clothing\outfits\factions\gezena.dm"
 #include "code\modules\clothing\outfits\factions\independent.dm"
 #include "code\modules\clothing\outfits\factions\inteq.dm"
-#include "code\modules\clothing\outfits\factions\minutemen.dm"
 #include "code\modules\clothing\outfits\factions\nanotrasen.dm"
 #include "code\modules\clothing\outfits\factions\roumain.dm"
 #include "code\modules\clothing\outfits\factions\syndicate.dm"
