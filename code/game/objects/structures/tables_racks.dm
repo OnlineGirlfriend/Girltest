@@ -109,10 +109,10 @@
 	if(mover.movement_type & FLOATING)
 		return TRUE
 
-/obj/structure/table/CanAStarPass(ID, dir, caller)
+/obj/structure/table/CanAStarPass(ID, dir, requester)
 	. = !density
-	if(ismovable(caller))
-		var/atom/movable/mover = caller
+	if(ismovable(requester))
+		var/atom/movable/mover = requester
 		. = . || (mover.pass_flags & PASSTABLE)
 
 /obj/structure/table/proc/tableplace(mob/living/user, mob/living/pushed_mob)
@@ -231,7 +231,7 @@
 	. = ..()
 	if(.)
 		return FALSE
-	if(!I.tool_start_check(user, amount=0))
+	if(!I.tool_start_check(user, src, amount=0))
 		return FALSE
 	if (I.use_tool(src, user, 1 SECONDS, volume=0))
 		to_chat(user, span_warning("You cut [src] into sheets."))
@@ -551,7 +551,7 @@
 
 /obj/structure/table/reinforced/attackby(obj/item/W, mob/user, params)
 	if(W.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HELP)
-		if(!W.tool_start_check(user, amount=0))
+		if(!W.tool_start_check(user, src, amount=0))
 			return
 
 		if(deconstruction_ready)
@@ -801,7 +801,7 @@
 
 /obj/structure/table/wood/reinforced/attackby(obj/item/W, mob/user, params)
 	if(W.tool_behaviour == TOOL_CROWBAR && user.a_intent != INTENT_HELP)
-		if(!W.tool_start_check(user, amount=0))
+		if(!W.tool_start_check(user, src, amount=0))
 			return
 
 		if(deconstruction_ready)
