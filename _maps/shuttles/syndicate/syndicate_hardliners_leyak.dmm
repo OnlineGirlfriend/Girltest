@@ -2742,18 +2742,6 @@
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/*/obj/item/gun_maint_kit{
-	pixel_x = -9;
-	pixel_y = 1
-	},
-/obj/item/gun_maint_kit{
-	pixel_x = -9;
-	pixel_y = 9
-	},
-/obj/item/gun_maint_kit{
-	pixel_x = -9;
-	pixel_y = 5
-	},*/
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "GB" = (
