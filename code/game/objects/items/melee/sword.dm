@@ -371,10 +371,10 @@
 /obj/item/melee/sword/vibro/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 20, 105)
-	AddComponent(/datum/component/two_handed, force_multiplier=2, icon_wielded="[base_icon_state]1")
+	AddComponent(/datum/component/two_handed, force_multiplier=2, icon_wielded="[base_icon_state]_on")
 
 /obj/item/melee/sword/vibro/update_icon_state()
-	icon_state = "[base_icon_state]0"
+	icon_state = "[base_icon_state]"
 	return ..()
 
 /obj/item/melee/sword/vibro/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
