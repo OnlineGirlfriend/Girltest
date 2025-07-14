@@ -308,7 +308,7 @@
 /turf/open/floor/plating,
 /area/ruin/icemoon/training_facility/range)
 "by" = (
-/obj/item/clothing/head/solgov/terragov{
+/obj/item/clothing/head/terragov/terragov{
 	pixel_y = 11;
 	pixel_x = -33
 	},
