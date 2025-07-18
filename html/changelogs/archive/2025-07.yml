@@ -72,3 +72,6 @@
   - bugfix: few invisible sprites are now fixed
   - bugfix: nachos shouldn't have any issues related to crafting anymore
   - rscdel: deletes the removal of gibtonite from randomgen orespawn because soul.
+2025-07-18:
+  Ossa88:
+  - rscdel: Narsie's Power over the system has dimenished.
