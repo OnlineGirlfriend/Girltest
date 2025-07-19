@@ -1894,7 +1894,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor/northleft/outpost{
-	req_access = 109
+	req_access = list("109")
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
@@ -9565,7 +9565,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor/northright/outpost{
-	req_access = 109
+	req_access = list("109")
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
