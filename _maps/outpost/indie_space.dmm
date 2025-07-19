@@ -7438,10 +7438,10 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/window/brigdoor/southleft/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /obj/machinery/door/window/brigdoor/northright/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)
@@ -8287,10 +8287,10 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/eastleft/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /obj/machinery/door/window/brigdoor/westleft/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)

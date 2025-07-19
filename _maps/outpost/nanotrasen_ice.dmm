@@ -735,7 +735,7 @@
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/eastleft/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /obj/machinery/door/poddoor/ert{
 	dir = 8;
@@ -2144,7 +2144,7 @@
 	},
 /obj/structure/fans/tiny/invisible,
 /obj/machinery/door/window/brigdoor/eastright/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /obj/machinery/door/poddoor/ert{
 	dir = 8;

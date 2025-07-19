@@ -2740,7 +2740,7 @@
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/eastright/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /obj/machinery/door/window/brigdoor/westleft/outpost,
 /turf/open/floor/plasteel,
@@ -10686,7 +10686,9 @@
 	color = "#808080";
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/southright/outpost,
+/obj/machinery/door/window/brigdoor/southright/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "KU" = (
@@ -15092,7 +15094,7 @@
 	desc = "A heavy duty blast door."
 	},
 /obj/machinery/door/window/brigdoor/southright/outpost{
-	req_access = 101
+	req_access = list("101")
 	},
 /obj/machinery/door/window/brigdoor/northright/outpost,
 /turf/open/floor/plasteel/tech/techmaint,
