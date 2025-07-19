@@ -7437,8 +7437,12 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/window/brigdoor/southleft/outpost,
-/obj/machinery/door/window/brigdoor/northright/outpost,
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = 101
+	},
+/obj/machinery/door/window/brigdoor/northright/outpost{
+	req_access = 101
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)
 "Fu" = (
@@ -8282,8 +8286,12 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/eastleft/outpost,
-/obj/machinery/door/window/brigdoor/westleft/outpost,
+/obj/machinery/door/window/brigdoor/eastleft/outpost{
+	req_access = 101
+	},
+/obj/machinery/door/window/brigdoor/westleft/outpost{
+	req_access = 101
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)
 "Iz" = (

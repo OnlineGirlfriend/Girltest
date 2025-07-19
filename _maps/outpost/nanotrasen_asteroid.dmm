@@ -1893,7 +1893,9 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/northleft/outpost,
+/obj/machinery/door/window/brigdoor/northleft/outpost{
+	req_access = 109
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "ha" = (
@@ -2737,7 +2739,9 @@
 	id = "outpost_office_lockdown";
 	dir = 8
 	},
-/obj/machinery/door/window/brigdoor/eastright/outpost,
+/obj/machinery/door/window/brigdoor/eastright/outpost{
+	req_access = 101
+	},
 /obj/machinery/door/window/brigdoor/westleft/outpost,
 /turf/open/floor/plasteel,
 /area/outpost/operations)
@@ -3989,8 +3993,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_com;
 	glass = 1;
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	name = "Bridge Access";
-	req_one_access_txt = "109"
+	name = "Bridge Access"
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "outpost_bridge_lockdown"
@@ -9561,7 +9564,9 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/northright/outpost,
+/obj/machinery/door/window/brigdoor/northright/outpost{
+	req_access = 109
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "GY" = (
@@ -12973,8 +12978,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_com;
 	glass = 1;
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	name = "Bridge Access";
-	req_one_access_txt = "109"
+	name = "Bridge Access"
 	},
 /turf/open/floor/plasteel,
 /area/outpost/operations)
@@ -15087,7 +15091,9 @@
 	id = "outpost_security_desk";
 	desc = "A heavy duty blast door."
 	},
-/obj/machinery/door/window/brigdoor/southright/outpost,
+/obj/machinery/door/window/brigdoor/southright/outpost{
+	req_access = 101
+	},
 /obj/machinery/door/window/brigdoor/northright/outpost,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/security)
