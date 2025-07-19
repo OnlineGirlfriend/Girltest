@@ -1234,7 +1234,9 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/southleft/outpost,
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "jh" = (
@@ -4712,7 +4714,9 @@
 	anchored = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/machinery/door/window/brigdoor/southleft/outpost,
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "Ey" = (
@@ -5734,7 +5738,9 @@
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/holosign_creator/security,
-/obj/machinery/door/window/brigdoor/southleft/outpost,
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "LT" = (
@@ -5839,7 +5845,9 @@
 	},
 /obj/structure/closet/jcloset,
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/door/window/brigdoor/northleft/outpost,
+/obj/machinery/door/window/brigdoor/northleft/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/security/armory)
 "Mv" = (
