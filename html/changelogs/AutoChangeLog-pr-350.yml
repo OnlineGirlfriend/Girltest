@@ -1,0 +1,7 @@
+author: Ossa88
+changes:
+  - {rscadd: Dr. Gloop's Ethical BioSolutions is selling Xenobio stuff via 
+      cargo.}
+  - {rscadd: Modsuits are buyable via cargo.}
+  - {bugfix: Posters have been given a proper catagory.}
+delete-after: true
