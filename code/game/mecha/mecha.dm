@@ -681,7 +681,7 @@
 	if(phasing && get_charge() >= phasing_energy_drain && !throwing)
 		if(!can_move)
 			return
-		if(istype(obstacle, /turf/closed/indestructible))
+		if(istype(obstacle, /turf/closed/indestructible, /obj/machinery/door/poddoor/ert, /obj/structure/window/reinforced/fulltile/indestructible, /obj/structure/grille/indestructible, /obj/machinery/door/airlock/outpost)) //PENTEST OUTPOST PROTECTION ACT
 			return
 		can_move = FALSE
 		if(phase_state)
