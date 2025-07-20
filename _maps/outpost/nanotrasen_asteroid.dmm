@@ -1893,9 +1893,7 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/northleft/outpost{
-	req_access = list("109")
-	},
+/obj/machinery/door/window/brigdoor/southleft/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "ha" = (
@@ -9564,9 +9562,7 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/northright/outpost{
-	req_access = list("109")
-	},
+/obj/machinery/door/window/brigdoor/southright/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "GY" = (
@@ -15096,7 +15092,6 @@
 /obj/machinery/door/window/brigdoor/southright/outpost{
 	req_access = list("101")
 	},
-/obj/machinery/door/window/brigdoor/northright/outpost,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/security)
 "ZE" = (

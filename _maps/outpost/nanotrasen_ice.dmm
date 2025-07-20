@@ -734,13 +734,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/door/window/brigdoor/eastleft/outpost{
-	req_access = list("101")
-	},
 /obj/machinery/door/poddoor/ert{
 	dir = 8;
 	id = "ice_ERT_bay"
 	},
+/obj/machinery/door/window/brigdoor/westright/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "eT" = (
@@ -2145,13 +2143,11 @@
 	icon_state = "4-8"
 	},
 /obj/structure/fans/tiny/invisible,
-/obj/machinery/door/window/brigdoor/eastright/outpost{
-	req_access = list("101")
-	},
 /obj/machinery/door/poddoor/ert{
 	dir = 8;
 	id = "ice_ERT_bay"
 	},
+/obj/machinery/door/window/brigdoor/westleft/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "oe" = (
