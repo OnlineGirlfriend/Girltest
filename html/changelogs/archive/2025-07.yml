@@ -75,3 +75,8 @@
 2025-07-18:
   Ossa88:
   - rscdel: Narsie's Power over the system has dimenished.
+2025-07-20:
+  Ossa88:
+  - rscadd: Dr. Gloop's Ethical BioSolutions is selling Xenobio stuff via cargo.
+  - rscadd: Modsuits are buyable via cargo.
+  - bugfix: Posters have been given a proper catagory.
