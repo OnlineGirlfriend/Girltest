@@ -681,7 +681,7 @@
 	if(phasing && get_charge() >= phasing_energy_drain && !throwing)
 		if(!can_move)
 			return
-		if(istype(obstacle, /turf/closed/indestructible))
+		if(is_phase_blocker(obstacle))
 			return
 		can_move = FALSE
 		if(phase_state)

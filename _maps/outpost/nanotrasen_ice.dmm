@@ -730,14 +730,15 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/machinery/door/poddoor/ert{
-	dir = 8;
-	id = "ice_ERT_bay"
-	},
 /obj/structure/fans/tiny/invisible,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/machinery/door/poddoor/ert{
+	dir = 8;
+	id = "ice_ERT_bay"
+	},
+/obj/machinery/door/window/brigdoor/westright/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "eT" = (
@@ -1231,8 +1232,8 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/southleft{
-	req_one_access_txt = "103"
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
@@ -2138,14 +2139,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/door/poddoor/ert{
-	dir = 8;
-	id = "ice_ERT_bay"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/structure/fans/tiny/invisible,
+/obj/machinery/door/poddoor/ert{
+	dir = 8;
+	id = "ice_ERT_bay"
+	},
+/obj/machinery/door/window/brigdoor/westleft/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "oe" = (
@@ -4708,8 +4710,8 @@
 	anchored = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/machinery/door/window/brigdoor/southleft{
-	req_one_access_txt = "103"
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
@@ -5284,15 +5286,13 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
 "Ip" = (
-/obj/machinery/door/window/brigdoor/eastleft{
-	req_one_access_txt = "101"
-	},
 /obj/structure/window/reinforced/spawner,
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
+/obj/machinery/door/window/brigdoor/eastleft/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "Ir" = (
@@ -5720,9 +5720,6 @@
 	anchored = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/machinery/door/window/brigdoor/southleft{
-	req_one_access_txt = "103"
-	},
 /obj/structure/window/reinforced/spawner{
 	dir = 4
 	},
@@ -5737,6 +5734,9 @@
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/holosign_creator/security,
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "LT" = (
@@ -5840,8 +5840,10 @@
 	desc = "Pray for your life, litter!"
 	},
 /obj/structure/closet/jcloset,
-/obj/machinery/door/window/brigdoor/northleft,
 /obj/structure/window/reinforced/spawner/west,
+/obj/machinery/door/window/brigdoor/northleft/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/security/armory)
 "Mv" = (

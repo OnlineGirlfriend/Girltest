@@ -1003,6 +1003,7 @@
 /obj/effect/turf_decal/weather/snow{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/starboard)
 "dQ" = (
@@ -1892,6 +1893,7 @@
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
+/obj/machinery/door/window/brigdoor/southleft/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "ha" = (
@@ -2731,21 +2733,14 @@
 /area/outpost/security/armory)
 "jW" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 4;
-	icon_state = "rightsecure";
-	name = "Head of Personnel's Desk";
-	req_access_txt = "101"
-	},
-/obj/machinery/door/window/northleft{
-	dir = 8;
-	name = "Reception Window"
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "outpost_office_lockdown";
 	dir = 8
 	},
+/obj/machinery/door/window/brigdoor/eastright/outpost{
+	req_access = list("101")
+	},
+/obj/machinery/door/window/brigdoor/westleft/outpost,
 /turf/open/floor/plasteel,
 /area/outpost/operations)
 "jX" = (
@@ -3996,8 +3991,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_com;
 	glass = 1;
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	name = "Bridge Access";
-	req_one_access_txt = "109"
+	name = "Bridge Access"
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "outpost_bridge_lockdown"
@@ -9316,14 +9310,12 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/engineering)
 "Gs" = (
-/obj/machinery/door/window/brigdoor/westright,
-/obj/machinery/door/window/brigdoor/westright{
-	dir = 4
-	},
 /obj/structure/fans/tiny,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+/obj/machinery/door/window/brigdoor/westright/outpost,
+/obj/machinery/door/window/brigdoor/eastright/outpost,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/operations)
 "Gt" = (
@@ -9562,6 +9554,17 @@
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating/catwalk_floor,
 /area/outpost/security)
+"GX" = (
+/obj/machinery/door/poddoor/ert{
+	id = "outpost_ert"
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/southright/outpost,
+/turf/open/floor/plasteel/dark,
+/area/outpost/security/armory)
 "GY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken/directional/south,
@@ -10675,17 +10678,17 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "KT" = (
-/obj/machinery/door/window/brigdoor/southright{
-	req_access_txt = "1"
-	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	color = "#808080";
 	dir = 1
 	},
+/obj/machinery/door/window/brigdoor/southright/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "KU" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced/indestructible,
 /turf/open/floor/plating,
 /area/outpost/hallway/fore)
 "KV" = (
@@ -12973,8 +12976,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_com;
 	glass = 1;
 	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
-	name = "Bridge Access";
-	req_one_access_txt = "109"
+	name = "Bridge Access"
 	},
 /turf/open/floor/plasteel,
 /area/outpost/operations)
@@ -13350,10 +13352,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/red/line,
-/obj/machinery/door/airlock/security/glass{
-	req_access_txt = "109";
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -13363,6 +13361,12 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/outpost/security{
+	dir = 4;
+	overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi';
+	assemblytype = /obj/structure/door_assembly/door_assembly_sec;
+	req_one_access_txt = "101"
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
@@ -14634,6 +14638,7 @@
 /area/outpost/crew/library)
 "Ym" = (
 /obj/machinery/door/airlock/maintenance_hatch,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
 /area/outpost/hallway/fore)
 "Yo" = (
@@ -15079,16 +15084,13 @@
 /area/outpost/crew/dorm)
 "ZD" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/brigdoor/southright{
-	req_access_txt = "101"
-	},
-/obj/machinery/door/window/brigdoor/southright{
-	dir = 1
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/ert{
 	id = "outpost_security_desk";
 	desc = "A heavy duty blast door."
+	},
+/obj/machinery/door/window/brigdoor/southright/outpost{
+	req_access = list("101")
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/security)
@@ -26026,7 +26028,7 @@ op
 IP
 kR
 oG
-gW
+GX
 bS
 bS
 jV

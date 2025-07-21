@@ -185,17 +185,6 @@
 /obj/structure/grille/indestructible,
 /turf/open/floor/plating,
 /area/outpost/crew/cryo)
-"aM" = (
-/obj/structure/window/reinforced/fulltile,
-/obj/structure/grille/indestructible,
-/obj/machinery/door/poddoor/shutters{
-	id = "is_cloth"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
-/turf/open/floor/plating,
-/area/outpost/crew/lounge)
 "aN" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
@@ -7444,17 +7433,16 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/obj/machinery/door/window{
-	req_access = list("101")
-	},
-/obj/machinery/door/window{
-	req_access = list("101");
-	dir = 1
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/window/brigdoor/southleft/outpost{
+	req_access = list("101")
+	},
+/obj/machinery/door/window/brigdoor/northright/outpost{
+	req_access = list("101")
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)
 "Fu" = (
@@ -8292,19 +8280,17 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/machinery/door/window{
-	req_access = list("101");
-	dir = 8
-	},
-/obj/machinery/door/window{
-	req_access = list("101");
-	dir = 4
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/eastleft/outpost{
+	req_access = list("101")
+	},
+/obj/machinery/door/window/brigdoor/westleft/outpost{
+	req_access = list("101")
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/security)
