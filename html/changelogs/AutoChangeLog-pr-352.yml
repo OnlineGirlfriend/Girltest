@@ -1,0 +1,7 @@
+author: Ossa88
+changes:
+  - {bugfix: Indestructible Windows ignore Jackhammers}
+  - {bugfix: Indestructible Windoors ignore everything}
+  - {bugfix: Phazons Ignore Indestructible objects}
+  - {bugfix: Outpost Admin areas reinforced}
+delete-after: true
