@@ -80,3 +80,9 @@
   - rscadd: Dr. Gloop's Ethical BioSolutions is selling Xenobio stuff via cargo.
   - rscadd: Modsuits are buyable via cargo.
   - bugfix: Posters have been given a proper catagory.
+2025-07-22:
+  Ossa88:
+  - bugfix: Indestructible Windows ignore Jackhammers
+  - bugfix: Indestructible Windoors ignore everything
+  - bugfix: Phazons Ignore Indestructible objects
+  - bugfix: Outpost Admin areas reinforced
