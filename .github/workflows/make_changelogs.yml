@@ -4,47 +4,27 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    types: [closed]
-    branches:
-      - master
 
 jobs:
   MakeCL:
     runs-on: ubuntu-latest
-    if: |
-      (github.event_name == 'push' && !contains(github.event.head_commit.message, '[ci skip]') && github.event.commits[0].author.name != 'Changelogs') ||
-      (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 25
-
-      - name: Debug Event Data
-        run: |
-          echo "Event Name: ${{ github.event_name }}"
-          echo "Pull Request Merged: ${{ github.event.pull_request.merged }}"
-          echo "Commit Message: ${{ github.event.head_commit.message }}"
-          echo "PR Number: ${{ github.event.pull_request.number }}"
-          echo "PR Title: ${{ github.event.pull_request.title }}"
-          echo "SHA: ${{ github.sha }}"
-
       - name: Python setup
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
-
-      - name: Install dependencies
+      - name: Install depends
         run: |
           python -m pip install --upgrade pip
           pip install ruamel.yaml PyGithub
-
-      - name: Make Changelog
+      - name: Make CL
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGELOG_TOKEN || secrets.GITHUB_TOKEN }}
           GIT_EMAIL: "action@github.com"
           GIT_NAME: "Changelogs"
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          GITHUB_SHA: ${{ github.sha }}
         run: python tools/changelog/generate_cl.py
