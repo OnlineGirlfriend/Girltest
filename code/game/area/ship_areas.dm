@@ -262,8 +262,8 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "law"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
-/area/ship/crew/terragov
-	name = "TerraGov Consulate"
+/area/ship/crew/solgov
+	name = "SolGov Consulate"
 	icon_state = "solgov"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 

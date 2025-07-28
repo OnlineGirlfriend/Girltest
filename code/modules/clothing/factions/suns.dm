@@ -276,7 +276,7 @@
 	lefthand_file = 'icons/mob/inhands/faction/suns/suns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/faction/suns/suns_righthand.dmi'
 
-/obj/item/clothing/head/helmet/space/hardsuit/terragov/suns
+/obj/item/clothing/head/helmet/space/hardsuit/solgov/suns
 	name = "\improper SUNS captain's hardsuit helmet"
 	icon_state = "hardsuit0-suns_solgov"
 	item_state = "hardsuit0-suns_solgov"
@@ -285,15 +285,15 @@
 	hardsuit_type = "suns_solgov"
 	desc = "An armored spaceproof helmet, the white glass on the side signifies a captain level rank."
 
-/obj/item/clothing/suit/space/hardsuit/terragov/suns
+/obj/item/clothing/suit/space/hardsuit/solgov/suns
 	name = "\improper SUNS captain's hardsuit"
-	desc = "A well decorated spaceworthy suit. The design was co-created by TerraGov and SUNS academics."
+	desc = "A well decorated spaceworthy suit. The design was co-created by SolGov and SUNS academics."
 	icon_state = "suns_commandsuit"
 	item_state = "suns_commandsuit"
 	icon = 'icons/obj/clothing/faction/suns/suits.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/suns/suits.dmi'
 	hardsuit_type = "suns_solgov"
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/terragov/suns
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solgov/suns
 	lefthand_file = 'icons/mob/inhands/faction/suns/suns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/faction/suns/suns_righthand.dmi'
 
@@ -596,15 +596,12 @@
 //Accessories//
 ///////////////
 
-//These are stored in clothing/accessories.dmi instead of a factional variant due to accessory code being dogwater
-//Please transfer them over to a factional file if accessory code is ever fixed
-
 /obj/item/clothing/accessory/waistcoat/suns
 	name = "\improper SUNS waistcoat"
 	desc = "An academic issued run of the mill waistcoat."
 	icon_state = "suns_waistcoat"
-	icon = 'icons/obj/clothing/accessories.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/accessories.dmi'
+	icon = 'icons/obj/clothing/faction/suns/accessory.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/suns/accessory.dmi'
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/waistcoat/suns/ribbon

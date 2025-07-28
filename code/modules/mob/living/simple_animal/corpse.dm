@@ -205,11 +205,11 @@
 	id = /obj/item/card/id
 	glasses = /obj/item/clothing/glasses/hud/health
 
-/obj/effect/mob_spawn/human/corpse/terragov/shocktrooper
-	name = "TerraGov Shock Trooper"
-	id_job = "TerraGov Shock Trooper"
-	outfit = /datum/outfit/job/terragov/shocktrooper
-	id_access_list = list(ACCESS_TERRAGOV)
+/obj/effect/mob_spawn/human/corpse/solgov/sonnensoldner
+	name = "SolGov Shock Trooper"
+	id_job = "SolGov Shock Trooper"
+	outfit = /datum/outfit/job/solgov/sonnensoldner
+	id_access_list = list(ACCESS_SOLGOV)
 
 //inteq
 

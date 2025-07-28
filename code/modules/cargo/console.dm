@@ -279,7 +279,7 @@
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/cargo/terragov
+/obj/machinery/computer/cargo/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov

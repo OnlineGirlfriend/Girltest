@@ -45,10 +45,10 @@
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/helm/terragov
+/obj/machinery/computer/helm/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /datum/config_entry/number/bluespace_jump_wait
 	default = 5 MINUTES

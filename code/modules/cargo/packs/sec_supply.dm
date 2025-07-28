@@ -180,7 +180,7 @@
 	cost = 1500
 	contains = list(/obj/item/melee/duelenergy/halberd)
 	crate_name = "energy halberd crate"
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 	faction_discount = 0
 	faction_locked = TRUE
 

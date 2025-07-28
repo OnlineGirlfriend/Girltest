@@ -197,11 +197,11 @@
 	mag_type = /obj/item/ammo_box/magazine/modelh
 
 /obj/item/storage/guncase/pistol/pistolec
-	gun_type = /obj/item/gun/ballistic/automatic/pistol/terragov
+	gun_type = /obj/item/gun/ballistic/automatic/pistol/solgov
 	mag_type = /obj/item/ammo_box/magazine/pistol556mm
 
 /obj/item/storage/guncase/ssg669
-	gun_type = /obj/item/gun/ballistic/rifle/terragov
+	gun_type = /obj/item/gun/ballistic/rifle/solgov
 	mag_type = /obj/item/ammo_box/a858
 
 /obj/item/storage/guncase/claris

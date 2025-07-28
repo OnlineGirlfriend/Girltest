@@ -290,7 +290,7 @@
 
 /datum/supply_pack/ammo/c556mmHITP_ammo_box
 	name = "5.56 Caseless Ammo Box Crate"
-	desc = "Contains a 48-round 5.56mm caseless box for TerraGov sidearms like the Pistole C."
+	desc = "Contains a 48-round 5.56mm caseless box for SolGov sidearms like the Pistole C."
 	contains = list(/obj/item/storage/box/ammo/c556mm)
 	cost = 165 //5.7 ammo efficiency at 20 damage
 

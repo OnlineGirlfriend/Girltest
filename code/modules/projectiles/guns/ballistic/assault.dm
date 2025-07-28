@@ -151,7 +151,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/swiss,
 	)
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 8
 	spread_unwielded = 15
 

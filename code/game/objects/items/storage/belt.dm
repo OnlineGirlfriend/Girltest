@@ -838,14 +838,14 @@
 	new sabre_type(src)
 	update_appearance()
 
-/obj/item/storage/belt/sabre/terragov
-	name = "terran sabre sheath"
+/obj/item/storage/belt/sabre/solgov
+	name = "solarian sabre sheath"
 	desc = "An ornate sheath designed to hold an officer's blade."
 	base_icon_state = "sheath-solgov"
 	icon_state = "sheath-solgov"
 	item_state = "sheath-solgov"
 	w_class = WEIGHT_CLASS_BULKY
-	sabre_type = /obj/item/melee/sword/sabre/terragov
+	sabre_type = /obj/item/melee/sword/sabre/solgov
 
 /obj/item/storage/belt/sabre/suns
 	name = "SUNS sabre sheath"
@@ -895,31 +895,3 @@
 	icon_state = "sheath-pgf"
 	item_state = "sheath-pgf"
 	sabre_type = /obj/item/melee/sword/sabre/pgf
-
-/obj/item/storage/belt/security/webbing/inteq
-	name = "inteq webbing"
-	desc = "A set of tactical webbing for operators of the IRMG, can hold security gear."
-	icon_state = "inteq_webbing"
-	item_state = "inteq_webbing"
-	supports_variations = VOX_VARIATION | KEPORI_VARIATION
-
-/obj/item/storage/belt/security/webbing/inteq/skm/PopulateContents()
-	. = ..()
-	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/skm_762_40(src)
-
-/obj/item/storage/belt/security/webbing/inteq/skm_carabine/PopulateContents()
-	. = ..()
-	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/smgm10mm(src)
-
-/obj/item/storage/belt/security/webbing/inteq/alt
-	name = "inteq drop pouch harness"
-	desc = "A harness with a bunch of pouches attached to them emblazoned in the colors of the IRMG, can hold security gear."
-	icon_state = "inteq_droppouch"
-	item_state = "inteq_droppouch"
-
-/obj/item/storage/belt/security/webbing/inteq/alt/bulldog/PopulateContents()
-	. = ..()
-	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/m12g_bulldog(src)

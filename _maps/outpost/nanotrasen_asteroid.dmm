@@ -6539,7 +6539,7 @@
 /obj/item/modular_computer/laptop/preset/civilian{
 	pixel_y = 5
 	},
-/obj/structure/sign/poster/terragov/paperwork{
+/obj/structure/sign/poster/solgov/paperwork{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel,

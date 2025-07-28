@@ -7323,7 +7323,7 @@
 /obj/item/radio/headset/syndicate/alt{
 	keyslot = null
 	},
-/obj/item/storage/belt/sabre/terragov,
+/obj/item/storage/belt/sabre/solgov,
 /obj/item/storage/guncase/pistol/modelh,
 /obj/item/storage/box/ammo/ferroslug,
 /turf/open/floor/mineral/plastitanium,
@@ -8872,7 +8872,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
 	},
-/obj/structure/sign/poster/terragov/suns{
+/obj/structure/sign/poster/solgov/suns{
 	pixel_x = 32
 	},
 /obj/structure/crate_shelf,

@@ -22,10 +22,10 @@
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/telecomms/server/terragov
+/obj/machinery/computer/telecomms/server/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/telecomms/server/ui_interact(mob/user)
 	. = ..()

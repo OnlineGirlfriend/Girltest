@@ -171,7 +171,7 @@
 	built_icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/structure/frame/computer/terragov
+/obj/structure/frame/computer/solgov
 	name = "wooden computer frame"
 	icon_state = "console_frame-solgov"
 	base_icon_state = "solgov"

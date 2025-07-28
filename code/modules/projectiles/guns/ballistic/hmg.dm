@@ -171,7 +171,7 @@
 
 	show_magazine_on_sprite = TRUE
 	w_class = WEIGHT_CLASS_BULKY
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 
 /obj/item/gun/ballistic/automatic/hmg/skm_lmg
 	name = "\improper SKM-24u"

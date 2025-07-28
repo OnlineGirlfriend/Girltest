@@ -318,7 +318,7 @@
 /datum/blackmarket_item/weapon/sgg
 	name = "SSG-669C Rotary Sniper Rifle"
 	desc = "I could tell you it's full name, but we'd be here all day. It's a sniper rifle. It shoots people from far away. Chambered in 8x58mm caseless."
-	item = /obj/item/gun/ballistic/rifle/terragov
+	item = /obj/item/gun/ballistic/rifle/solgov
 	pair_item = list(/datum/blackmarket_item/ammo/sgg_stripper)
 
 	price_min = 3000
@@ -329,7 +329,7 @@
 /datum/blackmarket_item/weapon/pistole_c
 	name = "Pistole C"
 	desc = "Pistole Compact? Pistole Caseless? Pistole Cheese? Fuck if I know. All I know is these little numbers pack a nasty sting. Chambered in 5.56 caseless."
-	item = /obj/item/gun/ballistic/automatic/pistol/terragov/old
+	item = /obj/item/gun/ballistic/automatic/pistol/solgov/old
 	pair_item = list(/datum/blackmarket_item/ammo/pistole_c_mag)
 
 	price_min = 900

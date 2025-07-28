@@ -122,8 +122,8 @@
 				/obj/item/pen/fourcolor,
 				/obj/item/pen/fountain,
 				/obj/item/pen/fountain/captain,
-				/obj/item/pen/terragov,
-				/obj/item/pen/fountain/terragov,
+				/obj/item/pen/solgov,
+				/obj/item/pen/fountain/solgov,
 				/obj/item/pen/edagger,
 				/obj/item/pen/survival,
 				/obj/item/pen/sleepy))

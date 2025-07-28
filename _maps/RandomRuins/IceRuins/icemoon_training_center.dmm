@@ -308,11 +308,11 @@
 /turf/open/floor/plating,
 /area/ruin/icemoon/training_facility/range)
 "by" = (
-/obj/item/clothing/head/terragov/terragov{
+/obj/item/clothing/head/solgov/terragov{
 	pixel_y = 11;
 	pixel_x = -33
 	},
-/obj/item/clothing/suit/toggle/terragov/terragov{
+/obj/item/clothing/suit/toggle/solgov/terragov{
 	pixel_y = 7;
 	name = "\improper tattered Terragov coat";
 	pixel_x = -6
@@ -322,7 +322,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/under/terragov/formal/terragov{
+/obj/item/clothing/under/solgov/formal/terragov{
 	pixel_x = 7;
 	pixel_y = 6
 	},
@@ -3750,7 +3750,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/structure/sign/poster/terragov/terra{
+/obj/structure/sign/poster/solgov/terra{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -8091,7 +8091,7 @@
 	pixel_x = -7;
 	pixel_y = 3
 	},
-/obj/item/pen/fountain/terragov{
+/obj/item/pen/fountain/solgov{
 	pixel_x = -1;
 	pixel_y = 4
 	},
@@ -8656,7 +8656,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/folder/documents/terragov,
+/obj/item/folder/documents/solgov,
 /turf/open/floor/wood,
 /area/ruin/icemoon/training_facility/office_2)
 "Ql" = (
@@ -9210,7 +9210,7 @@
 /turf/open/floor/wood,
 /area/ruin/icemoon/training_facility/classroom)
 "SA" = (
-/obj/structure/sign/poster/terragov/terragov,
+/obj/structure/sign/poster/solgov/terragov,
 /turf/closed/wall/concrete/reinforced,
 /area/ruin/icemoon/training_facility/office_2)
 "SC" = (

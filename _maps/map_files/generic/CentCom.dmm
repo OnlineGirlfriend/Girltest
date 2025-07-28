@@ -6413,10 +6413,10 @@
 /area/centcom/ferry)
 "bSy" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = 28
 	},
-/obj/item/clothing/head/beret/terragov{
+/obj/item/clothing/head/beret/solgov{
 	pixel_x = 11;
 	pixel_y = -1
 	},
@@ -7043,7 +7043,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/supply)
 "dom" = (
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = 28
 	},
 /obj/structure/table/wood/fancy/blue,
@@ -7620,7 +7620,7 @@
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
 "eqM" = (
-/obj/effect/turf_decal/terragov/wood/bottom_left,
+/obj/effect/turf_decal/solgov/wood/bottom_left,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
@@ -8659,7 +8659,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = -28
 	},
 /obj/structure/closet/crate/bin,
@@ -8887,7 +8887,7 @@
 "gTo" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/light/directional/north,
-/obj/machinery/fax/admin/terragov,
+/obj/machinery/fax/admin/solgov,
 /turf/open/floor/carpet/royalblue,
 /area/centcom)
 "gUp" = (
@@ -9810,7 +9810,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/centcom)
 "iSo" = (
-/obj/machinery/door/airlock/terragov{
+/obj/machinery/door/airlock/solgov{
 	req_access_txt = "109"
 	},
 /turf/open/floor/wood/walnut,
@@ -9947,7 +9947,7 @@
 	dir = 9;
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/center_left,
+/obj/effect/turf_decal/solgov/wood/center_left,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "jjE" = (
@@ -12389,12 +12389,12 @@
 "nYl" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/paper_bin/carbon,
-/obj/item/pen/terragov,
+/obj/item/pen/solgov,
 /obj/item/pen/fourcolor{
 	pixel_x = -9;
 	pixel_y = -3
 	},
-/obj/item/desk_flag/terragov{
+/obj/item/desk_flag/solgov{
 	pixel_y = 12;
 	pixel_x = -8
 	},
@@ -12983,7 +12983,7 @@
 /area/centcom/control)
 "phf" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/structure/sign/poster/terragov/paperwork{
+/obj/structure/sign/poster/solgov/paperwork{
 	pixel_y = 32
 	},
 /obj/item/radio/intercom/wideband/table{
@@ -13108,10 +13108,10 @@
 	dir = 10;
 	color = "#543C30"
 	},
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = -28
 	},
-/obj/machinery/telecomms/relay/preset/terragov{
+/obj/machinery/telecomms/relay/preset/solgov{
 	autolinkers = list("relay")
 	},
 /turf/open/floor/wood/walnut,
@@ -13194,7 +13194,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/centcom)
 "pwr" = (
-/obj/effect/turf_decal/terragov/wood/top_right,
+/obj/effect/turf_decal/solgov/wood/top_right,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 1
@@ -13439,7 +13439,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/bottom_right,
+/obj/effect/turf_decal/solgov/wood/bottom_right,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "pOL" = (
@@ -13657,7 +13657,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "qkP" = (
-/obj/effect/turf_decal/terragov/wood/bottom_left{
+/obj/effect/turf_decal/solgov/wood/bottom_left{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -15373,7 +15373,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "tOf" = (
-/obj/effect/turf_decal/terragov/wood/center,
+/obj/effect/turf_decal/solgov/wood/center,
 /obj/machinery/light/floor,
 /turf/open/floor/wood/walnut,
 /area/centcom)
@@ -15561,7 +15561,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/bottom_center,
+/obj/effect/turf_decal/solgov/wood/bottom_center,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
@@ -16190,7 +16190,7 @@
 	dir = 9;
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/top,
+/obj/effect/turf_decal/solgov/wood/top,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 1
@@ -16515,10 +16515,10 @@
 /area/centcom)
 "wCp" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/item/folder/documents/terragov{
+/obj/item/folder/documents/solgov{
 	pixel_x = -3
 	},
-/obj/item/folder/terragov{
+/obj/item/folder/solgov{
 	pixel_y = 5;
 	pixel_x = 2
 	},
@@ -16926,7 +16926,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "xTt" = (
-/obj/effect/turf_decal/terragov/wood/center_right,
+/obj/effect/turf_decal/solgov/wood/center_right,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "xWv" = (

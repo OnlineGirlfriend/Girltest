@@ -156,9 +156,9 @@
 	if(istype(B))
 		playsound(B, 'sound/items/sheath.ogg', 25, TRUE)
 
-/obj/item/melee/sword/sabre/terragov
+/obj/item/melee/sword/sabre/solgov
 	name = "solarian sabre"
-	desc = "A refined ceremonial blade often given to soldiers and high ranking officials of TerraGov."
+	desc = "A refined ceremonial blade often given to soldiers and high ranking officials of SolGov."
 	icon_state = "sabresolgov"
 	item_state = "sabresolgov"
 

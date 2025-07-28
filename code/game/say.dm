@@ -13,7 +13,7 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_AI_PRIVATE]" = "aiprivradio",
 	"[FREQ_SYNDICATE]" = "syndradio",
 	"[FREQ_CENTCOM]" = "centcomradio",
-	"[FREQ_TERRAGOV]" = "terragovradio",
+	"[FREQ_SOLGOV]" = "solgovradio",
 	"[FREQ_WIDEBAND]" = "widebandradio",
 	))
 
