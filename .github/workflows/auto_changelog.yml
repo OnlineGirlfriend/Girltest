@@ -22,7 +22,6 @@ jobs:
           script: |
             const { processAutoChangelog } = await import('${{ github.workspace }}/tools/changelog/autoChangelog.js')
             await processAutoChangelog({ github, context })
-        env:
-          GITHUB-TOKEN: ${{ secrets.CHANGELOG_TOKEN || secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.CHANGELOG_TOKEN || secrets.GITHUB_TOKEN }}
           GIT_EMAIL: "action@github.com"
           GIT_NAME: "Changelogs"
