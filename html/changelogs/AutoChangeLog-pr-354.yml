@@ -1,9 +1,0 @@
-author: Ossa88
-changes:
-  - {code_imp: Accessories icons are no-longer hardcoded to one file}
-  - {code_imp: Moves SolGov and Inteq clothing into a different file}
-  - {rscdel: Terragov Pentest Version}
-  - {rscadd: Solgov Shiptest Version}
-  - {rscdel: Solgov Shiptest Version}
-  - {rscadd: Dream}
-delete-after: true
