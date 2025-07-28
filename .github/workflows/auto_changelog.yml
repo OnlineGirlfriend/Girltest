@@ -6,8 +6,10 @@ on:
       - closed
     branches:
       - master
+
 permissions:
   contents: write
+
 jobs:
   auto_changelog:
     runs-on: ubuntu-latest
@@ -22,6 +24,6 @@ jobs:
           script: |
             const { processAutoChangelog } = await import('${{ github.workspace }}/tools/changelog/autoChangelog.js')
             await processAutoChangelog({ github, context })
-          github-token: ${{ secrets.CHANGELOG_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CHANGELOG_TOKEN || secrets.GITHUB_TOKEN }}
           GIT_EMAIL: "action@github.com"
           GIT_NAME: "Changelogs"
