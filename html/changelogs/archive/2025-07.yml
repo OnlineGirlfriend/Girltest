@@ -100,3 +100,7 @@
   - rscdel: Test 2
   - rscdel: Test 1
   - code_imp: This is the last time... if this doesnt pass Imma cry.
+2025-07-29:
+  Ossa88:
+  - rscdel: changelogs
+  - code_imp: Cleaning up changelog maker
