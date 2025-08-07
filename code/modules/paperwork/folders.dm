@@ -88,13 +88,21 @@
 
 /obj/item/folder/ui_data(mob/user)
 	var/list/data = list()
+
 	if(istype(src, /obj/item/folder/syndicate || /obj/item/folder/documents/syndicate))
 		data["theme"] = "syndicate"
+
 	data["bg_color"] = "[bg_color]"
 	data["folder_name"] = "[name]"
 
 	data["contents"] = list()
 	data["contents_ref"] = list()
+
+	if(!contents.len)
+		data["contents"] += "(No pages)"
+		data["contents_ref"] += "null"
+		return data
+
 	for(var/Content in src)
 		data["contents"] += "[Content]"
 		data["contents_ref"] += "[REF(Content)]"
