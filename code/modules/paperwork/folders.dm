@@ -95,7 +95,6 @@
 
 	data["contents"] = list()
 	data["contents_ref"] = list()
-
 	for(var/Content in src)
 		data["contents"] += "[Content]"
 		data["contents_ref"] += "[REF(Content)]"
