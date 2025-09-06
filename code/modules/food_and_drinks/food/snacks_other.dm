@@ -21,14 +21,18 @@
 	tastes = list("cheese" = 1)
 	foodtype = DAIRY
 
-/obj/item/reagent_containers/food/snacks/watermelonslice
+/obj/item/food/watermelonslice
 	name = "watermelon slice"
 	desc = "A water-rich slice of watermelon. Little black seeds decorate the wedge."
 	icon_state = "watermelonslice"
-	filling_color = "#FF1493"
+	food_reagents = list(
+		/datum/reagent/water = 1,
+		/datum/reagent/consumable/nutriment/vitamin = 0.2,
+		/datum/reagent/consumable/nutriment = 1,
+	)
 	tastes = list("watermelon" = 1)
-	foodtype = FRUIT
-	/*food_flags = FOOD_FINGER_FOOD*/
+	foodtypes = FRUIT
+	food_flags = FOOD_FINGER_FOOD
 	juice_results = list(/datum/reagent/consumable/watermelonjuice = 5)
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -40,7 +44,7 @@
 	filling_color = "#FF8C00"
 	tastes = list("candy corn" = 1)
 	foodtype = JUNKFOOD | SUGAR
-	/*food_flags = FOOD_FINGER_FOOD*/
+	//food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/reagent_containers/food/snacks/candy_corn/prison
@@ -189,6 +193,16 @@
 	tastes = list("egg" = 1)
 	foodtype = MEAT | VEGETABLES
 
+/obj/item/reagent_containers/food/snacks/chawanmushi
+	name = "chawanmushi"
+	desc = "A savory egg custard originating from Earth, named after being prepared by being steamed in a tea bowl or teacup."
+	icon_state = "chawanmushi"
+	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	filling_color = "#FFE4E1"
+	tastes = list("custard" = 1)
+	foodtype = GRAIN | MEAT | VEGETABLES
+
 /obj/item/reagent_containers/food/snacks/spidereggs
 	name = "spider eggs"
 	desc = "A cluster of immense, translucent eggs. The spawn inside quicken to life at being disturbed..."
@@ -266,16 +280,6 @@
 	tastes = list("eggplant" = 3, "cheese" = 1)
 	foodtype = VEGETABLES | DAIRY
 
-/obj/item/reagent_containers/food/snacks/tortilla
-	name = "tortilla"
-	desc = "A thin, unleavened flatbread used for dozens of dishes. Or eaten as is, if you want."
-	icon = 'icons/obj/food/food_ingredients.dmi'
-	icon_state = "tortilla"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
-	filling_color = "#FFEFD5"
-	tastes = list("tortilla" = 1)
-	foodtype = GRAIN
-
 /obj/item/reagent_containers/food/snacks/yakiimo
 	name = "yaki imo"
 	desc = "A popular winter street food, this is a whole roasted sweet potato."
@@ -319,36 +323,24 @@
 	tastes = list("grain alcohol" = 1, "fruit" = 1)
 	foodtype = FRUIT | ALCOHOL
 
-/obj/item/reagent_containers/food/snacks/honeybar
+/obj/item/food/honeybar
 	name = "honey nut bar"
 	desc = "Oats and nuts compressed together into a bar, held together with a honey glaze."
 	icon_state = "honeybar"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/honey = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/honey = 5)
-	filling_color = "#F2CE91"
+	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/honey = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("oats" = 3, "nuts" = 2, "honey" = 1)
-	foodtype = GRAIN | SUGAR
-	/*food_flags = FOOD_FINGER_FOOD*/
+	foodtypes = GRAIN | SUGAR
+	food_flags = FOOD_FINGER_FOOD
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/reagent_containers/food/snacks/stuffedlegion
-	name = "stuffed legion"
-	desc = "Composed of a whole skull sourced from a parasitic Legion stuffed with prepared goliath meat, served alongside ketchup and hotsauce."
-	icon_state = "stuffed_legion"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment/vitamin = 3, /datum/reagent/consumable/capsaicin = 1, /datum/reagent/medicine/tricordrazine = 5)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/capsaicin = 2, /datum/reagent/medicine/tricordrazine = 10)
-	tastes = list("tough meat" = 2, "calcium" = 1, "bitter chemical aftertaste" = 1, "hot peppers" = 1)
-	foodtype = MEAT
-
-/obj/item/reagent_containers/food/snacks/powercrepe
+/obj/item/food/crepe
 	name = "jelly crepe"
 	desc = "A crepe filled with jelly. It's very sticky."
 	icon_state = "powercrepe"
-	bonus_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 3)
-	list_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/vitamin = 5, /datum/reagent/consumable/cherryjelly = 5)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/cherryjelly = 5)
 	attack_verb = list("slapped", "slathered")
 	tastes = list("cherry" = 1, "crepe" = 1)
-	foodtype = GRAIN | FRUIT | SUGAR
+	foodtypes = GRAIN | FRUIT | SUGAR
 
 /obj/item/reagent_containers/food/snacks/chewable
 	slot_flags = ITEM_SLOT_MASK
@@ -563,25 +555,23 @@
 	trash = /obj/item/stack/rods
 	/*food_flags = FOOD_FINGER_FOOD*/
 
-/obj/item/reagent_containers/food/snacks/onionrings
+/obj/item/food/onionrings
 	name = "onion rings"
 	desc = "Onion slices coated in batter and fried."
 	icon_state = "onionrings"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
-	filling_color = "#C0C9A0"
+	food_reagents = list(/datum/reagent/consumable/nutriment = 3)
 	gender = PLURAL
 	tastes = list("batter" = 3, "onion" = 1)
-	foodtype = VEGETABLES
+	foodtypes = VEGETABLES
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/reagent_containers/food/snacks/pineappleslice
+/obj/item/food/pineappleslice
 	name = "pineapple slice"
 	desc = "A slice of pineapple."
 	icon_state = "pineapple_slice"
-	filling_color = "#F6CB0B"
 	juice_results = list(/datum/reagent/consumable/pineapplejuice = 3)
 	tastes = list("pineapple" = 1)
-	foodtype = FRUIT | PINEAPPLE
+	foodtypes = FRUIT | PINEAPPLE
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/reagent_containers/food/snacks/tinychocolate

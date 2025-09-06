@@ -3912,12 +3912,8 @@
 	pixel_x = 6;
 	pixel_y = 5
 	},
-/obj/item/storage/toolbox/syndicate{
-	name = "syndicate toolbox";
-	pixel_x = -2;
-	pixel_y = 1
-	},
 /obj/machinery/airalarm/directional/south,
+/obj/item/storage/toolbox/ngr,
 /turf/open/floor/pod/dark,
 /area/ship/engineering)
 "zl" = (

@@ -1076,7 +1076,6 @@
 	name = "Mechanic's Locker"
 	},
 /obj/item/clothing/under/syndicate/ngr,
-/obj/item/storage/toolbox/syndicate,
 /obj/item/radio/headset/alt,
 /obj/effect/turf_decal/corner/opaque/red/mono,
 /obj/item/gear_pack/anglegrinder,
@@ -1100,6 +1099,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/glasses/welding,
 /obj/item/storage/backpack/industrial,
+/obj/item/storage/toolbox/ngr,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/port)
 "wc" = (

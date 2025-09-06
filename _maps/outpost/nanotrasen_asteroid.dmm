@@ -3970,7 +3970,7 @@
 /area/outpost/cargo)
 "on" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/nachos,
+/obj/item/food/nachos,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
 "oo" = (
@@ -9931,7 +9931,6 @@
 	pixel_x = 1;
 	pixel_y = -3
 	},
-/obj/item/reagent_containers/food/snacks/meatbun,
 /obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime{
 	pixel_y = 12;
 	pixel_x = -8
@@ -12354,14 +12353,14 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/outpost/crew/canteen)
 "Qu" = (
@@ -12861,7 +12860,7 @@
 "Sa" = (
 /obj/structure/toilet/secret{
 	dir = 4;
-	secret_type = /obj/item/storage/box/donkpockets/donkpocketgondola
+	secret_type = /obj/item/storage/box/donkpockets
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
@@ -13076,7 +13075,7 @@
 /area/outpost/hallway/central)
 "ST" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/nachos{
+/obj/item/food/nachos{
 	pixel_y = 9
 	},
 /obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
@@ -13220,7 +13219,7 @@
 	pixel_y = 5;
 	pixel_x = 3
 	},
-/obj/item/reagent_containers/food/snacks/cakebatter{
+/obj/item/food/cakebatter{
 	pixel_y = -9;
 	pixel_x = -5
 	},
@@ -13535,6 +13534,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/landmark/observer_start,
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/fore)
 "Up" = (
