@@ -530,6 +530,9 @@ AUTH_ADMIN_TESTING
 ## Uncomment this if you'd like to enable commendation pollings for this percentage of players near the end of the round (5% suggested)
 COMMENDATION_PERCENT_POLL 0.05
 
+## Whether native FoV is enabled for all people.
+#NATIVE_FOV
+
 ## AUTO SHIP SPAWN LOCKING ##
 ## Whether this server uses time and ship roll filled locking. I.E. after x min new ships lock until jobs are filled. FALSE to disable.
 AUTO_SHIP_SPAWN_LOCKING 0

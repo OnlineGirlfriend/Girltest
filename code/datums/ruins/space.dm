@@ -54,6 +54,7 @@
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/space/scrapstation
+	cost = 10 // Attempt to make this particular ruin spawn less often
 	id = "scrapstation"
 	suffix = "scrapstation.dmm"
 	name = "Ramzi Scrapping Station"
@@ -64,14 +65,6 @@
 		/datum/mission/ruin/signaled/kill/foreman
 	)
 
-/datum/mission/ruin/signaled/kill/foreman
-	name = "Kill Foreman Bonsha"
-	desc = "Defector Verron Bonsha has established a Ramzi Clique post inside a former Coalation FOB. Killing him should send the local Clique into disarray and disrupt their supply lines."
-	author = "2nd Battlegroup Headquarters"
-	faction = /datum/faction/syndicate/ngr
-	value = 2000
-	mission_limit = 1
-
 /datum/mission/ruin/pgf_captain
 	name = "MIA Vessel Investigation"
 	desc = "The recovery beacon for a PFGN vessel that went missing on patrol has activated. Intellegence suggests they may have been assaulted by pirates. Recover the vessel captain's body and you will be compensated for your services."
@@ -80,3 +73,11 @@
 	mission_limit = 1
 	faction = /datum/faction/pgf
 	setpiece_item = /mob/living/carbon/human
+
+/datum/mission/ruin/signaled/kill/foreman
+	name = "Kill Foreman Bonsha"
+	desc = "Defector Verron Bonsha has established a Ramzi Clique post inside a former Coalation FOB. Killing him should send the local Clique into disarray and disrupt their supply lines."
+	author = "2nd Battlegroup Headquarters"
+	faction = /datum/faction/syndicate/ngr
+	value = 2000
+	mission_limit = 1

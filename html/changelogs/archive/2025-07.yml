@@ -72,3 +72,35 @@
   - bugfix: few invisible sprites are now fixed
   - bugfix: nachos shouldn't have any issues related to crafting anymore
   - rscdel: deletes the removal of gibtonite from randomgen orespawn because soul.
+2025-07-18:
+  Ossa88:
+  - rscdel: Narsie's Power over the system has dimenished.
+2025-07-20:
+  Ossa88:
+  - rscadd: Dr. Gloop's Ethical BioSolutions is selling Xenobio stuff via cargo.
+  - rscadd: Modsuits are buyable via cargo.
+  - bugfix: Posters have been given a proper catagory.
+2025-07-22:
+  Ossa88:
+  - bugfix: Indestructible Windows ignore Jackhammers
+  - bugfix: Indestructible Windoors ignore everything
+  - bugfix: Phazons Ignore Indestructible objects
+  - bugfix: Outpost Admin areas reinforced
+2025-07-23:
+  Ossa88:
+  - bugfix: Lottery Text just looks better
+2025-07-28:
+  Ossa88:
+  - code_imp: Accessories icons are no-longer hardcoded to one file
+  - code_imp: Moves SolGov and Inteq clothing into a different file
+  - rscdel: Terragov Pentest Version
+  - rscadd: Solgov Shiptest Version
+  - rscdel: Solgov Shiptest Version
+  - rscadd: Dream
+  - rscdel: Test 2
+  - rscdel: Test 1
+  - code_imp: This is the last time... if this doesnt pass Imma cry.
+2025-07-29:
+  Ossa88:
+  - rscdel: changelogs
+  - code_imp: Cleaning up changelog maker

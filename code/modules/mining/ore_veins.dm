@@ -144,6 +144,16 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/nest = 5,
 		)
 
+/obj/structure/vein/lavaland/classtwo/rare
+	mining_charges = 12
+	vein_class = 2
+	ore_list = list(
+		/obj/item/stack/ore/plasma = 20,
+		/obj/item/stack/ore/gold = 20,
+		/obj/item/stack/ore/diamond = 5,
+		/obj/item/stack/ore/bluespace_crystal = 5
+		)
+
 /obj/structure/vein/lavaland/classthree
 	mining_charges = 10
 	vein_class = 3
@@ -164,6 +174,16 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/nest = 10,
 		)
 
+/obj/structure/vein/lavaland/classthree/rare
+	mining_charges = 14
+	vein_class = 3
+	ore_list = list(
+		/obj/item/stack/ore/plasma = 10,
+		/obj/item/stack/ore/gold = 10,
+		/obj/item/stack/ore/diamond = 8,
+		/obj/item/stack/ore/bluespace_crystal = 5,
+		)
+
 // TODO: populate all planet veins with class 4s ; this exact path should not be used, used as a templa
 /obj/structure/vein/classfour
 	mining_charges = 30
@@ -174,7 +194,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 /obj/structure/vein/ice
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf = 40,
-		/mob/living/simple_animal/hostile/asteroid/polarbear = 40,
+		/mob/living/basic/bear/polar = 40,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/nest = 20,
 		/mob/living/simple_animal/hostile/asteroid/ice_demon = 5,
 		/mob/living/simple_animal/hostile/asteroid/ice_whelp = 1,
@@ -209,6 +229,13 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	max_mobs = 6
 	spawn_time = 10 SECONDS
 
+/obj/structure/vein/ice/classtwo/rare
+	mining_charges = 12
+	vein_class = 2
+	ore_list = list(
+		/obj/item/stack/ore/ice = 10,
+		)
+
 /obj/structure/vein/ice/classthree
 	mining_charges = 10
 	vein_class = 3
@@ -224,6 +251,13 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		)
 	max_mobs = 6
 	spawn_time = 8 SECONDS
+
+/obj/structure/vein/ice/classthree/rare
+	mining_charges = 14
+	vein_class = 3
+	ore_list = list(
+		/obj/item/stack/ore/ice = 10,
+		)
 
 /obj/structure/vein/ice/classfour
 	mining_charges = 30
@@ -246,7 +280,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	// class 1 has easy mobs, the ones you find on the surface
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 50,
-		/mob/living/simple_animal/hostile/bear/cave = 30,
+		/mob/living/basic/bear/cave = 30,
 		/mob/living/simple_animal/hostile/poison/giant_spider = 5,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 1,
 	)
@@ -265,7 +299,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	//We then start to introduce the unused jungle mobs... slowly.
 	mob_types = list(
 		/mob/living/simple_animal/hostile/asteroid/wolf/random = 75,
-		/mob/living/simple_animal/hostile/bear/cave = 60,
+		/mob/living/basic/bear/cave = 60,
 		/mob/living/simple_animal/hostile/poison/giant_spider = 45,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 20,
 		/mob/living/simple_animal/hostile/jungle/seedling = 1,
@@ -281,6 +315,14 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		)
 	max_mobs = 6
 	spawn_time = 15 SECONDS
+
+/obj/structure/vein/jungle/classtwo/rare
+	mining_charges = 12
+	vein_class = 2
+	ore_list = list(
+		/obj/item/stack/ore/gold = 10,
+		/obj/item/stack/ore/diamond = 5,
+		)
 
 /obj/structure/vein/jungle/classthree
 	mining_charges = 10
@@ -302,6 +344,14 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	//jungle mobs are kind of fucking hard, less max
 	max_mobs = 4
 	spawn_time = 10 SECONDS
+
+/obj/structure/vein/jungle/classthree/rare
+	mining_charges = 14
+	vein_class = 3
+	ore_list = list(
+		/obj/item/stack/ore/gold = 10,
+		/obj/item/stack/ore/diamond = 10,
+		)
 
 //Sand planets - more or less the same as lavaland but with the sand planet variants
 
@@ -340,6 +390,15 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	max_mobs = 6
 	spawn_time = 10 SECONDS
 
+/obj/structure/vein/sand/classtwo/rare
+	mining_charges = 12
+	vein_class = 2
+	ore_list = list(
+		/obj/item/stack/ore/plasma = 10,
+		/obj/item/stack/ore/uranium = 5,
+		/obj/item/stack/ore/diamond = 2,
+		)
+
 /obj/structure/vein/sand/classthree
 	mining_charges = 10
 	vein_class = 3
@@ -354,6 +413,15 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 	max_mobs = 6
 	spawn_time = 8 SECONDS
+
+/obj/structure/vein/sand/classthree/rare
+	mining_charges = 14
+	vein_class = 3
+	ore_list = list(
+		/obj/item/stack/ore/plasma = 10,
+		/obj/item/stack/ore/uranium = 10,
+		/obj/item/stack/ore/diamond = 4,
+		)
 
 // rockplanet
 
@@ -485,6 +553,13 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	max_mobs = 7
 	spawn_time = 10 SECONDS
 
+/obj/structure/vein/waste/classtwo/rare
+	mining_charges = 12
+	vein_class = 2
+	ore_list = list(
+		/obj/item/stack/ore/uranium = 10,
+		)
+
 /obj/structure/vein/waste/classthree
 	mining_charges = 10
 	vein_class = 3
@@ -508,6 +583,13 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	//ditto
 	max_mobs = 7
 	spawn_time = 8 SECONDS
+
+/obj/structure/vein/waste/classthree/rare
+	mining_charges = 14
+	vein_class = 3
+	ore_list = list(
+		/obj/item/stack/ore/uranium = 10,
+		)
 
 /obj/structure/vein/waste/classfour
 	mining_charges = 30
@@ -664,10 +746,10 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 1,
 		)
 
-	max_mobs = -1
+	max_mobs = 4
 	spawn_time = 5 SECONDS
 	///His greed was his downfall
-	var/greed_chance = 10
+	var/greed_chance = 20
 
 /obj/structure/vein/shrouded/Initialize()
 	. = ..()
@@ -696,7 +778,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 
 	spawn_time = 4 SECONDS
 
-	greed_chance = 20
+	greed_chance = 30
 
 /obj/structure/vein/shrouded/classthree
 	mining_charges = 12
@@ -719,7 +801,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 		/obj/item/stack/ore/diamond = 5,
 		)
 
-	greed_chance = 25
+	greed_chance = 40
 	spawn_time = 3 SECONDS
 
 // Asteroid veins.
@@ -768,6 +850,13 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	max_mobs = 6
 	spawn_time = 10 SECONDS
 
+/obj/structure/vein/asteroid/classtwo/rare
+	mining_charges = 12
+	vein_class = 2
+	ore_list = list(
+		/obj/item/stack/ore/ice = 10,
+		)
+
 /obj/structure/vein/asteroid/classthree
 	mining_charges = 10
 	vein_class = 3
@@ -793,12 +882,18 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	max_mobs = 6
 	spawn_time = 8 SECONDS
 
+/obj/structure/vein/asteroid/classthree/rare
+	mining_charges = 14
+	vein_class = 3
+	ore_list = list(
+		/obj/item/stack/ore/ice = 10,
+		)
 
 // Waterplanet veins.
 
 /obj/structure/vein/waterplanet
 	mob_types = list(
-		/mob/living/simple_animal/hostile/bear/cave = 60,
+		/mob/living/basic/bear/cave = 60,
 		/mob/living/simple_animal/hostile/carp = 40,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 20,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 10,
@@ -820,7 +915,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	vein_class = 2
 
 	mob_types = list(
-		/mob/living/simple_animal/hostile/bear/cave = 50,
+		/mob/living/basic/bear/cave = 50,
 		/mob/living/simple_animal/hostile/carp = 30,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 30,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 15,
@@ -845,7 +940,7 @@ GLOBAL_LIST_EMPTY(ore_veins)
 	vein_class = 3
 
 	mob_types = list(
-		/mob/living/simple_animal/hostile/bear/cave = 10,
+		/mob/living/basic/bear/cave = 10,
 		/mob/living/simple_animal/hostile/carp = 20,
 		/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach = 10,
 		/mob/living/simple_animal/hostile/poison/giant_spider/tarantula = 40,

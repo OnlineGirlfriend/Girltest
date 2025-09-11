@@ -18,15 +18,14 @@ export const HelmConsole = (_props, context) => {
   const { data } = useBackend(context);
   const { mapRef, isViewer } = data;
   return (
-    <Window width={870} height={708} resizable>
-      <div className="CameraConsole__left">
+    <Window width={1150} height={708} resizable>
+      <div className="CameraConsole__helmleft">
         <Window.Content>
           {!isViewer && <ShipControlContent />}
           <ShipContent />
-          <SharedContent />
         </Window.Content>
       </div>
-      <div className="CameraConsole__right">
+      <div className="CameraConsole__helmcenter">
         <div className="CameraConsole__toolbar">
           {!!data.docked && (
             <div className="NoticeBox">Ship docked to: {data.docked}</div>
@@ -39,6 +38,11 @@ export const HelmConsole = (_props, context) => {
             type: 'map',
           }}
         />
+      </div>
+      <div className="CameraConsole__helmright">
+        <Window.Content>
+          <SharedContent />
+        </Window.Content>
       </div>
     </Window>
   );

@@ -20,6 +20,7 @@
 	base_icon_state = "table"
 	density = TRUE
 	anchored = TRUE
+	obj_flags = parent_type::obj_flags | ELEVATED_SURFACE
 	pass_flags_self = PASSTABLE | LETPASSTHROW
 	layer = TABLE_LAYER
 	climbable = TRUE
@@ -659,6 +660,7 @@
 	layer = TABLE_LAYER
 	density = TRUE
 	anchored = TRUE
+	obj_flags = parent_type::obj_flags | ELEVATED_SURFACE
 	pass_flags_self = LETPASSTHROW //You can throw objects over this, despite it's density.
 	max_integrity = 20
 
@@ -777,7 +779,7 @@
 		qdel(src)
 	building = FALSE
 
-/obj/structure/table/wood/reinforced //a reinforced version of the regular wooden table, primarily for use in terragov outposts or ships
+/obj/structure/table/wood/reinforced //a reinforced version of the regular wooden table, primarily for use in solgov outposts or ships
 	name = "reinforced wooden table"
 	desc = "A reinforced version of the four-legged wooden table. Likely as easy to burn as a normal one."
 	icon = 'icons/obj/smooth_structures/reinforced_wood_table.dmi'

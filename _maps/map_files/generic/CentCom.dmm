@@ -2323,7 +2323,7 @@
 /turf/open/floor/plasteel,
 /area/wizard_station)
 "ayH" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
 /turf/open/floor/grass,
 /area/wizard_station)
 "ayI" = (
@@ -2399,7 +2399,7 @@
 /turf/open/floor/grass,
 /area/wizard_station)
 "azr" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
+/obj/item/food/meat/slab/corgi,
 /turf/open/floor/grass,
 /area/wizard_station)
 "azt" = (
@@ -2553,7 +2553,7 @@
 /turf/open/floor/grass,
 /area/wizard_station)
 "aAA" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
+/obj/item/food/meat/slab/human/mutant/slime,
 /turf/open/floor/grass,
 /area/wizard_station)
 "aAB" = (
@@ -2655,7 +2655,7 @@
 /turf/open/floor/plasteel,
 /area/wizard_station)
 "aBi" = (
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
 /turf/open/floor/grass,
 /area/wizard_station)
 "aBk" = (
@@ -3029,7 +3029,7 @@
 /area/centcom/holding)
 "aFe" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/sashimi,
+/obj/item/food/sashimi,
 /turf/open/floor/wood,
 /area/centcom/holding)
 "aFi" = (
@@ -6199,7 +6199,7 @@
 	pixel_y = 28
 	},
 /obj/machinery/light/directional/east,
-/obj/item/reagent_containers/food/snacks/pancakes/blueberry,
+/obj/item/food/pancakes/blueberry,
 /turf/open/floor/plasteel,
 /area/centcom)
 "bsD" = (
@@ -6413,10 +6413,10 @@
 /area/centcom/ferry)
 "bSy" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = 28
 	},
-/obj/item/clothing/head/beret/terragov{
+/obj/item/clothing/head/beret/solgov{
 	pixel_x = 11;
 	pixel_y = -1
 	},
@@ -6938,25 +6938,25 @@
 /area/centcom/evac)
 "cZd" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/banana,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/vanillapod,
-/obj/item/reagent_containers/food/snacks/grown/vanillapod,
-/obj/item/reagent_containers/food/snacks/grown/sugarcane,
-/obj/item/reagent_containers/food/snacks/grown/sugarcane,
-/obj/item/reagent_containers/food/snacks/grown/oat,
-/obj/item/reagent_containers/food/snacks/grown/oat,
-/obj/item/reagent_containers/food/snacks/grown/grapes,
-/obj/item/reagent_containers/food/snacks/grown/grapes,
-/obj/item/reagent_containers/food/snacks/grown/corn,
-/obj/item/reagent_containers/food/snacks/grown/corn,
-/obj/item/reagent_containers/food/snacks/grown/chili,
-/obj/item/reagent_containers/food/snacks/grown/chili,
-/obj/item/reagent_containers/food/snacks/grown/carrot,
-/obj/item/reagent_containers/food/snacks/grown/apple,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/vulgaris,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/banana,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/wheat,
+/obj/item/food/grown/vanillapod,
+/obj/item/food/grown/vanillapod,
+/obj/item/food/grown/sugarcane,
+/obj/item/food/grown/sugarcane,
+/obj/item/food/grown/oat,
+/obj/item/food/grown/oat,
+/obj/item/food/grown/grapes,
+/obj/item/food/grown/grapes,
+/obj/item/food/grown/corn,
+/obj/item/food/grown/corn,
+/obj/item/food/grown/chili,
+/obj/item/food/grown/chili,
+/obj/item/food/grown/carrot,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/ambrosia/vulgaris,
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
 	},
@@ -7043,7 +7043,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/supply)
 "dom" = (
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = 28
 	},
 /obj/structure/table/wood/fancy/blue,
@@ -7620,7 +7620,7 @@
 /turf/open/floor/plasteel/white,
 /area/centcom/holding)
 "eqM" = (
-/obj/effect/turf_decal/terragov/wood/bottom_left,
+/obj/effect/turf_decal/solgov/wood/bottom_left,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
@@ -8640,6 +8640,28 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/tdome/tdomeobserve)
+"gqK" = (
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 6
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "grJ" = (
 /obj/item/flashlight/lamp,
 /obj/structure/table/reinforced,
@@ -8659,7 +8681,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = -28
 	},
 /obj/structure/closet/crate/bin,
@@ -8729,6 +8751,27 @@
 	icon_state = "platingdmg3"
 	},
 /area/centcom)
+"gFm" = (
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 6
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 9
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "gFU" = (
 /obj/machinery/computer,
 /obj/effect/turf_decal/industrial/warning{
@@ -8868,6 +8911,17 @@
 "gRm" = (
 /turf/closed/indestructible/titanium/nodiagnonal,
 /area/centcom)
+"gSF" = (
+/obj/effect/turf_decal/steeldecal/steel_decals10,
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 4
+	},
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "gTh" = (
 /obj/structure/table/wood,
 /obj/item/storage/photo_album,
@@ -8887,7 +8941,7 @@
 "gTo" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/light/directional/north,
-/obj/machinery/fax/admin/terragov,
+/obj/machinery/fax/admin/solgov,
 /turf/open/floor/carpet/royalblue,
 /area/centcom)
 "gUp" = (
@@ -9064,6 +9118,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/centcom/control)
+"htR" = (
+/obj/machinery/power/smes/magical,
+/obj/structure/cable,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "huh" = (
 /obj/effect/turf_decal/corner/opaque/red{
 	dir = 1
@@ -9309,6 +9368,13 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/ship/dirt,
 /area/centcom)
+"hYZ" = (
+/obj/machinery/door/airlock/engineering/glass{
+	req_access_txt = "10";
+	dir = 4
+	},
+/turf/open/floor/plasteel/patterned/grid,
+/area/hangar)
 "hZs" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/red{
@@ -9810,7 +9876,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/centcom)
 "iSo" = (
-/obj/machinery/door/airlock/terragov{
+/obj/machinery/door/airlock/solgov{
 	req_access_txt = "109"
 	},
 /turf/open/floor/wood/walnut,
@@ -9947,7 +10013,7 @@
 	dir = 9;
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/center_left,
+/obj/effect/turf_decal/solgov/wood/center_left,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "jjE" = (
@@ -10967,6 +11033,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ctf)
+"llY" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/hangar)
 "lmc" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/green{
@@ -11195,27 +11264,27 @@
 /area/tdome/tdomeobserve)
 "lHy" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/sausage,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/killertomato,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/meat/slab/human/mutant/lizard,
+/obj/item/food/sausage,
+/obj/item/food/sausage,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
 	},
@@ -11508,23 +11577,23 @@
 /area/ctf)
 "miR" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/bear,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/goliath,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
-/obj/item/reagent_containers/food/snacks/meat/slab/xeno,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/bear,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/goliath,
+/obj/item/food/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
+/obj/item/food/meat/slab/xeno,
 /obj/item/food/spaghetti/raw,
 /obj/item/food/spaghetti/raw,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
-/obj/item/reagent_containers/food/snacks/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
+/obj/item/food/meat/rawcutlet,
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
 	},
@@ -12190,6 +12259,30 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/one)
+"nBv" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera{
+	dir = 5
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering";
+	req_access_txt = "10"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "heron_sm_lockdown";
+	rad_insulation = 0.1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned/grid,
+/area/hangar)
 "nDB" = (
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 1
@@ -12389,12 +12482,12 @@
 "nYl" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/paper_bin/carbon,
-/obj/item/pen/terragov,
+/obj/item/pen/solgov,
 /obj/item/pen/fourcolor{
 	pixel_x = -9;
 	pixel_y = -3
 	},
-/obj/item/desk_flag/terragov{
+/obj/item/desk_flag/solgov{
 	pixel_y = 12;
 	pixel_x = -8
 	},
@@ -12424,7 +12517,6 @@
 "oba" = (
 /obj/structure/table/wood,
 /obj/structure/safe/floor,
-/obj/item/seeds/cherry/bomb,
 /turf/open/floor/wood,
 /area/centcom/holding)
 "obp" = (
@@ -12612,6 +12704,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"otk" = (
+/obj/effect/turf_decal/steeldecal/steel_decals10,
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 4
+	},
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "otZ" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -12635,6 +12737,18 @@
 /obj/effect/turf_decal/corner/opaque/green,
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
+"ovO" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/power/smes/magical,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/item/toy/figure/engineer{
+	pixel_x = 9;
+	pixel_y = 12
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "owZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/med_data/laptop,
@@ -12763,6 +12877,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/supply)
+"oGY" = (
+/turf/open/floor/plasteel/patterned/grid,
+/area/hangar)
 "oHB" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -12983,7 +13100,7 @@
 /area/centcom/control)
 "phf" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/structure/sign/poster/terragov/paperwork{
+/obj/structure/sign/poster/solgov/paperwork{
 	pixel_y = 32
 	},
 /obj/item/radio/intercom/wideband/table{
@@ -13033,22 +13150,22 @@
 /area/centcom/ferry)
 "pkb" = (
 /obj/structure/closet/secure_closet/freezer/fridge/open,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/whitebeet,
-/obj/item/reagent_containers/food/snacks/grown/whitebeet,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
-/obj/item/reagent_containers/food/snacks/grown/tomato,
-/obj/item/reagent_containers/food/snacks/grown/rice,
-/obj/item/reagent_containers/food/snacks/grown/rice,
-/obj/item/reagent_containers/food/snacks/grown/icepepper,
-/obj/item/reagent_containers/food/snacks/grown/icepepper,
-/obj/item/reagent_containers/food/snacks/grown/citrus/lemon,
-/obj/item/reagent_containers/food/snacks/grown/citrus/lime,
-/obj/item/reagent_containers/food/snacks/grown/citrus/orange,
-/obj/item/reagent_containers/food/snacks/grown/cherries,
-/obj/item/reagent_containers/food/snacks/grown/apple,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/whitebeet,
+/obj/item/food/grown/whitebeet,
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/tomato,
+/obj/item/food/grown/rice,
+/obj/item/food/grown/rice,
+/obj/item/food/grown/icepepper,
+/obj/item/food/grown/icepepper,
+/obj/item/food/grown/citrus/lemon,
+/obj/item/food/grown/citrus/lime,
+/obj/item/food/grown/citrus/orange,
+/obj/item/food/grown/cherries,
+/obj/item/food/grown/apple,
+/obj/item/food/grown/ambrosia/deus,
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
 	},
@@ -13108,10 +13225,10 @@
 	dir = 10;
 	color = "#543C30"
 	},
-/obj/structure/sign/terragov_seal{
+/obj/structure/sign/solgov_seal{
 	pixel_y = -28
 	},
-/obj/machinery/telecomms/relay/preset/terragov{
+/obj/machinery/telecomms/relay/preset/solgov{
 	autolinkers = list("relay")
 	},
 /turf/open/floor/wood/walnut,
@@ -13194,7 +13311,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/centcom)
 "pwr" = (
-/obj/effect/turf_decal/terragov/wood/top_right,
+/obj/effect/turf_decal/solgov/wood/top_right,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 1
@@ -13287,11 +13404,11 @@
 /area/centcom/evac)
 "pCe" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
-/obj/item/reagent_containers/food/snacks/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
 /turf/open/floor/plasteel,
 /area/centcom/holding)
 "pDx" = (
@@ -13439,7 +13556,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/bottom_right,
+/obj/effect/turf_decal/solgov/wood/bottom_right,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "pOL" = (
@@ -13657,7 +13774,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "qkP" = (
-/obj/effect/turf_decal/terragov/wood/bottom_left{
+/obj/effect/turf_decal/solgov/wood/bottom_left{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wood{
@@ -14489,6 +14606,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"rNN" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "rQy" = (
 /obj/machinery/button/door/indestructible{
 	id = "thunderdomehea";
@@ -14673,6 +14799,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/control)
+"slY" = (
+/obj/structure/sign/warning/electricshock{
+	pixel_y = -30
+	},
+/turf/open/floor/plasteel/patterned/grid,
+/area/hangar)
 "spy" = (
 /obj/effect/turf_decal/corner/opaque/red{
 	dir = 1
@@ -14708,6 +14840,15 @@
 	},
 /turf/open/floor/circuit/red,
 /area/ctf)
+"sxo" = (
+/obj/machinery/light_switch{
+	pixel_x = -12;
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/effect/decal/cleanable/robot_debris,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "syj" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
@@ -14987,6 +15128,22 @@
 /obj/effect/turf_decal/corner/opaque/red,
 /turf/open/floor/plasteel/dark,
 /area/ctf)
+"taN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "heron_sm_lockdown";
+	rad_insulation = 0.1
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering";
+	req_access_txt = "10"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned/grid,
+/area/hangar)
 "taS" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 9
@@ -15373,7 +15530,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/evac)
 "tOf" = (
-/obj/effect/turf_decal/terragov/wood/center,
+/obj/effect/turf_decal/solgov/wood/center,
 /obj/machinery/light/floor,
 /turf/open/floor/wood/walnut,
 /area/centcom)
@@ -15561,7 +15718,7 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/bottom_center,
+/obj/effect/turf_decal/solgov/wood/bottom_center,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30"
 	},
@@ -15754,6 +15911,13 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
+"uNg" = (
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "uNn" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -16031,6 +16195,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/tdome/tdomeobserve)
+"vok" = (
+/obj/structure/sign/departments/mait{
+	pixel_x = -32
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/hangar)
 "vqb" = (
 /obj/structure/closet/crate/bin,
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -16056,6 +16226,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ctf)
+"vug" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "vuT" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner/transparent/neutral{
@@ -16190,7 +16366,7 @@
 	dir = 9;
 	color = "#543C30"
 	},
-/obj/effect/turf_decal/terragov/wood/top,
+/obj/effect/turf_decal/solgov/wood/top,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 1
@@ -16264,6 +16440,10 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel,
 /area/centcom/control)
+"vRi" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/patterned/grid,
+/area/hangar)
 "vZq" = (
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
@@ -16462,6 +16642,18 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"wtd" = (
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 8
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals10{
+	dir = 1
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "wvj" = (
 /obj/machinery/conveyor_switch/oneway{
 	dir = 8;
@@ -16515,10 +16707,10 @@
 /area/centcom)
 "wCp" = (
 /obj/structure/table/wood/fancy/blue,
-/obj/item/folder/documents/terragov{
+/obj/item/folder/documents/solgov{
 	pixel_x = -3
 	},
-/obj/item/folder/terragov{
+/obj/item/folder/solgov{
 	pixel_y = 5;
 	pixel_x = 2
 	},
@@ -16787,6 +16979,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/control)
+"xtv" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/power/smes/magical,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/hangar)
 "xtF" = (
 /obj/item/storage/briefcase{
 	pixel_x = -3;
@@ -16806,6 +17006,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"xwv" = (
+/turf/closed/indestructible/titanium/nodiagnonal,
+/area/hangar)
 "xxi" = (
 /obj/effect/turf_decal/syndicateemblem/top/middle,
 /turf/open/floor/mineral/plastitanium/red,
@@ -16926,7 +17129,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
 "xTt" = (
-/obj/effect/turf_decal/terragov/wood/center_right,
+/obj/effect/turf_decal/solgov/wood/center_right,
 /turf/open/floor/wood/walnut,
 /area/centcom)
 "xWv" = (
@@ -26463,13 +26666,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+xwv
+xwv
+xwv
+xwv
+hYZ
+xwv
 aaa
 aPu
 aPu
@@ -26720,13 +26923,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+xtv
+gFm
+htR
+vok
+slY
+xwv
 aaa
 aPu
 bSy
@@ -26977,13 +27180,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+wtd
+vug
+wtd
+nBv
+vRi
+xwv
 aaa
 aPu
 nYl
@@ -27234,13 +27437,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+uNg
+rNN
+sxo
+llY
+oGY
+xwv
 aaa
 aPu
 gTo
@@ -27491,13 +27694,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+gSF
+vug
+otk
+taN
+oGY
+xwv
 aaa
 aPu
 phf
@@ -27748,13 +27951,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+ovO
+gqK
+htR
+llY
+slY
+xwv
 aaa
 aPu
 dom
@@ -28005,13 +28208,13 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xwv
+xwv
+xwv
+xwv
+xwv
+hYZ
+xwv
 aaa
 aPu
 aPu

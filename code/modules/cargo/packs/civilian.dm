@@ -1,5 +1,5 @@
 /datum/supply_pack/civilian
-	group = "Civilian & Decoration"
+	category = "Civilian & Decoration"
 
 /*
 		Janitorial
@@ -74,7 +74,7 @@
 	contains = list(/obj/item/storage/box/fountainpens)
 	crate_name = "calligraphy crate"
 	crate_type = /obj/structure/closet/crate/wooden
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 
 /datum/supply_pack/civilian/wrapping_paper
 	name = "Festive Wrapping Paper Crate"
@@ -297,9 +297,8 @@
 /datum/supply_pack/civilian/noslipfloor
 	name = "High-traction Floor Tiles"
 	desc = "Make slipping a thing of the past with thirty industrial-grade anti-slip floortiles!"
-	cost = 1000
-	contains = list(/obj/item/stack/tile/noslip/thirty,
-					/obj/item/stack/tile/noslip/thirty)
+	cost = 500
+	contains = list(/obj/item/stack/tile/noslip/thirty)
 	crate_name = "high-traction floor tiles crate"
 
 /datum/supply_pack/civilian/jukebox

@@ -17,7 +17,7 @@
 	description = "An abandoned shipping dock used by small cargo freighters and smugglers alike. Some malicious group seems to have trapped the place to eliminate scavengers."
 	id = "rockplanet_shippingdock"
 	suffix = "rockplanet_shippingdock.dmm"
-	ruin_mission_types = list(
+/*	ruin_mission_types = list(
 		/datum/mission/ruin/bitch_wife,
 	)
 
@@ -26,7 +26,7 @@
 	desc = "My fucking wife lost her pet mothroach when it crawled onto a shuttlecraft at the outpost literal months ago. She hasn't stopped talking about how much she misses it since then and I am tired. So tired, of hearing about how she misses the Mothroach. Just. Bring it back. Alive so she doesn't start screaming again."
 	value = 1000
 	mission_limit = 1
-	setpiece_item = /mob/living/simple_animal/pet/mothroach
+	setpiece_item = /mob/living/simple_animal/pet/mothroach*/
 
 /datum/map_template/ruin/rockplanet/distillery
 	name = "Frontiersman Distillery"
@@ -40,7 +40,7 @@
 
 /datum/mission/ruin/multiple/moonshine_crates/distillery
 	name = "Assess and Retrieve Booze Supply"
-	desc = "One of the main suppliers of my store's moonshine has stopped shipping out our orders, and we still have several outstanding! Find our sealed crates of booze and bring them back."
+	desc = "One of the main suppliers of my store's moonshine has stopped shipping out our orders, and we still have several outstanding! Find our sealed crates of booze and bring them back. Be careful to not damage the product, or I will be unable to sell it!"
 	author = "Tallymere Party Store"
 	mission_limit = 1
 	value = 1750

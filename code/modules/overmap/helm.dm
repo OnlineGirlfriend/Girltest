@@ -45,10 +45,10 @@
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/helm/terragov
+/obj/machinery/computer/helm/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /datum/config_entry/number/bluespace_jump_wait
 	default = 5 MINUTES
@@ -350,7 +350,7 @@
 			if (current_ship)
 				var/obj/item/borg/upgrade/ship_access_chip/chip = new(get_turf(src), current_ship)
 				chip.ship = current_ship
-				COOLDOWN_START(src, silicon_access_print_cooldown, 60 SECONDS)
+				COOLDOWN_START(src, silicon_access_print_cooldown, 10 SECONDS)
 			playsound('sound/machines/terminal_prompt_confirm.ogg', 50, FALSE)
 			return //PENTEST UPGRADE - END
 
