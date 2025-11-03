@@ -1,0 +1,4 @@
+author: "lizelive"
+delete-after: True
+changes:
+  - admin: "don't alert no admin if no players"
