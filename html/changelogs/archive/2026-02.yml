@@ -40,3 +40,30 @@
   - bugfix: Default Lawset is now Crewmov Lawset
   Summy Sunshine:
   - rscadd: Gorlax Scout-cruiser
+2026-02-21:
+  KOCMODECAHTHUK:
+  - code_imp: Visual distinction for pipes in sDMM for mappers, and appear transparent
+      in-game
+  Ossa88:
+  - bugfix: Plant Data Disks no longer forget their information.
+  - bugfix: Outposts are more secure
+  Ravellon:
+  - bugfix: 'no more wine_flavor taste for you
+
+      :cl:
+
+      <!-- Both :cl:''s are required for the changelog to work! You can put your name
+      to the right of the first :cl: if you want to overwrite your GitHub username
+      as author ingame. -->
+
+      <!-- You can use multiple of the same prefix (they''re only used for the icon
+      ingame) and delete the unneeded ones. Despite some of the tags, changelogs should
+      generally represent how a player might be affected by the changes rather than
+      a summary of the PR''s contents. -->'
+  Ryll/Shaps:
+  - qol: Adds a new preference for photosensitive players in the OOC preferences menu
+      to replace the bright white flash from things like flashes/flashbangs with a
+      solid black screen.
+  nednaZ, Imenvs, RKz:
+  - bugfix: ghosts are now 50% more spooky (they now properly float)
+  - bugfix: ghosts remember they can float after orbiting
