@@ -586,7 +586,15 @@ class ChatRenderer {
       .substring(0, 19)
       .replace(/[-:]/g, '')
       .replace('T', '-');
-    window.navigator.msSaveBlob(blob, `ss13-chatlog-${timestamp}.html`);
+
+    // PENTEST FIX - Modern download approach (replacing deprecated msSaveBlob)
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `pentest-chatlog-${timestamp}.html`;
+    link.click();
+    URL.revokeObjectURL(url);
+    // PENTEST FIX END
   }
 }
 
