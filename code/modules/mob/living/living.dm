@@ -1864,6 +1864,9 @@ GLOBAL_VAR_INIT(ssd_indicator_overlay, mutable_appearance('icons/mob/ssd_indicat
 
 /// Used for setting typing indicator on/off. Checking the state should be done not on the proc to avoid overhead.
 /mob/living/set_typing_indicator(state)
+	// Don't show typing indicator if dead // PENTEST FIX
+	if(state && stat != CONSCIOUS)
+		return // PENTEST FIX END
 	typing_indicator = state
 	var/datum/language/used_language = get_selected_language()
 	var/state_of_bubble = "[initial(used_language?.bubble_override) || bubble_icon || "default"]0"
