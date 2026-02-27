@@ -134,10 +134,10 @@
 			if(hellbound)
 				. += span_warning("[t_His] soul seems to have been ripped out of [t_his] body. Revival is impossible.")
 			. += ""
-			if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(FALSE, TRUE))
-				. += span_deadsay("[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_he] won't be coming back...")
+			if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(even_if_they_cant_reenter = FALSE, ghosts_with_clients = FALSE)) //PENTEST EDIT START
+				. += span_deadsay("[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_his] soul has moved on. [t_He] won't be coming back...")
 			else
-				. += span_deadsay("[t_He] [t_is] limp and unresponsive; there are no signs of life...")
+				. += span_deadsay("[t_He] [t_is] limp and unresponsive with no signs of life, though [t_he] may yet return...") //PENTEST EDIT END
 
 
 	if(get_bodypart(BODY_ZONE_HEAD) && !getorgan(/obj/item/organ/brain))
