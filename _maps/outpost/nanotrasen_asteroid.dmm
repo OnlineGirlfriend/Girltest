@@ -572,9 +572,6 @@
 	pixel_y = -14;
 	pixel_x = -4
 	},
-/obj/effect/turf_decal/weather/snow/surround{
-	dir = 4
-	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
 "cm" = (
@@ -1000,9 +997,6 @@
 /area/outpost/maintenance/fore)
 "dO" = (
 /obj/effect/turf_decal/snow,
-/obj/effect/turf_decal/weather/snow{
-	dir = 8
-	},
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/hallway/starboard)
@@ -3354,9 +3348,6 @@
 /obj/item/toy/plush/moth{
 	pixel_y = 3;
 	pixel_x = -1
-	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 9
 	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
@@ -6681,9 +6672,6 @@
 /area/outpost/hallway/central)
 "xk" = (
 /obj/structure/bonfire/prelit,
-/obj/effect/turf_decal/weather/snow{
-	dir = 1
-	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
 "xm" = (
@@ -9365,9 +9353,6 @@
 	pixel_y = 5;
 	pixel_x = 1
 	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 10
-	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)
 "Gw" = (
@@ -11685,9 +11670,6 @@
 /obj/item/shovel,
 /obj/item/flashlight/lantern{
 	pixel_x = 7
-	},
-/obj/effect/turf_decal/weather/snow{
-	dir = 6
 	},
 /turf/open/floor/plating/asteroid/snow/under/lit,
 /area/outpost/external)

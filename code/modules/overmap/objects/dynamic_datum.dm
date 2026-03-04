@@ -198,7 +198,7 @@
 /datum/overmap/dynamic/proc/set_planet_type(datum/planet_type/planet)
 	if(!is_type_in_list(planet, list(/datum/planet_type/asteroid, /datum/planet_type/spaceruin)))
 		planet_name = "[gen_planet_name()]"
-		Rename(planet_name)
+		name = "[planet_name] ([planet.name])"
 
 	ruin_type = planet.ruin_type
 	default_baseturf = planet.default_baseturf
@@ -221,10 +221,7 @@
 /datum/overmap/dynamic/alter_token_appearance()
 	if(!planet)
 		return ..()
-	if(!ispath(planet, /datum/planet_type/asteroid) || !ispath(planet, /datum/planet_type/spaceruin))
-		token.name = "[planet.name]"
-	else
-		token.name = "[planet_name]" + " ([planet.name])"
+	token.name = name
 	token_icon_state = planet.icon_state
 	desc = planet.desc
 	default_color = planet.color
@@ -249,7 +246,7 @@
 
 /datum/overmap/dynamic/proc/gen_planet_name()
 	. = ""
-	switch(rand(1,10))
+	switch(rand(1,12))
 		if(1 to 4)
 			for(var/i in 1 to rand(2,3))
 				. += capitalize(pick(GLOB.alphabet))
@@ -257,8 +254,10 @@
 			. += "[pick(rand(1,999))]"
 		if(4 to 9)
 			. += "[pick(GLOB.planet_names)] \Roman[rand(1,9)]"
-		if(10)
+		if(10, 11)
 			. += "[pick(GLOB.planet_prefixes)] [pick(GLOB.planet_names)]"
+		if(12)
+			. += "[capitalize(pick(GLOB.adjectives))] [pick(GLOB.planet_names)]"
 
 /**
  * Load a level for a ship that's visiting the level.
@@ -286,6 +285,11 @@
 	var/datum/virtual_level/our_likely_vlevel = mapzone.virtual_levels[1]
 	if(istype(our_likely_vlevel) && selfloop)
 		our_likely_vlevel.selfloop()
+
+	for(var/obj/docking_port/stationary/port in reserve_docks)
+		if(port.roundstart_template)
+			port.name = "[name] auxillary docking location"
+			port.load_roundstart()
 
 	SEND_SIGNAL(src, COMSIG_OVERMAP_LOADED)
 	loading = FALSE
@@ -597,6 +601,9 @@
 	ambience_index = AMBIENCE_SPACE
 	light_range = 0
 	light_power = 0
+
+/area/overmap_encounter/planetoid/asteroid/explored
+	area_flags = VALID_TERRITORY
 
 /area/overmap_encounter/planetoid/gas_giant
 	name = "\improper Gas Giant"

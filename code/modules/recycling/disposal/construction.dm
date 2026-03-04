@@ -153,6 +153,11 @@
 
 /obj/structure/disposalconstruct/welder_act(mob/living/user, obj/item/I)
 	..()
+	// PENTEST ADDITION START - Prevent welding on water turfs, no escaping outposts with disposal pipes!
+	var/turf/T = get_turf(src)
+	if(istype(T, /turf/open/water/beach/deep/outpost))
+		to_chat(user, span_warning("You can't weld disposal pipes in water!"))
+		return TRUE // PENTEST ADDITION END
 	if(anchored)
 		if(!I.tool_start_check(user, src, amount=0))
 			return TRUE

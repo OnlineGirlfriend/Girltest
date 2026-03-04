@@ -181,10 +181,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"il" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/mineral/random/snow,
-/area/hangar)
 "iT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -5214,7 +5210,7 @@ Sw
 Sw
 eH
 UY
-il
+UY
 UY
 eH
 fh
