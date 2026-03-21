@@ -89,7 +89,7 @@
 	gloves = /obj/item/clothing/gloves/color/plasmaman
 
 /datum/outfit/debug //Debug objs plus hardsuit
-	name = "Debug outfit"
+	name = "A Debug outfit"	//PENTEST EDIT - Sort in up list in Select Equpment
 	uniform = /obj/item/clothing/under/misc/patriotsuit
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
 	glasses = /obj/item/clothing/glasses/debug
@@ -110,7 +110,14 @@
 		/obj/item/debug/omnitool=1
 		)
 
+//PENTEST EDIT START - Runtime: remove update id_card, and adding faction ignore ship-turrets - no FACTION_FRONTIERSMEN + FACTION_RAMZI - ruines and mob attack Debug outfit
+#define FACTION_DEBUG FACTION_SYNDICATE + FACTION_NGR + FACTION_CYBERSUN + FACTION_HARDLINERS + FACTION_SUNS + FACTION_SELF + FACTION_SOLCON + FACTION_SRM + FACTION_INTEQ + FACTION_CLIP + FACTION_NT + FACTION_NS_LOGI + FACTION_VIGILITAS + FACTION_PGF + FACTION_INDEPENDENT
+
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	var/obj/item/card/id/W = H.wear_id
-	W.registered_name = H.real_name
-	W.update_label()
+	//var/obj/item/card/id/W = H.wear_id
+	//W.registered_name = H.real_name
+	//W.update_label()
+	H.faction |= list(FACTION_DEBUG)
+
+#undef FACTION_DEBUG
+//PENTEST EDIT END
