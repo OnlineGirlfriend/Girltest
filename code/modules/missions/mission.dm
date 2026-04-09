@@ -79,6 +79,7 @@
 			SSmissions.active_ruin_missions -= src
 		else
 			SSmissions.inactive_ruin_missions -= src
+		mission_location = null  // Clear the reference to prevent circular reference issues
 
 	//LAZYREMOVE(source_outpost.missions, src)
 	//source_outpost = null

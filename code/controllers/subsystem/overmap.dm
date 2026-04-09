@@ -377,7 +377,7 @@ SUBSYSTEM_DEF(overmap)
 
 	var/encounter_name = name
 	var/datum/map_zone/mapzone = SSmapping.create_map_zone(encounter_name)
-	overmap_vlevel = SSmapping.create_virtual_level(encounter_name, list(), mapzone, size + MAP_EDGE_PAD * 2, size + MAP_EDGE_PAD * 2)
+	overmap_vlevel = SSmapping.create_virtual_level(encounter_name, list(), mapzone, size + MAP_EDGE_PAD * 2, size + MAP_EDGE_PAD * 2, ALLOCATION_QUADRANT, DEFAULT_ALLOC_JUMP, ZLEVEL_ROLE_OVERMAP) // PENTEST EDIT - Manditory ZLevels
 	overmap_vlevel.current_systen = src
 	overmap_vlevel.reserve_margin(MAP_EDGE_PAD)
 	overmap_vlevel.fill_in(/turf/open/overmap, /area/overmap)
@@ -589,7 +589,8 @@ SUBSYSTEM_DEF(overmap)
 		dynamic_datum.vlevel_width,
 		dynamic_datum.vlevel_height,
 		ALLOCATION_QUADRANT,
-		QUADRANT_MAP_SIZE
+		QUADRANT_MAP_SIZE, // PENTEST EDIT - Manditory ZLevels
+		ZLEVEL_ROLE_RUIN // PENTEST EDIT - Manditory ZLevels
 	)
 
 	vlevel.reserve_margin(QUADRANT_SIZE_BORDER)
@@ -755,7 +756,8 @@ SUBSYSTEM_DEF(overmap)
 			map_to_load.width,
 			map_to_load.height,
 			ALLOCATION_QUADRANT,
-			QUADRANT_MAP_SIZE
+			QUADRANT_MAP_SIZE, // PENTEST EDIT - Manditory ZLevels
+			ZLEVEL_ROLE_RUIN // PENTEST EDIT - Manditory ZLevels
 		)
 
 	vlevel.reserve_margin(static_datum.border_size)
