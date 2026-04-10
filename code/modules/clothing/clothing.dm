@@ -122,6 +122,11 @@
 		to_chat(user, span_notice("You fix the damage on [src] with [cloth]."))
 		return TRUE
 
+	// PENTEST ADDITION START - Spraycans should be able to recolor clothing even if they can hold items
+	if(istype(tool, /obj/item/toy/crayon/spraycan) && user.a_intent == INTENT_HARM)
+		return
+	// PENTEST ADDITION END
+
 	return ..()
 
 /obj/item/clothing/dropped(mob/user)
