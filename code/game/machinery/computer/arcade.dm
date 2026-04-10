@@ -40,7 +40,6 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/toy/clockwork_watch = 2,
 		/obj/item/toy/toy_dagger = 2,
 		/obj/item/extendohand/acme = 1,
-		/obj/item/hot_potato/harmless/toy = 1,
 		/obj/item/card/emagfake = 1,
 		/obj/item/clothing/shoes/kindleKicks = 2,
 		/obj/item/toy/plush/goatplushie/angry/realgoat = 2,
@@ -50,7 +49,8 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/toy/brokenradio = 2,
 		/obj/item/toy/braintoy = 2,
 		/obj/item/clothing/glasses/trickblindfold = 2,
-		/obj/item/toy/prize/honk = 1)) //PENTEST RESTORED
+		/obj/item/toy/prize/honk = 1, //PENTEST RESTORED - Honk
+		/obj/item/hot_potato/harmless/toy = 1,)) //PENTEST RESTORED - Harmless Hot Potato
 
 /obj/machinery/computer/arcade
 	name = "random arcade"

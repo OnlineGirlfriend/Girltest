@@ -136,8 +136,6 @@
 			just_sleeping = TRUE
 
 		if(!just_sleeping)
-			if(hellbound)
-				. += span_warning("[t_His] soul seems to have been ripped out of [t_his] body. Revival is impossible.")
 			. += ""
 			if(getorgan(/obj/item/organ/brain) && !key && !get_ghost(even_if_they_cant_reenter = FALSE, ghosts_with_clients = FALSE)) //PENTEST EDIT START
 				. += span_deadsay("[t_He] [t_is] limp and unresponsive; there are no signs of life and [t_his] soul has moved on. [t_He] won't be coming back...")
