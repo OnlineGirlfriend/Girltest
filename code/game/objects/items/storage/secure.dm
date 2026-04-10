@@ -6,7 +6,7 @@
  *		Secure Briefcase
  *		Wall Safe
  */
-
+/* PENTEST REMOVAL - The entire file has been reworked, but the original code is still here. See Module "secured_items"
 // -----------------------------
 //         Generic Item
 // -----------------------------
@@ -228,3 +228,4 @@
 /obj/item/storage/secure/safe/cybersun/biodynamics/PopulateContents()
 	. = ..()
 	new /obj/item/folder/documents/syndicate/cybersun/biodynamics(src)
+*/
