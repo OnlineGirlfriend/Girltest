@@ -24,3 +24,11 @@
   - bugfix: fixed the Aegis' TEG chamber not being able to ignite
   - bugfix: fixed the Aegis' scrubber system dumping everything but oxygen in the
       O2 tank
+2026-04-11:
+  Ossa88:
+  - rscadd: Lots of Chems
+  - rscdel: Lots of Chems
+  - bugfix: Safes and Secure Briefcases now have TGUI safe interface
+  - bugfix: Luminescent Slimes can use powers again
+  - bugfix: You no longer feel a life long desire to do that drug you once did in
+      your youth and swore off ever since.
