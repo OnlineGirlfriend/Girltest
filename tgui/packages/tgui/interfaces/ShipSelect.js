@@ -25,8 +25,17 @@ const findShipByRef = (ship_list, ship_ref) => {
 export const ShipSelect = (props, context) => {
   const { act, data } = useBackend(context);
 
+  // Safety checks for data
+  if (!data) {
+    return (
+      <Window title="Ship Select" width={800} height={600} resizable>
+        <Window.Content scrollable>Loading...</Window.Content>
+      </Window>
+    );
+  }
+
   const ships = data.ships || {};
-  const templates = data.templates || [];
+  const templates = Array.isArray(data.templates) ? data.templates : [];
 
   const [currentTab, setCurrentTab] = useLocalState(context, 'tab', 1);
   const [selectedShipRef, setSelectedShipRef] = useLocalState(
@@ -47,10 +56,74 @@ export const ShipSelect = (props, context) => {
     { name: 'Ship Select', tab: 1 },
     { name: 'Ship Purchase', tab: 3 },
   ]);
-  const searchFor = (searchText) =>
-    createSearch(searchText, (thing) => thing.name);
 
   const [searchText, setSearchText] = useLocalState(context, 'searchText', '');
+  const [selectedFaction, setSelectedFaction] = useLocalState(
+    context,
+    'selectedFaction',
+    null
+  );
+
+  // Faction sorting order - groups parent factions with their sub-factions
+  const factionSortOrder = {
+    'Independent': 100,
+    'Confederated League of Independent Planets': 50,
+    'Inteq Risk Management Group': 45,
+    'Saint-Roumain Militia': 40,
+    'Pan-Gezena Federation': 35,
+    'Solar Confederation': 30,
+    'Syndicate Coalition': 25,
+    'New Gorlex Republic': 24,
+    'Cybersun Industries': 23,
+    'Gorlex Hardliners': 22,
+    'Student-Union of Naturalistic Sciences': 21,
+    'Sentient Engine Liberation Front': 20,
+    'Nanotrasen': 15,
+    'N+S Logistics': 14,
+    'Vigilitas Interstellar': 13,
+    'Frontiersmen Fleet': 5,
+    'Ramzi Clique': 4,
+  };
+
+  // Sub-factions for visual grouping
+  const subFactions = new Set([
+    'New Gorlex Republic',
+    'Cybersun Industries',
+    'Gorlex Hardliners',
+    'Student-Union of Naturalistic Sciences',
+    'Sentient Engine Liberation Front',
+    'N+S Logistics',
+    'Vigilitas Interstellar',
+  ]);
+
+  // Extract unique factions from templates
+  const allFactionValues = templates.map((template) => template?.faction);
+  const filteredFactions = allFactionValues.filter((f) => f);
+  const uniqueFactionSet = new Set(filteredFactions);
+  const factionsArray = Array.from(uniqueFactionSet);
+
+  // Sort factions by custom order, then alphabetically for unknowns
+  const factions = factionsArray.sort((a, b) => {
+    const orderA = factionSortOrder[a] ?? 0;
+    const orderB = factionSortOrder[b] ?? 0;
+    if (orderA !== orderB) {
+      return orderB - orderA; // Higher numbers first
+    }
+    return a.localeCompare(b); // Alphabetical fallback
+  });
+
+  // Safe search function
+  const searchFor = (searchText) => {
+    if (!searchText) return () => true;
+    const searchFn = createSearch(searchText, (thing) => thing?.name || '');
+    return (thing) => {
+      try {
+        return searchFn(thing);
+      } catch (e) {
+        return false;
+      }
+    };
+  };
 
   return (
     <Window title="Ship Select" width={800} height={600} resizable>
@@ -233,89 +306,151 @@ export const ShipSelect = (props, context) => {
           </>
         )}
         {currentTab === 3 && (
-          <Section
-            title="Ship Purchase"
-            buttons={
-              <>
-                <Input
-                  placeholder="Search..."
-                  autoFocus
-                  value={searchText}
-                  onInput={(_, value) => setSearchText(value)}
-                />
-                <Button
-                  content="Back"
-                  onClick={() => {
-                    setCurrentTab(1);
-                  }}
-                />
-              </>
-            }
-          >
-            {templates.filter(searchFor(searchText)).map((template) => (
-              <Collapsible
-                title={template.name}
-                key={template.name}
-                color={
-                  (!data.shipSpawnAllowed && 'average') ||
-                  ((template.curNum >= template.limit ||
-                    (!data.autoMeet && data.playMin < template.minTime)) &&
-                    'grey') ||
-                  'default'
-                }
-                buttons={
+          <>
+            <Section
+              title="Ship Purchase"
+              buttons={
+                <>
+                  <Input
+                    placeholder="Search..."
+                    autoFocus
+                    value={searchText}
+                    onInput={(_, value) => setSearchText(value)}
+                  />
                   <Button
-                    content="Buy"
-                    tooltip={
-                      (!data.shipSpawnAllowed &&
-                        'No more ships may be spawned at this time.') ||
-                      (template.curNum >= template.limit &&
-                        'There are too many ships of this type.') ||
-                      (!data.autoMeet &&
-                        data.playMin < template.minTime &&
-                        'You do not have enough playtime to buy this ship.') ||
-                      (data.shipSpawning &&
-                        'A ship is currently spawning. Please wait.')
-                    }
-                    disabled={
-                      !data.shipSpawnAllowed ||
-                      data.shipSpawning ||
-                      template.curNum >= template.limit ||
-                      (!data.autoMeet && data.playMin < template.minTime)
-                    }
+                    content="Back"
                     onClick={() => {
-                      act('buy', {
-                        name: template.name,
-                      });
+                      setCurrentTab(1);
                     }}
                   />
-                }
+                </>
+              }
+            />
+            <div style={{ display: 'flex', gap: '0.5em' }}>
+              <Section
+                title="Factions"
+                style={{ flex: '0 0 200px', minWidth: '200px' }}
               >
-                <LabeledList>
-                  <LabeledList.Item label="Description">
-                    {template.desc || 'No Description'}
-                  </LabeledList.Item>
-                  <LabeledList.Item label="Ship Faction">
-                    {template.faction}
-                  </LabeledList.Item>
-                  <LabeledList.Item label="Ship Tags">
-                    {(template.tags && template.tags.join(', ')) ||
-                      'No Tags Set'}
-                  </LabeledList.Item>
-                  <LabeledList.Item label="Std. Crew">
-                    {template.crewCount}
-                  </LabeledList.Item>
-                  <LabeledList.Item label="Max #">
-                    {template.limit}
-                  </LabeledList.Item>
-                  <LabeledList.Item label="Min. Playtime">
-                    {formatShipTime(
-                      template.minTime,
-                      data.playMin,
-                      data.autoMeet
-                    )}
-                  </LabeledList.Item>
-                  {/*
+                <Button
+                  fluid
+                  content="All Factions"
+                  color={selectedFaction === null ? 'good' : 'default'}
+                  onClick={() => setSelectedFaction(null)}
+                />
+                {factions.length > 0 ? (
+                  factions.map((faction) => {
+                    const isSubFaction = subFactions.has(faction);
+                    return (
+                      <Button
+                        key={faction}
+                        fluid
+                        content={isSubFaction ? `  ↳ ${faction}` : faction}
+                        color={selectedFaction === faction ? 'good' : 'default'}
+                        onClick={() => setSelectedFaction(faction)}
+                        style={
+                          isSubFaction
+                            ? { textAlign: 'left', paddingLeft: '0.5em' }
+                            : {}
+                        }
+                      />
+                    );
+                  })
+                ) : (
+                  <div style={{ padding: '0.5em', color: '#888' }}>
+                    No factions found
+                  </div>
+                )}
+              </Section>
+              <Section
+                title={
+                  selectedFaction
+                    ? `${selectedFaction} Ships`
+                    : 'All Available Ships'
+                }
+                style={{ flex: '1', minWidth: 0, overflowY: 'auto' }}
+              >
+                {templates.length > 0 ? (
+                  templates
+                    .filter((template) => {
+                      if (!template) return false;
+                      if (!searchText) return true;
+                      const searchFn = searchFor(searchText);
+                      return searchFn(template);
+                    })
+                    .filter(
+                      (template) =>
+                        template &&
+                        (selectedFaction === null ||
+                          template?.faction === selectedFaction)
+                    )
+                    .map((template) => {
+                      if (!template) return null;
+                      return (
+                        <Collapsible
+                          title={template.name}
+                          key={template.name}
+                          color={
+                            (!data.shipSpawnAllowed && 'average') ||
+                            ((template.curNum >= template.limit ||
+                              (!data.autoMeet &&
+                                data.playMin < template.minTime)) &&
+                              'grey') ||
+                            'default'
+                          }
+                          buttons={
+                            <Button
+                              content="Buy"
+                              tooltip={
+                                (!data.shipSpawnAllowed &&
+                                  'No more ships may be spawned at this time.') ||
+                                (template.curNum >= template.limit &&
+                                  'There are too many ships of this type.') ||
+                                (!data.autoMeet &&
+                                  data.playMin < template.minTime &&
+                                  'You do not have enough playtime to buy this ship.') ||
+                                (data.shipSpawning &&
+                                  'A ship is currently spawning. Please wait.')
+                              }
+                              disabled={
+                                !data.shipSpawnAllowed ||
+                                data.shipSpawning ||
+                                template.curNum >= template.limit ||
+                                (!data.autoMeet &&
+                                  data.playMin < template.minTime)
+                              }
+                              onClick={() => {
+                                act('buy', {
+                                  name: template.name,
+                                });
+                              }}
+                            />
+                          }
+                        >
+                          <LabeledList>
+                            <LabeledList.Item label="Description">
+                              {template.desc || 'No Description'}
+                            </LabeledList.Item>
+                            <LabeledList.Item label="Ship Faction">
+                              {template.faction}
+                            </LabeledList.Item>
+                            <LabeledList.Item label="Ship Tags">
+                              {(template.tags && template.tags.join(', ')) ||
+                                'No Tags Set'}
+                            </LabeledList.Item>
+                            <LabeledList.Item label="Std. Crew">
+                              {template.crewCount}
+                            </LabeledList.Item>
+                            <LabeledList.Item label="Max #">
+                              {template.limit}
+                            </LabeledList.Item>
+                            <LabeledList.Item label="Min. Playtime">
+                              {formatShipTime(
+                                template.minTime,
+                                data.playMin,
+                                data.autoMeet
+                              )}
+                            </LabeledList.Item>
+                            {/*
                   <LabeledList.Item label="Wiki Link">
                     <a
                       href={'https://shiptest.net/wiki/' + template.name}
@@ -325,39 +460,47 @@ export const ShipSelect = (props, context) => {
                       Here
                     </a>
                   </LabeledList.Item>*/}
-                  <LabeledList.Item label="Lead Architect">
-                    {template.architect || 'Unknown Architect'}
-                  </LabeledList.Item>
-                  <LabeledList.Item label="Contributors">
-                    {(template.contributors &&
-                      template.contributors.join(', ')) ||
-                      'Unknown Contributors'}
-                  </LabeledList.Item>
-                </LabeledList>
-                <Collapsible
-                  title={
-                    'Ship Image (Click image to open in browser for finer detail)'
-                  }
-                  key={template.name + ' Image'}
-                >
-                  <img
-                    src={
-                      template.shortName ? resolveAsset(template.shortName) : ''
-                    }
-                    width={'100%'}
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => {
-                      if (template.shortName) {
-                        const url = resolveAsset(template.shortName);
-                        window.open(url, '_blank');
-                      }
-                    }}
-                  />
-                </Collapsible>
-                <Divider horizontal />
-              </Collapsible>
-            ))}
-          </Section>
+                            <LabeledList.Item label="Lead Architect">
+                              {template.architect || 'Unknown Architect'}
+                            </LabeledList.Item>
+                            <LabeledList.Item label="Contributors">
+                              {(template.contributors &&
+                                template.contributors.join(', ')) ||
+                                'Unknown Contributors'}
+                            </LabeledList.Item>
+                          </LabeledList>
+                          <Collapsible
+                            title={
+                              'Ship Image (Click image to open in browser for finer detail)'
+                            }
+                            key={template.name + ' Image'}
+                          >
+                            <img
+                              src={
+                                template.shortName
+                                  ? resolveAsset(template.shortName)
+                                  : ''
+                              }
+                              width={'100%'}
+                              style={{ cursor: 'pointer' }}
+                              onClick={() => {
+                                if (template.shortName) {
+                                  const url = resolveAsset(template.shortName);
+                                  window.open(url, '_blank');
+                                }
+                              }}
+                            />
+                          </Collapsible>
+                          <Divider horizontal />
+                        </Collapsible>
+                      );
+                    })
+                ) : (
+                  <div>No ships available</div>
+                )}
+              </Section>
+            </div>
+          </>
         )}
       </Window.Content>
     </Window>
