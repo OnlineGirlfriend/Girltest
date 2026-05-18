@@ -42,6 +42,9 @@ GLOBAL_VAR(tgui_log)
 GLOBAL_PROTECT(tgui_log)
 GLOBAL_VAR(world_shuttle_log)
 GLOBAL_PROTECT(world_shuttle_log)
+GLOBAL_VAR(modular_ruins_log) // PENTEST MODULAR RUINS START
+GLOBAL_PROTECT(modular_ruins_log)
+GLOBAL_VAR_INIT(modular_connections_debug, FALSE) // PENTEST MODULAR RUINS END
 
 GLOBAL_VAR(perf_log)
 GLOBAL_PROTECT(perf_log)

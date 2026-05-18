@@ -238,6 +238,11 @@
 /proc/log_mapping(text)
 	WRITE_LOG(GLOB.world_map_error_log, text)
 
+///PENTEST MODULAR RUINS START
+/proc/log_modular_ruins(text)
+	WRITE_LOG(GLOB.modular_ruins_log, text)
+// PENTEST MODULAR RUINS END
+
 /proc/log_perf(list/perf_info)
 	. = "[perf_info.Join(",")]\n"
 	WRITE_LOG_NO_FORMAT(GLOB.perf_log, .)

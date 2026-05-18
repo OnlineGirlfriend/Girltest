@@ -1,0 +1,492 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"b" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"c" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"d" = (
+/obj/machinery/light/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"e" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"f" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"g" = (
+/obj/structure/fence/door{
+	dir = 8
+	},
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"h" = (
+/obj/machinery/camera{
+	dir = 5;
+	network = list("zonea")
+	},
+/obj/item/target/alien,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"j" = (
+/obj/machinery/camera{
+	dir = 8;
+	network = list("zonea")
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"k" = (
+/obj/machinery/camera{
+	network = list("zonea")
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"l" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"m" = (
+/obj/structure/fence/cut/large{
+	dir = 8
+	},
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"n" = (
+/obj/structure/fence/door,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"o" = (
+/obj/structure/fence/door,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"p" = (
+/obj/item/target,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"q" = (
+/obj/structure/fence/door,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"r" = (
+/obj/item/target,
+/obj/structure/flippedtable{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"s" = (
+/turf/template_noop,
+/area/template_noop)
+"t" = (
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"u" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"v" = (
+/turf/closed/wall,
+/area/ruin/space/has_grav/syndicircle/training)
+"w" = (
+/obj/machinery/light/directional/north,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"x" = (
+/obj/item/target,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"y" = (
+/obj/structure/flippedtable{
+	icon_state = "table"
+	},
+/obj/item/target,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/gun_voucher/syndicate,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"z" = (
+/obj/structure/sign/warning{
+	desc = "WARNING: Clear shoothouse before intiating a drill!";
+	name = "Shoothouse Sign";
+	sign_change_name = "Warning: Shoothouse"
+	},
+/turf/closed/wall,
+/area/ruin/space/has_grav/syndicircle/training)
+"A" = (
+/turf/closed/wall/rust,
+/area/ruin/space/has_grav/syndicircle/training)
+"B" = (
+/obj/machinery/light/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"C" = (
+/obj/item/target,
+/obj/structure/flippedtable{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"D" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"E" = (
+/obj/item/target,
+/obj/structure/flippedtable{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"F" = (
+/obj/item/target/syndicate,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"G" = (
+/obj/item/target,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"H" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"J" = (
+/obj/machinery/camera{
+	dir = 5;
+	network = list("zonea")
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"L" = (
+/obj/machinery/vending/toyliberationstation,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"M" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"N" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"O" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"P" = (
+/obj/structure/table/greyscale,
+/obj/item/assembly/timer{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/assembly/timer{
+	pixel_x = -4;
+	pixel_y = -3
+	},
+/obj/machinery/camera{
+	network = list("zonea")
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"Q" = (
+/obj/machinery/camera{
+	network = list("zonea")
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"R" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"T" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"U" = (
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"V" = (
+/obj/item/target,
+/obj/structure/flippedtable{
+	dir = 4
+	},
+/obj/structure/flippedtable{
+	icon_state = "table"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"W" = (
+/obj/machinery/camera{
+	dir = 10;
+	network = list("zonea")
+	},
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+"Y" = (
+/obj/structure/fence{
+	dir = 8
+	},
+/turf/open/floor/plating/sandy_dirt,
+/area/ruin/space/has_grav/syndicircle/training)
+"Z" = (
+/obj/item/target,
+/obj/machinery/light/small/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/dirt/wasteland,
+/area/ruin/space/has_grav/syndicircle/training)
+
+(1,1,1) = {"
+A
+R
+A
+A
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+"}
+(2,1,1) = {"
+p
+H
+U
+o
+T
+t
+s
+s
+s
+s
+s
+s
+s
+s
+"}
+(3,1,1) = {"
+A
+T
+T
+Y
+U
+T
+p
+v
+s
+s
+s
+s
+s
+s
+"}
+(4,1,1) = {"
+U
+U
+d
+v
+U
+T
+T
+O
+h
+s
+s
+s
+s
+s
+"}
+(5,1,1) = {"
+Q
+U
+t
+A
+U
+T
+U
+O
+Z
+A
+s
+s
+s
+s
+"}
+(6,1,1) = {"
+U
+O
+A
+A
+V
+U
+D
+v
+A
+A
+A
+s
+s
+s
+"}
+(7,1,1) = {"
+T
+O
+F
+A
+U
+U
+d
+A
+J
+e
+T
+r
+s
+s
+"}
+(8,1,1) = {"
+v
+v
+v
+A
+k
+f
+N
+v
+G
+N
+U
+U
+s
+s
+"}
+(9,1,1) = {"
+v
+G
+R
+q
+R
+O
+G
+A
+T
+a
+U
+T
+A
+s
+"}
+(10,1,1) = {"
+A
+R
+t
+v
+A
+v
+A
+A
+g
+A
+A
+g
+A
+s
+"}
+(11,1,1) = {"
+A
+t
+d
+v
+w
+T
+m
+M
+T
+A
+t
+U
+U
+p
+"}
+(12,1,1) = {"
+A
+t
+U
+x
+T
+A
+A
+A
+v
+v
+T
+U
+U
+W
+"}
+(13,1,1) = {"
+A
+y
+t
+T
+U
+v
+P
+c
+u
+n
+T
+T
+t
+b
+"}
+(14,1,1) = {"
+s
+A
+t
+j
+E
+A
+L
+l
+B
+z
+t
+T
+p
+C
+"}

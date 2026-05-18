@@ -89,8 +89,9 @@
 					continue
 
 				if(item.parent)
-					log_mapping("Possible doubled atmosmachine found at [AREACOORD(item)] with other contents: [json_encode(item.loc.contents)]")
-					item.stack_trace("Possible doubled atmosmachine found")
+					if(!SSair.loading_modular_room) // PENTEST EDIT START - Modular ruins can accidently trigger doubled atmos machines, so we should ignore this if we're loading one of those.
+						log_mapping("Possible doubled atmosmachine found at [AREACOORD(item)] with other contents: [json_encode(item.loc.contents)]")
+						item.stack_trace("Possible doubled atmosmachine found")  // PENTEST EDIT END
 					continue
 
 				members += item

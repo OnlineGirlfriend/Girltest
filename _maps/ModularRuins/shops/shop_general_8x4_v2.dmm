@@ -1,0 +1,230 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/poison/giant_spider/hunter{
+	environment_smash = 0
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"b" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"e" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"g" = (
+/obj/structure/closet/crate/engineering,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/glass/twenty,
+/turf/open/floor/plating,
+/area/template_noop)
+"j" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/mop,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"k" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/template_noop)
+"l" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/poison/giant_spider{
+	melee_damage_upper = 25;
+	melee_damage_lower = 20
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+"o" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+"p" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+"r" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plating,
+/area/template_noop)
+"s" = (
+/turf/open/floor/plating,
+/area/template_noop)
+"u" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
+/obj/machinery/power/floodlight,
+/turf/open/floor/plating,
+/area/template_noop)
+"v" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/autoname{
+	dir = 10;
+	network = list("mall")
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+"x" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/light_construct/directional/south,
+/turf/open/floor/plating,
+/area/template_noop)
+"y" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"z" = (
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"D" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"G" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/light_construct/directional/east,
+/turf/open/floor/plating,
+/area/template_noop)
+"L" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/glass/bucket{
+	pixel_x = 15;
+	pixel_y = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"M" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/plating,
+/area/template_noop)
+"N" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spider/stickyweb,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"Q" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+"T" = (
+/obj/item/kirbyplants/dead,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"U" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = -13
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+"W" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/template_noop)
+"X" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/template_noop)
+
+(1,1,1) = {"
+W
+U
+D
+N
+"}
+(2,1,1) = {"
+y
+s
+k
+x
+"}
+(3,1,1) = {"
+z
+o
+g
+a
+"}
+(4,1,1) = {"
+z
+l
+M
+e
+"}
+(5,1,1) = {"
+b
+u
+k
+v
+"}
+(6,1,1) = {"
+z
+r
+Q
+D
+"}
+(7,1,1) = {"
+z
+X
+p
+L
+"}
+(8,1,1) = {"
+T
+G
+a
+j
+"}

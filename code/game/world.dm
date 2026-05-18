@@ -142,6 +142,7 @@ GLOBAL_VAR(restart_counter)
 	GLOB.world_paper_log = "[GLOB.log_directory]/paper.log"
 	GLOB.tgui_log = "[GLOB.log_directory]/tgui.log"
 	GLOB.world_shuttle_log = "[GLOB.log_directory]/shuttle.log"
+	GLOB.modular_ruins_log = "[GLOB.log_directory]/modular_ruins.log" // PENTEST MODULAR RUINS
 
 	GLOB.demo_log = "[GLOB.log_directory]/demo.log"
 
@@ -158,6 +159,7 @@ GLOBAL_VAR(restart_counter)
 	start_log(GLOB.world_telecomms_log)
 	start_log(GLOB.world_manifest_log)
 	start_log(GLOB.world_href_log)
+	start_log(GLOB.modular_ruins_log) // PENTEST MODULAR RUINS
 	start_log(GLOB.world_qdel_log)
 	start_log(GLOB.world_runtime_log)
 	start_log(GLOB.world_job_debug_log)

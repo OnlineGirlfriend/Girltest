@@ -18,6 +18,9 @@ SUBSYSTEM_DEF(mapping)
 	var/list/planet_types = list()
 	var/list/mission_pois = list()
 
+	/// PENTEST MODULAR RUINS - List of all modular room templates available for placement
+	var/list/modular_room_templates = list()
+
 	var/list/ship_purchase_list
 
 	var/list/shuttle_templates = list()
@@ -147,6 +150,7 @@ SUBSYSTEM_DEF(mapping)
 	load_ship_templates()
 	preloadShelterTemplates()
 	preloadOutpostTemplates()
+	preloadModularRoomTemplates() // PENTEST MODULAR RUINS
 
 /datum/controller/subsystem/mapping/proc/preloadRuinTemplates()
 	for(var/datum/planet_type/type as anything in subtypesof(/datum/planet_type))
@@ -166,6 +170,29 @@ SUBSYSTEM_DEF(mapping)
 		var/list/ruin_entry = list()
 		ruin_entry[R] = initial(R.placement_weight)
 		ruin_types_probabilities[R.ruin_type] += ruin_entry
+
+/// PENTEST MODULAR RUINS START - Preload modular room templates into a list for easy access during ruin generation
+/datum/controller/subsystem/mapping/proc/preloadModularRoomTemplates()
+	log_modular_ruins("Preloading modular room templates...")
+
+	for(var/item in subtypesof(/datum/map_template/modular_room))
+		var/datum/map_template/modular_room/room_type = item
+
+		// Skip abstract base types using abstract_type pattern
+		if(initial(room_type.abstract_type) == room_type)
+			continue
+
+		var/datum/map_template/modular_room/M = new room_type()
+
+		if(!M.mappath)
+			log_modular_ruins("Warning: Modular room '[M.name]' has no mappath!")
+			continue
+
+		modular_room_templates[M.name] = M
+		log_modular_ruins("Loaded modular room template: [M.name] ([M.width]x[M.height])")
+
+	log_modular_ruins("Loaded [length(modular_room_templates)] modular room templates.")
+// PENTEST MODULAR RUINS END
 
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()
 	for(var/item in subtypesof(/datum/map_template/shuttle))

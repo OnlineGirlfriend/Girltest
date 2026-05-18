@@ -1,0 +1,451 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"d" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 1;
+	pixel_y = -20;
+	pixel_x = -6;
+	name = "Cargo Holoshields";
+	id = "cargoshield"
+	},
+/obj/machinery/button/door{
+	dir = 1;
+	pixel_y = -21;
+	pixel_x = 5;
+	name = "Cargo Shutters";
+	id = "cargoshutter"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"e" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 8;
+	id = "cargoshield"
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"h" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"i" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/light/small/directional/south,
+/obj/structure/closet/crate/secure,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/spawner/random/maintenance/two,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"j" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"k" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 5e+006
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"m" = (
+/obj/machinery/power/shuttle/engine/electric,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"n" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"p" = (
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/secure,
+/obj/effect/spawner/random/clothing/costume,
+/obj/effect/spawner/random/clothing/costume,
+/obj/effect/spawner/random/clothing/costume,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"q" = (
+/obj/item/reagent_containers/glass/rag{
+	pixel_y = 5
+	},
+/obj/structure/table,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"r" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/item/geiger_counter{
+	pixel_y = 15;
+	pixel_x = 7
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"t" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/railing,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"u" = (
+/obj/effect/turf_decal/box,
+/obj/effect/spawner/random/salvage/machine,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"w" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/fans/tiny,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"x" = (
+/obj/structure/frame/computer{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/item/circuitboard/computer/shuttle/helm,
+/obj/item/stack/cable_coil/cut,
+/obj/structure/railing,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"y" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"z" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 4;
+	id = "cargoshield"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"A" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"C" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"E" = (
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/trashcart,
+/obj/item/trash/popcorn,
+/obj/item/trash/candy,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"F" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/railing/corner,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"G" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/power/apc/auto_name/directional/north{
+	start_charge = 0
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/structure/closet/crate/radiation{
+	name = "fuel crate"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"I" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/structure/railing,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"J" = (
+/obj/effect/turf_decal/box,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"L" = (
+/obj/effect/turf_decal/box,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/light/small/directional/north,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"O" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"Q" = (
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/secure,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"R" = (
+/turf/closed/wall,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"S" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"U" = (
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/engineering/electrical,
+/obj/effect/spawner/random/techstorage,
+/obj/effect/spawner/random/techstorage,
+/obj/effect/spawner/random/stockparts,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"W" = (
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"Y" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/railing,
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+
+(1,1,1) = {"
+R
+m
+m
+m
+m
+R
+"}
+(2,1,1) = {"
+R
+A
+A
+A
+A
+R
+"}
+(3,1,1) = {"
+R
+y
+F
+h
+d
+R
+"}
+(4,1,1) = {"
+R
+k
+Y
+W
+Q
+z
+"}
+(5,1,1) = {"
+R
+G
+t
+p
+U
+O
+"}
+(6,1,1) = {"
+w
+n
+j
+C
+r
+S
+"}
+(7,1,1) = {"
+R
+L
+I
+J
+i
+e
+"}
+(8,1,1) = {"
+a
+q
+x
+E
+u
+a
+"}
+(9,1,1) = {"
+a
+a
+a
+a
+a
+a
+"}

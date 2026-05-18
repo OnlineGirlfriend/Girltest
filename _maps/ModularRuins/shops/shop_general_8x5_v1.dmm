@@ -1,0 +1,262 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"b" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/arrow_cw{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/black{
+	dir = 6
+	},
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("mall")
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"f" = (
+/turf/closed/wall,
+/area/template_noop)
+"g" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"j" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/item/paper{
+	name = "Cheap Kalixcian Phrasebook";
+	default_raw_text = "Rsku suok sz zalo - My sugarcube is full of eels."
+	},
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"l" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window{
+	dir = 4
+	},
+/obj/machinery/paystand,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"m" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/structure/filingcabinet,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"p" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/circuit/computer/common,
+/obj/item/research_notes/loot,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"s" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/arrow_cw{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/black{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 5
+	},
+/obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"u" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/light/directional/east,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"v" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"z" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"A" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/spider/stickyweb,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"B" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/circuit/computer/common,
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"D" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/arrow_cw{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/black{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"G" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"H" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced/spawner{
+	dir = 4
+	},
+/obj/item/paper_bin,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"I" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"L" = (
+/obj/structure/closet/crate/bin,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"M" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"N" = (
+/obj/structure/rack,
+/obj/effect/spawner/random/engineering/tool/common,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"Q" = (
+/obj/effect/turf_decal/trimline/transparent/neutral/arrow_cw{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/black{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 5
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"R" = (
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"U" = (
+/obj/structure/rack,
+/obj/item/spacecash/bundle/c1000,
+/obj/effect/turf_decal/trimline/transparent/neutral/arrow_cw{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/black{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"X" = (
+/turf/template_noop,
+/area/template_noop)
+"Y" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"Z" = (
+/obj/structure/rack,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/turf_decal/corner/transparent/black/diagonal,
+/turf/open/floor/plasteel,
+/area/template_noop)
+
+(1,1,1) = {"
+D
+s
+b
+Q
+U
+"}
+(2,1,1) = {"
+L
+I
+a
+G
+m
+"}
+(3,1,1) = {"
+X
+f
+l
+H
+f
+"}
+(4,1,1) = {"
+X
+N
+a
+R
+Z
+"}
+(5,1,1) = {"
+X
+z
+a
+v
+p
+"}
+(6,1,1) = {"
+X
+Y
+R
+a
+Y
+"}
+(7,1,1) = {"
+X
+M
+g
+g
+A
+"}
+(8,1,1) = {"
+X
+j
+u
+B
+N
+"}

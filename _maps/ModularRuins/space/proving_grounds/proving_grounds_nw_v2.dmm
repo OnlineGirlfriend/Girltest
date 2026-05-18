@@ -1,0 +1,903 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aB" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/industrial/warning,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/smg,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"aX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/disposalpipe/broken{
+	dir = 1
+	},
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"bH" = (
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"cn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"cq" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"cU" = (
+/obj/effect/gibspawner/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor6";
+	pixel_x = -17;
+	pixel_y = 21
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/syndicircle/training)
+"dF" = (
+/obj/item/stock_parts/matter_bin,
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -15;
+	pixel_y = -10
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"dT" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ef" = (
+/obj/structure/sign/poster/official/moth/hardhats{
+	pixel_y = 32
+	},
+/obj/machinery/conveyor{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ex" = (
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"eI" = (
+/obj/effect/turf_decal/trimline/opaque/beige/arrow_cw{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"eQ" = (
+/obj/structure/lattice,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"fj" = (
+/obj/effect/spawner/random/circuit/computer/common,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"fO" = (
+/obj/item/ammo_casing/spent/pistol_steel,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"gd" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"gh" = (
+/obj/item/stack/cable_coil/cut/yellow,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"gU" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"hc" = (
+/obj/effect/decal/cleanable/plastic,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"it" = (
+/obj/effect/turf_decal/trimline/opaque/beige/arrow_cw,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"iP" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/effect/turf_decal/trimline/opaque/beige/arrow_cw{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"jm" = (
+/obj/machinery/conveyor{
+	dir = 8
+	},
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"kR" = (
+/obj/structure/ore_box,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"kU" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "trails_2";
+	dir = 4
+	},
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"lj" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"lo" = (
+/obj/machinery/conveyor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"lp" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "trails_2";
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"lA" = (
+/obj/structure/table_frame,
+/turf/open/floor/plating/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"lI" = (
+/obj/effect/turf_decal/trimline/opaque/beige/warning,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"lQ" = (
+/obj/structure/table,
+/obj/item/stack/ore/salvage/scraptitanium,
+/turf/open/floor/plating/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"nu" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"nD" = (
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"nQ" = (
+/obj/structure/lattice,
+/obj/item/stack/cable_coil/cut/yellow,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"oi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/ore/salvage/scrapmetal,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"pl" = (
+/obj/item/stack/cable_coil/cut/yellow,
+/turf/open/floor/plating/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"pV" = (
+/obj/machinery/light/broken/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ro" = (
+/obj/effect/decal/cleanable/glass,
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -10;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"rx" = (
+/obj/item/rack_parts/shelf,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ry" = (
+/obj/effect/turf_decal/trimline/opaque/beige/arrow_cw,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"rO" = (
+/obj/effect/gibspawner/human,
+/obj/effect/decal/remains/human,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"sU" = (
+/obj/item/stack/sheet/metal,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"tE" = (
+/obj/structure/salvageable/computer,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"tG" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/syndicircle/training)
+"ul" = (
+/obj/machinery/mineral/processing_unit{
+	input_dir = 8;
+	output_dir = 1
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"va" = (
+/obj/machinery/mineral/unloading_machine{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"vU" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"we" = (
+/obj/structure/salvageable/computer,
+/obj/effect/spawner/random/circuit/computer/common,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"wL" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"wW" = (
+/obj/structure/salvageable/protolathe,
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"xk" = (
+/obj/effect/turf_decal/road/stop{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"xX" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor7";
+	pixel_y = -16;
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"xZ" = (
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"yI" = (
+/obj/structure/salvageable/computer{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"yL" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"za" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/stand_clear,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ay" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"Bi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/item/ammo_casing/c45{
+	icon_state = "pistol-steel-empty";
+	projectile_type = null
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"BC" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/turf_decal/trimline/opaque/beige/warning,
+/mob/living/simple_animal/hostile/viscerator,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"BO" = (
+/obj/effect/decal/cleanable/ash,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"BP" = (
+/obj/structure/lattice,
+/obj/structure/salvageable/machine,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"Cr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/ammo_casing/spent/pistol_steel,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Eo" = (
+/obj/structure/salvageable/computer,
+/obj/effect/spawner/random/circuit/computer/common,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Eu" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ez" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ER" = (
+/obj/machinery/conveyor{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"Fc" = (
+/mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"FP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Gd" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ii" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -15;
+	pixel_y = -10
+	},
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Il" = (
+/obj/effect/turf_decal/trimline/opaque/beige/arrow_cw{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/item/ammo_casing/c45{
+	icon_state = "pistol-steel-empty";
+	projectile_type = null
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Iq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/opaque/beige/arrow_cw{
+	dir = 6
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Jk" = (
+/obj/item/ammo_casing/c45{
+	icon_state = "pistol-steel-empty";
+	projectile_type = null
+	},
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Jq" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"JG" = (
+/obj/item/stack/cable_coil/cut/yellow,
+/obj/structure/salvageable/machine,
+/obj/effect/spawner/random/engineering/tool,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"KN" = (
+/obj/effect/decal/cleanable/ash,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"KU" = (
+/obj/item/stack/cable_coil/cut/yellow,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Lf" = (
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"LA" = (
+/obj/structure/lattice,
+/obj/item/stack/sheet/metal,
+/obj/effect/spawner/random/structure/crate_abandoned,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"LX" = (
+/obj/item/stack/sheet/metal,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ml" = (
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"My" = (
+/obj/item/wallframe/apc,
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ME" = (
+/obj/effect/decal/cleanable/ash,
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"MM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/ore/salvage/scrapmetal/five,
+/obj/item/stack/sheet/metal,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"MQ" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/item/circuitboard/machine/stacking_machine,
+/obj/item/stack/cable_coil/cut/random,
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -10;
+	pixel_y = 2
+	},
+/obj/structure/frame/machine,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Nb" = (
+/obj/machinery/light/built/directional/north,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Nl" = (
+/turf/template_noop,
+/area/template_noop)
+"NE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/stand_clear{
+	dir = 1
+	},
+/obj/item/ammo_casing/c10mm{
+	icon_state = "pistol-steel-empty";
+	projectile_type = null
+	},
+/obj/item/ammo_casing/c10mm{
+	icon_state = "pistol-steel-empty";
+	projectile_type = null
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"NI" = (
+/obj/structure/table,
+/obj/item/stack/rods,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"NV" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gibbl1"
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Og" = (
+/obj/effect/turf_decal/road/stop,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ou" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"OO" = (
+/obj/effect/decal/cleanable/plastic,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Pe" = (
+/obj/machinery/door/poddoor/crusher{
+	name = "Malfunctioning Presser"
+	},
+/obj/effect/decal/cleanable/glass,
+/obj/item/gun_voucher/syndicate,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"PJ" = (
+/obj/item/stack/rods,
+/obj/item/stack/rods,
+/obj/item/stack/rods,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"Qj" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/syndicircle/training)
+"QV" = (
+/obj/item/stack/rods,
+/obj/structure/disposalpipe/broken{
+	dir = 1
+	},
+/obj/structure/disposalpipe/broken{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"Rr" = (
+/obj/effect/decal/cleanable/ash,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/spawner/random/anomaly/rock/cave,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"RO" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/item/ammo_casing/c10mm{
+	icon_state = "pistol-steel-empty";
+	projectile_type = null
+	},
+/turf/open/floor/plating/rust/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"SP" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 1
+	},
+/obj/item/stack/ore/salvage/scrapgold,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"TN" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_x = -15;
+	pixel_y = -10
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"TS" = (
+/obj/structure/table_frame,
+/obj/effect/decal/cleanable/plastic,
+/turf/open/floor/plating/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Uc" = (
+/mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"UN" = (
+/obj/structure/lattice,
+/obj/structure/disposalpipe/broken,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"UP" = (
+/obj/item/stack/rods,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"Vk" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Vo" = (
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"Vt" = (
+/obj/structure/table_frame,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"VG" = (
+/obj/effect/decal/cleanable/plastic,
+/obj/structure/railing,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"YK" = (
+/mob/living/simple_animal/hostile/viscerator,
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"YL" = (
+/obj/item/stack/sheet/metal,
+/obj/structure/railing,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"Zm" = (
+/obj/effect/decal/cleanable/generic,
+/obj/structure/railing,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Zp" = (
+/obj/machinery/disposal/deliveryChute{
+	dir = 8
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"Zv" = (
+/obj/item/shard,
+/obj/effect/decal/cleanable/glass,
+/obj/structure/railing,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+"ZN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/dark/lava,
+/area/ruin/space/has_grav/syndicircle/training)
+
+(1,1,1) = {"
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+tG
+tG
+tG
+tG
+"}
+(2,1,1) = {"
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+gd
+lj
+xZ
+KN
+ex
+tG
+"}
+(3,1,1) = {"
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
+pV
+NV
+cq
+nD
+rx
+ex
+Jq
+bH
+"}
+(4,1,1) = {"
+Nl
+Nl
+Nl
+Nl
+Nl
+we
+fj
+lp
+ex
+ex
+Ez
+ex
+vU
+bH
+"}
+(5,1,1) = {"
+Nl
+Nl
+Nl
+Nl
+Nb
+Gd
+TN
+kU
+BC
+oi
+ex
+Ay
+ZN
+OO
+"}
+(6,1,1) = {"
+Nl
+Nl
+Nl
+Ou
+LX
+FP
+hc
+BO
+lI
+NE
+kR
+za
+Jq
+gU
+"}
+(7,1,1) = {"
+Nl
+Nl
+Vt
+wL
+ZN
+pl
+Vo
+LA
+nQ
+YL
+va
+Eo
+fO
+bH
+"}
+(8,1,1) = {"
+Nl
+Nl
+NI
+Jq
+Fc
+MM
+lA
+Vo
+Bi
+aB
+lo
+PJ
+Cr
+yI
+"}
+(9,1,1) = {"
+Nl
+wW
+cn
+Ml
+eQ
+ex
+lQ
+rO
+JG
+Zm
+lo
+Lf
+Ml
+Og
+"}
+(10,1,1) = {"
+Nl
+ER
+cn
+fO
+ex
+Jq
+TS
+xk
+Vo
+Zv
+ul
+RO
+xX
+ry
+"}
+(11,1,1) = {"
+tG
+Pe
+Uc
+ex
+Qj
+gh
+BP
+Rr
+YK
+VG
+Lf
+UP
+ZN
+it
+"}
+(12,1,1) = {"
+tG
+jm
+SP
+ex
+cU
+ex
+ZN
+sU
+nQ
+Jk
+Zp
+Vo
+yL
+ex
+"}
+(13,1,1) = {"
+tG
+ef
+MQ
+ro
+vU
+dF
+aX
+UN
+ME
+Il
+QV
+eI
+iP
+Iq
+"}
+(14,1,1) = {"
+tG
+tG
+ex
+ex
+dT
+ex
+tE
+nu
+Eu
+Ii
+KU
+My
+Vk
+Nl
+"}

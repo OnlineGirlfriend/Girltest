@@ -1,0 +1,314 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 10
+	},
+/obj/machinery/gibber,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/plastic,
+/area/template_noop)
+"c" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction{
+	dir = 1
+	},
+/obj/structure/kitchenspike,
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/plastic,
+/area/template_noop)
+"f" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plastic,
+/area/template_noop)
+"g" = (
+/obj/machinery/door/airlock/freezer{
+	name = "Freezer Room";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/template_noop)
+"j" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"l" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/mob/living/simple_animal/hostile/human/cat_butcherer{
+	atmos_requirements = list("min_oxy"=0,"max_oxy"=0,"min_tox"=0,"max_tox"=0,"min_co2"=0,"max_co2"=0,"min_n2"=0,"max_n2"=0);
+	desc = "A profession carp butcher, gone mad due to carptoxin exposure. There seems to be something in their pocket...";
+	faction = list("beach","pirate");
+	health = 300;
+	loot = list(/obj/effect/mob_spawn/human/corpse/cat_butcher,/obj/item/guardiancreator/carp);
+	maxHealth = 300;
+	maxbodytemp = 10000;
+	melee_damage_lower = 20;
+	melee_damage_upper = 25;
+	minbodytemp = 0;
+	name = "The Butcher";
+	ranged_cooldown_time = 15;
+	ranged_message = "fires the speargun at";
+	real_name = "The Butcher";
+	unique_name = 1
+	},
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plastic,
+/area/template_noop)
+"m" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/pipe/heat_exchanging/junction,
+/mob/living/simple_animal/hostile/carp{
+	bruteloss = 100
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"n" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
+	},
+/obj/structure/table/reinforced,
+/obj/item/melee/knife/butcher,
+/turf/open/floor/plastic,
+/area/template_noop)
+"p" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on/coldroom,
+/turf/open/floor/plastic,
+/area/template_noop)
+"q" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/microwave{
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"r" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -11
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plastic,
+/area/template_noop)
+"u" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 5
+	},
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/structure/closet/secure_closet/freezer,
+/turf/open/floor/plastic,
+/area/template_noop)
+"v" = (
+/obj/machinery/grill,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/plastic,
+/area/template_noop)
+"w" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plastic,
+/area/template_noop)
+"x" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"z" = (
+/obj/structure/closet/crate/bin,
+/obj/item/food/fishmeat/carp/imitation,
+/obj/item/food/fishmeat/carp/imitation,
+/obj/item/food/fishmeat/carp/imitation,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"A" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plastic,
+/area/template_noop)
+"B" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"C" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 9
+	},
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"D" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/reagentgrinder,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"E" = (
+/obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen{
+	anchored = 1
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"F" = (
+/turf/template_noop,
+/area/template_noop)
+"M" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"Q" = (
+/obj/structure/table/wood/reinforced,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/item/melee/knife{
+	pixel_y = 12;
+	pixel_x = 9
+	},
+/obj/item/food/fishfingers{
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/plastic,
+/area/template_noop)
+"U" = (
+/obj/machinery/processor,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"V" = (
+/mob/living/simple_animal/hostile/human/pirate/melee{
+	faction = list("beach","pirate")
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"W" = (
+/obj/machinery/deepfryer,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"X" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/food/fishandchips,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"Y" = (
+/turf/closed/wall/mineral/wood,
+/area/template_noop)
+"Z" = (
+/obj/item/toy/plush/carpplushie/dehy_carp,
+/obj/item/toy/plush/carpplushie/dehy_carp,
+/obj/item/toy/plush/carpplushie/dehy_carp,
+/obj/item/toy/plush/carpplushie/dehy_carp,
+/obj/structure/closet/crate/wooden{
+	name = "freeze dried carp"
+	},
+/obj/machinery/light/dim/directional/south,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+
+(1,1,1) = {"
+v
+w
+r
+f
+"}
+(2,1,1) = {"
+U
+j
+x
+Z
+"}
+(3,1,1) = {"
+W
+j
+V
+X
+"}
+(4,1,1) = {"
+q
+j
+M
+A
+"}
+(5,1,1) = {"
+D
+Q
+B
+z
+"}
+(6,1,1) = {"
+F
+Y
+g
+Y
+"}
+(7,1,1) = {"
+F
+p
+m
+u
+"}
+(8,1,1) = {"
+F
+n
+l
+C
+"}
+(9,1,1) = {"
+F
+a
+c
+E
+"}

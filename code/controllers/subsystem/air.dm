@@ -56,6 +56,8 @@ SUBSYSTEM_DEF(air)
 	var/currentpart = SSAIR_PIPENETS
 
 	var/map_loading = TRUE
+	/// PENTEST ADDITION - MODULAR RUINS - Set to TRUE while loading modular rooms to suppress false-positive doubled atmosmachine warnings
+	var/loading_modular_room = FALSE
 
 	var/log_explosive_decompression = TRUE // If things get spammy, admemes can turn this off.
 
@@ -374,8 +376,9 @@ SUBSYSTEM_DEF(air)
 			if(item in net.members)
 				continue
 			if(item.parent)
-				log_mapping("Doubled atmosmachine found at [AREACOORD(item)] with other contents: [json_encode(item.loc.contents)]")
-				item.stack_trace("Possible doubled atmosmachine")
+				if(!SSair.loading_modular_room) // PENTEST EDIT START - Modular ruins can accidently trigger doubled atmos machines, so we should ignore this if we're loading one of those.
+					log_mapping("Doubled atmosmachine found at [AREACOORD(item)] with other contents: [json_encode(item.loc.contents)]")
+					item.stack_trace("Possible doubled atmosmachine") // PENTEST EDIT END
 
 			net.members += item
 			border += item

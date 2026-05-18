@@ -1,0 +1,289 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"d" = (
+/obj/structure/window/reinforced/fulltile,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"e" = (
+/obj/effect/decal/cleanable/glass,
+/obj/item/stack/rods,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"h" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"i" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"j" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
+/obj/item/stack/rods,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"k" = (
+/obj/machinery/power/smes/engineering{
+	charge = 5e+006
+	},
+/obj/structure/cable/pink{
+	icon_state = "0-10"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"m" = (
+/obj/machinery/power/shuttle/engine/electric,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"n" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable/pink{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"p" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/engineering/electrical,
+/obj/effect/spawner/random/techstorage,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"q" = (
+/obj/structure/frame/computer,
+/obj/item/circuitboard/computer/shuttle/helm,
+/obj/item/stack/cable_coil/cut,
+/obj/effect/spawner/random/stockparts,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"r" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"t" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"u" = (
+/obj/structure/frame/computer{
+	dir = 1
+	},
+/obj/effect/spawner/random/stockparts,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"w" = (
+/obj/structure/grille,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"x" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"z" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"A" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable/pink{
+	icon_state = "0-5"
+	},
+/obj/structure/closet/crate/radiation{
+	name = "fuel crate"
+	},
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"C" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"E" = (
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"F" = (
+/obj/structure/cable/pink{
+	icon_state = "5-8"
+	},
+/obj/structure/cable/pink{
+	icon_state = "5-10"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"G" = (
+/obj/effect/turf_decal/box,
+/obj/structure/closet/crate/secure,
+/obj/effect/spawner/random/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"I" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"J" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"L" = (
+/obj/effect/anomaly/flux,
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"O" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"Q" = (
+/turf/closed/wall/mineral/titanium/exterior,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"S" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/fans/tiny,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel/rockplanet,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"U" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 2
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"W" = (
+/obj/effect/turf_decal/box,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"Y" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+
+(1,1,1) = {"
+Q
+m
+Q
+Q
+m
+Q
+"}
+(2,1,1) = {"
+Q
+U
+n
+A
+i
+Q
+"}
+(3,1,1) = {"
+Q
+Q
+F
+h
+Q
+Q
+"}
+(4,1,1) = {"
+Q
+k
+Y
+O
+Q
+z
+"}
+(5,1,1) = {"
+Q
+G
+t
+p
+Q
+Q
+"}
+(6,1,1) = {"
+a
+W
+j
+C
+r
+S
+"}
+(7,1,1) = {"
+Q
+L
+I
+J
+Q
+Q
+"}
+(8,1,1) = {"
+Q
+q
+x
+E
+u
+Q
+"}
+(9,1,1) = {"
+Q
+w
+d
+e
+d
+Q
+"}

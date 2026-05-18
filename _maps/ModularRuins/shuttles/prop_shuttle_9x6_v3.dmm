@@ -1,0 +1,403 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"h" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/machinery/light/directional/south,
+/obj/effect/turf_decal/techfloor,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/port_gen/pacman/super,
+/obj/item/stack/sheet/mineral/uranium,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"j" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/radiation,
+/obj/structure/hazard/radioactive/waste,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"k" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/open/floor/engine/hull/interior,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"m" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"n" = (
+/obj/machinery/computer/helm{
+	dir = 4;
+	layer = 3
+	},
+/obj/structure/railing{
+	dir = 10
+	},
+/obj/machinery/button/shieldwallgen{
+	pixel_y = 21;
+	pixel_x = 9;
+	id = "haste_holo"
+	},
+/obj/machinery/button/door{
+	pixel_x = -2;
+	pixel_y = 23;
+	id = "haste_door"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"p" = (
+/obj/effect/turf_decal/techfloor,
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-9"
+	},
+/obj/item/clothing/suit/radiation/space,
+/obj/effect/mob_spawn/human/skeleton/alive,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"q" = (
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 2
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"r" = (
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_y = 7;
+	pixel_x = 21;
+	name = "Cargo Shutters";
+	id = "cargoshutter"
+	},
+/obj/machinery/button/shieldwallgen{
+	dir = 8;
+	pixel_y = -2;
+	pixel_x = 20;
+	name = "Cargo Holoshields";
+	id = "cargoshield"
+	},
+/turf/open/floor/plasteel/stairs/right{
+	dir = 1
+	},
+/area/ruin/space/has_grav/spacemall/shuttle)
+"t" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/item/stack/sheet/mineral/uranium/five,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"u" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"x" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/stack/sheet/mineral/uranium/ten,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"z" = (
+/obj/machinery/power/shieldwallgen/atmos{
+	dir = 4;
+	id = "cargoshield"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-5"
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"A" = (
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-5"
+	},
+/obj/effect/turf_decal/techfloor,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"C" = (
+/obj/effect/turf_decal/techfloor,
+/obj/item/stack/sheet/mineral/uranium,
+/obj/item/clothing/head/collectable/slime,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"E" = (
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/power/terminal,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/rack,
+/obj/item/storage/firstaid/medical{
+	pixel_x = -4;
+	pixel_y = 6
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"F" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/structure/railing,
+/obj/item/radio/intercom/wideband/directional/north{
+	pixel_x = -9
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-10"
+	},
+/obj/machinery/light_switch{
+	pixel_y = 22;
+	pixel_x = 10
+	},
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse/midwife,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"G" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"I" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/chair/handrail{
+	pixel_y = 7
+	},
+/obj/structure/hazard/radioactive/waste,
+/obj/effect/radiation,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"J" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/turf_decal/techfloor,
+/mob/living/simple_animal/hostile/poison/giant_spider/nurse,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"O" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"Q" = (
+/obj/item/stack/sheet/mineral/uranium,
+/obj/effect/decal/cleanable/sprayweb,
+/turf/open/floor/plasteel/stairs/left{
+	dir = 1
+	},
+/area/ruin/space/has_grav/spacemall/shuttle)
+"S" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/power/shieldwallgen/atmos{
+	dir = 8;
+	id = "cargoshield"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-9"
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters{
+	id = "cargoshutter"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"U" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-6"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-10"
+	},
+/obj/effect/decal/cleanable/sprayweb,
+/turf/open/floor/plasteel/stairs/mid{
+	dir = 1
+	},
+/area/ruin/space/has_grav/spacemall/shuttle)
+"W" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/mob/living/simple_animal/hostile/poison/giant_spider,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+"Y" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "6-8"
+	},
+/obj/item/stack/sheet/mineral/uranium,
+/obj/item/clothing/head/radiation/space,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/spacemall/shuttle)
+
+(1,1,1) = {"
+a
+G
+m
+m
+G
+a
+"}
+(2,1,1) = {"
+a
+G
+n
+A
+G
+a
+"}
+(3,1,1) = {"
+a
+G
+F
+h
+G
+G
+"}
+(4,1,1) = {"
+a
+G
+Y
+W
+Q
+z
+"}
+(5,1,1) = {"
+a
+G
+t
+p
+U
+O
+"}
+(6,1,1) = {"
+a
+G
+j
+C
+r
+S
+"}
+(7,1,1) = {"
+a
+G
+I
+J
+G
+G
+"}
+(8,1,1) = {"
+a
+q
+x
+E
+u
+a
+"}
+(9,1,1) = {"
+a
+k
+G
+G
+k
+a
+"}

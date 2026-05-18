@@ -1,0 +1,18 @@
+help:
+  Multiple modular markers or connection markers on the same tile. Duplicate modular_markers will cause overlapping room placements.
+  Duplicate door/parent_door markers are ignored but indicate a mapping error. Only one marker of each type should exist per tile.
+
+/obj/effect/landmark/modular_connection/parent_door:
+  banned_neighbors:
+    /obj/effect/landmark/modular_connection/parent_door:
+      identical: true
+
+/obj/effect/landmark/modular_connection/door:
+  banned_neighbors:
+    /obj/effect/landmark/modular_connection/door:
+      identical: true
+
+/obj/effect/landmark/modular_marker:
+  banned_neighbors:
+    /obj/effect/landmark/modular_marker:
+      identical: true

@@ -1,0 +1,311 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"c" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/siding/thinplating,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/template_noop)
+"d" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"f" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/template_noop)
+"g" = (
+/obj/effect/turf_decal/corner/opaque/bottlegreen/diagonal,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"h" = (
+/obj/item/wallframe/extinguisher_cabinet{
+	pixel_x = 22
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"i" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/contraband/mothpill{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"j" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/template_noop)
+"l" = (
+/obj/effect/turf_decal/corner/opaque/bottlegreen/diagonal,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"o" = (
+/obj/structure/chair/office/light,
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/template_noop)
+"p" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/box/white,
+/obj/structure/sign/poster/contraband/smoke{
+	pixel_x = -32
+	},
+/obj/item/pen,
+/obj/item/laser_pointer,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"r" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"t" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/corner/opaque/bottlegreen/diagonal,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"w" = (
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"y" = (
+/obj/machinery/camera/autoname{
+	dir = 9;
+	network = list("mall")
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"z" = (
+/obj/machinery/door/window{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"A" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/box/white,
+/obj/item/binoculars,
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"B" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/box/white,
+/obj/item/pushbroom,
+/obj/item/mop{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/spray/cleaner,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"D" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"E" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/corner/opaque/bottlegreen/diagonal,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"J" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/box/white,
+/obj/item/plunger,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"L" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/box/white,
+/obj/effect/turf_decal/corner/opaque/bottlegreen/diagonal,
+/obj/item/hand_labeler,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"N" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"O" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"Q" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/bodypart/head,
+/obj/structure/closet/crate/bin,
+/obj/item/trash/can/food,
+/obj/item/clothing/neck/stethoscope,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"R" = (
+/obj/machinery/door/window{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/template_noop)
+"T" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/turf_decal/corner/opaque/bottlegreen/diagonal,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"V" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/siding/thinplating,
+/obj/machinery/paystand,
+/turf/open/floor/plasteel/dark,
+/area/template_noop)
+"X" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plasteel,
+/area/template_noop)
+"Y" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/plasteel/dark,
+/area/template_noop)
+
+(1,1,1) = {"
+Q
+i
+A
+p
+L
+"}
+(2,1,1) = {"
+X
+w
+a
+r
+T
+"}
+(3,1,1) = {"
+R
+O
+D
+N
+t
+"}
+(4,1,1) = {"
+j
+f
+d
+B
+l
+"}
+(5,1,1) = {"
+o
+V
+z
+J
+g
+"}
+(6,1,1) = {"
+Y
+c
+h
+y
+E
+"}

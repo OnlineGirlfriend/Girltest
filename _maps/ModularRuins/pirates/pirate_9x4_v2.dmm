@@ -1,0 +1,292 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/machinery/reagentgrinder{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/plastic,
+/area/template_noop)
+"b" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/melee/knife{
+	pixel_y = 5;
+	pixel_x = 9
+	},
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/obj/item/toy/figure/chef{
+	pixel_x = -10;
+	pixel_y = 6
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"c" = (
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/obj/effect/decal/cleanable/food/flour,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plastic,
+/area/template_noop)
+"e" = (
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/plastic,
+/area/template_noop)
+"f" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/machinery/microwave{
+	pixel_y = 7
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/plastic,
+/area/template_noop)
+"g" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/food/flour,
+/turf/open/floor/plastic,
+/area/template_noop)
+"j" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/item/food/fishmeat/carp,
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"o" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/machinery/light/dim/directional/south,
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/food/flour,
+/obj/structure/closet/crate/trashcart,
+/turf/open/floor/plastic,
+/area/template_noop)
+"p" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/item/melee/knife/butcher,
+/obj/structure/table/reinforced,
+/turf/open/floor/plastic,
+/area/template_noop)
+"q" = (
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"r" = (
+/obj/machinery/deepfryer,
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"s" = (
+/turf/template_noop,
+/area/template_noop)
+"w" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/mob/living/simple_animal/hostile/human/cat_butcherer{
+	atmos_requirements = list("min_oxy"=0,"max_oxy"=0,"min_tox"=0,"max_tox"=0,"min_co2"=0,"max_co2"=0,"min_n2"=0,"max_n2"=0);
+	desc = "A profession carp butcher, gone mad due to carptoxin exposure. There seems to be something in their pocket...";
+	faction = list("beach","pirate");
+	health = 300;
+	loot = list(/obj/effect/mob_spawn/human/corpse/cat_butcher,/obj/item/guardiancreator/carp);
+	maxHealth = 300;
+	maxbodytemp = 10000;
+	melee_damage_lower = 20;
+	melee_damage_upper = 25;
+	minbodytemp = 0;
+	name = "The Butcher";
+	ranged_cooldown_time = 15;
+	ranged_message = "fires the speargun at";
+	real_name = "The Butcher";
+	unique_name = 1
+	},
+/obj/effect/decal/cleanable/food/flour,
+/turf/open/floor/plastic,
+/area/template_noop)
+"x" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/structure/table/reinforced,
+/obj/machinery/light/dim/directional/east,
+/obj/item/clothing/suit/apron/chef{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/clothing/head/chefhat{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"G" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/food/fishfingers{
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/obj/machinery/light/dim/directional/north,
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"J" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/condiment/flour{
+	pixel_x = -7;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/condiment/flour{
+	pixel_x = -7;
+	pixel_y = 1
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"L" = (
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/obj/effect/decal/cleanable/food/flour,
+/turf/open/floor/plastic,
+/area/template_noop)
+"M" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/food/fishandchips{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"N" = (
+/obj/machinery/light/dim/directional/south,
+/obj/structure/table/wood/reinforced,
+/obj/item/food/fishandchips{
+	pixel_x = -3;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"P" = (
+/mob/living/simple_animal/hostile/human/pirate/melee{
+	faction = list("beach","pirate")
+	},
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"Q" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/obj/effect/decal/cleanable/food/flour,
+/obj/item/reagent_containers/condiment/flour{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"R" = (
+/obj/machinery/grill,
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+"T" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"U" = (
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/plastic,
+/area/template_noop)
+"V" = (
+/obj/effect/turf_decal/corner/opaque/pink/diagonal,
+/obj/effect/decal/cleanable/food/flour,
+/turf/open/floor/plastic,
+/area/template_noop)
+"X" = (
+/obj/machinery/processor,
+/obj/effect/turf_decal/corner/opaque/purple/diagonal,
+/turf/open/floor/plastic,
+/area/template_noop)
+
+(1,1,1) = {"
+G
+e
+e
+e
+"}
+(2,1,1) = {"
+b
+q
+q
+N
+"}
+(3,1,1) = {"
+r
+q
+q
+M
+"}
+(4,1,1) = {"
+X
+q
+P
+c
+"}
+(5,1,1) = {"
+R
+L
+U
+c
+"}
+(6,1,1) = {"
+s
+j
+Q
+o
+"}
+(7,1,1) = {"
+s
+V
+T
+J
+"}
+(8,1,1) = {"
+s
+g
+w
+p
+"}
+(9,1,1) = {"
+s
+f
+x
+a
+"}

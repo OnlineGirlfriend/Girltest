@@ -1,0 +1,169 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken"
+	},
+/area/template_noop)
+"d" = (
+/obj/structure/closet/cabinet,
+/obj/item/melee/knife/hunting,
+/obj/item/gun/ballistic/shotgun/flamingarrow/absolution,
+/turf/open/floor/wood,
+/area/template_noop)
+"h" = (
+/turf/open/floor/wood,
+/area/template_noop)
+"i" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"l" = (
+/obj/structure/railing/wood{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/human/pirate,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"m" = (
+/obj/structure/table/wood,
+/obj/item/melee/energy/sword/saber/pirate{
+	pixel_x = 0;
+	pixel_y = 13
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"s" = (
+/obj/structure/railing/wood,
+/obj/structure/table/wood,
+/obj/item/stack/medical/bruise_pack/herb{
+	pixel_x = -5;
+	name = "herbal pack"
+	},
+/obj/structure/railing/wood{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"u" = (
+/obj/item/trash/can{
+	pixel_x = 4;
+	pixel_y = -10
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken2"
+	},
+/area/template_noop)
+"w" = (
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"x" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken5"
+	},
+/area/template_noop)
+"y" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/bin,
+/obj/effect/spawner/random/trash/deluxe_garbage,
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"A" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/bigplant,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"B" = (
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/wood,
+/area/template_noop)
+"G" = (
+/obj/structure/table/wood,
+/obj/item/grenade/spawnergrenade/spesscarp{
+	pixel_x = 3;
+	pixel_y = -21
+	},
+/obj/item/trash/boritos,
+/turf/open/floor/wood,
+/area/template_noop)
+"H" = (
+/turf/open/floor/plasteel/stairs/wood,
+/area/template_noop)
+"J" = (
+/obj/structure/railing/wood{
+	dir = 5
+	},
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"O" = (
+/mob/living/simple_animal/hostile/human/pirate/melee{
+	faction = list("beach","pirate")
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/wood,
+/area/template_noop)
+"P" = (
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/wood/walnut,
+/area/template_noop)
+"Q" = (
+/obj/structure/closet/cabinet,
+/obj/item/melee/knife/hunting,
+/obj/item/gun/ballistic/shotgun/doublebarrel/beacon,
+/turf/open/floor/wood,
+/area/template_noop)
+"R" = (
+/obj/structure/table/wood,
+/obj/structure/railing/wood,
+/turf/open/floor/wood,
+/area/template_noop)
+"W" = (
+/obj/item/trash/energybar{
+	pixel_x = -13;
+	pixel_y = 11
+	},
+/obj/effect/landmark/modular_connection/door,
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken7"
+	},
+/area/template_noop)
+
+(1,1,1) = {"
+Q
+d
+l
+u
+y
+"}
+(2,1,1) = {"
+B
+h
+J
+i
+W
+"}
+(3,1,1) = {"
+O
+h
+H
+w
+P
+"}
+(4,1,1) = {"
+B
+h
+s
+a
+P
+"}
+(5,1,1) = {"
+m
+G
+R
+A
+x
+"}

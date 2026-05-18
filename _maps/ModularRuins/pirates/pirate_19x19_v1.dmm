@@ -1,0 +1,1364 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"aj" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/human/pirate/ranged/space,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"bI" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"cg" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"cn" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/unpowered)
+"ct" = (
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/decoration/glowstick,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/unpowered)
+"cH" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"cV" = (
+/mob/living/basic/mouse/rat,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"cY" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/curtain/bounty,
+/obj/structure/fluff/hedge,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"db" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/structure/table/wood/reinforced,
+/obj/item/paper_bin{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/pen/charcoal{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/bottle/moonshine{
+	pixel_x = 9;
+	pixel_y = 3
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/carpet/red,
+/area/ruin/beach/treasure_cove)
+"ec" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/trash/sosjerky{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/item/trash/semki,
+/obj/item/trash/energybar,
+/obj/item/weldingtool,
+/obj/machinery/light/directional/west,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/beach/treasure_cove)
+"eM" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken7"
+	},
+/area/ruin/beach/treasure_cove)
+"fp" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/secure/loot,
+/obj/structure/sign/poster/contraband/ambrosia_vulgaris{
+	pixel_y = -32
+	},
+/obj/item/storage/box/syndie_kit/imp_adrenal,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"ft" = (
+/obj/structure/fence/door,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"gB" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/storage/pill_bottle/dice{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/trash/chips{
+	pixel_x = -2;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/beach/treasure_cove)
+"gF" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/human/pirate/ranged,
+/turf/open/floor/carpet/red,
+/area/ruin/beach/treasure_cove)
+"hL" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/silvercrate,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"hP" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/ruin/beach/treasure_cove)
+"hX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"jq" = (
+/obj/item/storage/guncase,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	color = "#808080"
+	},
+/obj/item/gun/energy/laser,
+/turf/open/floor/concrete/slab_2,
+/area/ruin/beach/treasure_cove)
+"la" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/beach/treasure_cove)
+"lf" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/bed{
+	icon_state = "dirty_mattress"
+	},
+/obj/item/storage/cans/sixbeer{
+	pixel_x = 3;
+	pixel_y = 2
+	},
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken4"
+	},
+/area/ruin/beach/treasure_cove)
+"lk" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"lq" = (
+/obj/machinery/light/directional/east,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/beach/treasure_cove)
+"mj" = (
+/obj/item/storage/box/zipties{
+	pixel_y = 7;
+	pixel_x = -3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"nd" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = -8;
+	pixel_y = -17
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"nP" = (
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/beach/treasure_cove)
+"nR" = (
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"oc" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"pa" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"pb" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"pf" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/closet/crate/critter{
+	pixel_x = 2
+	},
+/mob/living/simple_animal/parrot{
+	faction = list("pirate")
+	},
+/obj/machinery/light/directional/north,
+/obj/structure/sign/poster/contraband/syndiemoth{
+	pixel_x = 30
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"pF" = (
+/obj/machinery/recharger{
+	pixel_x = -5
+	},
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/item/storage/box/ammo/c38{
+	pixel_x = 10;
+	pixel_y = 8
+	},
+/obj/item/storage/box/ammo/c38{
+	pixel_x = 10
+	},
+/obj/structure/sign/poster/contraband/energy_swords{
+	pixel_x = -32
+	},
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/treasure_cove)
+"pP" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/closet/crate/large,
+/obj/item/paicard{
+	pixel_x = -5
+	},
+/obj/item/stack/sheet/animalhide/monkey,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"qd" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"qv" = (
+/obj/structure/railing/wood{
+	layer = 3.1
+	},
+/obj/structure/rack,
+/obj/item/wrench{
+	pixel_y = 6;
+	pixel_x = -4
+	},
+/obj/item/weldingtool/largetank,
+/turf/open/floor/plating,
+/area/ruin/beach/treasure_cove)
+"qQ" = (
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"rb" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/ruin/beach/treasure_cove)
+"rg" = (
+/obj/structure/flora/junglebush,
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/unpowered)
+"rB" = (
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"rE" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/ruin/beach/treasure_cove)
+"rQ" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood{
+	icon_state = "wood-broken"
+	},
+/area/ruin/beach/treasure_cove)
+"sd" = (
+/obj/structure/railing/wood{
+	layer = 3.1
+	},
+/obj/machinery/power/port_gen/pacman/super,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/beach/treasure_cove)
+"si" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/table/wood/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/fancy/nugget_box{
+	pixel_y = 10;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/coffee{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/turf/open/floor/carpet/red,
+/area/ruin/beach/treasure_cove)
+"sW" = (
+/turf/closed/mineral/random/beach,
+/area/ruin/beach/treasure_cove)
+"tj" = (
+/obj/machinery/suit_storage_unit/inherit,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/concrete/slab_2,
+/area/ruin/beach/treasure_cove)
+"tQ" = (
+/obj/machinery/vending/tool,
+/obj/effect/turf_decal/industrial/warning,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ruin/beach/treasure_cove)
+"ud" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/solarpanel_small,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/wrapping,
+/obj/item/circuitboard/machine/shuttle/engine/electric{
+	pixel_x = -1;
+	pixel_y = -3
+	},
+/obj/item/circuitboard/machine/shuttle/smes,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = -6
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"un" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/table/wood/reinforced,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/storage/fancy/cigarettes/cigpack_midori{
+	pixel_x = 9
+	},
+/obj/item/storage/fancy/cigarettes/cigpack_midori{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"vy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"vC" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/bed,
+/obj/item/bedsheet/qm,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"wb" = (
+/obj/structure/bonfire/prelit,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"wd" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/table/wood/reinforced,
+/obj/item/documents{
+	desc = "\"Top Secret\" documents, detailing the Flight path of a Minutemen VIP ship."
+	},
+/obj/structure/sign/poster/official/fruit_bowl{
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/red,
+/area/ruin/beach/treasure_cove)
+"wS" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/ruin/beach/treasure_cove)
+"xd" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/chair/wood/wings,
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"xu" = (
+/obj/item/stack/ore/salvage/scrapmetal{
+	pixel_y = -15;
+	pixel_x = 3
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/sign/poster/contraband/lusty_xenomorph{
+	pixel_y = 32
+	},
+/mob/living/basic/cockroach,
+/turf/open/floor/plating/rust,
+/area/ruin/beach/treasure_cove)
+"yS" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"za" = (
+/turf/open/floor/plating,
+/area/ruin/beach/treasure_cove)
+"zf" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/structure/bed{
+	icon_state = "dirty_mattress"
+	},
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"zg" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-25";
+	pixel_x = 5
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"zu" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"zT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/ruin/beach/treasure_cove)
+"Af" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"AF" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/trash/sosjerky{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Bd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/human/pirate/melee{
+	environment_smash = 0;
+	faction = list("pirate","mining");
+	loot = list(/obj/effect/mob_spawn/human/corpse/pirate)
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/beach/treasure_cove)
+"Bl" = (
+/obj/effect/turf_decal/siding/wood/corner,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Bm" = (
+/obj/item/storage/bag/money/vault{
+	pixel_x = 4
+	},
+/obj/item/storage/bag/money/vault{
+	pixel_x = -6;
+	pixel_y = 3
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	color = "#808080"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/wrapping,
+/turf/open/floor/concrete/tiles,
+/area/ruin/beach/treasure_cove)
+"CN" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/ruin/beach/treasure_cove)
+"Da" = (
+/turf/open/floor/plasteel/stairs{
+	barefootstep = "woodbarefoot";
+	color = "#A47449";
+	dir = 4;
+	footstep = "wood"
+	},
+/area/ruin/unpowered)
+"Do" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/ore_box,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"DU" = (
+/turf/template_noop,
+/area/ruin/unpowered)
+"DZ" = (
+/obj/structure/flora/ausbushes/fullgrass{
+	pixel_y = -7;
+	pixel_x = 1
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/unpowered)
+"Fr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/structure/curtain/bounty,
+/obj/structure/fluff/hedge,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Fw" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/table/wood/reinforced,
+/obj/machinery/jukebox/boombox{
+	pixel_y = 5
+	},
+/obj/item/table_bell{
+	pixel_x = 9;
+	pixel_y = -1
+	},
+/obj/item/gun/ballistic/automatic/assault/cm82{
+	pixel_y = 7;
+	pixel_x = -9
+	},
+/turf/open/floor/carpet/red,
+/area/ruin/beach/treasure_cove)
+"FG" = (
+/obj/structure/railing/wood{
+	layer = 3.1;
+	dir = 8
+	},
+/turf/open/water/beach,
+/area/ruin/unpowered)
+"FJ" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4;
+	color = "#808080"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/concrete/slab_3,
+/area/ruin/beach/treasure_cove)
+"Gj" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"Gr" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/glasses/welding{
+	pixel_y = -5;
+	pixel_x = 6
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/beach/treasure_cove)
+"GM" = (
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Hd" = (
+/obj/structure/flora/ausbushes/fernybush,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/unpowered)
+"HV" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Ih" = (
+/turf/closed/mineral/random/beach,
+/area/ruin/unpowered)
+"IA" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/secure/science,
+/obj/item/clothing/under/rank/rnd/research_director/turtleneck,
+/obj/item/research_notes/loot/medium,
+/obj/item/circuitboard/machine/tesla_coil/research{
+	pixel_y = -6;
+	pixel_x = 4
+	},
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"ID" = (
+/obj/effect/turf_decal/industrial/loading{
+	dir = 4
+	},
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"IX" = (
+/obj/structure/bed{
+	icon_state = "dirty_mattress"
+	},
+/obj/machinery/light/directional/east,
+/obj/structure/sign/poster/contraband/punch_shit{
+	pixel_x = 32
+	},
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"KT" = (
+/mob/living/basic/cockroach,
+/turf/open/floor/wood{
+	icon_state = "wood-broken4"
+	},
+/area/ruin/beach/treasure_cove)
+"KY" = (
+/turf/open/floor/wood{
+	icon_state = "wood-broken"
+	},
+/area/ruin/beach/treasure_cove)
+"MU" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Nh" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"NV" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"NZ" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"OF" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"OQ" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/human/pirate/melee,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/beach/treasure_cove)
+"Pi" = (
+/obj/machinery/autolathe/hacked,
+/obj/item/stack/sheet/metal/twenty{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/beach/treasure_cove)
+"Pq" = (
+/turf/closed/wall/concrete,
+/area/ruin/beach/treasure_cove)
+"PN" = (
+/obj/item/chair/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"Ql" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Qs" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/plastic,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"QN" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/beach/treasure_cove)
+"QR" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/fermenting_barrel{
+	pixel_x = 11;
+	pixel_y = 4
+	},
+/obj/structure/fermenting_barrel{
+	pixel_y = -6;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/drinks/bottle/wine{
+	pixel_x = 15;
+	pixel_y = -5
+	},
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"QY" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Ra" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/bed{
+	icon_state = "dirty_mattress"
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"Th" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"TW" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood{
+	icon_state = "wood-broken2"
+	},
+/area/ruin/beach/treasure_cove)
+"Ua" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood{
+	icon_state = "wood-broken6"
+	},
+/area/ruin/beach/treasure_cove)
+"Ur" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/treasure_cove)
+"Uu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/ore/salvage/scraptitanium{
+	pixel_x = -12;
+	pixel_y = 11
+	},
+/turf/open/floor/plating,
+/area/ruin/beach/treasure_cove)
+"UG" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/concrete/slab_4,
+/area/ruin/beach/treasure_cove)
+"UO" = (
+/obj/effect/turf_decal/siding/wood/corner,
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_y = 16;
+	pixel_x = 3
+	},
+/obj/item/food/grown/berries{
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/turf/open/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/ruin/beach/treasure_cove)
+"Vp" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/flashlight/lantern{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/melee/energy/sword/saber/pirate/red{
+	pixel_y = 8;
+	pixel_x = 10
+	},
+/obj/item/radio/old{
+	pixel_x = -3
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"VI" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"Wl" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/light/small/directional/north,
+/obj/effect/spawner/random/decoration/glowstick,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"Ws" = (
+/turf/open/floor/carpet/red,
+/area/ruin/beach/treasure_cove)
+"WH" = (
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"WN" = (
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"WZ" = (
+/obj/machinery/suit_storage_unit/inherit,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/clothing/suit/space/hardsuit/security/independent/frontier,
+/turf/open/floor/concrete/slab_2,
+/area/ruin/beach/treasure_cove)
+"Xp" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/directional/north,
+/turf/open/floor/wood,
+/area/ruin/beach/treasure_cove)
+"XD" = (
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/secure/loot,
+/obj/item/storage/box/syndie_kit/imp_freedom,
+/turf/open/floor/concrete/slab_1,
+/area/ruin/beach/treasure_cove)
+"YS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/basic/cockroach,
+/turf/open/floor/plating/asteroid/dirt/jungle/dark,
+/area/ruin/beach/treasure_cove)
+"Zl" = (
+/turf/open/floor/plasteel/stairs{
+	barefootstep = "woodbarefoot";
+	color = "#A47449";
+	footstep = "wood"
+	},
+/area/ruin/beach/treasure_cove)
+"ZP" = (
+/obj/structure/railing/wood{
+	layer = 3.1
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/ruin/beach/treasure_cove)
+
+(1,1,1) = {"
+DU
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Pq
+Pq
+Pq
+Pq
+Pq
+Ih
+Ih
+Ih
+Ih
+"}
+(2,1,1) = {"
+DU
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Pq
+Pq
+WN
+ud
+WN
+Pq
+Pq
+Ih
+Ih
+Ih
+"}
+(3,1,1) = {"
+Ih
+Ih
+Ih
+Ih
+Ih
+Pq
+Pq
+Pq
+Pq
+Pq
+XD
+qQ
+bI
+qQ
+IA
+Pq
+Ih
+Ih
+Ih
+"}
+(4,1,1) = {"
+Ih
+Ih
+Ih
+Pq
+Pq
+Pq
+WZ
+UG
+pF
+Pq
+Do
+WN
+zu
+WN
+fp
+Pq
+Ih
+Ih
+Ih
+"}
+(5,1,1) = {"
+Ih
+Ih
+Pq
+Pq
+Pi
+Pq
+tj
+nR
+mj
+Pq
+Wl
+WN
+hL
+WN
+yS
+Pq
+Ih
+Ih
+Ih
+"}
+(6,1,1) = {"
+Ih
+Ih
+Pq
+rb
+la
+qv
+jq
+FJ
+Bm
+Pq
+ID
+af
+ID
+nR
+ID
+sW
+Ih
+Ih
+Ih
+"}
+(7,1,1) = {"
+Ih
+Ih
+Pq
+xu
+zT
+Uu
+Zl
+hX
+WH
+ft
+wS
+cg
+aj
+pb
+qd
+qd
+Ih
+Ih
+Ih
+"}
+(8,1,1) = {"
+Ih
+Ih
+Pq
+Gr
+za
+ZP
+KY
+WH
+KT
+Pq
+Xp
+hX
+hX
+Bl
+CN
+oc
+Ih
+Ih
+Ih
+"}
+(9,1,1) = {"
+Ih
+Ih
+Pq
+tQ
+lq
+sd
+WH
+Pq
+Pq
+Pq
+AF
+vy
+hX
+NZ
+DU
+DU
+DU
+DU
+DU
+"}
+(10,1,1) = {"
+Ih
+Ih
+Pq
+Pq
+Pq
+Pq
+Pq
+Pq
+OF
+ec
+nP
+TW
+Bl
+NV
+DU
+DU
+DU
+DU
+DU
+"}
+(11,1,1) = {"
+Ih
+Ih
+Ih
+Ih
+Pq
+db
+si
+vC
+Fr
+cV
+wb
+pa
+NZ
+DU
+DU
+DU
+DU
+DU
+DU
+"}
+(12,1,1) = {"
+Ih
+Ih
+Ih
+Ih
+Pq
+wd
+gF
+Ua
+cY
+nd
+Bd
+pa
+NZ
+DU
+DU
+DU
+DU
+DU
+DU
+"}
+(13,1,1) = {"
+Ih
+Ih
+Ih
+Ih
+Pq
+Fw
+Ws
+WH
+GM
+qd
+qd
+rQ
+NZ
+DU
+DU
+DU
+DU
+DU
+DU
+"}
+(14,1,1) = {"
+Ih
+Ih
+Ih
+Ih
+Pq
+QR
+UO
+lk
+lk
+lk
+lk
+HV
+NZ
+DU
+DU
+DU
+DU
+DU
+DU
+"}
+(15,1,1) = {"
+Ih
+Ih
+Ih
+Ih
+Pq
+pf
+zg
+Nh
+Gj
+Af
+PN
+MU
+cH
+DZ
+DU
+DU
+DU
+DU
+DU
+"}
+(16,1,1) = {"
+DU
+Ih
+Ih
+Ih
+Pq
+Pq
+zf
+Ur
+xd
+gB
+Vp
+pa
+VI
+Qs
+Hd
+DU
+DU
+DU
+DU
+"}
+(17,1,1) = {"
+DU
+Ih
+Ih
+Ih
+Ih
+Pq
+lf
+rB
+eM
+OQ
+QN
+QY
+vy
+VI
+qd
+qd
+cg
+hP
+Th
+"}
+(18,1,1) = {"
+DU
+Ih
+Ih
+Ih
+Ih
+Pq
+un
+IX
+Ra
+YS
+vy
+sW
+pP
+lk
+rE
+Ql
+Ql
+lk
+Ql
+"}
+(19,1,1) = {"
+DU
+DU
+Ih
+Ih
+Ih
+Pq
+Pq
+Pq
+Pq
+OF
+Ih
+Ih
+Ih
+FG
+cn
+Da
+rg
+ct
+Ih
+"}

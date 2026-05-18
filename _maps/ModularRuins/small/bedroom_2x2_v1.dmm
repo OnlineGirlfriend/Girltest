@@ -1,0 +1,48 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/dresser{
+	dir = 1
+	},
+/obj/effect/spawner/random/maintenance{
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"B" = (
+/obj/effect/landmark/modular_connection/door,
+/obj/effect/spawner/random/salvage,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"H" = (
+/obj/structure/bed,
+/obj/effect/spawner/random/bedsheet,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"Z" = (
+/obj/structure/mirror{
+	pixel_y = 30
+	},
+/obj/machinery/light/small/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4;
+	welded = 1
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+
+(1,1,1) = {"
+Z
+a
+"}
+(2,1,1) = {"
+B
+H
+"}

@@ -612,9 +612,21 @@ SUBSYSTEM_DEF(overmap)
 			vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,
 			vlevel.z_value
 		)
-		used_ruin.load(ruin_turf)
+		var/list/bounds = used_ruin.load(ruin_turf) // PENTEST MODULAR RUINS
 		ruin_turfs[used_ruin.name] = ruin_turf
 		ruin_templates[used_ruin.name] = used_ruin
+
+		// PENTEST MODULAR RUINS START - Defer or process modular rooms via new subsystem
+		if(used_ruin.this_ruin_uses_modular_rooms && bounds)
+			used_ruin.loaded_bounds = bounds
+
+			// During server init, defer processing to avoid blocking initialization
+			// During runtime (player visits), process immediately with optimized caching
+			if(SSatoms.initialized == INITIALIZATION_INNEW_MAPLOAD)
+				SSmodular_ruins.defer_ruin(used_ruin)
+			else
+				SSmodular_ruins.process_ruin(used_ruin)
+		// PENTEST MODULAR RUINS END
 
 	// fill in the turfs, AFTER generating the ruin. this prevents them from generating within the ruin
 	// and ALSO prevents the ruin from being spaced when it spawns in

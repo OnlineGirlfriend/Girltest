@@ -200,6 +200,7 @@ GLOBAL_PROTECT(admin_verbs_debug)
 	/client/proc/map_template_load,
 	/client/proc/map_template_upload,
 	/client/proc/jump_to_ruin,
+	/client/proc/toggle_modular_connections_debug, // PENTEST MODULAR RUINS
 	/client/proc/fucky_wucky,
 	/client/proc/spooderman, /* Spooderman is a fun admin verb that plays a sound and shows an image to all players */
 	/client/proc/view_runtimes,

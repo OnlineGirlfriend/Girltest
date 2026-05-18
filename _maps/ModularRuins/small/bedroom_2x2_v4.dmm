@@ -1,0 +1,45 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/landmark/modular_connection/door,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"k" = (
+/obj/structure/bed,
+/obj/effect/spawner/random/bedsheet,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+"s" = (
+/obj/structure/mirror{
+	pixel_x = 30
+	},
+/obj/machinery/light/small/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	welded = 1
+	},
+/obj/effect/spawner/random/medical/medkit,
+/turf/open/floor/wood,
+/area/template_noop)
+"R" = (
+/obj/structure/dresser{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/template_noop)
+
+(1,1,1) = {"
+R
+k
+"}
+(2,1,1) = {"
+s
+a
+"}

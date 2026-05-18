@@ -1,0 +1,663 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ah" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"cA" = (
+/obj/effect/mob_spawn/human/corpse/syndicatecaptain,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"fg" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"fQ" = (
+/obj/structure/chair/office{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"ge" = (
+/obj/effect/turf_decal/ntlogo,
+/obj/machinery/nuclearbomb/beer,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"gn" = (
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"iA" = (
+/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/shreds,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"iE" = (
+/obj/effect/turf_decal/ntlogo{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"iH" = (
+/obj/effect/turf_decal/techfloor,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"kb" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"kA" = (
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"kJ" = (
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"lr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/modular_computer/console/preset{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"lu" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"lG" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"nD" = (
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"nF" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"oZ" = (
+/obj/machinery/modular_computer/console/preset,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"pV" = (
+/obj/structure/frame/machine,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"pW" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"qs" = (
+/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/plastic,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"rn" = (
+/obj/effect/turf_decal/ntlogo{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg{
+	name = "REDFOR commando"
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"td" = (
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/deployable_turret/hmg,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"uu" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"uR" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"uY" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"vn" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"vM" = (
+/mob/living/simple_animal/hostile/human/ramzi{
+	name = "REDFOR operative"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"vY" = (
+/obj/structure/chair/office,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"wF" = (
+/obj/machinery/modular_computer/console/preset,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"wK" = (
+/obj/effect/decal/cleanable/robot_debris,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"xx" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 5
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"xJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/office{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"yq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"yI" = (
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"yK" = (
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"zm" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Am" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Ax" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"AY" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 10
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Bh" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Bo" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 5
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Bq" = (
+/obj/effect/turf_decal/techfloor/corner,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Cp" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/machinery/modular_computer/console/preset{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Cr" = (
+/obj/effect/decal/cleanable/robot_debris,
+/obj/structure/frame/machine,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Eh" = (
+/obj/effect/turf_decal/techfloor,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Es" = (
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/syndicircle/research)
+"Ew" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Fv" = (
+/obj/structure/salvageable/server,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Gf" = (
+/obj/machinery/camera{
+	network = list("zonec")
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"GH" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 4
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"GR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"Jn" = (
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"Kn" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"LE" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/camera{
+	dir = 1;
+	network = list("zonec")
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"MT" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Ph" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/machinery/camera{
+	dir = 5;
+	network = list("zonec")
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"Qo" = (
+/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/plastic,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"QM" = (
+/obj/item/ammo_casing/mm712x82/match,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"RI" = (
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"RK" = (
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"RL" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"Sk" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Tn" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Tv" = (
+/obj/effect/turf_decal/ntlogo{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg{
+	name = "REDFOR commando"
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"TY" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"Wk" = (
+/obj/effect/turf_decal/techfloor/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"WK" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"WQ" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"Xl" = (
+/obj/machinery/camera{
+	dir = 8;
+	network = list("zonec")
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"XK" = (
+/obj/structure/filingcabinet/chestdrawer,
+/obj/item/gun_voucher/syndicate,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"XX" = (
+/obj/machinery/modular_computer/console/preset{
+	dir = 1
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/syndicircle/research)
+"Zt" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 9
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/syndicircle/research)
+"ZN" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ruin/space/has_grav/syndicircle/research)
+"ZR" = (
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+uu
+RI
+RI
+RI
+RI
+Tn
+RI
+Ph
+Cr
+pW
+Fv
+pW
+Fv
+ZR
+"}
+(2,1,1) = {"
+wF
+vY
+lr
+Fv
+pV
+wK
+yK
+WQ
+Fv
+GR
+qs
+Jn
+RI
+Fv
+"}
+(3,1,1) = {"
+wF
+fQ
+Ew
+wK
+iA
+Fv
+RI
+xx
+lu
+lu
+lu
+Wk
+Jn
+XX
+"}
+(4,1,1) = {"
+uu
+Bh
+RI
+Fv
+pV
+vM
+Zt
+Am
+RL
+AY
+Es
+WQ
+Cr
+Fv
+"}
+(5,1,1) = {"
+ZR
+Gf
+RI
+GH
+GH
+Zt
+td
+fg
+fg
+nD
+AY
+lG
+vn
+XX
+"}
+(6,1,1) = {"
+ZR
+RI
+Bh
+Sk
+RI
+nF
+kJ
+rn
+ge
+zm
+iH
+WQ
+RI
+pV
+"}
+(7,1,1) = {"
+ZR
+ZR
+TY
+kA
+RI
+nF
+oZ
+iE
+Tv
+kb
+Eh
+xx
+lu
+LE
+"}
+(8,1,1) = {"
+ZR
+ZR
+uu
+RI
+Tn
+Bo
+gn
+uR
+QM
+Bq
+uY
+TY
+cA
+RI
+"}
+(9,1,1) = {"
+ZR
+ZR
+ZR
+wF
+RK
+RI
+Bo
+Kn
+MT
+uY
+RI
+wK
+RI
+Tn
+"}
+(10,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+WK
+yq
+Ax
+RI
+vM
+XX
+Fv
+RI
+Qo
+RI
+"}
+(11,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+WK
+Bh
+cA
+TY
+XX
+wK
+pV
+Fv
+RI
+"}
+(12,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+XK
+RI
+RI
+RI
+RI
+Cp
+ah
+xJ
+"}
+(13,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+Bh
+Xl
+Bh
+vY
+yI
+ZN
+"}
+(14,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+uu
+WK
+WK
+uu
+"}

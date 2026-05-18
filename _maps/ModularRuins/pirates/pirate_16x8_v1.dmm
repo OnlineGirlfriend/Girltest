@@ -1,0 +1,447 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/structure/railing,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"c" = (
+/obj/item/storage/box/ammo/c45,
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"d" = (
+/obj/item/storage/box/ammo/c9mm,
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"e" = (
+/obj/structure/table/wood/poker,
+/obj/item/nullrod/claymore/saber/pirate,
+/obj/item/melee/energy/sword/saber/pirate,
+/turf/open/floor/carpet/red,
+/area/ruin/beach)
+"f" = (
+/turf/open/floor/carpet/red,
+/area/ruin/beach)
+"g" = (
+/obj/structure/closet/crate/goldcrate,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"h" = (
+/obj/structure/table/wood/poker,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/mob/living/simple_animal/parrot{
+	faction = list("pirate");
+	name = "Pegwing"
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"i" = (
+/obj/structure/railing,
+/obj/effect/decal/cleanable/ash,
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"j" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 4
+	},
+/turf/open/water/beach,
+/area/ruin/beach)
+"k" = (
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"l" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"m" = (
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"n" = (
+/obj/structure/stairs/east,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"o" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/pirate/ranged,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"p" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"q" = (
+/obj/machinery/grill,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"r" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"s" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"t" = (
+/obj/item/ammo_box/a40mm,
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"u" = (
+/obj/effect/decal/cleanable/food/egg_smudge,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"v" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"w" = (
+/obj/item/bedsheet/syndie,
+/obj/structure/bed,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"x" = (
+/obj/structure/railing,
+/obj/effect/decal/cleanable/ash/large,
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"y" = (
+/turf/closed/wall/mineral/wood,
+/area/ruin/beach)
+"z" = (
+/obj/structure/railing,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"A" = (
+/turf/open/floor/wood,
+/area/ruin/beach)
+"B" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/stairs/east,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"C" = (
+/obj/structure/dresser,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"D" = (
+/obj/structure/bonfire/prelit,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"E" = (
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"F" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/ash/large,
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"G" = (
+/mob/living/simple_animal/hostile/human/pirate/melee,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"H" = (
+/obj/structure/curtain/bounty,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"I" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"J" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"K" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"L" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"M" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/red,
+/area/ruin/beach)
+"N" = (
+/mob/living/simple_animal/hostile/human/pirate/melee{
+	environment_smash = 0;
+	faction = list("pirate","mining");
+	loot = list(/obj/effect/mob_spawn/human/corpse/pirate)
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"O" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"P" = (
+/obj/structure/safe,
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/card/emag,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"Q" = (
+/obj/structure/statue/sandstone/venus{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"R" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"S" = (
+/mob/living/simple_animal/hostile/human/pirate/ranged/space,
+/turf/open/floor/carpet/red,
+/area/ruin/beach)
+"T" = (
+/obj/structure/closet/crate/goldcrate,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"U" = (
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"V" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/floor/wood,
+/area/ruin/beach)
+"W" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/ash,
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"X" = (
+/obj/structure/closet/crate/wooden/toy,
+/turf/open/floor/wood,
+/area/ruin/beach)
+"Y" = (
+/obj/structure/table/wood/poker,
+/obj/item/gun/energy/laser,
+/turf/open/floor/carpet/red,
+/area/ruin/beach)
+"Z" = (
+/obj/effect/decal/cleanable/food/flour,
+/turf/open/floor/wood,
+/area/ruin/beach)
+
+(1,1,1) = {"
+a
+a
+a
+Q
+U
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+A
+A
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+K
+A
+I
+z
+a
+a
+"}
+(4,1,1) = {"
+a
+v
+J
+N
+A
+p
+r
+a
+"}
+(5,1,1) = {"
+a
+F
+A
+A
+A
+A
+i
+a
+"}
+(6,1,1) = {"
+v
+s
+A
+T
+T
+A
+p
+r
+"}
+(7,1,1) = {"
+W
+G
+t
+y
+y
+d
+N
+x
+"}
+(8,1,1) = {"
+K
+A
+E
+y
+y
+c
+L
+b
+"}
+(9,1,1) = {"
+I
+A
+A
+u
+A
+A
+A
+A
+"}
+(10,1,1) = {"
+k
+n
+Z
+q
+D
+A
+B
+X
+"}
+(11,1,1) = {"
+y
+y
+l
+y
+y
+l
+y
+y
+"}
+(12,1,1) = {"
+y
+C
+M
+Y
+e
+f
+m
+y
+"}
+(13,1,1) = {"
+y
+w
+S
+M
+f
+f
+g
+y
+"}
+(14,1,1) = {"
+y
+y
+h
+A
+A
+P
+y
+y
+"}
+(15,1,1) = {"
+j
+y
+y
+l
+H
+y
+y
+j
+"}
+(16,1,1) = {"
+a
+j
+V
+o
+O
+R
+j
+a
+"}

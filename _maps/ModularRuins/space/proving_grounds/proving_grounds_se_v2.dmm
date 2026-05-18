@@ -1,0 +1,706 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aU" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/obj/effect/turf_decal/syndicateemblem/bottom/left{
+	pixel_x = 16;
+	pixel_y = 1
+	},
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"bA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"cH" = (
+/obj/structure/grille,
+/obj/item/shard,
+/obj/structure/poddoor_assembly/shutters{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"cM" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"dl" = (
+/obj/effect/turf_decal/spline/fancy/opaque/lime{
+	dir = 9
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"dn" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"dC" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"gY" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/obj/effect/turf_decal/syndicateemblem/bottom/middle{
+	pixel_x = 16;
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"hk" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/floodlight,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"ho" = (
+/obj/structure/grille/broken,
+/obj/structure/poddoor_assembly/shutters{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg1"
+	},
+/area/ruin/space/has_grav/syndicircle/training)
+"iI" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/closet/crate/engineering,
+/obj/item/stack/sheet/mineral/titanium/five,
+/obj/item/stack/sheet/plasteel/twenty,
+/obj/item/stack/sheet/titaniumglass,
+/obj/item/stack/sheet/titaniumglass,
+/obj/item/stack/sheet/titaniumglass,
+/obj/item/stack/sheet/titaniumglass,
+/obj/item/stack/sheet/titaniumglass,
+/obj/item/stack/sheet/metal/twenty,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"iY" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner,
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"jJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"kI" = (
+/obj/structure/marker_beacon{
+	picked_color = "burgundy"
+	},
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"lw" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"mD" = (
+/obj/structure/marker_beacon{
+	picked_color = "burgundy"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"mQ" = (
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/obj/effect/decal/cleanable/molten_object,
+/obj/effect/spawner/random/salvage/part,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"nI" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/holopad/secure,
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"nS" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/floordetail/tiled,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"oh" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/plasteel/stairs{
+	icon = 'icons/obj/stairs.dmi';
+	dir = 1
+	},
+/area/ruin/space/has_grav/syndicircle/training)
+"oL" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/obj/effect/turf_decal/syndicateemblem/bottom/right{
+	pixel_x = 16;
+	pixel_y = 0
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/plastic,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"pm" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ruin/space/has_grav/syndicircle/training)
+"qx" = (
+/obj/effect/turf_decal/spline/fancy/opaque/lime{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/item/stack/tile/plasteel/dark,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"rV" = (
+/obj/structure/grille/broken,
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/molten_object,
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg1"
+	},
+/area/ruin/space/has_grav/syndicircle/training)
+"tx" = (
+/obj/structure/grille/broken,
+/obj/structure/poddoor_assembly/shutters{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"tV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"ub" = (
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"uI" = (
+/obj/structure/lattice/catwalk,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg,
+/obj/effect/spawner/random/salvage/prolathe/gun,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"wy" = (
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/sledge,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"xd" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"xI" = (
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"xK" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/obj/effect/decal/cleanable/blood/splatter/over_window,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"xU" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/obj/effect/turf_decal/syndicateemblem/middle/middle{
+	pixel_x = 16;
+	pixel_y = 0
+	},
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"zo" = (
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"zK" = (
+/obj/structure/fluff/broken_flooring{
+	icon_state = "pile"
+	},
+/turf/open/floor/plating/airless{
+	icon_state = "platingdmg3"
+	},
+/area/ruin/space/has_grav/syndicircle/training)
+"Av" = (
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 9
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/floordetail/tiled,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"BP" = (
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Cu" = (
+/obj/machinery/airalarm/directional/south,
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"CJ" = (
+/obj/effect/turf_decal/spline/fancy/opaque/lime{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"CM" = (
+/obj/effect/turf_decal/corner/opaque/lime/three_quarters{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"DS" = (
+/obj/effect/spawner/random/salvage/ore,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ed" = (
+/obj/effect/decal/cleanable/plastic,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"Es" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/obj/effect/turf_decal/syndicateemblem/middle/left{
+	pixel_x = 16;
+	pixel_y = 0
+	},
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"EL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/medical,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"EW" = (
+/obj/structure/lattice,
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/sledge,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"Fg" = (
+/turf/closed/mineral/random,
+/area/ruin/space/has_grav/syndicircle/training)
+"Fs" = (
+/obj/structure/salvageable/computer{
+	dir = 8
+	},
+/obj/effect/spawner/random/salvage/part,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Gc" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile/shuttle,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/training)
+"Gm" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 1
+	},
+/obj/item/crowbar,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Gv" = (
+/obj/effect/decal/cleanable/molten_object,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Hw" = (
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 9
+	},
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"IF" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"Jd" = (
+/obj/item/stack/cable_coil/cut/yellow,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ni" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/mono,
+/obj/effect/turf_decal/syndicateemblem/middle/right{
+	pixel_x = 16;
+	pixel_y = 0
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"Nt" = (
+/turf/template_noop,
+/area/template_noop)
+"Pf" = (
+/obj/structure/railing,
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/wideband/table,
+/obj/effect/turf_decal/corner/opaque/lime/mono,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"PX" = (
+/obj/effect/turf_decal/spline/fancy/opaque/lime/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/item/stack/tile/plasteel/dark,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"RU" = (
+/obj/effect/turf_decal/spline/fancy/opaque/lime/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Sl" = (
+/obj/structure/salvageable/computer{
+	dir = 8
+	},
+/obj/effect/spawner/random/salvage/part,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Tj" = (
+/obj/structure/lattice,
+/obj/effect/spawner/random/salvage/ore,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ur" = (
+/obj/structure/firelock_frame/border{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"UN" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/space/has_grav/syndicircle/training)
+"Vs" = (
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"Wv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/engine/hull,
+/area/ruin/space/has_grav/syndicircle/training)
+"Wz" = (
+/obj/effect/turf_decal/corner/opaque/lime/half,
+/obj/effect/decal/cleanable/molten_object,
+/obj/effect/decal/cleanable/glass,
+/turf/open/floor/plasteel/dark/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"WI" = (
+/obj/structure/table/reinforced,
+/obj/item/gun_voucher/syndicate,
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"YI" = (
+/obj/structure/fluff/broken_flooring{
+	icon_state = "pile";
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+"YP" = (
+/turf/open/floor/plasteel/telecomms_floor/airless,
+/area/ruin/space/has_grav/syndicircle/training)
+
+(1,1,1) = {"
+Nt
+Fg
+Fg
+Fg
+Fg
+Fg
+pm
+pm
+pm
+pm
+dC
+Ur
+CM
+mQ
+"}
+(2,1,1) = {"
+Fg
+Fg
+Fg
+ub
+lw
+ub
+pm
+xK
+Pf
+CJ
+RU
+YI
+Wz
+Cu
+"}
+(3,1,1) = {"
+Fg
+Fg
+ub
+lw
+lw
+lw
+pm
+xI
+iY
+oh
+qx
+xd
+Jd
+dn
+"}
+(4,1,1) = {"
+UN
+UN
+ub
+Tj
+lw
+lw
+pm
+nI
+cM
+dl
+PX
+Gm
+pm
+pm
+"}
+(5,1,1) = {"
+Ed
+mD
+ub
+lw
+lw
+lw
+pm
+Hw
+Hw
+Hw
+BP
+Av
+pm
+Nt
+"}
+(6,1,1) = {"
+EL
+bA
+ub
+lw
+lw
+lw
+pm
+YP
+nS
+Vs
+hk
+Fs
+pm
+Nt
+"}
+(7,1,1) = {"
+Es
+aU
+ub
+ub
+lw
+lw
+pm
+WI
+Sl
+zK
+Gv
+Gc
+Nt
+Nt
+"}
+(8,1,1) = {"
+xU
+gY
+ub
+ub
+ub
+lw
+pm
+cH
+ho
+rV
+tx
+Gc
+Nt
+Nt
+"}
+(9,1,1) = {"
+Ni
+oL
+ub
+ub
+ub
+lw
+lw
+EW
+zo
+zo
+zo
+Nt
+Nt
+Nt
+"}
+(10,1,1) = {"
+jJ
+IF
+ub
+DS
+ub
+ub
+ub
+iI
+zo
+uI
+Nt
+Nt
+Nt
+Nt
+"}
+(11,1,1) = {"
+wy
+tV
+ub
+ub
+ub
+ub
+ub
+lw
+lw
+Nt
+Nt
+Nt
+Nt
+Nt
+"}
+(12,1,1) = {"
+Wv
+kI
+ub
+ub
+ub
+DS
+ub
+ub
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+"}
+(13,1,1) = {"
+UN
+UN
+Fg
+Fg
+ub
+ub
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+"}
+(14,1,1) = {"
+Fg
+Fg
+Fg
+Fg
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+Nt
+"}

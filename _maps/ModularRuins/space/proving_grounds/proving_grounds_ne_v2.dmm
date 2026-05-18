@@ -1,0 +1,527 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ah" = (
+/mob/living/simple_animal/hostile/human/pirate/melee,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"ge" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"gn" = (
+/obj/structure/table/wood/poker,
+/obj/item/nullrod/claymore/saber/pirate,
+/obj/item/melee/energy/sword/saber/pirate,
+/turf/open/floor/carpet/red,
+/area/ruin/space/has_grav/syndicircle/training)
+"iA" = (
+/obj/item/ammo_box/a40mm,
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"iE" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"kJ" = (
+/obj/structure/bonfire/prelit,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"lr" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"lu" = (
+/mob/living/simple_animal/hostile/human/pirate/melee{
+	environment_smash = 0;
+	faction = list("pirate","mining");
+	loot = list(/obj/effect/mob_spawn/human/corpse/pirate)
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"lG" = (
+/obj/effect/decal/cleanable/food/flour,
+/obj/structure/stairs/east,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"nD" = (
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"nF" = (
+/obj/machinery/grill,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"oZ" = (
+/obj/structure/fluff/fokoff_sign{
+	pixel_x = 6;
+	pixel_y = 12;
+	layer = 4.5
+	},
+/obj/structure/flora/rock{
+	icon_state = "basalt2"
+	},
+/turf/open/water/beach,
+/area/ruin/space/has_grav/syndicircle/training)
+"pV" = (
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"qs" = (
+/obj/structure/dresser,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"rn" = (
+/obj/structure/stairs/east,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"td" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"uu" = (
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/space/has_grav/syndicircle/training)
+"uR" = (
+/turf/open/floor/carpet/red,
+/area/ruin/space/has_grav/syndicircle/training)
+"uY" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"vM" = (
+/obj/structure/curtain/bounty,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"vY" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"wF" = (
+/obj/item/bedsheet/syndie,
+/obj/structure/bed,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"wK" = (
+/obj/structure/closet/crate/goldcrate,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"xx" = (
+/obj/item/storage/box/ammo/c9mm,
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"xJ" = (
+/mob/living/simple_animal/crab,
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/space/has_grav/syndicircle/training)
+"yI" = (
+/obj/structure/flora/tree/jungle/small{
+	pixel_x = -27;
+	pixel_y = 5
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/space/has_grav/syndicircle/training)
+"yK" = (
+/obj/structure/destructible/tribal_torch{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"zm" = (
+/obj/structure/closet/crate/wooden/toy,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Am" = (
+/obj/item/storage/box/ammo/c45,
+/obj/structure/table/wood/poker,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"AY" = (
+/obj/structure/railing,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Bh" = (
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Bo" = (
+/obj/structure/table/wood/poker,
+/obj/item/gun/energy/laser,
+/turf/open/floor/carpet/red,
+/area/ruin/space/has_grav/syndicircle/training)
+"Bq" = (
+/turf/closed/wall/mineral/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Cp" = (
+/turf/open/floor/plating/asteroid/sand/lit{
+	light_range = 2
+	},
+/area/ruin/space/has_grav/syndicircle/training)
+"Cr" = (
+/obj/structure/railing,
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Ew" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/fluff/oldturret,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Fv" = (
+/obj/structure/fermenting_barrel,
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/syndicircle/training)
+"GH" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 4
+	},
+/turf/open/water/beach,
+/area/ruin/space/has_grav/syndicircle/training)
+"GR" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Kn" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"MT" = (
+/obj/structure/closet/crate/goldcrate,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Qo" = (
+/obj/structure/flora/rock/beach,
+/turf/open/water/beach,
+/area/ruin/space/has_grav/syndicircle/training)
+"QM" = (
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"RI" = (
+/turf/open/water/beach/deep,
+/area/ruin/space/has_grav/syndicircle/training)
+"RK" = (
+/mob/living/simple_animal/hostile/human/pirate/ranged/space,
+/turf/open/floor/carpet/red,
+/area/ruin/space/has_grav/syndicircle/training)
+"RL" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"Tn" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/red,
+/area/ruin/space/has_grav/syndicircle/training)
+"Tv" = (
+/obj/structure/safe,
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/gun_voucher/syndicate,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"TY" = (
+/turf/open/water/beach,
+/area/ruin/space/has_grav/syndicircle/training)
+"Wk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"WK" = (
+/obj/structure/table/wood/poker,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/mob/living/simple_animal/parrot{
+	faction = list("pirate");
+	name = "Pegwing"
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"WQ" = (
+/obj/structure/destructible/tribal_torch{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/syndicircle/training)
+"XK" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/pirate/ranged,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"XX" = (
+/turf/open/floor/pod/dark,
+/area/ruin/space/has_grav/syndicircle/training)
+"Zt" = (
+/obj/effect/decal/cleanable/food/egg_smudge,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/syndicircle/training)
+"ZN" = (
+/obj/structure/flora/rock/pile/largejungle{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/dirt/jungle,
+/area/ruin/space/has_grav/syndicircle/training)
+"ZR" = (
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+RI
+RI
+RI
+Ew
+nD
+nD
+nD
+nD
+Cr
+TY
+TY
+TY
+TY
+ZR
+"}
+(2,1,1) = {"
+RI
+RI
+lr
+td
+nD
+wK
+yK
+nD
+vY
+GR
+TY
+TY
+TY
+TY
+"}
+(3,1,1) = {"
+RI
+RI
+Ew
+ah
+iA
+Bq
+Bq
+xx
+lu
+Cr
+TY
+TY
+TY
+TY
+"}
+(4,1,1) = {"
+RI
+RI
+Kn
+nD
+pV
+Bq
+Bq
+Am
+RL
+AY
+TY
+TY
+oZ
+Fv
+"}
+(5,1,1) = {"
+ZR
+RI
+Wk
+nD
+nD
+Zt
+nD
+nD
+nD
+nD
+XX
+XX
+XX
+XX
+"}
+(6,1,1) = {"
+ZR
+RI
+Bh
+nD
+lG
+nF
+kJ
+rn
+ge
+zm
+XX
+WQ
+XX
+XX
+"}
+(7,1,1) = {"
+ZR
+ZR
+Bq
+Bq
+iE
+Bq
+Bq
+iE
+Bq
+Bq
+TY
+TY
+TY
+XX
+"}
+(8,1,1) = {"
+ZR
+ZR
+Bq
+qs
+Tn
+Bo
+gn
+uR
+QM
+Bq
+TY
+TY
+TY
+TY
+"}
+(9,1,1) = {"
+ZR
+ZR
+ZR
+wF
+RK
+Tn
+uR
+uR
+MT
+Bq
+TY
+TY
+TY
+TY
+"}
+(10,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+WK
+nD
+nD
+Tv
+Bq
+Bq
+TY
+TY
+Qo
+Cp
+"}
+(11,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+iE
+vM
+Bq
+Bq
+GH
+TY
+TY
+Cp
+Cp
+"}
+(12,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+XK
+uY
+GH
+TY
+TY
+Cp
+Cp
+xJ
+"}
+(13,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+TY
+TY
+TY
+Cp
+yI
+ZN
+"}
+(14,1,1) = {"
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+ZR
+Cp
+Cp
+uu
+uu
+"}

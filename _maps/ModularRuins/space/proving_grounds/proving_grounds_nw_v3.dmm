@@ -1,0 +1,460 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/indestructible/rock/snow,
+/area/ruin/space/has_grav/syndicircle/winter)
+"b" = (
+/obj/structure/table/reinforced,
+/obj/item/ammo_box/magazine/m45_cobra{
+	pixel_y = 5
+	},
+/obj/item/ammo_box/magazine/m45_cobra{
+	pixel_x = -4;
+	pixel_y = -6
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/winter)
+"c" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/winter)
+"d" = (
+/turf/open/floor/plating/ice,
+/area/ruin/space/has_grav/syndicircle/winter)
+"e" = (
+/obj/structure/table/reinforced,
+/obj/item/folder/documents/syndicate/red,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"f" = (
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"g" = (
+/obj/structure/flora/rock/icy,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"h" = (
+/obj/structure/flippedtable{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/smg{
+	name = "BLUFOR operative"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"k" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"l" = (
+/obj/structure/flippedtable{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/winter)
+"m" = (
+/obj/machinery/light/dim/directional/south,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"n" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"o" = (
+/obj/item/mine/pressure/explosive/shrapnel/live,
+/obj/item/stack/tile/mineral/snow,
+/obj/machinery/light/dim/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"p" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/snowed,
+/area/ruin/space/has_grav/syndicircle/winter)
+"s" = (
+/turf/template_noop,
+/area/template_noop)
+"t" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"u" = (
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"v" = (
+/obj/machinery/camera/preset{
+	dir = 4;
+	network = list("zoned")
+	},
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"w" = (
+/obj/structure/flora/rock/icy,
+/obj/machinery/camera/preset{
+	dir = 9;
+	network = list("zoned")
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"x" = (
+/mob/living/simple_animal/hostile/human/ramzi/ranged/smg{
+	name = "REDFOR operative"
+	},
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"y" = (
+/obj/structure/flippedtable,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/smg{
+	name = "BLUFOR operative"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"A" = (
+/obj/item/restraints/legcuffs/beartrap,
+/obj/structure/barricade/wooden/snowed,
+/obj/effect/turf_decal/snow,
+/obj/machinery/door/airlock/hatch,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/winter)
+"C" = (
+/obj/structure/table/reinforced,
+/obj/item/gun/ballistic/automatic/smg/cobra{
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/machinery/light/dim/directional/west,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"D" = (
+/obj/structure/flippedtable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"E" = (
+/obj/machinery/light/dim/directional/east,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"F" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"G" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/syndicircle/winter)
+"H" = (
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"J" = (
+/obj/machinery/camera/preset{
+	network = list("zoned")
+	},
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"L" = (
+/turf/open/floor/plating/snowed,
+/area/ruin/space/has_grav/syndicircle/winter)
+"M" = (
+/mob/living/simple_animal/hostile/human/ramzi/ranged/shotgun{
+	name = "REDFOR operative"
+	},
+/turf/open/floor/plating/ice,
+/area/ruin/space/has_grav/syndicircle/winter)
+"N" = (
+/obj/effect/turf_decal/snow,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/winter)
+"O" = (
+/obj/effect/turf_decal/snow,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/syndicircle/winter)
+"P" = (
+/obj/structure/statue/snow/snowman,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"Q" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"R" = (
+/obj/structure/sign/warning/coldtemp,
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/syndicircle/winter)
+"T" = (
+/obj/structure/flora/rock/pile,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"U" = (
+/obj/item/mine/pressure/explosive/shrapnel/live,
+/obj/item/stack/tile/mineral/snow,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/asteroid/snow/atmosphere,
+/area/ruin/space/has_grav/syndicircle/winter)
+"V" = (
+/obj/structure/table/reinforced,
+/obj/item/toy/redbutton{
+	pixel_y = 6
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"Y" = (
+/obj/structure/table/reinforced,
+/obj/item/documents/syndicate/red{
+	pixel_x = -7
+	},
+/obj/machinery/camera/preset{
+	network = list("zoned")
+	},
+/obj/item/seeds/chili/ice{
+	pixel_x = -5
+	},
+/obj/item/gun_voucher/syndicate,
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/syndicircle/winter)
+"Z" = (
+/obj/structure/barricade/wooden/snowed,
+/obj/effect/turf_decal/snow,
+/obj/machinery/door/airlock/hatch{
+	dir = 8
+	},
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/syndicircle/winter)
+
+(1,1,1) = {"
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+s
+s
+s
+s
+s
+s
+s
+s
+a
+u
+d
+F
+a
+a
+"}
+(3,1,1) = {"
+s
+s
+s
+s
+s
+s
+G
+G
+d
+t
+u
+u
+g
+a
+"}
+(4,1,1) = {"
+s
+s
+s
+s
+s
+C
+b
+G
+G
+J
+u
+u
+u
+n
+"}
+(5,1,1) = {"
+s
+s
+s
+s
+V
+Q
+y
+O
+G
+H
+U
+x
+u
+m
+"}
+(6,1,1) = {"
+s
+s
+s
+e
+f
+k
+D
+c
+A
+u
+u
+n
+u
+L
+"}
+(7,1,1) = {"
+s
+s
+G
+Y
+h
+l
+c
+N
+G
+u
+u
+u
+u
+L
+"}
+(8,1,1) = {"
+s
+s
+G
+G
+k
+f
+N
+G
+G
+a
+n
+F
+u
+d
+"}
+(9,1,1) = {"
+s
+a
+u
+G
+R
+Z
+G
+G
+a
+a
+d
+u
+u
+u
+"}
+(10,1,1) = {"
+s
+g
+u
+v
+o
+u
+n
+d
+d
+a
+a
+u
+u
+F
+"}
+(11,1,1) = {"
+a
+n
+d
+u
+u
+u
+a
+M
+d
+d
+a
+U
+u
+a
+"}
+(12,1,1) = {"
+a
+u
+F
+x
+u
+u
+a
+a
+u
+d
+u
+u
+P
+a
+"}
+(13,1,1) = {"
+a
+a
+t
+u
+u
+u
+u
+d
+u
+u
+u
+T
+a
+a
+"}
+(14,1,1) = {"
+a
+a
+a
+t
+E
+p
+L
+u
+U
+u
+w
+a
+a
+s
+"}

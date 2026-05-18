@@ -1,0 +1,500 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/stone_tile/surrounding/cracked{
+	pixel_x = -18;
+	pixel_y = 0
+	},
+/turf/closed/indestructible/riveted/boss,
+/area/ruin/space/has_grav/syndicircle/training)
+"b" = (
+/obj/item/stack/sheet/animalhide/goliath_hide,
+/obj/item/stack/sheet/animalhide/goliath_hide,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"c" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"d" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 4;
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 1;
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/turf/closed/indestructible/riveted/boss,
+/area/ruin/space/has_grav/syndicircle/training)
+"e" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 1
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"f" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "floor2"
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"g" = (
+/obj/structure/stone_tile/surrounding_tile/burnt,
+/turf/open/indestructible/cult,
+/area/ruin/space/has_grav/syndicircle/training)
+"h" = (
+/obj/structure/stone_tile/block,
+/obj/structure/stone_tile/slab/burnt{
+	pixel_y = -16
+	},
+/turf/open/lava/smooth/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"j" = (
+/obj/structure/flora/ausbushes/fullgrass/hell,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
+/area/ruin/space/has_grav/syndicircle/training)
+"k" = (
+/turf/open/indestructible/cult,
+/area/ruin/space/has_grav/syndicircle/training)
+"l" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 4;
+	pixel_x = -4;
+	pixel_y = 15
+	},
+/turf/closed/indestructible/riveted/boss,
+/area/ruin/space/has_grav/syndicircle/training)
+"m" = (
+/obj/effect/decal/cleanable/molten_object/large,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"n" = (
+/mob/living/simple_animal/hostile/asteroid/goliath/beast,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"o" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 4;
+	pixel_x = -9;
+	pixel_y = 2
+	},
+/obj/item/stack/sheet/mineral/silver{
+	pixel_y = 1;
+	pixel_x = -8
+	},
+/turf/open/indestructible/cult,
+/area/ruin/space/has_grav/syndicircle/training)
+"p" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 8;
+	pixel_x = -10;
+	pixel_y = -7
+	},
+/turf/open/indestructible/cult,
+/area/ruin/space/has_grav/syndicircle/training)
+"r" = (
+/obj/effect/gibspawner/human,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"s" = (
+/turf/template_noop,
+/area/template_noop)
+"t" = (
+/obj/effect/gibspawner/human,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
+/area/ruin/space/has_grav/syndicircle/training)
+"u" = (
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"v" = (
+/obj/structure/stone_tile/surrounding/cracked,
+/obj/machinery/door/keycard/gates/lavacanyon{
+	color = "#423429"
+	},
+/turf/open/indestructible/cult,
+/area/ruin/space/has_grav/syndicircle/training)
+"w" = (
+/mob/living/simple_animal/hostile/megafauna/blood_drunk_miner{
+	loot = list(/obj/item/melee/cleaving_saw,/obj/item/gun/energy/kinetic_accelerator,/obj/item/keycard/gatedrop/lavacanyon)
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"x" = (
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
+/area/ruin/space/has_grav/syndicircle/training)
+"A" = (
+/obj/item/stack/sheet/animalhide/goliath_hide,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"B" = (
+/obj/structure/stone_tile/block{
+	pixel_x = 0;
+	pixel_y = -16
+	},
+/turf/open/lava/smooth/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"C" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	icon_state = "xttrails_1";
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"D" = (
+/obj/structure/stone_tile/slab/cracked{
+	dir = 10
+	},
+/obj/item/stack/sheet/mineral/diamond{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/turf/open/indestructible/cult,
+/area/ruin/space/has_grav/syndicircle/training)
+"F" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 4;
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/mineral/gold{
+	pixel_x = -5;
+	pixel_y = 1
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"G" = (
+/obj/structure/stone_tile/slab/cracked{
+	dir = 10
+	},
+/turf/closed/indestructible/riveted/boss,
+/area/ruin/space/has_grav/syndicircle/training)
+"H" = (
+/obj/structure/stone_tile/surrounding/cracked{
+	dir = 10
+	},
+/obj/structure/closet/crate/necropolis/tendril/greater,
+/obj/item/gun_voucher/syndicate,
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"J" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 1;
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/obj/item/stack/sheet/mineral/diamond{
+	pixel_x = -9;
+	pixel_y = -9
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"L" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	pixel_x = 8;
+	pixel_y = -14
+	},
+/obj/item/stack/sheet/mineral/gold{
+	pixel_x = 4;
+	pixel_y = 8
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"M" = (
+/obj/structure/stone_tile/surrounding/cracked{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"N" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 8
+	},
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 1
+	},
+/obj/item/stack/sheet/mineral/gold{
+	pixel_x = -4;
+	pixel_y = -1
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"O" = (
+/obj/structure/stone_tile/surrounding/cracked{
+	dir = 4
+	},
+/obj/item/stack/sheet/mineral/silver{
+	pixel_y = 1;
+	pixel_x = -8
+	},
+/obj/item/gem/bloodstone{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"R" = (
+/obj/structure/stone_tile/block,
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/turf/open/lava/smooth/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"T" = (
+/obj/structure/stone_tile/surrounding_tile/burnt{
+	dir = 1;
+	pixel_x = 16;
+	pixel_y = 3
+	},
+/obj/item/stack/sheet/mineral/silver{
+	pixel_y = 1;
+	pixel_x = -8
+	},
+/turf/open/indestructible/necropolis,
+/area/ruin/space/has_grav/syndicircle/training)
+"U" = (
+/turf/open/lava/smooth/lava_land_surface,
+/area/ruin/space/has_grav/syndicircle/training)
+"W" = (
+/obj/structure/flora/ausbushes/fullgrass/hell,
+/obj/structure/flora/ash/leaf_shroom,
+/turf/open/floor/plating/asteroid/dirt/grass/lavaland,
+/area/ruin/space/has_grav/syndicircle/training)
+"Y" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	icon_state = "xtracks"
+	},
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface/lit,
+/area/ruin/space/has_grav/syndicircle/training)
+"Z" = (
+/turf/closed/indestructible/riveted/boss,
+/area/ruin/space/has_grav/syndicircle/training)
+
+(1,1,1) = {"
+Z
+Z
+Z
+Z
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+"}
+(2,1,1) = {"
+U
+U
+U
+Z
+Z
+Z
+s
+s
+s
+s
+s
+s
+s
+s
+"}
+(3,1,1) = {"
+u
+Z
+U
+U
+Z
+Z
+Z
+Z
+s
+s
+s
+s
+s
+s
+"}
+(4,1,1) = {"
+u
+u
+u
+U
+Z
+g
+T
+Z
+Z
+s
+s
+s
+s
+s
+"}
+(5,1,1) = {"
+x
+t
+m
+U
+Z
+o
+F
+O
+Z
+Z
+s
+s
+s
+s
+"}
+(6,1,1) = {"
+j
+j
+u
+U
+Z
+Z
+D
+H
+L
+Z
+Z
+s
+s
+s
+"}
+(7,1,1) = {"
+x
+j
+u
+U
+U
+Z
+d
+p
+J
+e
+Z
+Z
+s
+s
+"}
+(8,1,1) = {"
+j
+u
+Z
+u
+U
+U
+Z
+v
+G
+N
+k
+Z
+s
+s
+"}
+(9,1,1) = {"
+u
+b
+u
+u
+u
+U
+h
+B
+Z
+a
+l
+Z
+Z
+s
+"}
+(10,1,1) = {"
+x
+x
+u
+u
+A
+w
+M
+R
+U
+U
+U
+U
+Z
+s
+"}
+(11,1,1) = {"
+x
+x
+u
+u
+u
+u
+m
+M
+m
+u
+u
+U
+Z
+Z
+"}
+(12,1,1) = {"
+j
+t
+x
+x
+u
+f
+Y
+Y
+C
+r
+u
+U
+U
+Z
+"}
+(13,1,1) = {"
+x
+j
+j
+j
+r
+Z
+u
+c
+u
+n
+u
+u
+U
+Z
+"}
+(14,1,1) = {"
+s
+W
+x
+j
+x
+u
+u
+u
+u
+Z
+Z
+Z
+Z
+Z
+"}
