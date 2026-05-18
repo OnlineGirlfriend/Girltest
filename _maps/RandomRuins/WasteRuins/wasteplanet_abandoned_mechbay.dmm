@@ -111,7 +111,7 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/wasteplanet/abandoned_mechbay/bay2)
 "bZ" = (
-/obj/structure/closet/secure{
+/obj/structure/closet/secure_closet/empty{
 	name = "Pilot Equipment"
 	},
 /obj/item/clothing/head/helmet/space/pilot,
@@ -629,7 +629,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/wasteplanet/abandoned_mechbay/bay1)
 "gc" = (
-/obj/structure/closet/secure{
+/obj/structure/closet/secure_closet/empty{
 	name = "Pilot Equipment"
 	},
 /obj/item/clothing/head/helmet/space/pilot,
@@ -3795,7 +3795,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/closet/secure{
+/obj/structure/closet/secure_closet/empty{
 	name = "Pilot Equipment"
 	},
 /obj/item/clothing/head/helmet/space/pilot,

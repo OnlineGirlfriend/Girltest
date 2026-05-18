@@ -322,3 +322,6 @@ GLOBAL_LIST_INIT(most_common_words, init_common_words())
 	for(var/word in world.file2list("strings/1000_most_common.txt"))
 		.[word] = i
 		i += 1
+
+/// PENTEST ADDITION - ABANDONED CRATES - List of 5-letter words for Wordle-style abandoned crate locks
+GLOBAL_LIST_INIT(wordle_words, world.file2list("strings/wordle_words.txt"))

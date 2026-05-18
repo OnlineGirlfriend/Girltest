@@ -1,5 +1,5 @@
 //Originally coded by ISaidNo, later modified by Kelenius. Ported from Baystation12.
-
+/*
 /obj/structure/closet/crate/secure/loot
 	name = "abandoned crate"
 	desc = "What could be inside?"
@@ -250,4 +250,4 @@
 			new /obj/item/twenty_pounds_of_ice(src)
 		if(100)
 			new /obj/item/skateboard/hoverboard(src)
-	spawned_loot = TRUE
+	spawned_loot = TRUE*/

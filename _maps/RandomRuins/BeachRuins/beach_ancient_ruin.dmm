@@ -1223,7 +1223,6 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/complex/wall)
 "uG" = (
-/obj/structure/closet/secure,
 /obj/effect/turf_decal/box/white,
 /obj/item/clothing/under/shorts/red{
 	name = "Cybersun Brand Jorts";
@@ -1235,6 +1234,7 @@
 /obj/item/clothing/under/syndicate/gorlex,
 /obj/item/clothing/under/syndicate/gorlex,
 /obj/item/clothing/under/syndicate/gorlex,
+/obj/structure/closet/secure_closet/empty,
 /turf/open/floor/concrete/slab_3,
 /area/ruin/beach/complex)
 "uH" = (
@@ -1751,7 +1751,6 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/complex/wall)
 "Cv" = (
-/obj/structure/closet/secure,
 /obj/effect/turf_decal/box/white,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/gloves/combat,
@@ -1777,6 +1776,7 @@
 /obj/item/clothing/shoes/jackboots{
 	desc = "Cybersun-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
 	},
+/obj/structure/closet/secure_closet/empty,
 /turf/open/floor/concrete/slab_3,
 /area/ruin/beach/complex)
 "Cz" = (
