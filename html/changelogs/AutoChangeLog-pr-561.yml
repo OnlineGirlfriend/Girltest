@@ -1,0 +1,4 @@
+author: "Ossa88"
+delete-after: True
+changes:
+  - balance: "Attempts to rebalance hivebot spawn rates to reduce server load"
