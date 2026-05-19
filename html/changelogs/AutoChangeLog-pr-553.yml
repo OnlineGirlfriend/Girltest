@@ -1,4 +1,0 @@
-author: "Ossa88"
-delete-after: True
-changes:
-  - rscadd: "Abandoned Crates have new forms of Locks. Multitools have proper interfaces with these new locks."
