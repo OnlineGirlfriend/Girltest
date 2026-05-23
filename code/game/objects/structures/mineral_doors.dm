@@ -15,7 +15,7 @@
 	CanAtmosPass = ATMOS_PASS_DENSITY
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
 	rad_insulation = RAD_MEDIUM_INSULATION
-
+	var/rad_insulation_closed = RAD_MEDIUM_INSULATION // PENTEST ADDITION - RADIATION REFACTOR
 	var/door_opened = FALSE //if it's open or not.
 	var/isSwitchingStates = FALSE //don't try to change stats if we're already opening
 
@@ -98,7 +98,7 @@
 	air_update_turf(TRUE)
 	update_appearance()
 	isSwitchingStates = FALSE
-
+	rad_insulation = RAD_NO_INSULATION // PENTEST ADDITION - RADIATION REFACTOR
 	if(close_delay != -1)
 		addtimer(CALLBACK(src, PROC_REF(Close)), close_delay)
 
@@ -120,6 +120,7 @@
 	air_update_turf(TRUE)
 	update_appearance()
 	isSwitchingStates = FALSE
+	rad_insulation = rad_insulation_closed // PENTEST ADDITION - RADIATION REFACTOR
 
 /obj/structure/mineral_door/update_icon_state()
 	icon_state = "[initial(icon_state)][door_opened ? "open":""]"

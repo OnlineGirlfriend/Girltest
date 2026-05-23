@@ -19,6 +19,7 @@
 	CanAtmosPass = ATMOS_PASS_DENSITY
 	flags_1 = RAD_PROTECT_CONTENTS_1 | RAD_NO_CONTAMINATE_1
 	rad_insulation = RAD_MEDIUM_INSULATION
+	var/rad_insulation_closed = RAD_MEDIUM_INSULATION // PENTEST ADDITION - RADIATION REFACTOR
 	var/mineral = /obj/item/stack/sheet/metal
 	var/mineral_amount = 2
 	var/walltype = /turf/closed/wall
@@ -57,6 +58,7 @@
 		set_opacity(density)
 		opening = FALSE
 		update_appearance()
+		rad_insulation = density? rad_insulation_closed : RAD_NO_INSULATION // PENTEST ADDITION - RADIATION REFACTOR
 		air_update_turf(TRUE)
 
 /obj/structure/falsewall/update_icon()//Calling icon_update will refresh the smoothwalls if it's closed, otherwise it will make sure the icon is correct if it's open

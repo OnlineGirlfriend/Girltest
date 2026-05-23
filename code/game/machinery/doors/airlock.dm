@@ -1285,6 +1285,7 @@
 	layer = OPEN_DOOR_LAYER
 	update_icon(ALL, AIRLOCK_OPEN, TRUE)
 	operating = FALSE
+	rad_insulation = RAD_NO_INSULATION // PENTEST ADDITION - RADIATION REFACTOR
 	if(delayed_close_requested)
 		delayed_close_requested = FALSE
 		addtimer(CALLBACK(src, PROC_REF(close)), 1)
@@ -1340,6 +1341,7 @@
 	update_icon(ALL, AIRLOCK_CLOSED, 1)
 	operating = FALSE
 	delayed_close_requested = FALSE
+	rad_insulation = rad_insulation_closed // PENTEST ADDITION - RADIATION REFACTOR
 	if(safe)
 		CheckForMobs()
 	return TRUE

@@ -44,7 +44,9 @@
 	var/unres_sides = 0 //Unrestricted sides. A bitflag for which direction (if any) can open the door with no access
 	var/safety_mode = FALSE ///Whether or not the airlock can be opened with bare hands while unpowered
 	var/can_crush = TRUE /// Whether or not the door can crush mobs.
-
+	// PENTEST ADDITION - RADIATION REFACTOR START
+	var/rad_insulation_closed = RAD_NO_INSULATION /// How much rad_insulation it has when closed, so that it can be modified for closed/open state.
+	// PENTEST ADDITION - RADIATION REFACTOR END
 
 /obj/machinery/door/examine(mob/user)
 	. = ..()
@@ -343,6 +345,7 @@
 	operating = FALSE
 	air_update_turf(1)
 	update_freelook_sight()
+	rad_insulation = RAD_NO_INSULATION // PENTEST ADDITION - RADIATION REFACTOR
 	if(autoclose)
 		addtimer(CALLBACK(src, PROC_REF(close)), autoclose)
 	return 1
@@ -360,6 +363,7 @@
 				return
 
 	operating = TRUE
+	rad_insulation = rad_insulation_closed // PENTEST ADDITION - RADIATION REFACTOR
 
 	do_animate("closing")
 	layer = closingLayer
