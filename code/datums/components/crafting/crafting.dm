@@ -80,8 +80,26 @@
 		var/needed_amount = R.reqs[requirement_path]
 		for(var/content_item_path in contents)
 			// Right path and not blacklisted
-			if(!ispath(content_item_path, requirement_path) || R.blacklist.Find(content_item_path))
+			if(!ispath(content_item_path, requirement_path)) //PENTEST EDIT
 				continue
+
+			// PENTEST CHANGE - START - Check whitelist first - whitelist overrides blacklist
+			var/is_whitelisted = R.whitelist.Find(content_item_path)
+
+			// Check blacklist only if not whitelisted
+			if(!is_whitelisted)
+				if(R.blacklist_subtypes)
+					// Check if content_item_path is a subtype of any blacklisted type
+					var/is_blacklisted = FALSE
+					for(var/blacklisted_type in R.blacklist)
+						if(ispath(content_item_path, blacklisted_type))
+							is_blacklisted = TRUE
+							break
+					if(is_blacklisted)
+						continue
+				else if(R.blacklist.Find(content_item_path))
+					continue
+					//PENTEST CHANGE - END
 
 			needed_amount -= contents[content_item_path]
 			if(needed_amount <= 0)
@@ -103,6 +121,32 @@
 			return FALSE
 
 	return R.check_requirements(a, requirements_list)
+
+/**
+ * PENTEST CHANGE START
+ *
+ * Check if an item type is allowed by the recipe's blacklist/whitelist.
+ *
+ * R: The /datum/crafting_recipe being checked.
+ * item_type: The type path of the item to check.
+ * Returns TRUE if the item is allowed, FALSE if blacklisted.
+ */
+/datum/component/personal_crafting/proc/is_type_allowed(datum/crafting_recipe/R, item_type)
+	// Check whitelist first - whitelist overrides blacklist
+	if(R.whitelist.Find(item_type))
+		return TRUE
+
+	// Check blacklist
+	if(R.blacklist_subtypes)
+		// Check if item_type is a subtype of any blacklisted type
+		for(var/blacklisted_type in R.blacklist)
+			if(ispath(item_type, blacklisted_type))
+				return FALSE
+	else if(R.blacklist.Find(item_type))
+		return FALSE
+
+	return TRUE
+	// PENTEST CHANGE END
 
 /datum/component/personal_crafting/proc/get_environment(atom/a, list/blacklist = null, radius_range = 1)
 	. = list()
@@ -234,6 +278,11 @@
 				var/datum/reagent/RGNT
 				while(amt > 0)
 					var/obj/item/reagent_containers/RC = locate() in surroundings
+					// PENTEST CHANGE - Check if container type is blacklisted
+					if(RC && !is_type_allowed(R, RC.type))
+						surroundings -= RC
+						continue
+					// PENTEST CHANGE END
 					RG = RC.reagents.get_reagent(A)
 					if(RG)
 						if(!locate(RG.type) in Deletion)
@@ -263,6 +312,11 @@
 				var/obj/item/stack/SD
 				while(amt > 0)
 					S = locate(A) in surroundings
+					// PENTEST CHANGE - Check if stack type is blacklisted
+					if(S && !is_type_allowed(R, S.type))
+						surroundings -= S
+						continue
+					// PENTEST CHANGE END
 					if(S.amount >= amt)
 						if(!locate(S.type) in Deletion)
 							SD = new S.type()
@@ -284,6 +338,11 @@
 				var/atom/movable/I
 				while(amt > 0)
 					I = locate(A) in surroundings
+					// PENTEST CHANGE - Check if item type is blacklisted
+					if(I && !is_type_allowed(R, I.type))
+						surroundings -= I
+						continue
+					// PENTEST CHANGE END
 					Deletion += I
 					surroundings -= I
 					amt--

@@ -170,3 +170,4 @@
 		/obj/item/analyzer = 1
 	)
 	category = CAT_MISC
+	blacklist_subtypes = TRUE //PENTEST ADDITION
