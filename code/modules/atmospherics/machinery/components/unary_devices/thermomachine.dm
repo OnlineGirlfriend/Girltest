@@ -43,12 +43,19 @@
 // PENTEST FIX - THERMOMACHINE POWER CALCULATION - START
 	recalculate_power()
 
-/// Recalculates the power usage of the machine based on the current target temperature and the temperature of the gas in the pipes. Should be called whenever the target temperature changes, or when the machine is turned on or off.
-/obj/machinery/atmospherics/components/unary/thermomachine/proc/recalculate_power(old_temperature)
-	var/temperature_difference = abs(target_temperature - old_temperature)
-	// Baseline active power (200W) + temperature-based scaling
-	// This ensures the machine always draws meaningful power when active
-	var/new_active_power = idle_power_usage + (heat_capacity * temperature_difference) / 1000
+/// Recalculates the power usage of the machine based on the current air temperature and target temperature. Should be called every tick and whenever state changes.
+/obj/machinery/atmospherics/components/unary/thermomachine/proc/recalculate_power()
+	var/new_active_power = idle_power_usage
+
+	// Only calculate work-based power if machine is on and has a connected pipe
+	if(on && nodes[1])
+		var/datum/gas_mixture/air_contents = airs[1]
+		if(air_contents)
+			var/current_temp = air_contents.return_temperature()
+			var/temperature_difference = abs(target_temperature - current_temp)
+			// Power based on actual temperature difference (how much work needs to be done)
+			new_active_power = idle_power_usage + (heat_capacity * temperature_difference) / 1000
+
 	set_no_power()
 	active_power_usage = new_active_power
 	if(on)
@@ -92,7 +99,6 @@
 
 	var/air_heat_capacity = air_contents.heat_capacity()
 	var/combined_heat_capacity = heat_capacity + air_heat_capacity
-	var/old_temperature = air_contents.return_temperature()
 
 	if(combined_heat_capacity > 0)
 		var/combined_energy = heat_capacity * target_temperature + air_heat_capacity * air_contents.return_temperature()
@@ -100,11 +106,11 @@
 
 // PENTEST FIX - THERMOMACHINE POWER CALCULATION - START
 // The orginal system used to calculate the delta difference and set it to a varible but never told the set_active_power() proc to update
-// the power usage based on the new delta. This meant that if you changed the target temperature, or turned it on and off
-// the machine would see the incorrect delta and would then pass that to the APC resulting in infinite power gain or draw regardless of the machines power status.
-	if(abs(old_temperature - air_contents.return_temperature()) > 1)
-		recalculate_power(old_temperature)
-		update_parents()
+// Attempt#3 Recalculate power will now check every process_atoms tick to reflect actual work being done
+// This should ensure power usage accurately tracks the temperature difference between current and target
+// When at target temperature, power usage should drop to idle levels
+	recalculate_power()
+	update_parents()
 // PENTEST FIX - THERMOMACHINE POWER CALCULATION - END
 	return 1
 
