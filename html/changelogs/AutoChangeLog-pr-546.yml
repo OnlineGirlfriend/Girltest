@@ -1,0 +1,4 @@
+author: "Ossa88"
+delete-after: True
+changes:
+  - bugfix: "small items in volumetic storages have better clickability."
