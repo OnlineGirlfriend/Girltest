@@ -131,8 +131,8 @@
 		I = i
 		var/percent = percentage_by_item[I]
 		var/atom/movable/screen/storage/volumetric_box/center/B = new /atom/movable/screen/storage/volumetric_box/center(null, src, I)
-		// SNOWFLAKE: force it to icon until we unfuck storage/click passing
-		I.mouse_opacity = MOUSE_OPACITY_ICON
+		// PENTEST CHANGE - Make items non-clickable so clicks pass through to the box, preventing overlapping sprites from causing misclicks
+		I.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 		var/pixels_to_use = overrun? MINIMUM_PIXELS_PER_ITEM : max(using_horizontal_pixels * percent, MINIMUM_PIXELS_PER_ITEM)
 		var/addrow = FALSE
 		if(CEILING(pixels_to_use, 1) >= FLOOR(horizontal_pixels - current_pixel - VOLUMETRIC_STORAGE_EDGE_PADDING, 1))
