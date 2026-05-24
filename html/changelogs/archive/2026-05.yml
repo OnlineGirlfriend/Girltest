@@ -5,3 +5,21 @@
   - bugfix: Ship Selection Panel is cleaner
   - rscadd: Abandoned Crates have new forms of Locks. Multitools have proper interfaces
       with these new locks.
+2026-05-24:
+  FslashN:
+  - refactor: 'Refactored radiation spread code as well as insulation.
+
+      <!-- Both :cl:''s are required for the changelog to work! You can put your name
+      to the right of the first :cl: if you want to overwrite your GitHub username
+      as author ingame. -->
+
+      <!-- You can use multiple of the same prefix (they''re only used for the icon
+      ingame) and delete the unneeded ones. Despite some of the tags, changelogs should
+      generally represent how a player might be affected by the changes rather than
+      a summary of the PR''s contents. -->'
+  Ossa88:
+  - bugfix: Fixing this again.... God damn how much I would love to just upgrade the
+      entire codebase to TG's
+  - bugfix: Allows individual crafting recipes to ignore certain subpathed blacklisted
+      items
+  - bugfix: small items in volumetic storages have better clickability.
